@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="Manage-Kodi-Favourites" name="[COLOR blue]Manage Kodi Favourites[/COLOR]" version="2.0" provider-name="M-Borsch,MB-K@DI">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <news>
+      [COLOR lavender][B]Manage Kodi Favourites[/B][/COLOR]
+      [B]2.0:[/B]
+      - Inital Public release
+      - Add ability to add Prefixes, Suffixes and Colors.
+    </news>
+    <summary>
+Manage your Favourites made easy!
+    </summary>
+    <description lang="en">
+Lets you manage the entries in your [B]Favourites[/B] by either adding "prefix/suffix" or "coloring".
+
+Select item and madify depending on selected items 
+
+Modify picklists in the configuration screen.
+
+Use this to quickly and easily manage your Favourites.
+    </description>
+    <platform>all</platform>
+    <assets>
+        <icon>Manage-Kodi-Fav-icon.png</icon>
+    </assets>
+  </extension>
+</addon>
