@@ -1,17 +1,12 @@
-# Insert-Swap Kodi Favourites - To Do
-![icon](https://github.com/M-Borsch/OrderFavourtites/blob/master/icon.png)  
+# Manage Kodi Favourites Program Addon - To Do
+![icon](https://github.com/M-Borsch/Manage-Kodi-Favourites/blob/main/Manage-Kodi-Fav-icon.png)  
 
-# Program Addon: Insert-Swap Kodi Favourites - To Do List of Activities
-
-### This is a simple & lightweight program add-on that lets you quickly reorganize your Kodi favourites that works on multiple Kodi skins.
+### This is a simple & lightweight program add-on that lets you quickly manage your Kodi favourites by adding Prefixes, Suffixes and use Colors to better oraganize your Favourites list that works on multiple Kodi skins.
 > [!NOTE]
-> - [x] - (Contxtual Popup) - ~~Add ability to display which order mode the Addon is configured~~
+> - [ ] - (Contextual Popup) - Add ability to display a text version of your Favourites
+> 
+> - [ ] - (Configuration Panel) - Add ability to edit lists and colors
 >
-> - [x] - (Configuration Panel) - ~~Add configuration panel to Addon~~
+> - [ ] - (Write Out New file) - Add ability to manipuate the Favourites list
 >
-> - [x] - (Selectable Order Method) - ~~Add ability to configure Order Method (Swap, Insert Before, Insert After)~~
->
-> - [x] - (Icon Size) - ~~Add ability to adjust/configure the size of the thumbnails~~
->
-> - [x] - (Font Size) - ~~Add ability to adjust/configure the size of the font used for label~~ 
 
