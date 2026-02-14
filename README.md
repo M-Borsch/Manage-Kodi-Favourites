@@ -1,5 +1,6 @@
 # Manage-Kodi-Favourites
 This Kodi program addon allows you to manage your Kodi favourites by adding a prefix, suffix and color you Kodi favourites
+
 ![icon](https://github.com/M-Borsch/Manage-Kodi-Favourites/blob/main/Manage-Kodi-Fav-icon.png)  
 
 # Program Addon: Manage Kodi Favourites
