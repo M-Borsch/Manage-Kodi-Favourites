@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="General">
+        <setting id="prefixText" label="Prefix Text" type="enum" default="0"
+                 values="NONE|TV - |Movie - |Show - "/>
+        <setting id="prefixColor" label="Prefix Color" type="enum" default="0"
+                 values="NONE|green|yellow|blue|cyan|orange"/>
+        <setting id="suffixText" label="Prefix Text" type="enum" default="0"
+                 values="NONE|TV - |Movie - |Show - "/>
+        <setting id="suffixColor" label="Prefix Color" type="enum" default="0"
+                 values="NONE|green|yellow|blue|cyan|orange"/>
+    </category>
+</settings>
