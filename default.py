@@ -219,9 +219,10 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
                 xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Please Select an Item)' % "No Item")
             else:
                 # Something is selected, so do the label change.
-                xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Item Selected)' % str(self.allItems[self.indexFrom]))
+                xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Item Selected)' % self.allItems[self.indexFrom]).getlabel())
                 
                 # for now - do nothing - add prefix and suffix checks
+                # label_text = my_listitem.getLabel()
                 
 
     def doReload(self):
@@ -413,6 +414,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
