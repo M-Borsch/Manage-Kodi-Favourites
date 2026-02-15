@@ -59,10 +59,11 @@ msgid "30007"
 msgstr "NONE| - # Free99 #| - # Scrubs V2 #| - # Ghost #| - # Quicksilver #| - # Samsung TV+ #"
 
 msgctxt "#32001"
-msgid [COLOR white]Here you choose the actions from the picklists for Prefix/Suffix and Colors[/COLOR]
+msgid "[COLOR white]Here you choose the actions from the picklists for Prefix/Suffix and Colors[/COLOR]"
 msgstr "Picklist Title"
 
 msgctxt "#32002"
 msgid "NONE| - # Free99 #| - # Scrubs V2 #| - # Ghost #| - # Quicksilver #| - # Samsung TV+ #"
 msgstr "Mon Addon"
+
 
