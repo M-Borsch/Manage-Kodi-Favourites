@@ -330,7 +330,7 @@
 				</control>
 				<control type="textbox">
 					<visible>true</visible>
-					<height>25</height>
+					<height>50</height>
 					<onleft>195</onleft>
 					<width>270</width>
 					<onright>100</onright>
@@ -354,7 +354,7 @@
 				</control>
 				<control type="textbox">
 					<visible>true</visible>
-					<height>25</height>
+					<height>50</height>
 					<onleft>200</onleft>
 					<width>270</width>
 					<onright>100</onright>
@@ -384,18 +384,7 @@
 					<font>font10</font>
 					<align>left</align>
 					<aligny>top</aligny>
-					<label>[B]===========================================[/B]</label>
-				</control>
-				<control type="textbox">
-					<visible>true</visible>
-					<height>25</height>
-					<onleft>200</onleft>
-					<width>270</width>
-					<onright>100</onright>
-					<font>font10</font>
-					<align>left</align>
-					<aligny>top</aligny>
-					<label>[B]The Following are the Insert/Swap settings:[/B]</label>
+					<label>[B]======INSERT/SWAP=================================[/B]</label>
 				</control>
 				<control type="textbox">
 					<visible>String.IsEqual(Window.Property(reorder),0)</visible>
@@ -468,6 +457,7 @@
 	   </control>
 	</controls>
 </window>
+
 
 
 
