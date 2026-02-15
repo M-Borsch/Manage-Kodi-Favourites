@@ -219,7 +219,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
                 xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Please Select an Item)' % "No Item")
             else:
                 # Something is selected, so do the label change.
-                xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Item Selected)' % "Item")
+                xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Item Selected)' % "Item - " % str(self.indexFrom))
                 # for now - do nothing
                 self.close()
 
@@ -413,6 +413,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
