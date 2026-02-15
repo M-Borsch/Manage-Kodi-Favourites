@@ -281,7 +281,6 @@
                     <onright>100</onright>
                     <textcolor>white</textcolor>
                     <label>[B]Restore...[/B]</label>
-					<onclick>ActivateWindow(SkinSettings)</onclick>
                     <align>center</align>
                     <texturefocus colordiffuse="FF12A0C7">BGWhite.png</texturefocus>
                     <texturenofocus colordiffuse="30FFFFFF">BGWhite.png</texturenofocus>
@@ -290,7 +289,7 @@
                     <height>300</height>
                     <onleft>200</onleft>
                     <onright>100</onright>
-                    <texture fallback="ManagepKodiFavourites.png" background="true">ManageKodiFavourites.png</texture>
+                    <texture fallback="ManageKodiFavourites.png" background="true">ManageKodiFavourites.png</texture>
 	            <bordersize>10</bordersize>
                 </control>
 		<control type="textbox">
@@ -382,5 +381,6 @@
 	   </control>
 	</controls>
 </window>
+
 
 
