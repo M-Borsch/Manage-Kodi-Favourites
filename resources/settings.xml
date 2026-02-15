@@ -3,24 +3,17 @@
     <category label="Settings">
         <setting type="text" label="[COLOR white]Here you choose the actions from the picklists for Prefix/Suffix and Colors[/COLOR]" />
 
-        # Create an instance of your addon
-        addon = xbmcaddon.Addon('Manage-Kodi-Favourites')
-
-        # Get the setting value (returns a string, e.g., "0", "1", "2")
-        prefix_text_value_str = addon.getSetting('prefixText')
-
         <setting type="lsep" label="[COLOR blue]Settings Section for Prefix Picklists[/COLOR]" />
         <!-- Prefix entry and Color settings -->
          <setting id="prefixTextSel" label="Prefix Text" type="enum" default="0"
                  values="NONE|TV - |Movie - |Show - "/>
-             
         <setting id="prefixColorSel" label="Prefix Color" type="enum" default="0"
                  values="NONE|green|yellow|blue|cyan|orange|purple"/>
 
         <setting type="lsep" label="[COLOR blue]Settings Section for Suffix Picklists[/COLOR]" />
         <!-- Suffix entry and Color settings -->
          <setting id="suffixTextSel" label="Suffix Text" type="enum" default="0"
-                 values="NONE| - # Pluto TV #| - # Samsung TV+ #"/>
+                 values="NONE| - # Free99 #| - # Scrubs V2 #| - # Ghost #| - # Quicksilver #| - # Samsung TV+ #| - # Pluto TV #| - # IPTV #"/>
         <setting id="suffixColorSel" label="Suffix Color" type="enum" default="0"
                  values="NONE|orange|green|yellow|blue|cyan|purple"/>
     </category>
@@ -46,6 +39,7 @@
                  values="Small|Large"/>
     </category>
 </settings>
+
 
 
 
