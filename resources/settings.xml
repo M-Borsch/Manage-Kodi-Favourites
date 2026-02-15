@@ -12,7 +12,16 @@
         <setting id="suffixText" type="text" label="Text" default="NONE| - # Pluto TV #| - # Samsung TV+ #"/>
         <setting id="suffixColor" type="text" label="Color" default="NONE|green|yellow|blue|cyan|orange|purple" />
     </category>
+    <category label="Thumb/Font">
+        <setting id="reorderingMethod" label="Reordering Method" type="enum" default="0"
+                 values="Swap A and B|Insert A before B|Insert A after B"/>
+        <setting id="fontSize" label="Font Size" type="enum" default="0"
+                 values="Small|Medium|Large"/>
+        <setting id="thumbSize" label="Thumnbail Size" type="enum" default="1"
+                 values="Small|Large"/>
+    </category>
 </settings>
+
 
 
 
