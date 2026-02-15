@@ -36,3 +36,24 @@ msgstr "Open settings"
 msgctxt "#30002"
 msgid "Welcome back, %s"
 msgstr "Welcome back, %s"
+
+#: resources/settings.xml
+# This is a helpful comment for the translator
+msgid "30003"
+msgstr "Enable debug logging"
+
+#: resources/settings.xml
+msgid "30004"
+msgstr "Logging level"
+
+#: resources/settings.xml
+msgid "30005"
+msgstr "NONE|green|yellow|blue|cyan|orange"
+
+#: resources/settings.xml
+msgid "30006"
+msgstr "NONE|TV - |Movie - |Show - "
+
+#: resources/settings.xml
+msgid "30007"
+msgstr "NONE| - # Free99 #| - # Scrubs V2 #| - # Ghost #| - # Quicksilver #| - # Samsung TV+ #"
