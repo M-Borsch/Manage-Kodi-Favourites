@@ -45,12 +45,13 @@ msgstr "Prefix Colors"
 
 #: resources/settings.xml
 msgctxt "#30005"
-msgid "NONE| - # Free99 #| - # Scrubs V2 #| - # Ghost #| - # Quicksilver #| - # Samsung TV+ #"
+msgid "NONE| - # Free99 #| - # Scrubs V2 #| - # Ghost #| - # Quicksilver #| - # Samsung TV+ #| - # Pluto TV #| - # IPTV #"
 msgstr "Suffix Texts"
 
 #: resources/settings.xml
 msgctxt "#30006"
 msgid "NONE|orange|green|yellow|blue|cyan|purple"
 msgstr "Suffix Colors"
+
 
 
