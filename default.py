@@ -213,8 +213,15 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             'This will modify the Prefix/Suffix/Color of the currently selected item.\nProceed?'
         ):
             # Add Code to modify entry
-            # for now - do nothing
-            self.close()
+            if self.indexFrom == None:
+                # Selecting a new item to reorder.
+                ## Dialog here
+                xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Please Select an Item)' % "No Item")
+            else:
+                # Something is selected, so do the label change.
+                xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Item Selected)' % "Item")
+                # for now - do nothing
+                self.close()
 
 
     def doReload(self):
@@ -308,10 +315,10 @@ def xbmcLog(*args):
 if '/dialog' in PLUGIN_URL:
     thumbSize = '0' if not ADDON.getSetting('thumbSize') else ADDON.getSetting('thumbSize')
     if thumbSize == '0':
-        if DEBUG == '1': xbmcgui.Dialog().ok('Manage Favourites', 'INFO: "%s"\n(thumSize is SMALL)' % thumbSize)
+        if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(thumSize is SMALL)' % thumbSize)
         ui = CustomFavouritesDialog('CustomFavouritesDialog-smThumbs.xml', ADDON.getAddonInfo('path'), 'Default', '1080i')
     else:
-        if DEBUG == '1': xbmcgui.Dialog().ok('Manage Favourites', 'INFO: "%s"\n(thumSize is LARGE)' % thumbSize)
+        if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(thumSize is LARGE)' % thumbSize)
         ui = CustomFavouritesDialog('CustomFavouritesDialog-lgThumbs.xml', ADDON.getAddonInfo('path'), 'Default', '1080i')
     try:  
         result = ui.doCustomModal(favouritesDataGen())
@@ -406,6 +413,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
