@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
     <category label="General">
-            <!-- Default the Prefix text entry setting -->
+        <setting type="lsep" label="[COLOR blue]Settings Section for Prefix[/COLOR]" />
+        <!-- Default the Prefix/Suffix text entry and Color settings -->
         <setting id="prefixText" type="text" label="Prefix Text" default="NONE|TV - |Movie - |Show - " />
-        <setting id="prefixColor" type="text" label="Prefix Text" default="NONE|green|yellow|blue|cyan|orange|purple" />
+        <setting id="prefixColor" type="text" label="Prefix Color" default="NONE|green|yellow|blue|cyan|orange|purple" />
+
+        <setting type="lsep" label="[COLOR blue]Settings Section for Suffix[/COLOR]" />
         <setting id="suffixText" type="text" label="Prefix Text" default="NONE| - # Free99 #| - # Scrubs V2 #| - # Ghost #| - # Quicksilver #| - # Samsung TV+ #"/>
         <setting id="suffixColor" type="text" label="Prefix Text" default="NONE|green|yellow|blue|cyan|orange|purple" />
     </category>
 </settings>
+
 
 
 
