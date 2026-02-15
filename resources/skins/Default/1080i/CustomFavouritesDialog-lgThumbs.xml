@@ -422,7 +422,7 @@
 				</control>
 				<control type="textbox">
 		            <visible>String.IsEqual(Window.Property(reorder),0)</visible>
-		            <height>150</height>
+		            <height>75</height>
 				    <onleft>200</onleft>
 				    <width>270</width>
 		            <onright>100</onright>
@@ -433,7 +433,7 @@
 		        </control>
 				<control type="textbox">
 		            <visible>String.IsEqual(Window.Property(reorder),1)</visible>
-		            <height>150</height>
+		            <height>75</height>
 					<onleft>200</onleft>
 				    <width>270</width>
 		            <onright>100</onright>
@@ -444,7 +444,7 @@
 		        </control>
 				<control type="textbox">
                     <visible>String.IsEqual(Window.Property(reorder),2)</visible>
-                    <height>150</height>
+                    <height>75</height>
 		    		<onleft>200</onleft>
 		    		<width>270</width>
                     <onright>100</onright>
@@ -455,7 +455,7 @@
                 </control>
 				<control type="textbox">
 					<visible>true</visible>
-					<height>25</height>
+					<height>50</height>
 					<onleft>200</onleft>
 					<width>270</width>
 					<onright>100</onright>
@@ -469,6 +469,7 @@
 	   </control>
 	</controls>
 </window>
+
 
 
 
