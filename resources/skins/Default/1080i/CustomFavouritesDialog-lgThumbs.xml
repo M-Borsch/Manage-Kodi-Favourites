@@ -281,6 +281,7 @@
                     <onright>100</onright>
                     <textcolor>white</textcolor>
                     <label>[B]Restore...[/B]</label>
+					<onclick>ActivateWindow(SkinSettings)</onclick>
                     <align>center</align>
                     <texturefocus colordiffuse="FF12A0C7">BGWhite.png</texturefocus>
                     <texturenofocus colordiffuse="30FFFFFF">BGWhite.png</texturenofocus>
@@ -381,4 +382,5 @@
 	   </control>
 	</controls>
 </window>
+
 
