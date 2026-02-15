@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
     <category label="General">
-        <setting type="text" label="[COLOR white]Here you can define the picklists for Prefix/Sufix and Colors[/COLOR]" />
+        <setting type="text" label="[COLOR white]Here you can define the picklists for Prefix/Suffix and Colors[/COLOR]" />
 
-        <setting type="lsep" label="[COLOR blue]Settings Section for Prefix[/COLOR]" />
+        <setting type="lsep" label="[COLOR blue]Settings Section for Prefix Picklists[/COLOR]" />
         <!-- Default the Prefix/Suffix text entry and Color settings -->
         <setting id="prefixText" type="text" label="Text" default="NONE|TV - |Movie - |Show - " />
         <setting id="prefixColor" type="text" label="Color" default="NONE|green|yellow|blue|cyan|orange|purple" />
 
-        <setting type="lsep" label="[COLOR blue]Settings Section for Suffix[/COLOR]" />
+        <setting type="lsep" label="[COLOR blue]Settings Section for Suffix Picklists[/COLOR]" />
         <setting id="suffixText" type="text" label="Text" default="NONE| - # Free99 #| - # Scrubs V2 #| - # Ghost #| - # Quicksilver #| - # Samsung TV+ #"/>
         <setting id="suffixColor" type="text" label="Color" default="NONE|green|yellow|blue|cyan|orange|purple" />
     </category>
 </settings>
+
 
 
 
