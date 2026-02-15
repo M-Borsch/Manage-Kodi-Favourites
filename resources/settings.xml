@@ -3,14 +3,12 @@
     <category label="General">
             <!-- Default the Prefix text entry setting -->
         <setting id="prefixText" type="text" label="Prefix Text" default="NONE|TV - |Movie - |Show - " />
-        <setting id="prefixColor" label="Prefix Color" type="enum" default="0"
-                 values="NONE|green|yellow|blue|cyan|orange"/>
-        <setting id="suffixText" label="Suffix Text" type="enum" default="0"
-                 values="$ADDON[Manage-Kodi-Favourites 30004]"/> 
-        <setting id="suffixColor" label="Suffix Color" type="enum" default="0"
-                 values="NONE|green|yellow|blue|cyan|orange"/>
+        <setting id="prefixColor" type="text" label="Prefix Text" default="NONE|green|yellow|blue|cyan|orange|purple" />
+        <setting id="suffixText" type="text" label="Prefix Text" default="NONE| - # Free99 #| - # Scrubs V2 #| - # Ghost #| - # Quicksilver #| - # Samsung TV+ #"/>
+        <setting id="suffixColor" type="text" label="Prefix Text" default="NONE|green|yellow|blue|cyan|orange|purple" />
     </category>
 </settings>
+
 
 
 
