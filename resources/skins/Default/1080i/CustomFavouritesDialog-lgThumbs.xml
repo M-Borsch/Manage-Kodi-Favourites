@@ -377,7 +377,18 @@
 				</control>
 				<control type="textbox">
 					<visible>true</visible>
-					<height>50</height>
+					<height>25</height>
+					<onleft>200</onleft>
+					<width>270</width>
+					<onright>100</onright>
+					<font>font10</font>
+					<align>left</align>
+					<aligny>top</aligny>
+					<label>[B]===========================================[/B]</label>
+				</control>
+				<control type="textbox">
+					<visible>true</visible>
+					<height>25</height>
 					<onleft>200</onleft>
 					<width>270</width>
 					<onright>100</onright>
@@ -457,6 +468,7 @@
 	   </control>
 	</controls>
 </window>
+
 
 
 
