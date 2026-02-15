@@ -263,6 +263,13 @@
 				<top>90</top>
                 <bottom>0</bottom>
 				<itemgap>50</itemgap>
+				<control type="image">
+                    <height>300</height>
+                    <onleft>200</onleft>
+                    <onright>100</onright>
+                    <texture fallback="ManageKodiFavourites.png" background="true">ManageKodiFavourites.png</texture>
+	            <bordersize>10</bordersize>
+                </control>
                 <control type="button" id="301">
                     <width>270</width>
                     <height>100</height>
@@ -306,13 +313,6 @@
                     <align>center</align>
                     <texturefocus colordiffuse="FF12A0C7">BGWhite.png</texturefocus>
                     <texturenofocus colordiffuse="30FFFFFF">BGWhite.png</texturenofocus>
-                </control>
-                <control type="image">
-                    <height>100</height>
-                    <onleft>200</onleft>
-                    <onright>100</onright>
-                    <texture fallback="ManageKodiFavourites.png" background="true">ManageKodiFavourites.png</texture>
-	            <bordersize>10</bordersize>
                 </control>
 		<control type="textbox">
 			<visible>false</visible>
@@ -403,6 +403,7 @@
 	   </control>
 	</controls>
 </window>
+
 
 
 
