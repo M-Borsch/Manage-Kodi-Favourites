@@ -57,3 +57,8 @@ msgstr "NONE|TV - |Movie - |Show - "
 #: resources/settings.xml
 msgid "30007"
 msgstr "NONE| - # Free99 #| - # Scrubs V2 #| - # Ghost #| - # Quicksilver #| - # Samsung TV+ #"
+
+msgctxt "#32001"
+msgid "Addon Label"
+msgstr "Mon Addon"
+
