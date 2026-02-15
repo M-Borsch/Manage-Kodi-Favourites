@@ -197,7 +197,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
     def doReload(self):
         if xbmcgui.Dialog().yesno(
             'Manage Kodi Favourites',
-            'This will restore the order from the favourites file so you can try reordering again.\nProceed?\nOR: ADDON.getSetting('prefixTextSel')'
+            'This will restore the order from the favourites file so you can try reordering again.\nProceed?\nOR: str(ADDON.getSetting('prefixTextSel'))'
         ):
             # Test Calling up Addon Settings
             # Activate the Manage Kodi Favourites Settings window
@@ -386,6 +386,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
