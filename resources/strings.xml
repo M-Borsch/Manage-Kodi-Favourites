@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<strings>
+    <!-- PreFix Values -->
+    <string id="30003">NONE|TV - |Movie - |Show - </string>
+    <!-- Suffix Values -->
+    <string id="30004">Enable Feature</string>
+    <!-- Colours -->
+    <string id="30002">NONE|green|yellow|blue|cyan|orange</string>
+</strings>
