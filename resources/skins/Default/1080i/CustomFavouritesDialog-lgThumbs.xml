@@ -453,21 +453,9 @@
                     <aligny>top</aligny>
                    	<label>Select [B]"A" then select "B"[/B] - "A" will be placed after "B".</label>
                 </control>
-								<control type="textbox">
-					<visible>true</visible>
-					<height>50</height>
-					<onleft>200</onleft>
-					<width>270</width>
-					<onright>100</onright>
-					<font>font10</font>
-					<align>left</align>
-					<aligny>top</aligny>
-					<textcolor>blue</textcolor>
-					<label></label>
-				</control>
 				<control type="textbox">
 					<visible>true</visible>
-					<height>50</height>
+					<height>25</height>
 					<onleft>200</onleft>
 					<width>270</width>
 					<onright>100</onright>
@@ -475,12 +463,13 @@
 					<align>left</align>
 					<aligny>top</aligny>
 					<textcolor>blue</textcolor>
-					<label>kodi@borsch.ca http://borsch.ca</label>
+					<label>[I]kodi@borsch.ca http://borsch.ca[/I]</label>
 				</control>
 	     </control>
 	   </control>
 	</controls>
 </window>
+
 
 
 
