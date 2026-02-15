@@ -9,23 +9,30 @@ This Kodi program addon allows you to manage your Kodi favourites by adding a pr
 > [!NOTE]
 > (Latest) - This is the latest version of the Manage Kodi Favourites
 
-Version 1.0 of Manage Kodi Favourites :sunglasses:
-- Added ability for users to set the Prefixes, Siffixes and/or Colors in the configuration panel
+Version 2.0 of Manage Kodi Favourites :sunglasses:
+- Added ability for users to set the Prefixes, Suffixes and/or Colors in the configuration panel
 - <a href="https://github.com/M-Borsch/Insert-Swap-Kodi-Favourites/releases/download/Insert-Swap-Kodi-Favourites-1.2/Insert-Swap-Kodi-Favourites-1.2.zip">Download Insert-Swap-Kodi-Favourites (1.2) (zip file)</a> (Latest)
 -------------------------------
 # How to use:
 
 > [!IMPORTANT]
-> Depending on the setting you set in the configuration screen, this addon will either **Add a Prefix/Suffix** to items or **Color** items in your Favourites list.
+> Depending on the setting you set in the configuration screen, this addon will either **Add a Prefix/Suffix** to items and/or **Color** those items in your Favourites list.
 >
-> **Prefix List**:
->    If selected - the marked item will be added to the marked item.
->
-> **Insert Before**:
->    The marked item **"A"** will be placed **in front** the marked item **"B"** in the list.
->
-> **Insert Affter**:
->    The marked item **"A"** will be placed **after** the marked item **"B"** in the list.
+> **Pickists**:
+> 
+>     Picklist items are separated by the "|" divider. e.g. Color list: NONE|green|yellow|blue|cyan|orange|purple
+> 
+> **Prefix Pickists**:
+> 
+>    Text - Here you can define the Text to include in the Prefix Picklist. e.g. NONE|TV - |Movie - |Show -
+> 
+>    Color - Here you can define the Colors to include in the Prefix Picklist. e.g. NONE|green|yellow|blue|cyan|orange|purple
+> 
+> **Suffix Pickists**:
+> 
+>    Text - Here you can define the Text to include in the Suffix Picklist. e.g. NONE| - # Samsung TV+ #
+> 
+>    Color - Here you can define the Colors to include in the Suffix Picklist. e.g. NONE|green|yellow|blue|cyan|orange|purple
 > 
 The main menu shows 4 options.
 
