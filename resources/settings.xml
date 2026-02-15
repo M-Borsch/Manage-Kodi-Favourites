@@ -3,10 +3,16 @@
     <category label="Settings">
         <setting type="text" label="[COLOR white]Here you choose the actions from the picklists for Prefix/Suffix and Colors[/COLOR]" />
 
+        # Create an instance of your addon
+        addon = xbmcaddon.Addon('Manage-Kodi-Favourites')
+
+        # Get the setting value (returns a string, e.g., "0", "1", "2")
+        prefix_text_value_str = addon.getSetting('prefixText')
+
         <setting type="lsep" label="[COLOR blue]Settings Section for Prefix Picklists[/COLOR]" />
         <!-- Prefix entry and Color settings -->
          <setting id="prefixTextSel" label="Prefix Text" type="enum" default="0"
-                 values="NONE|TV - |Movie - |Show - "/>
+                 values=prefix_text_value_str/>
         <setting id="prefixColorSel" label="Prefix Color" type="enum" default="0"
                  values="NONE|green|yellow|blue|cyan|orange|purple"/>
 
@@ -15,7 +21,7 @@
          <setting id="suffixTextSel" label="Suffix Text" type="enum" default="0"
                  values="NONE| - # Pluto TV #| - # Samsung TV+ #"/>
         <setting id="suffixColorSel" label="Suffix Color" type="enum" default="0"
-                 values="NONE|green|yellow|blue|cyan|orange|purple"/>
+                 values="NONE|orange|green|yellow|blue|cyan|purple"/>
     </category>
     
     <category label="Edit Lists">
@@ -28,7 +34,7 @@
 
         <setting type="lsep" label="[COLOR blue]Settings Section for Suffix Picklists[/COLOR]" />
         <setting id="suffixText" type="text" label="Text" default="NONE| - # Pluto TV #| - # Samsung TV+ #"/>
-        <setting id="suffixColor" type="text" label="Color" default="NONE|green|yellow|blue|cyan|orange|purple" />
+        <setting id="suffixColor" type="text" label="Color" default="NONE|orange|green|yellow|blue|cyan|purple" />
     </category>
     <category label="Thumb/Font">
         <setting id="reorderingMethod" label="Reordering Method" type="enum" default="0"
@@ -39,6 +45,7 @@
                  values="Small|Large"/>
     </category>
 </settings>
+
 
 
 
