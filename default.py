@@ -66,7 +66,6 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             301: self.close,
             302: self.doReload,
             303: self.doConfigure,
-            304: self:doPreSuffix,
         }
 
         # Map action IDs to custom handler methods. See more action IDs in
@@ -194,15 +193,6 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             self.indexFrom = None
         else:
             self.close()
-
-    def doPreSuffix(self):
-        if xbmcgui.Dialog().yesno(
-            'Manage Kodi Favourites',
-            'This will the Addon Configuration Panel.\nProceed?'
-        ):
-            # Call up Addon Settings
-            # Activate the Manage Kodi Favourites Settings window
-            xbmc.executebuiltin('Addon.OpenSettings(Manage-Kodi-Favourites)')
 
     def doConfigure(self):
         if xbmcgui.Dialog().yesno(
@@ -402,6 +392,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
