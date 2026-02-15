@@ -285,8 +285,30 @@
                     <texturefocus colordiffuse="FF12A0C7">BGWhite.png</texturefocus>
                     <texturenofocus colordiffuse="30FFFFFF">BGWhite.png</texturenofocus>
                 </control>
+				<control type="button" id="303">
+                    <width>270</width>
+                    <height>100</height>
+                    <onleft>200</onleft>
+                    <onright>100</onright>
+                    <textcolor>white</textcolor>
+                    <label>[B]Configure...[/B]</label>
+                    <align>center</align>
+                    <texturefocus colordiffuse="FF12A0C7">BGWhite.png</texturefocus>
+                    <texturenofocus colordiffuse="30FFFFFF">BGWhite.png</texturenofocus>
+                </control>
+				<control type="button" id="304">
+                    <width>270</width>
+                    <height>100</height>
+                    <onleft>200</onleft>
+                    <onright>100</onright>
+                    <textcolor>white</textcolor>
+                    <label>[B]Prefix/Suffix/Color...[/B]</label>
+                    <align>center</align>
+                    <texturefocus colordiffuse="FF12A0C7">BGWhite.png</texturefocus>
+                    <texturenofocus colordiffuse="30FFFFFF">BGWhite.png</texturenofocus>
+                </control>
                 <control type="image">
-                    <height>300</height>
+                    <height>100</height>
                     <onleft>200</onleft>
                     <onright>100</onright>
                     <texture fallback="ManageKodiFavourites.png" background="true">ManageKodiFavourites.png</texture>
@@ -382,6 +404,7 @@
 	   </control>
 	</controls>
 </window>
+
 
 
 
