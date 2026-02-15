@@ -199,6 +199,10 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             'Manage Kodi Favourites',
             'This will restore the order from the favourites file so you can try reordering again.\nProceed?'
         ):
+            # Test Calling up Addon Settings
+            # Activate the Manage Kodi Favourites Settings window
+            xbmc.executebuiltin('Addon.OpenSettings(Manage-Kodi-Favourites)')
+            
             # Re-sort all items based on their original indices.
             selectedPosition = self.panel.getSelectedPosition()
             self.indexFrom = None
@@ -207,10 +211,6 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             self.panel.addItems(self.allItems)
             if selectedPosition != -1:
                 self.panel.selectItem(selectedPosition)
-
-            # Test Calling up Settings
-            # Activate the Skin Settings window
-            xbmc.executebuiltin('ActivateWindow(SkinSettings)')
 
 
     def _makeResult(self):
@@ -386,5 +386,6 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
