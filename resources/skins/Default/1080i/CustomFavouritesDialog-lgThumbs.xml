@@ -384,15 +384,15 @@
 		    <font>font10</font>
                     <align>left</align>
                     <aligny>top</aligny>
-                   <!-- <label>Select [B]"A" then select "B"[/B]
-- "A" will be placed after "B". -->
-					<label>Current Value: $INFO[Skin.String(suffixTextSel)] Or: $INFO[Skin.String(30001)] OR: $INFO[Skin.String(Suffix Color)]
+                   	<label>Select [B]"A" then select "B"[/B]
+- "A" will be placed after "B".
 		    </label>
                 </control>
 	     </control>
 	   </control>
 	</controls>
 </window>
+
 
 
 
