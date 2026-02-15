@@ -62,3 +62,6 @@ msgctxt "#32001"
 msgid "Addon Label"
 msgstr "Mon Addon"
 
+msgctxt "#32002"
+msgid "NONE| - # Free99 #| - # Scrubs V2 #| - # Ghost #| - # Quicksilver #| - # Samsung TV+ #"
+msgstr "Mon Addon"
