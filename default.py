@@ -362,23 +362,23 @@ else:
     # Create the menu items.
     xbmcplugin.setContent(PLUGIN_ID, 'files')
 
-    dialogItem = xbmcgui.ListItem('[COLOR lavender][B]Manage Your Favourites...[/B][/COLOR]')
+    dialogItem = xbmcgui.ListItem('[B]Manage Your Kodi Favourites...[/B]')
     dialogItem.setArt({'thumb': 'DefaultAddonContextItem.png'})
     dialogItem.setInfo('video', {'plot': 'Open the dialog where you can Manage your favourites.[CR][B]How to ' \
                                  'use:[/B] select one item, then select another to Insert/Swap. ' \
                                  'Do this as much as needed. Finally, close the dialog and use the menus ' \
                                  'below to save your changes.'})
-    saveReloadItem = xbmcgui.ListItem('[COLOR lavender][B]Save and Reload Your Kodi Profile (may take several seconds)...[/B][/COLOR]')
+    saveReloadItem = xbmcgui.ListItem('[B]Apply Changes and Reload Your Kodi Profile (may take several seconds)...[/B]')
     saveReloadItem.setArt({'thumb': 'DefaultAddonsUpdates.png'})
     saveReloadItem.setInfo('video', {'plot': 'Save any changes you made and reload your Kodi profile '
                                        'to make the changes visible right now, without having to restart Kodi.'})
-    saveExitItem = xbmcgui.ListItem('[COLOR lavender][B]Save and Exit (No Reload - Leave Changes Pending)[/B][/COLOR]')
+    saveExitItem = xbmcgui.ListItem('[B]Save and Exit (No Reload - Leave Changes Pending)[/B]')
     saveExitItem.setArt({'thumb': 'DefaultFolderBack.png'})
     saveExitItem.setInfo('video', {'plot': 'Save any changes you made and exit the add-on. [B]Note:[/B] if you '
                                    'make any changes to your favourites using the Favourites screen (like adding, '
                                    'removing or reordering items) before closing Kodi, your changes from this '
                                    'add-on will be ignored.'})
-    exitItem = xbmcgui.ListItem('[COLOR lavender][B]Exit (Abandon Your Changes)[/B][/COLOR]')
+    exitItem = xbmcgui.ListItem('[B]Exit (Abandon All Changes)[/B]')
     exitItem.setArt({'thumb': 'DefaultFolderBack.png'})
     exitItem.setInfo('video', {'plot': 'Exit the add-on (same as pressing Back), without saving your changes.'})
     xbmcplugin.addDirectoryItems(
@@ -392,6 +392,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
