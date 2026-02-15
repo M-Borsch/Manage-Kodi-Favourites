@@ -298,7 +298,7 @@ if '/dialog' in PLUGIN_URL:
         setRawWindowProperty(PROPERTY_FAVOURITES_RESULT, result)
     except Exception as e:
         xbmcLog(traceback.format_exc())
-        xbmcgui.Dialog().ok('Insert/Swap Error', 'ERROR: "%s"\n(Please check the log for more info)' % str(e))
+        xbmcgui.Dialog().ok('Manage Kodi Favourites Error', 'ERROR: "%s"\n(Please check the log for more info)' % str(e))
         clearWindowProperty(PROPERTY_FAVOURITES_RESULT)
         clearWindowProperty(REORDER_METHOD)
         clearWindowProperty(THUMB_SIZE)
@@ -314,7 +314,7 @@ elif '/save_reload' in PLUGIN_URL:
             clearWindowProperty(REORDER_METHOD)
             clearWindowProperty(THUMB_SIZE)
             
-            xbmcgui.Dialog().ok('Insert/Swap', 'Save successful, press OK to reload your profile...')
+            xbmcgui.Dialog().ok('Manage Kodi Favourites', 'Save successful, press OK to reload your profile...')
             xbmc.executebuiltin('LoadProfile(%s)' % xbmc.getInfoLabel('System.ProfileName'))
             # Alternative way of issuing a profile reload, using JSON-RPC:
             #rpcQuery = (
@@ -327,7 +327,7 @@ elif '/save_reload' in PLUGIN_URL:
             xbmc.executebuiltin('Action(Back)')
     except Exception as e:
         xbmcLog(traceback.format_exc())
-        xbmcgui.Dialog().ok('Insert/Swap Favourites Error', 'ERROR: "%s"\n(Please check the log for more info)' % str(e))
+        xbmcgui.Dialog().ok('Manage Kodi Favourites Error', 'ERROR: "%s"\n(Please check the log for more info)' % str(e))
 
 elif '/save_exit' in PLUGIN_URL:
     # Reload the current profile (which causes a reload of 'favourites.xml').
@@ -386,6 +386,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
