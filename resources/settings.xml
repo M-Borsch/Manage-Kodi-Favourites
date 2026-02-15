@@ -3,7 +3,7 @@
     <category label="Settings">
         <setting type="text" label="[COLOR white]Here you choose the actions from the picklists for Prefix/Suffix and Colors[/COLOR]" />
                 
-        <setting type="text" label="$ADDON[Manage-Kodi-Favourites 32001]"/>
+        <setting type="text" label="$ADDON[Manage-Kodi-Favourites 32002]"/>
 
 
         <setting type="lsep" label="[COLOR blue]Settings Section for Prefix Picklists[/COLOR]" />
@@ -43,6 +43,7 @@
                  values="Small|Large"/>
     </category>
 </settings>
+
 
 
 
