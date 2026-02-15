@@ -30,7 +30,7 @@ msgstr "Picklist Entries"
 
 #: resources/settings.xml
 msgctxt "#30002"
-msgid "[COLOR white]Here you override picklists and use custom Prefix/Suffix and Colors[/COLOR]"
+msgid "[COLOR white]Here you can override picklists and use custom Prefix/Suffix and Colors[/COLOR]"
 msgstr "Custom Entries"
 
 #: resources/settings.xml
@@ -52,6 +52,7 @@ msgstr "Suffix Texts"
 msgctxt "#30006"
 msgid "NONE|orange|green|yellow|blue|cyan|purple"
 msgstr "Suffix Colors"
+
 
 
 
