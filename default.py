@@ -220,8 +220,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
                     'Manage Kodi Favourites',
                     'This will modify the Prefix/Suffix/Color of the currently selected item.\n\nProceed?'
                 ):
-                self.noop = lambda: None
-                # for now - do nothing - add prefix and suffix checks
+                self.close()                # for now - do nothing - add prefix and suffix checks
     
                 
 
@@ -414,6 +413,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
