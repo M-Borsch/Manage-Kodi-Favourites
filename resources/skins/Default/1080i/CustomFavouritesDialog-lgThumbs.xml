@@ -55,7 +55,7 @@
                     <right>0</right>
                     <top>0</top>
                     <aligny>center</aligny>
-                    <label>[B]Insert/Swap Favourites[/B]</label>
+                    <label>[B]Manage Kodi Favourites[/B]</label>
                     <shadowcolor>black</shadowcolor>
                 </control>
                 <!-- "button overlay to avoid closing in dialog area." -->
@@ -289,7 +289,7 @@
                     <height>300</height>
                     <onleft>200</onleft>
                     <onright>100</onright>
-                    <texture fallback="InsertSwapKodiFavourites.png" background="true">InsertSwapKodiFavourites.png</texture>
+                    <texture fallback="ManagepKodiFavourites.png" background="true">ManageKodiFavourites.png</texture>
 	            <bordersize>10</bordersize>
                 </control>
 		<control type="textbox">
@@ -381,3 +381,4 @@
 	   </control>
 	</controls>
 </window>
+
