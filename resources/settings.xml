@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
-    <category label="General">
+    <category label="Settings">
+        <setting type="text" label="[COLOR white]Here you choose the actions from the picklists for Prefix/Suffix and Colors[/COLOR]" />
+
+        <setting type="lsep" label="[COLOR blue]Settings Section for Prefix Picklists[/COLOR]" />
+        <!-- Prefix entry and Color settings -->
+         <setting id="prefixTextSel" label="Prefix Text" type="enum" default="0"
+                 values="NONE|TV - |Movie - |Show - "/>
+        <setting id="prefixColorSel" label="Prefix Color" type="enum" default="0"
+                 values="NONE|green|yellow|blue|cyan|orange|purple"/>
+
+        <setting type="lsep" label="[COLOR blue]Settings Section for Suffix Picklists[/COLOR]" />
+        <!-- Suffix entry and Color settings -->
+         <setting id="suffixTextSel" label="Suffix Text" type="enum" default="0"
+                 values="NONE| - # Pluto TV #| - # Samsung TV+ #"/>
+        <setting id="suffixColorSel" label="Suffix Color" type="enum" default="0"
+                 values="NONE|green|yellow|blue|cyan|orange|purple"/>
+    </category>
+    
+    <category label="Edit Lists">
         <setting type="text" label="[COLOR white]Here you can define the picklists for Prefix/Suffix and Colors[/COLOR]" />
 
         <setting type="lsep" label="[COLOR blue]Settings Section for Prefix Picklists[/COLOR]" />
@@ -21,6 +39,7 @@
                  values="Small|Large"/>
     </category>
 </settings>
+
 
 
 
