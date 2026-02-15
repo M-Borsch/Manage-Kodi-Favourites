@@ -8,12 +8,11 @@
 
         # Get the setting value (returns a string, e.g., "0", "1", "2")
         prefix_text_value_str = addon.getSetting('prefixText')
-        new_options = "Server A|Server B|Server C|Server D"
 
         <setting type="lsep" label="[COLOR blue]Settings Section for Prefix Picklists[/COLOR]" />
         <!-- Prefix entry and Color settings -->
          <setting id="prefixTextSel" label="Prefix Text" type="enum" default="0"
-                 values=new_options/>
+                 values="NONE|TV - |Movie - |Show - "/>
              
         <setting id="prefixColorSel" label="Prefix Color" type="enum" default="0"
                  values="NONE|green|yellow|blue|cyan|orange|purple"/>
@@ -35,7 +34,7 @@
         <setting id="prefixColor" type="text" label="Color" default="NONE|green|yellow|blue|cyan|orange|purple" />
 
         <setting type="lsep" label="[COLOR blue]Settings Section for Suffix Picklists[/COLOR]" />
-        <setting id="suffixText" type="text" label="Text" default="NONE| - # Pluto TV #| - # Samsung TV+ #"/>
+        <setting id="suffixText" type="text" label="Text" default="NONE| - # Free99 #| - # Scrubs V2 #| - # Ghost #| - # Quicksilver #| - # Samsung TV+ #| - # Pluto TV #| - # IPTV #"/>
         <setting id="suffixColor" type="text" label="Color" default="NONE|orange|green|yellow|blue|cyan|purple" />
     </category>
     <category label="Thumb/Font">
@@ -47,6 +46,7 @@
                  values="Small|Large"/>
     </category>
 </settings>
+
 
 
 
