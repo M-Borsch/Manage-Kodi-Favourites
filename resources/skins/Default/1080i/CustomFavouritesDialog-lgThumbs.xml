@@ -262,7 +262,7 @@
                 <width>270</width>
 				<top>90</top>
                 <bottom>0</bottom>
-				<itemgap>50</itemgap>
+				<itemgap>20</itemgap>
 				<control type="image">
 					<visible>false</visible>
                     <height>300</height>
@@ -326,10 +326,10 @@
 					<align>left</align>
 					<aligny>top</aligny>
 					<textcolor>yellow</textcolor>
-					<label>[B]Prefix / Color:[/B]</label>
+					<label>[B]Prefix / Color:[/B] "TV - / cyan"</label>
 				</control>
 				<control type="textbox">
-					<visible>true</visible>
+					<visible>false</visible>
 					<height>25</height>
 					<onleft>195</onleft>
 					<width>270</width>
@@ -350,10 +350,10 @@
 					<align>left</align>
 					<aligny>top</aligny>
 					 <textcolor>yellow</textcolor>
-					<label>[B]Suffix / Color:[/B]</label>
+					<label>[B]Suffix / Color:[/B] "- # Samsung TV + # / orange"</label>
 				</control>
 				<control type="textbox">
-					<visible>true</visible>
+					<visible>false</visible>
 					<height>25</height>
 					<onleft>200</onleft>
 					<width>270</width>
@@ -446,6 +446,7 @@
 	   </control>
 	</controls>
 </window>
+
 
 
 
