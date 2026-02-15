@@ -325,7 +325,7 @@
 					<font>font10</font>
 					<align>left</align>
 					<aligny>top</aligny>
-					 <textcolor>yellow</textcolor>
+					<textcolor>yellow</textcolor>
 					<label>[B]Prefix / Color:[/B]</label>
 				</control>
 				<control type="textbox">
@@ -355,7 +355,7 @@
 				<control type="textbox">
 					<visible>true</visible>
 					<height>25</height>
-					<onleft>195</onleft>
+					<onleft>200</onleft>
 					<width>270</width>
 					<onright>100</onright>
 					<font>font10</font>
@@ -407,8 +407,7 @@
 					<font>font10</font>
 					<align>left</align>
 					<aligny>top</aligny>
-					<label>[B]Insert A after B:[/B]
-					</label>
+					<label>[B]Insert A after B:[/B]</label>
 				</control>
 				<control type="textbox">
 		                    <visible>String.IsEqual(Window.Property(reorder),0)</visible>
@@ -419,9 +418,7 @@
 				    <font>font10</font>
 		                    <align>left</align>
 		                    <aligny>top</aligny>
-		                    <label>Select [B]"A" then select "B"[/B]
-		- "A" will be placed at "B" and "B" will be placed at "A".
-				    </label>
+		                    <label>Select [B]"A" then select "B"[/B] - "A" will be placed at "B" and "B" will be placed at "A".</label>
 		                </control>
 				<control type="textbox">
 		                    <visible>String.IsEqual(Window.Property(reorder),1)</visible>
@@ -432,9 +429,7 @@
 				    <font>font10</font>
 		                    <align>left</align>
 		                    <aligny>top</aligny>
-		                    <label>Select [B]"A" then select "B"[/B]
-		- "A" will be placed before "B".
-				    </label>
+		                    <label>Select [B]"A" then select "B"[/B] - "A" will be placed before "B".</label>
 		                </control>
 		<control type="textbox">
                     <visible>String.IsEqual(Window.Property(reorder),2)</visible>
@@ -445,14 +440,13 @@
 		    <font>font10</font>
                     <align>left</align>
                     <aligny>top</aligny>
-                   	<label>Select [B]"A" then select "B"[/B]
-- "A" will be placed after "B".
-		    </label>
+                   	<label>Select [B]"A" then select "B"[/B] - "A" will be placed after "B".</label>
                 </control>
 	     </control>
 	   </control>
 	</controls>
 </window>
+
 
 
 
