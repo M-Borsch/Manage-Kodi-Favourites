@@ -285,7 +285,7 @@ def clearWindowProperty(prop):
 
 # Debugging helper. Logs a LOGNOTICE-level message.
 def xbmcLog(*args):
-    xbmc.log('Insert/Swap FAVOURITES > ' + ' '.join((var if isinstance(var, str) else repr(var)) for var in args), xbmc.LOGNOTICE)
+    xbmc.log('Manage Kodi FAVOURITES > ' + ' '.join((var if isinstance(var, str) else repr(var)) for var in args), xbmc.LOGNOTICE)
 
 #===================================================================================
 
@@ -368,7 +368,7 @@ else:
                                  'use:[/B] select one item, then select another to Insert/Swap. ' \
                                  'Do this as much as needed. Finally, close the dialog and use the menus ' \
                                  'below to save your changes.'})
-    saveReloadItem = xbmcgui.ListItem('[COLOR lavender][B]Save and Reload Your Changes[/B][/COLOR]')
+    saveReloadItem = xbmcgui.ListItem('[COLOR lavender][B]Save and Reload Your Kodi Profile (may take several seconds)...[/B][/COLOR]')
     saveReloadItem.setArt({'thumb': 'DefaultAddonsUpdates.png'})
     saveReloadItem.setInfo('video', {'plot': 'Save any changes you made and reload your Kodi profile '
                                        'to make the changes visible right now, without having to restart Kodi.'})
@@ -392,6 +392,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
