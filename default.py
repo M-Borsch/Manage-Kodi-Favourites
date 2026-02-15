@@ -7,10 +7,12 @@
 # --------------------------------------------------------------------
 # M-Borsch 2026-02-14: Version 2.0.0
 # - Initial Release based on 1.4.3 of Insert/Swap Kodi Favourites.
+# - Major re-write of the Addon to allow for the ability to add
+# prefixes and suffixes and color items in your Kodi Favoutites list
 # --------------------------------------------------------------------
 # M-Borsch 2023-12-24: Version 1.4.3
 # - Updated to include Thumb size settings.
-# - <ust have 2 versions of the skin - ! for large and 1 for small thumbs
+# - Must have 2 versions of the skin - ! for large and 1 for small thumbs
 # --------------------------------------------------------------------
 # M-Borsch 2023-12-24: Version 1.4.2
 # - Updated to include Font size settings.
@@ -380,17 +382,17 @@ else:
                                  'use:[/B] select one item, then select another to Insert/Swap. ' \
                                  'Do this as much as needed. Finally, close the dialog and use the menus ' \
                                  'below to save your changes.'})
-    saveReloadItem = xbmcgui.ListItem('[B]Apply Changes and Reload Your Kodi Profile (may take several seconds)...[/B]')
+    saveReloadItem = xbmcgui.ListItem('[B]   Apply Changes and Reload Your Kodi Profile (may take several seconds)...[/B]')
     saveReloadItem.setArt({'thumb': 'DefaultAddonsUpdates.png'})
     saveReloadItem.setInfo('video', {'plot': 'Save any changes you made and reload your Kodi profile '
                                        'to make the changes visible right now, without having to restart Kodi.'})
-    saveExitItem = xbmcgui.ListItem('[B]Save and Exit (No Reload - Leave Changes Pending)[/B]')
+    saveExitItem = xbmcgui.ListItem('[B]   Save and Exit (No Reload - Leave Changes Pending)[/B]')
     saveExitItem.setArt({'thumb': 'DefaultFolderBack.png'})
     saveExitItem.setInfo('video', {'plot': 'Save any changes you made and exit the add-on. [B]Note:[/B] if you '
                                    'make any changes to your favourites using the Favourites screen (like adding, '
                                    'removing or reordering items) before closing Kodi, your changes from this '
                                    'add-on will be ignored.'})
-    exitItem = xbmcgui.ListItem('[B]Exit (Abandon All Changes)[/B]')
+    exitItem = xbmcgui.ListItem('[B]   Exit (Abandon All Changes)[/B]')
     exitItem.setArt({'thumb': 'DefaultFolderBack.png'})
     exitItem.setInfo('video', {'plot': 'Exit the add-on (same as pressing Back), without saving your changes.'})
     xbmcplugin.addDirectoryItems(
@@ -404,6 +406,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
