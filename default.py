@@ -196,7 +196,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
 
     def doReload(self):
         if xbmcgui.Dialog().yesno(
-            'Insert/Swap Favourites',
+            'Manage Kodi Favourites',
             'This will restore the order from the favourites file so you can try reordering again.\nProceed?'
         ):
             # Re-sort all items based on their original indices.
@@ -332,11 +332,11 @@ elif '/save_exit' in PLUGIN_URL:
             clearWindowProperty(PROPERTY_FAVOURITES_RESULT)
             clearWindowProperty(REORDER_METHOD)
             clearWindowProperty(THUMB_SIZE)
-            xbmcgui.Dialog().ok('Insert/Swap Favourites', 'Save successful. Press OK to end the add-on...')
+            xbmcgui.Dialog().ok('Manage Kodi Favourites', 'Save successful. Press OK to end the add-on...')
         xbmc.executebuiltin('Action(Back)')
     except Exception as e:
         xbmcLog(traceback.format_exc())
-        xbmcgui.Dialog().ok('Insert/Swap Favourites Error', 'ERROR: "%s"\n(Please check the log for more info)' % str(e))
+        xbmcgui.Dialog().ok('Manage Kodi Favourites Error', 'ERROR: "%s"\n(Please check the log for more info)' % str(e))
 
 elif '/exit_only' in PLUGIN_URL:
     # Clear the results property and go back one screen (to wherever the user came from).
@@ -352,9 +352,9 @@ else:
     # Create the menu items.
     xbmcplugin.setContent(PLUGIN_ID, 'files')
 
-    dialogItem = xbmcgui.ListItem('[COLOR lavender][B]Insert/Swap Your Favourites...[/B][/COLOR]')
+    dialogItem = xbmcgui.ListItem('[COLOR lavender][B]Manage Your Favourites...[/B][/COLOR]')
     dialogItem.setArt({'thumb': 'DefaultAddonContextItem.png'})
-    dialogItem.setInfo('video', {'plot': 'Open the dialog where you can Insert/Swap your favourites.[CR][B]How to ' \
+    dialogItem.setInfo('video', {'plot': 'Open the dialog where you can Manage your favourites.[CR][B]How to ' \
                                  'use:[/B] select one item, then select another to Insert/Swap. ' \
                                  'Do this as much as needed. Finally, close the dialog and use the menus ' \
                                  'below to save your changes.'})
@@ -382,3 +382,4 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
