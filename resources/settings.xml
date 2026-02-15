@@ -12,7 +12,12 @@
         <setting type="lsep" label="[COLOR blue]Settings Section for Prefix Picklists[/COLOR]" />
         <!-- Prefix entry and Color settings -->
          <setting id="prefixTextSel" label="Prefix Text" type="enum" default="0"
-                 values=${prefix_text_value_str}/>
+                 values=""/>
+
+        new_options = "Server A|Server B|Server C|Server D"
+        # Set the enum values dynamically
+        addon.setSetting("prefixTextSel", new_options)
+             
         <setting id="prefixColorSel" label="Prefix Color" type="enum" default="0"
                  values="NONE|green|yellow|blue|cyan|orange|purple"/>
 
@@ -45,6 +50,7 @@
                  values="Small|Large"/>
     </category>
 </settings>
+
 
 
 
