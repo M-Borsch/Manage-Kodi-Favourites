@@ -326,10 +326,10 @@
 					<align>left</align>
 					<aligny>top</aligny>
 					<textcolor>yellow</textcolor>
-					<label>[B]Prefix / Color:[/B] "TV - / cyan"</label>
+					<label>[B]Prefix / Color:[/B]</label>
 				</control>
 				<control type="textbox">
-					<visible>false</visible>
+					<visible>true</visible>
 					<height>25</height>
 					<onleft>195</onleft>
 					<width>270</width>
@@ -350,10 +350,10 @@
 					<align>left</align>
 					<aligny>top</aligny>
 					 <textcolor>yellow</textcolor>
-					<label>[B]Suffix / Color:[/B] "- # Samsung TV + # / orange"</label>
+					<label>[B]Suffix / Color:[/B]</label>
 				</control>
 				<control type="textbox">
-					<visible>false</visible>
+					<visible>true</visible>
 					<height>25</height>
 					<onleft>200</onleft>
 					<width>270</width>
@@ -374,6 +374,17 @@
 					<align>left</align>
 					<aligny>top</aligny>
 					<label>[B]THUMB: [/B]$INFO[Window.Property(thumbSize)] [B]FONT: [/B] $INFO[Window.Property(fontSize)]</label>
+				</control>
+				<control type="textbox">
+					<visible>true</visible>
+					<height>50</height>
+					<onleft>200</onleft>
+					<width>270</width>
+					<onright>100</onright>
+					<font>font10</font>
+					<align>left</align>
+					<aligny>top</aligny>
+					<label>[B]The Following are the Insert/Swap settings:[/B]</label>
 				</control>
 				<control type="textbox">
 					<visible>String.IsEqual(Window.Property(reorder),0)</visible>
@@ -446,6 +457,7 @@
 	   </control>
 	</controls>
 </window>
+
 
 
 
