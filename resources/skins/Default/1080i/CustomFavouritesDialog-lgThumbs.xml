@@ -317,7 +317,7 @@
                 </control>
 				<control type="textbox">
 					<visible>true</visible>
-					<height>20</height>
+					<height>25</height>
 					<onleft>200</onleft>
 					<width>270</width>
 					<onright>100</onright>
@@ -325,11 +325,11 @@
 					<align>left</align>
 					<aligny>top</aligny>
 					 <textcolor>yellow</textcolor>
-					<label>[B]Prefix / Color: TV - / cyan[/B]</label>
+					<label>[B]Prefix / Color:[CR] TV - / cyan[/B]</label>
 				</control>
 				<control type="textbox">
 					<visible>true</visible>
-					<height>20</height>
+					<height>25</height>
 					<onleft>200</onleft>
 					<width>270</width>
 					<onright>100</onright>
@@ -337,7 +337,7 @@
 					<align>left</align>
 					<aligny>top</aligny>
 					 <textcolor>yellow</textcolor>
-					<label>[B]Suffix / Color: - # Samsung TV + #/ orange[/B]</label>
+					<label>[B]Suffix / Color:[CR]# Samsung TV + #/ orange[/B]</label>
 				</control>
 				<control type="textbox">
 					<visible>false</visible>
@@ -428,6 +428,7 @@
 	   </control>
 	</controls>
 </window>
+
 
 
 
