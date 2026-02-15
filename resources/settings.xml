@@ -9,10 +9,11 @@
         <setting id="prefixColor" type="text" label="Color" default="NONE|green|yellow|blue|cyan|orange|purple" />
 
         <setting type="lsep" label="[COLOR blue]Settings Section for Suffix Picklists[/COLOR]" />
-        <setting id="suffixText" type="text" label="Text" default="NONE| - # Free99 #| - # Scrubs V2 #| - # Ghost #| - # Quicksilver #| - # Samsung TV+ #"/>
+        <setting id="suffixText" type="text" label="Text" default="NONE| - # Pluto TV #| - # Samsung TV+ #"/>
         <setting id="suffixColor" type="text" label="Color" default="NONE|green|yellow|blue|cyan|orange|purple" />
     </category>
 </settings>
+
 
 
 
