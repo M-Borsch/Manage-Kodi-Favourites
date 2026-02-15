@@ -208,6 +208,10 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             if selectedPosition != -1:
                 self.panel.selectItem(selectedPosition)
 
+            # Test Calling up Settings
+            # Activate the Skin Settings window
+            xbmc.executebuiltin('ActivateWindow(SkinSettings)')
+
 
     def _makeResult(self):
         INDENT_STRING = ' ' * 4
@@ -382,4 +386,5 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
