@@ -23,16 +23,20 @@
     </category>
     
     <category label="Edit Lists">
-        <setting type="text" label="[COLOR white]Here you can define the picklists for Prefix/Suffix and Colors[/COLOR]" />
+        <setting type="text" label="$ADDON[Manage-Kodi-Favourites 30002]"/>
 
         <setting type="lsep" label="[COLOR blue]Settings Section for Prefix Picklists[/COLOR]" />
         <!-- Default the Prefix/Suffix text entry and Color settings -->
-        <setting id="prefixText" type="text" label="Text" default="NONE|TV - |Movie - |Show - " />
-        <setting id="prefixColor" type="text" label="Color" default="NONE|green|yellow|blue|cyan|orange|purple" />
+        <setting id="prefixBooltCus" type="bool" label=" Override Prefix" default=""/>
+
+        <setting id="prefixTextCus" type="text" label="Custom Text" default="" />
+        <setting id="prefixColorCus" type="text" label="Cuustom Color" default="" />
 
         <setting type="lsep" label="[COLOR blue]Settings Section for Suffix Picklists[/COLOR]" />
-        <setting id="suffixText" type="text" label="Text" default="NONE| - # Free99 #| - # Scrubs V2 #| - # Ghost #| - # Quicksilver #| - # Samsung TV+ #| - # Pluto TV #| - # IPTV #"/>
-        <setting id="suffixColor" type="text" label="Color" default="NONE|orange|green|yellow|blue|cyan|purple" />
+        <setting id="suffixBooltCus" type="bool" label=" Override Suffix" default=""/>
+
+        <setting id="suffixTextCus" type="text" label="Custom Text" default=""/>
+        <setting id="suffixColorCus" type="text" label="Custom Color" default="" />
     </category>
     <category label="Thumb/Font">
         <setting id="reorderingMethod" label="Reordering Method" type="enum" default="0"
@@ -43,6 +47,7 @@
                  values="Small|Large"/>
     </category>
 </settings>
+
 
 
 
