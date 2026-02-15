@@ -375,13 +375,14 @@
                     <aligny>top</aligny>
                    <!-- <label>Select [B]"A" then select "B"[/B]
 - "A" will be placed after "B". -->
-					<label> "$ADDON[Manage-Kodi-Favourites 30001]"
+					<label>Current Value: $INFO[Skin.String(30001]
 		    </label>
                 </control>
 	     </control>
 	   </control>
 	</controls>
 </window>
+
 
 
 
