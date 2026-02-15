@@ -15,9 +15,10 @@
 
         <setting type="lsep" label="[COLOR blue]Settings Section for Suffix Picklists[/COLOR]" />
         <!-- Suffix entry and Color settings -->
+        <!-- Note: values="$ADDON[Manage-Kodi-Favourites 32005]" does not work?? -->
         <!-- values="NONE| - # Free99 #| - # Scrubs V2 #| - # Ghost #| - # Quicksilver #| - # Samsung TV+ #| - # Pluto TV #| - # IPTV #"/> -->
          <setting id="suffixTextSel" label="Suffix Text" type="enum" default="0"
-                                  values="$ADDON[Manage-Kodi-Favourites 32002]"/>
+                                  values="NONE| - # Free99 #| - # Scrubs V2 #| - # Ghost #| - # Quicksilver #| - # Samsung TV+ #| - # Pluto TV #| - # IPTV #"/>
         <setting id="suffixColorSel" label="Suffix Color" type="enum" default="0"
                  values="NONE|orange|green|yellow|blue|cyan|purple"/>
     </category>
@@ -47,6 +48,7 @@
                  values="Small|Large"/>
     </category>
 </settings>
+
 
 
 
