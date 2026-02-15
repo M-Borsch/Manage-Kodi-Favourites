@@ -3,7 +3,7 @@
     <category label="Settings">
         <setting type="text" label="[COLOR white]Here you choose the actions from the picklists for Prefix/Suffix and Colors[/COLOR]" />
                 
-        <setting type="text" label=$LOCALIZE[30000] />
+        <setting type="text" label=$LOCALIZE[30004] />
 
         <setting type="lsep" label="[COLOR blue]Settings Section for Prefix Picklists[/COLOR]" />
         <!-- Prefix entry and Color settings -->
@@ -16,7 +16,7 @@
         <!-- Suffix entry and Color settings -->
         <!-- values="NONE| - # Free99 #| - # Scrubs V2 #| - # Ghost #| - # Quicksilver #| - # Samsung TV+ #| - # Pluto TV #| - # IPTV #"/> -->
          <setting id="suffixTextSel" label="Suffix Text" type="enum" default="0"
-                                  values="$ADDON[Manage-Kodi-Favourites 30000]"/>
+                                  values="$ADDON[Manage-Kodi-Favourites 30006]"/>
         <setting id="suffixColorSel" label="Suffix Color" type="enum" default="0"
                  values="NONE|orange|green|yellow|blue|cyan|purple"/>
     </category>
@@ -42,6 +42,7 @@
                  values="Small|Large"/>
     </category>
 </settings>
+
 
 
 
