@@ -2,6 +2,8 @@
 <settings>
     <category label="Settings">
         <setting type="text" label="[COLOR white]Here you choose the actions from the picklists for Prefix/Suffix and Colors[/COLOR]" />
+                
+        <setting type="text" label="[COLOR red]$LOCALIZE[30000][/COLOR]" />
 
         <setting type="lsep" label="[COLOR blue]Settings Section for Prefix Picklists[/COLOR]" />
         <!-- Prefix entry and Color settings -->
@@ -40,6 +42,7 @@
                  values="Small|Large"/>
     </category>
 </settings>
+
 
 
 
