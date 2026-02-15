@@ -283,6 +283,7 @@
                     <texturenofocus colordiffuse="30FFFFFF">BGWhite.png</texturenofocus>
                 </control>
                 <control type="button" id="302">
+					<visible>false</visible>
                     <width>270</width>
                     <height>100</height>
                     <onleft>200</onleft>
@@ -325,7 +326,19 @@
 					<align>left</align>
 					<aligny>top</aligny>
 					 <textcolor>yellow</textcolor>
-					<label>[B]Prefix / Color:[CR] TV - / cyan[/B]</label>
+					<label>[B]Prefix / Color:[/B]</label>
+				</control>
+				<control type="textbox">
+					<visible>true</visible>
+					<height>25</height>
+					<onleft>195</onleft>
+					<width>270</width>
+					<onright>100</onright>
+					<font>font10</font>
+					<align>left</align>
+					<aligny>top</aligny>
+					 <textcolor>white</textcolor>
+					<label>TV - / cyan</label>
 				</control>
 				<control type="textbox">
 					<visible>true</visible>
@@ -337,7 +350,19 @@
 					<align>left</align>
 					<aligny>top</aligny>
 					 <textcolor>yellow</textcolor>
-					<label>[B]Suffix / Color:[CR]# Samsung TV + #/ orange[/B]</label>
+					<label>[B]Suffix / Color:[/B]</label>
+				</control>
+				<control type="textbox">
+					<visible>true</visible>
+					<height>25</height>
+					<onleft>195</onleft>
+					<width>270</width>
+					<onright>100</onright>
+					<font>font10</font>
+					<align>left</align>
+					<aligny>top</aligny>
+					 <textcolor>white</textcolor>
+					<label>- # Samsung TV + # / orange</label>
 				</control>
 				<control type="textbox">
 					<visible>false</visible>
@@ -428,6 +453,7 @@
 	   </control>
 	</controls>
 </window>
+
 
 
 
