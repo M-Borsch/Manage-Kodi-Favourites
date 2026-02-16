@@ -14,51 +14,29 @@
         <!-- 30011, 32102 represent labels in strings.po (e.g., "NONE", "TV - ", "Show - ", "Movie -") -->
         <setting id="suffixTextSel" type="select" label="30017" lvalues="30018|30019|30020|30021|30022|30023}30024|30025" default="0" />
         <setting id="prefixColtSel" type="select" label="30026" lvalues="30010|30011|30012|30013|30014|30015" default="0" />
-      
-    </category>
- 
-    <category label="Picklists">
-       <!-- <setting type="text" label="[COLOR white]Here you choose the actions from the picklists for Prefix/Suffix and Colors[/COLOR]" /> -->
-                
-        <setting type="text" label="$ADDON[Manage-Kodi-Favourites 30001]"/>
-        <!-- NOTE: LOCALIZE does not resolve propoerly <setting type="text" label=$LOCALIZE[30001]/> -->
 
-        <setting type="lsep" label="[COLOR blue]Settings Section for Prefix Picklists[/COLOR]" />
-        <!-- Prefix entry and Color settings -->
-         <setting id="prefixTextSel-old" label="Prefix Text" type="enum" default="0"
-                 values="NONE|TV - |Movie - |Show - "/>
-        <setting id="prefixColorSel-old" label="Prefix Color" type="enum" default="0"
-                 values="NONE|green|yellow|blue|cyan|orange|purple"/>
+        <!-- Override Prefix and Suffix entry and Color settings -->
 
-        <setting type="lsep" label="[COLOR blue]Settings Section for Suffix Picklists[/COLOR]" />
-        <!-- Suffix entry and Color settings -->
-        <!-- Note: values="$ADDON[Manage-Kodi-Favourites 32005]" does not work?? -->
-        <!-- values="NONE| - # Free99 #| - # Scrubs V2 #| - # Ghost #| - # Quicksilver #| - # Samsung TV+ #| - # Pluto TV #| - # IPTV #"/> -->
-         <setting id="suffixTextSel-old" label="Suffix Text" type="enum" default="0"
-                                  values="NONE| - # Free99 #| - # Scrubs V2 #| - # Ghost #| - # Quicksilver #| - # Samsung TV+ #| - # Pluto TV #| - # IPTV #"/>
-        <setting id="suffixColorSel-old" label="Suffix Color" type="enum" default="0"
-                 values="NONE|orange|green|yellow|blue|cyan|purple"/>
+        <setting type="lsep" label="30030" />
+        <setting type="string" label="30031" />
 
-       <setting type="lsep" label="[COLOR blue]Custom Override Section for Prefix / Suffix / Colors [/COLOR]" />
-       <setting type="text" label="$ADDON[Manage-Kodi-Favourites 30002]"/>
-
-        <setting type="lsep" label="[COLOR blue]Settings Section for Prefix Picklists[/COLOR]" />
+        <setting type="lsep" label="30032" />
         <!-- Default the Prefix/Suffix text entry and Color settings -->
-        <setting id="prefixBooltCus" type="bool" label=" Override Prefix" default="false"/>
+        <setting id="prefixBooltCus" type="bool" label="30033" default="false"/>
 
-        <setting id="prefixTextCus" type="text" label="Custom Text" default="" />
-        <setting id="prefixColorCus" type="text" label="Cuustom Color" default="" />
+        <setting id="prefixTextCus" type="text" label="30034" default="" />
+        <setting id="prefixColorCus" type="text" label="30035" default="" />
 
-        <setting type="lsep" label="[COLOR blue]Settings Section for Suffix Picklists[/COLOR]" />
-        <setting id="suffixBooltCus" type="bool" label=" Override Suffix" default="false"/>
+        <setting type="lsep" label="30036" />
+        <setting id="suffixBooltCus" type="bool" label="30037" default="false"/>
 
-        <setting id="suffixTextCus" type="text" label="Custom Text" default=""/>
-        <setting id="suffixColorCus" type="text" label="Custom Color" default="" />
-     
+        <setting id="suffixTextCus" type="text" label="30034" default=""/>
+        <setting id="suffixColorCus" type="text" label="30035" default="" />
     </category>
- 
+   
+
     <category label="Thumb/Font/Re-Order">
-        <setting type="lsep" label="[COLOR blue]Settings Section Controllin the Favourites List[/COLOR]" />
+        <setting type="lsep" label="[COLOR blue]Settings Section Controlling the Favourites List[/COLOR]" />
         <setting type="text" label="[COLOR white]Here you choose the size of the thumbnails as well as the label font to be displayed in the editing popup.[/COLOR]" />
 
         <setting id="fontSize" label="Font Size" type="enum" default="0"
@@ -73,6 +51,7 @@
 
     </category>
 </settings>
+
 
 
 
