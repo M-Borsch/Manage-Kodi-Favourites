@@ -213,7 +213,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             ## Notify User to Select an Item
             xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n\n(Please Select an Item)' % "No Item")
         else:
-            xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n\n(Item Selected)' % str(self.indexFrom))
+            if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n\n(Item Selected)' % str(self.indexFrom))
 
         # Let the user know that there are about to modify a List entry
         if xbmcgui.Dialog().yesno(
@@ -416,5 +416,6 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
