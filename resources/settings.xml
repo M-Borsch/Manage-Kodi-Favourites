@@ -27,13 +27,13 @@
 
         <setting type="lsep" label="[COLOR blue]Settings Section for Prefix Picklists[/COLOR]" />
         <!-- Default the Prefix/Suffix text entry and Color settings -->
-        <setting id="prefixBooltCus" type="bool" label=" Override Prefix" default=""/>
+        <setting id="prefixBooltCus" type="bool" label=" Override Prefix" default="false"/>
 
         <setting id="prefixTextCus" type="text" label="Custom Text" default="" />
         <setting id="prefixColorCus" type="text" label="Cuustom Color" default="" />
 
         <setting type="lsep" label="[COLOR blue]Settings Section for Suffix Picklists[/COLOR]" />
-        <setting id="suffixBooltCus" type="bool" label=" Override Suffix" default=""/>
+        <setting id="suffixBooltCus" type="bool" label=" Override Suffix" default="false"/>
 
         <setting id="suffixTextCus" type="text" label="Custom Text" default=""/>
         <setting id="suffixColorCus" type="text" label="Custom Color" default="" />
@@ -56,6 +56,7 @@
 
     </category>
 </settings>
+
 
 
 
