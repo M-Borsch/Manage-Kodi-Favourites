@@ -219,22 +219,22 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
                 if xbmcgui.Dialog().yesno(
                         'Manage Kodi Favourites',
                         'This will modify the Prefix/Suffix/Color of the currently selected item.\n\nProceed?'
-                    ):
-                    # For now hard code a sample suffix
-                    listitem_at_index = self.allItems[self.indexFrom]
-                    label = listitem_at_index.getLabel()
-                    xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Item Selected)' %  str(label))
-                    new_label = label + " - [COLOR orange]# Scrubs V2 #[/COLOR]"
-                    listitem_at_index.setLabel(new_label)
-
-                    # Reset the selection state.
-                    self.isDirty = True
-                    self.indexFrom = None
-                    self.doUnselectClose(self)
-                        
-                    # Commit the changes to the UI, and highlight item A.
-                    self.panel.reset()
-                    self.panel.addItems(self.allItems)
+                ):
+                # For now hard code a sample suffix
+                listitem_at_index = self.allItems[self.indexFrom]
+                label = listitem_at_index.getLabel()
+                xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Item Selected)' %  str(label))
+                new_label = label + " - [COLOR orange]# Scrubs V2 #[/COLOR]"
+                listitem_at_index.setLabel(new_label)
+    
+                # Reset the selection state.
+                self.isDirty = True
+                self.indexFrom = None
+                self.doUnselectClose(self)
+                    
+                # Commit the changes to the UI, and highlight item A.
+                self.panel.reset()
+                self.panel.addItems(self.allItems)
 
     def doReload(self):
         if xbmcgui.Dialog().yesno(
@@ -425,52 +425,3 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
