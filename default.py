@@ -232,9 +232,11 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             self.indexFrom = None
             self.doUnselectClose(self)
                 
-            # Commit the changes to the UI, and highlight item A.
+            # Commit the changes to the UI, and unhighlight item A.
             self.panel.reset()
             self.panel.addItems(self.allItems)
+            self.panel.getSelectedItem().setProperty('selected', '')
+
 
     def doReload(self):
         if xbmcgui.Dialog().yesno(
@@ -425,5 +427,6 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
