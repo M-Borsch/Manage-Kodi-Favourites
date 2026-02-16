@@ -226,17 +226,6 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Item Selected)' %  str(label))
             new_label = label + " - [COLOR orange]# Scrubs V2 #[/COLOR]"
             listitem_at_index.setLabel(new_label)
-    
-            # Reset the selection state.
-            self.isDirty = True
-            self.indexFrom = None
-            self.doUnselectClose(self)
-                
-            # Commit the changes to the UI, and unhighlight item A.
-            self.panel.reset()
-            self.panel.addItems(self.allItems)
-            self.panel.getSelectedItem().setProperty('selected', '')
-
 
     def doReload(self):
         if xbmcgui.Dialog().yesno(
@@ -427,3 +416,4 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
