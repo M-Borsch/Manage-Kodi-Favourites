@@ -6,12 +6,12 @@
         <setting type="lsep" label="30003" />
         <!-- Prefix entry and Color settings -->
         <setting id="prefixTextSel" type="select" label="30004" lvalues="30005|30006|30007|30008" default="0" />
-        <setting id="prefixColtSel" type="select" label="30009" lvalues="30010|30011|30012|30013|30014|30015" default="0" />
+        <setting id="prefixColSel" type="select" label="30009" lvalues="30010|30011|30012|30013|30014|30015" default="0" />
       
         <setting type="lsep" label="30016" />
         <!-- Prefix entry and Color settings -->
         <setting id="suffixTextSel" type="select" label="30017" lvalues="30018|30019|30020|30021|30022|30023}30024|30025" default="0" />
-        <setting id="prefixColtSel" type="select" label="30026" lvalues="30010|30011|30012|30013|30014|30015" default="0" />
+        <setting id="suffixColSel" type="select" label="30026" lvalues="30010|30011|30012|30013|30014|30015" default="0" />
 
         <!-- Override Prefix and Suffix entry and Color settings -->
 
@@ -49,6 +49,7 @@
 
     </category>
 </settings>
+
 
 
 
