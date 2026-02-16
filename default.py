@@ -43,6 +43,7 @@ import xbmc, xbmcgui, xbmcplugin, xbmcvfs
 from xbmcaddon import Addon
 
 DEBUG = '0'
+DEBUG2 = '1'
 FAVOURITES_PATH = 'special://userdata/favourites.xml'
 THUMBNAILS_PATH_FORMAT = 'special://thumbnails/{folder}/{file}'
 
@@ -112,6 +113,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
         if ADDON.getSetting('prefixBooltCus') == "true":
             PrefixText = ADDON.getSetting('prefixTextCus')
             PrefixColor = ADDON.getSetting('prefixColorCus')
+            if DEBUG2 == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s "\n(Custom Prefix)' %  str(PrefixText))
 
         self.allItems = list(self._makeFavourites(favouritesGen))
         self.indexFrom = None # Integer index of the source item (or None when nothing is selected).
@@ -421,6 +423,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
