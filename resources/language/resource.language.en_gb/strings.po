@@ -53,6 +53,14 @@ msgctxt "#30006"
 msgid "NONE|orange|green|yellow|blue|cyan|purple"
 msgstr "Suffix Colors"
 
+#: resources/settings.xml
+msgctxt "#32000"
+msgid "[COLOR blue]Manage Kodi Favourites[/COLOR]"
 
+#: resources/settings.xml
+msgctxt "#32001"
+msgid "[COLOR blue]Picklists[/COLOR]"
 
-
+#: resources/settings.xml
+msgctxt "#32002"
+msgid "[COLOR white]Here you choose the actions from the picklists for Prefix/Suffix and Colors[/COLOR]"
