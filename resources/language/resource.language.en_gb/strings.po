@@ -76,7 +76,7 @@ msgctxt "#30011"
 msgid "cyan"
 
 #: resources/settings.xml
-msgctxt "#30015"
+msgctxt "#30012"
 msgid "orange"
 
 #: resources/settings.xml
@@ -130,4 +130,5 @@ msgid "NONE"
 #: resources/settings.xml
 msgctxt "#30030"
 msgid "[COLOR white]Here you can override picklists and use custom Prefix/Suffix and Colors[/COLOR]"
+
 
