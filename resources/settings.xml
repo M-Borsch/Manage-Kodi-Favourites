@@ -2,12 +2,18 @@
 <settings>
      <category label="32001"> <!-- Picklist Settings -->
         <setting type="string" label="32002" />
+      
         <setting type="lsep" label="32003" />
         <!-- Prefix entry and Color settings -->
         <!-- 32101, 32102 represent labels in strings.po (e.g., "NONE", "TV - ", "Show - ", "Movie -") -->
         <setting id="prefixTextSel" type="select" label="32100" lvalues="32101|32102|32103|32104" default="0" />
         <setting id="prefixColtSel" type="select" label="32110" lvalues="32111|32112|32113|32114|32115|32116|32117" default="0" />
-
+      
+        <setting type="lsep" label="32004" />
+        <!-- Prefix entry and Color settings -->
+        <!-- 32101, 32102 represent labels in strings.po (e.g., "NONE", "TV - ", "Show - ", "Movie -") -->
+        <setting id="suffixTextSel" type="select" label="33100" lvalues="33101|33102|33103|3310433105|33106|33107" default="0" />
+        <setting id="suffixColtSel" type="select" label="33110" lvalues="33111|33112|33113|33114|33115|33116|33117" default="0" />
       
     </category>
  
@@ -28,9 +34,9 @@
         <!-- Suffix entry and Color settings -->
         <!-- Note: values="$ADDON[Manage-Kodi-Favourites 32005]" does not work?? -->
         <!-- values="NONE| - # Free99 #| - # Scrubs V2 #| - # Ghost #| - # Quicksilver #| - # Samsung TV+ #| - # Pluto TV #| - # IPTV #"/> -->
-         <setting id="suffixTextSel" label="Suffix Text" type="enum" default="0"
+         <setting id="suffixTextSel-old" label="Suffix Text" type="enum" default="0"
                                   values="NONE| - # Free99 #| - # Scrubs V2 #| - # Ghost #| - # Quicksilver #| - # Samsung TV+ #| - # Pluto TV #| - # IPTV #"/>
-        <setting id="suffixColorSel" label="Suffix Color" type="enum" default="0"
+        <setting id="suffixColorSel-old" label="Suffix Color" type="enum" default="0"
                  values="NONE|orange|green|yellow|blue|cyan|purple"/>
 
        <setting type="lsep" label="[COLOR blue]Custom Override Section for Prefix / Suffix / Colors [/COLOR]" />
@@ -67,6 +73,7 @@
 
     </category>
 </settings>
+
 
 
 
