@@ -5,13 +5,11 @@
       
         <setting type="lsep" label="30003" />
         <!-- Prefix entry and Color settings -->
-        <!-- 30004, etc represent labels in strings.po (e.g., "NONE", "TV - ", "Show - ", "Movie -") -->
         <setting id="prefixTextSel" type="select" label="30004" lvalues="30005|30006|30007|30008" default="0" />
         <setting id="prefixColtSel" type="select" label="30009" lvalues="30010|30011|30012|30013|30014|30015" default="0" />
       
         <setting type="lsep" label="30016" />
         <!-- Prefix entry and Color settings -->
-        <!-- 30011, 32102 represent labels in strings.po (e.g., "NONE", "TV - ", "Show - ", "Movie -") -->
         <setting id="suffixTextSel" type="select" label="30017" lvalues="30018|30019|30020|30021|30022|30023}30024|30025" default="0" />
         <setting id="prefixColtSel" type="select" label="30026" lvalues="30010|30011|30012|30013|30014|30015" default="0" />
 
@@ -35,22 +33,23 @@
     </category>
    
 
-    <category label="Thumb/Font/Re-Order">
-        <setting type="lsep" label="[COLOR blue]Settings Section Controlling the Favourites List[/COLOR]" />
-        <setting type="text" label="[COLOR white]Here you choose the size of the thumbnails as well as the label font to be displayed in the editing popup.[/COLOR]" />
+    <category label="30038">
+        <setting type="lsep" label="30039" />
+        <setting type="string" label="30040" />
 
-        <setting id="fontSize" label="Font Size" type="enum" default="0"
+        <setting id="fontSize" label="30041" type="enum" default="0"
                  values="Small|Medium|Large"/>
-        <setting id="thumbSize" label="Thumnbail Size" type="enum" default="1"
+        <setting id="thumbSize" label="30042" type="enum" default="1"
                  values="Small|Large"/>        
      
-        <setting type="lsep" label="[COLOR blue]Settings Section for Insert/Swap[/COLOR]" />
-        <setting type="text" label="[COLOR white]Here you choose the actions to be performed when selecting items in your Kodi Favourites list. Either Swap A and B, Insert A before B or Insert A after B.[/COLOR]" />
-        <setting id="reorderingMethod" label="Reordering Method" type="enum" default="0"
+        <setting type="lsep" label="30043" />
+        <setting type="string" label="30044" />
+        <setting id="reorderingMethod" label="30045" type="enum" default="0"
                  values="Swap A and B|Insert A before B|Insert A after B"/>
 
     </category>
 </settings>
+
 
 
 
