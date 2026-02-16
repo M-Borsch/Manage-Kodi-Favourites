@@ -244,10 +244,6 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             label = listitem_at_index.getLabel()
             if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Item Selected)' %  str(label))
 
-            PrefixStr = addon.getSetting("30004") # This retrieves its translation
-           
-            if DEBUG2 == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Item Selected)' %  str(PrefixStr))
-
             new_label = label + " - [COLOR orange]# Scrubs V2 #[/COLOR]"
             listitem_at_index.setLabel(new_label)
 
@@ -440,6 +436,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
