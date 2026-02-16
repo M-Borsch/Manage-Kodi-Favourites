@@ -4,9 +4,7 @@
         <setting type="string" label="32002" />
         <setting type="lsep" label="32003" />
         <!-- Prefix entry and Color settings -->
-        <setting id="language_setting" type="labelenum" label="32004"  values="32100|32101|32102|32103" default="32100" />
-
-        <setting id="prefixTextSel-new" type="integer" label="32002">
+        <setting id="prefixTextSel-new" type="integer" label="32004">
                     <level>0</level>
                     <default>0</default>
                     <constraints>
@@ -77,6 +75,7 @@
 
     </category>
 </settings>
+
 
 
 
