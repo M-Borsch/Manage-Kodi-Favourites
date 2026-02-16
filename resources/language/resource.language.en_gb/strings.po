@@ -133,7 +133,34 @@ msgid "NONE"
 
 #: resources/settings.xml
 msgctxt "#30030"
-msgid "[COLOR white]Here you can override picklists and use custom Prefix/Suffix and Colors[/COLOR]"
+msgid "[COLOR blue]Custom Override Section for Prefix / Suffix / Colors [/COLOR]"
 
+#: resources/settings.xml
+msgctxt "#30031"
+msgid "[COLOR white]Here you can override Picklists and use custom Prefix/Suffix and Colors[/COLOR]"
+
+#: resources/settings.xml
+msgctxt "#30032"
+msgid "[COLOR blue]Settings Section for Prefix Picklists[/COLOR]"
+
+#: resources/settings.xml
+msgctxt "#30033"
+msgid "Override Prefix"
+
+#: resources/settings.xml
+msgctxt "#30034"
+msgid "Custom Text"
+
+#: resources/settings.xml
+msgctxt "#30035"
+msgid "Custom Color"
+
+#: resources/settings.xml
+msgctxt "#30036"
+msgid "[COLOR blue]Settings Section for Suffix Picklists[/COLOR]"
+
+#: resources/settings.xml
+msgctxt "#30037"
+msgid "Override Suffix"
 
 
