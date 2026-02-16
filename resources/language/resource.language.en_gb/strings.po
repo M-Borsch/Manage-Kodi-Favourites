@@ -37,46 +37,50 @@ msgid "[COLOR blue]Section for Prefix Picklists[/COLOR]"
 
 #: resources/settings.xml
 msgctxt "#30004"
-msgid "NONE"
+msgid "Prefix Text"
 
 #: resources/settings.xml
 msgctxt "#30005"
-msgid "TV - "
-
-#: resources/settings.xml
-msgctxt "#30006"
-msgid "Movie - "
-
-#: resources/settings.xml
-msgctxt "#30007"
-msgid "Show - "
-
-#: resources/settings.xml
-msgctxt "#30008"
-msgid "Prefix Color"
-
-#: resources/settings.xml
-msgctxt "#30009"
 msgid "NONE"
 
 #: resources/settings.xml
-msgctxt "#30010"cyan
+msgctxt "#30006"
+msgid "TV - "
+
+#: resources/settings.xml
+msgctxt "#30007"
+msgid "Movie - "
+
+#: resources/settings.xml
+msgctxt "#30008"
+msgid "Show - "
+
+#: resources/settings.xml
+msgctxt "#30009"
+msgid "Prefix Color"
+
+#: resources/settings.xml
+msgctxt "#30010"
+msgid "NONE"
+
+#: resources/settings.xml
+msgctxt "#30011"cyan
 msgid "green"
 
 #: resources/settings.xml
-msgctxt "#30011"
+msgctxt "#30012"
 msgid "yellow"
 
 #: resources/settings.xml
-msgctxt "#30012"
+msgctxt "#30013"
 msgid "blue"
 
 #: resources/settings.xml
-msgctxt "#30011"
+msgctxt "#30014"
 msgid "cyan"
 
 #: resources/settings.xml
-msgctxt "#30012"
+msgctxt "#30015"
 msgid "orange"
 
 #: resources/settings.xml
@@ -130,5 +134,6 @@ msgid "NONE"
 #: resources/settings.xml
 msgctxt "#30030"
 msgid "[COLOR white]Here you can override picklists and use custom Prefix/Suffix and Colors[/COLOR]"
+
 
 
