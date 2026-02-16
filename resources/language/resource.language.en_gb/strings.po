@@ -64,3 +64,11 @@ msgid "[COLOR blue]Picklists[/COLOR]"
 #: resources/settings.xml
 msgctxt "#32002"
 msgid "[COLOR white]Here you choose the actions from the picklists for Prefix/Suffix and Colors[/COLOR]"
+
+#: resources/settings.xml
+msgctxt "#32003"
+msgid "[COLOR blue]Settings Section for Prefix Picklists[/COLOR]"
+
+#: resources/settings.xml
+msgctxt "#32004"
+msgid "NONE|TV - |Movie - |Show - "
