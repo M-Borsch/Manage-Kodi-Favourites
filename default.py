@@ -114,14 +114,14 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             PrefixText = ADDON.getSetting('prefixTextCus')
             PrefixColor = ADDON.getSetting('prefixColorCus')
         else:
-            PrefixText = ADDON.getSetting('prefixTextSel')
+            PrefixText = xbmc.getLocalizedString(int(ADDON.getSetting('prefixTextSel')))
             PrefixColor = ADDON.getSetting('prefixColorSel')
         
         if ADDON.getSetting('suffixBooltCus') == "true":
             SuffixText = ADDON.getSetting('suffixTextCus')
             SuffixColor = ADDON.getSetting('suffixColorCus')
         else:
-            SuffixText = ADDON.getSetting('suffixTextSel')
+            SuffixText = xbmc.getLocalizedString(int(ADDON.getSetting('suffixTextSel')))
             SuffixColor = ADDON.getSetting('suffixColorSel')
             
         if DEBUG2 == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s "\n(Custom Prefix)' %  str(PrefixText))
@@ -435,6 +435,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
