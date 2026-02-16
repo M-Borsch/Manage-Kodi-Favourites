@@ -72,3 +72,22 @@ msgid "[COLOR blue]Settings Section for Prefix Picklists[/COLOR]"
 #: resources/settings.xml
 msgctxt "#32004"
 msgid "NONE|TV - |Movie - |Show - "
+
+#: resources/settings.xml
+msgctxt "#32100"
+msgid "NONE"
+
+#: resources/settings.xml
+msgctxt "#32101"
+msgid "TV - "
+
+#: resources/settings.xml
+msgctxt "#32102"
+msgid "Movie - "
+
+#: resources/settings.xml
+msgctxt "#32103"
+msgid "Show - "
+
+
+
