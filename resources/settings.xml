@@ -4,7 +4,7 @@
         <setting type="text" label="32002" />
         <setting type="lsep" label="32003" />
         <!-- Prefix entry and Color settings -->
-        <setting id="prefixTextSel" type="labelenum" label="32004" values=label=$LOCALIZE[32004] />
+        <setting id="prefixTextSel" type="labelenum" label="32004"  values="32100|32101|32102|32103" default="32100" />
     </category>
  
     <category label="Picklists">
@@ -63,6 +63,7 @@
 
     </category>
 </settings>
+
 
 
 
