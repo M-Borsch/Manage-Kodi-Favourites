@@ -223,7 +223,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             # For now hard code a sample suffix
             listitem_at_index = self.allItems[self.indexFrom]
             label = listitem_at_index.getLabel()
-            xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Item Selected)' %  str(label))
+            if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Item Selected)' %  str(label))
             new_label = label + " - [COLOR orange]# Scrubs V2 #[/COLOR]"
             listitem_at_index.setLabel(new_label)
 
@@ -416,4 +416,5 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
