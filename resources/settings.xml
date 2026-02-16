@@ -4,7 +4,7 @@
         <setting type="text" label="32002" />
         <setting type="lsep" label="32003" />
         <!-- Prefix entry and Color settings -->
-        <setting id="prefixTextSel" type="labelenum" label="32004" values="NONE|TV - |Movie - |Show - " />
+        <setting id="prefixTextSel" type="labelenum" label="32004" values=label=$LOCALIZE[32004] />
     </category>
  
     <category label="Picklists">
@@ -63,6 +63,7 @@
 
     </category>
 </settings>
+
 
 
 
