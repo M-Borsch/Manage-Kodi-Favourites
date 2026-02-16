@@ -230,6 +230,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
                     # Reset the selection state.
                     self.isDirty = True
                     self.indexFrom = None
+                    self.doUnselectClose(self)
                         
                     # Commit the changes to the UI, and highlight item A.
                     self.panel.reset()
@@ -425,6 +426,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
