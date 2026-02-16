@@ -163,4 +163,34 @@ msgid "[COLOR blue]Settings Section for Suffix Picklists[/COLOR]"
 msgctxt "#30037"
 msgid "Override Suffix"
 
+#: resources/settings.xml
+msgctxt "#30038"
+msgid "Thumb/Font/Re-Order"
 
+#: resources/settings.xml
+msgctxt "#30039"
+msgid "[COLOR blue]Settings Section Controlling the Favourites List[/COLOR]"
+
+#: resources/settings.xml
+msgctxt "#30040"
+msgid "[COLOR white]Here you choose the size of the thumbnails as well as the label font to be displayed in the editing popup.[/COLOR]"
+
+#: resources/settings.xml
+msgctxt "#30041"
+msgid "Font Size"
+
+#: resources/settings.xml
+msgctxt "#30042"
+msgid "Thumnbail Size"
+
+#: resources/settings.xml
+msgctxt "#30043"
+msgid "[COLOR blue]Settings Section for Insert/Swap[/COLOR]"
+
+#: resources/settings.xml
+msgctxt "#30044"
+msgid "[COLOR white]Here you choose the actions to be performed when selecting items in your Kodi Favourites list. Either Swap A and B, Insert A before B or Insert A after B.[/COLOR]"
+
+#: resources/settings.xml
+msgctxt "#30045"
+msgid "Reordering Method"
