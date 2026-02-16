@@ -211,9 +211,9 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
         # Check to see if an entry is selected
             if self.indexFrom == None:
                 ## Notify User to Select an Item
-                xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Please Select an Item)' % "No Item")
+                xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n\n(Please Select an Item)' % "No Item")
             else:
-                xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Item Selected)' % str(self.indexFrom))
+                xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n\n(Item Selected)' % str(self.indexFrom))
 
                 # Let the user know that there are about to modify a List entry
                 if xbmcgui.Dialog().yesno(
@@ -221,6 +221,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
                         'This will modify the Prefix/Suffix/Color of the currently selected item.\n\nProceed?'
                     ):
                     # For now do nothing
+                    listitem_at_index = self.allItems[self.indexFrom]
                     self.close()
 
 
@@ -413,6 +414,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
