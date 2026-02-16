@@ -4,9 +4,9 @@
         <setting type="string" label="32002" />
         <setting type="lsep" label="32003" />
         <!-- Prefix entry and Color settings -->
-        <!-- Example 2: Selecting based on index (labelnum) -->
-        <!-- 32001, 32002, 32003 represent labels in strings.po (e.g., "Low", "Medium", "High") -->
-        <setting id="quality_level" type="select" label="30004" lvalues="32100|32101|32102" default="0" />
+        <!-- 32101, 32102 represent labels in strings.po (e.g., "NONE", "TV - ", "Show - ", "Movie -") -->
+        <setting id="prefixTextSel" type="select" label="32100" lvalues="32101|32102|32103|32104" default="0" />
+        <setting id="prefixColtSel" type="select" label="32110" lvalues="32111|32112|32113|32114|32115|32116|32117" default="0" />
 
       
     </category>
@@ -19,9 +19,9 @@
 
         <setting type="lsep" label="[COLOR blue]Settings Section for Prefix Picklists[/COLOR]" />
         <!-- Prefix entry and Color settings -->
-         <setting id="prefixTextSel" label="Prefix Text" type="enum" default="0"
+         <setting id="prefixTextSel-old" label="Prefix Text" type="enum" default="0"
                  values="NONE|TV - |Movie - |Show - "/>
-        <setting id="prefixColorSel" label="Prefix Color" type="enum" default="0"
+        <setting id="prefixColorSel-old" label="Prefix Color" type="enum" default="0"
                  values="NONE|green|yellow|blue|cyan|orange|purple"/>
 
         <setting type="lsep" label="[COLOR blue]Settings Section for Suffix Picklists[/COLOR]" />
@@ -67,6 +67,7 @@
 
     </category>
 </settings>
+
 
 
 
