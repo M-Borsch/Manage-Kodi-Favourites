@@ -208,26 +208,12 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             xbmc.executebuiltin('Addon.OpenSettings(Manage-Kodi-Favourites)')
   
     def doPreSuffix(self):
-            # Check to see if an entry is selected
+        # Check to see if an entry is selected
             if self.indexFrom == None:
-                # Selecting a new item to reorder.
-                ## Dialog here
+                ## Notify User to Select an Item
                 xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Please Select an Item)' % "No Item")
             else:
-                <!--
-                # Something is selected, so do the label change.
-                try:
-                    listitem_at_index = self.allItems[self.indexFrom]
-                    label = listitem_at_index.getLabel() #
-                    xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Item Selected)' %  "label")
-                    if xbmcgui.Dialog().yesno(
-                        'Manage Kodi Favourites',
-                        'This will modify the Prefix/Suffix/Color of the currently selected item.\n\nProceed?'
-                    ):
-                except IndexError:
-                    xbmcgui.Dialog().ok('Manage Kodi Favourites', 'ERR: "%s"\n(Index out of range)' % "Item")
-                -->
-                self.close()                # for now - do nothing - add prefix and suffix checks
+                xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Item Selected)' % str(self.indexFrom))
 
 
     def doReload(self):
@@ -419,6 +405,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
