@@ -222,7 +222,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
                     ):
                     # For now do nothing
                     listitem_at_index = self.allItems[self.indexFrom]
-                    self.close()
+                    label = listitem_at_index.getLabel()
 
 
     def doReload(self):
@@ -414,6 +414,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
