@@ -93,7 +93,6 @@ msgid "Show - "
 msgctxt "#32110"
 msgid "Prefix Color"
 
-NONE|green|yellow|blue|cyan|orange|purple
 #: resources/settings.xml
 msgctxt "#32111"
 msgid "NONE"
@@ -119,6 +118,74 @@ msgctxt "#32116"
 msgid "orange"
 
 #: resources/settings.xml
-msgctxt "#32117"
+msgctxt "#32004"
+msgid "[COLOR blue]Settings Section for Suffix Picklists[/COLOR]"
+
+#: resources/settings.xml
+msgctxt "#33100"
+msgid "Suffix Text"
+
+#: resources/settings.xml
+msgctxt "#33101"
+msgid "NONE"
+
+#: resources/settings.xml
+msgctxt "#33102"
+msgid " - # Free99 #"
+
+#: resources/settings.xml
+msgctxt "#33103"
+msgid " - # Scrubs V2 #"
+
+#: resources/settings.xml
+msgctxt "#33104"
+msgid " - # Ghost #"
+
+#: resources/settings.xml
+msgctxt "#33105"
+msgid " - # Quicksilver #"
+
+#: resources/settings.xml
+msgctxt "#33106"
+msgid " - # Samsung TV+ #"
+
+#: resources/settings.xml
+msgctxt "#33107"
+msgid " - # Pluto TV #"
+
+#: resources/settings.xml
+msgctxt "#33107"
+msgid " - # IPTV #"
+
+#: resources/settings.xml
+msgctxt "#33110"
+msgid "Suffix Color"
+
+#: resources/settings.xml
+msgctxt "#33111"
+msgid "NONE"
+
+#: resources/settings.xml
+msgctxt "#33112"cyan
+msgid "orange"
+
+#: resources/settings.xml
+msgctxt "#33113"
+msgid "green"
+
+#: resources/settings.xml
+msgctxt "#33114"
+msgid "yellow"
+
+#: resources/settings.xml
+msgctxt "#33115"
+msgid "blue"
+
+#: resources/settings.xml
+msgctxt "#33116"
+msgid "cyan"
+
+#: resources/settings.xml
+msgctxt "#33117"
 msgid "purple"
 
