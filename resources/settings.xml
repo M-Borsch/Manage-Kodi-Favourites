@@ -4,18 +4,10 @@
         <setting type="string" label="32002" />
         <setting type="lsep" label="32003" />
         <!-- Prefix entry and Color settings -->
-        <setting id="prefixTextSel-new" type="integer" label="32004">
-                    <level>0</level>
-                    <default>0</default>
-                    <constraints>
-                        <options>
-                            <option label="32100">0</option>
-                            <option label="32101">1</option>
-                            <option label="32102">2</option>
-                        </options>
-                    </constraints>
-                    <control type="list" format="integer" />
-         </setting>
+        <!-- Example 2: Selecting based on index (labelnum) -->
+        <!-- 32001, 32002, 32003 represent labels in strings.po (e.g., "Low", "Medium", "High") -->
+        <setting id="quality_level" type="select" label="30004" lvalues="32100|32101|32102" default="0" />
+
       
     </category>
  
@@ -75,6 +67,7 @@
 
     </category>
 </settings>
+
 
 
 
