@@ -25,167 +25,109 @@ msgid "[COLOR blue]Manage Kodi Favourites[/COLOR]"
 
 #: resources/settings.xml
 msgctxt "#30001"
-msgid "[COLOR white]Here you choose the actions from the picklists for Prefix/Suffix and Colors[/COLOR]"
-msgstr "Picklist Entries"
-
-#: resources/settings.xml
-msgctxt "#30002"
-msgid "[COLOR white]Here you can override picklists and use custom Prefix/Suffix and Colors[/COLOR]"
-msgstr "Custom Entries"
-
-#: resources/settings.xml
-msgctxt "#30003"
-msgid "NONE|TV - |Movie - |Show - "
-msgstr "Prefix Texts"
-
-#: resources/settings.xml
-msgctxt "#30004"
-msgid "NONE|green|yellow|blue|cyan|orange|purple"
-msgstr "Prefix Colors"
-
-#: resources/settings.xml
-msgctxt "#30005"
-msgid "NONE| - # Free99 #| - # Scrubs V2 #| - # Ghost #| - # Quicksilver #| - # Samsung TV+ #| - # Pluto TV #| - # IPTV #"
-msgstr "Suffix Texts"
-
-#: resources/settings.xml
-msgctxt "#30006"
-msgid "NONE|orange|green|yellow|blue|cyan|purple"
-msgstr "Suffix Colors"
-
-#: resources/settings.xml
-msgctxt "#32000"
-msgid "[COLOR blue]Manage Kodi Favourites[/COLOR]"
-
-#: resources/settings.xml
-msgctxt "#32001"
 msgid "[COLOR blue]Picklists[/COLOR]"
 
 #: resources/settings.xml
-msgctxt "#32002"
+msgctxt "#30002"
 msgid "[COLOR white]Here you choose the actions from the picklists for Prefix/Suffix and Colors[/COLOR]"
 
 #: resources/settings.xml
-msgctxt "#32003"
-msgid "[COLOR blue]Settings Section for Prefix Picklists[/COLOR]"
+msgctxt "#30003"
+msgid "[COLOR blue]Section for Prefix Picklists[/COLOR]"
 
 #: resources/settings.xml
-msgctxt "#32100"
-msgid "Prefix Text"
-
-#: resources/settings.xml
-msgctxt "#32101"
+msgctxt "#30004"
 msgid "NONE"
 
 #: resources/settings.xml
-msgctxt "#32102"
+msgctxt "#30005"
 msgid "TV - "
 
 #: resources/settings.xml
-msgctxt "#32103"
+msgctxt "#30006"
 msgid "Movie - "
 
 #: resources/settings.xml
-msgctxt "#32104"
+msgctxt "#30007"
 msgid "Show - "
 
 #: resources/settings.xml
-msgctxt "#32110"
+msgctxt "#30008"
 msgid "Prefix Color"
 
 #: resources/settings.xml
-msgctxt "#32111"
+msgctxt "#30009"
 msgid "NONE"
 
 #: resources/settings.xml
-msgctxt "#32112"cyan
+msgctxt "#30010"cyan
 msgid "green"
 
 #: resources/settings.xml
-msgctxt "#32113"
+msgctxt "#30011"
 msgid "yellow"
 
 #: resources/settings.xml
-msgctxt "#32114"
+msgctxt "#30012"
 msgid "blue"
 
 #: resources/settings.xml
-msgctxt "#32115"
+msgctxt "#30011"
 msgid "cyan"
 
 #: resources/settings.xml
-msgctxt "#32116"
+msgctxt "#30015"
 msgid "orange"
 
 #: resources/settings.xml
-msgctxt "#32004"
+msgctxt "#30016"
 msgid "[COLOR blue]Settings Section for Suffix Picklists[/COLOR]"
 
 #: resources/settings.xml
-msgctxt "#33100"
+msgctxt "#30017"
 msgid "Suffix Text"
 
 #: resources/settings.xml
-msgctxt "#33101"
+msgctxt "#30018"
 msgid "NONE"
 
 #: resources/settings.xml
-msgctxt "#33102"
+msgctxt "#30019"
 msgid " - # Free99 #"
 
 #: resources/settings.xml
-msgctxt "#33103"
+msgctxt "#30020"
 msgid " - # Scrubs V2 #"
 
 #: resources/settings.xml
-msgctxt "#33104"
+msgctxt "#30021"
 msgid " - # Ghost #"
 
 #: resources/settings.xml
-msgctxt "#33105"
+msgctxt "#30022"
 msgid " - # Quicksilver #"
 
 #: resources/settings.xml
-msgctxt "#33106"
+msgctxt "#30023"
 msgid " - # Samsung TV+ #"
 
 #: resources/settings.xml
-msgctxt "#33107"
+msgctxt "#30024"
 msgid " - # Pluto TV #"
 
 #: resources/settings.xml
-msgctxt "#33107"
+msgctxt "#30025"
 msgid " - # IPTV #"
 
 #: resources/settings.xml
-msgctxt "#33110"
+msgctxt "#30026"
 msgid "Suffix Color"
 
 #: resources/settings.xml
-msgctxt "#33111"
+msgctxt "#30027"
 msgid "NONE"
 
 #: resources/settings.xml
-msgctxt "#33112"cyan
-msgid "orange"
-
-#: resources/settings.xml
-msgctxt "#33113"
-msgid "green"
-
-#: resources/settings.xml
-msgctxt "#33114"
-msgid "yellow"
-
-#: resources/settings.xml
-msgctxt "#33115"
-msgid "blue"
-
-#: resources/settings.xml
-msgctxt "#33116"
-msgid "cyan"
-
-#: resources/settings.xml
-msgctxt "#33117"
-msgid "purple"
+msgctxt "#30030"
+msgid "[COLOR white]Here you can override picklists and use custom Prefix/Suffix and Colors[/COLOR]"
 
