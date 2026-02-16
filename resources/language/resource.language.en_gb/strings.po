@@ -70,24 +70,55 @@ msgctxt "#32003"
 msgid "[COLOR blue]Settings Section for Prefix Picklists[/COLOR]"
 
 #: resources/settings.xml
-msgctxt "#32004"
-msgid "NONE|TV - |Movie - |Show - "
-
-#: resources/settings.xml
 msgctxt "#32100"
-msgid "NONE"
+msgid "Prefix Text"
 
 #: resources/settings.xml
 msgctxt "#32101"
-msgid "TV - "
+msgid "NONE"
 
 #: resources/settings.xml
 msgctxt "#32102"
-msgid "Movie - "
+msgid "TV - "
 
 #: resources/settings.xml
 msgctxt "#32103"
+msgid "Movie - "
+
+#: resources/settings.xml
+msgctxt "#32104"
 msgid "Show - "
 
+#: resources/settings.xml
+msgctxt "#32110"
+msgid "Prefix Color"
 
+NONE|green|yellow|blue|cyan|orange|purple
+#: resources/settings.xml
+msgctxt "#32111"
+msgid "NONE"
+
+#: resources/settings.xml
+msgctxt "#32112"cyan
+msgid "green"
+
+#: resources/settings.xml
+msgctxt "#32113"
+msgid "yellow"
+
+#: resources/settings.xml
+msgctxt "#32114"
+msgid "blue"
+
+#: resources/settings.xml
+msgctxt "#32115"
+msgid "cyan"
+
+#: resources/settings.xml
+msgctxt "#32116"
+msgid "orange"
+
+#: resources/settings.xml
+msgctxt "#32117"
+msgid "purple"
 
