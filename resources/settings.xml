@@ -1,5 +1,10 @@
  <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
+     <category label="32001"> <!-- Picklist Settings -->
+        <setting type="text" label="32002" />
+        <setting id="my_enum_setting" type="labelenum" label="32003" values=$LOCALIZE[30001] />
+    </category>
+ 
     <category label="Picklists">
        <!-- <setting type="text" label="[COLOR white]Here you choose the actions from the picklists for Prefix/Suffix and Colors[/COLOR]" /> -->
                 
@@ -56,6 +61,7 @@
 
     </category>
 </settings>
+
 
 
 
