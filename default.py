@@ -108,6 +108,11 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
         fontSize = '0' if not ADDON.getSetting('fontSize') else ADDON.getSetting('fontSize')
         self.setProperty(FONT_SIZE, fontSize)
 
+        # Determine the Prefix, Sufix and Colors from Configuration Settings
+        if ADDON.getSetting('prefixBooltCus') == "true":
+            PrefixText = ADDON.getSetting('prefixTextCus')
+            PrefixColor = ADDON.getSetting('prefixColorCus')
+
         self.allItems = list(self._makeFavourites(favouritesGen))
         self.indexFrom = None # Integer index of the source item (or None when nothing is selected).
         self.isDirty = False # Bool saying if there were any user-made changes at all.
@@ -416,6 +421,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
