@@ -215,6 +215,14 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             else:
                 xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Item Selected)' % str(self.indexFrom))
 
+                # Let the user know that there are about to modify a List entry
+                if xbmcgui.Dialog().yesno(
+                        'Manage Kodi Favourites',
+                        'This will modify the Prefix/Suffix/Color of the currently selected item.\n\nProceed?'
+                    ):
+                    # For now do nothing
+                    self.close()
+
 
     def doReload(self):
         if xbmcgui.Dialog().yesno(
@@ -405,6 +413,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
