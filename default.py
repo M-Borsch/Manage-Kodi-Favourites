@@ -406,7 +406,7 @@ else:
     saveReloadItem.setArt({'thumb': 'DefaultAddonsUpdates.png'})
     saveReloadItem.setInfo('video', {'plot': 'Save any changes you made and reload your Kodi profile '
                                        'to make the changes visible right now, without having to restart Kodi.'})
-    saveExitItem = xbmcgui.ListItem('[B]   Save and Exit (No Reload - Leave Changes Pending)[/B]')
+    saveExitItem = xbmcgui.ListItem('[B]   Save and Exit (No Reload - Leave Changes Pending a Kodi Restart or Profile Reload)[/B]')
     saveExitItem.setArt({'thumb': 'DefaultFolderBack.png'})
     saveExitItem.setInfo('video', {'plot': 'Save any changes you made and exit the add-on. [B]Note:[/B] if you '
                                    'make any changes to your favourites using the Favourites screen (like adding, '
@@ -426,6 +426,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
