@@ -213,7 +213,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             ## Notify User to Select an Item
             xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n\n(Please Select an Item)' % "No Item")
         else:
-            xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n\n(Item Selected)' % str(self.indexFrom))
+            if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n\n(Item Selected)' % str(self.indexFrom))
 
         # Let the user know that there are about to modify a List entry
         if xbmcgui.Dialog().yesno(
@@ -223,10 +223,11 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             # For now hard code a sample suffix
             listitem_at_index = self.allItems[self.indexFrom]
             label = listitem_at_index.getLabel()
+            if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Item Selected)' %  str(label))
             new_label = label + " - [COLOR orange]# Scrubs V2 #[/COLOR]"
             listitem_at_index.setLabel(new_label)
 
-    def doReload(self):
+    def doReload(self)
         if xbmcgui.Dialog().yesno(
             'Manage Kodi Favourites',
             'This will restore the order from the favourites file so you can try reordering again.\nProceed?'
@@ -415,6 +416,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
