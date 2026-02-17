@@ -288,8 +288,6 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Prefix Color)' %  str(cur_prefix_color))
 
             if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(New Label)' %  str(new_label))
-            if DEBUG == '1': log_msg = "Manage Kodi Favourites INFO: New Label = %s" % new_label
-            if DEBUG == '1': xbmc.log("Manage Kodi Favourites INFO: New Label = %s" % new_label, level=xbmc.LOGINFO)
 
             # Let the user know that there are about to modify a List entry
             msg_text = f"This will modify the Prefix/Suffix/Color of the currently selected item to:.\n{new_label}\nProceed?"
@@ -303,8 +301,13 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
                 # Mark the change but dont reset the selection state.
                 self.isDirty = True
 
-                if DEBUG2 == '1': log_msg = "###### Manage Kodi Favourites ###### INFO: new_label = %s" % str(new_label)
+                if DEBUG2 == '1': log_msg = "Manage Kodi Favourites INFO: New Label = %s" % new_label
+                if DEBUG2 == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)
 
+                if DEBUG2 == '1': log_msg = "Manage Kodi Favourites INFO: Get Label before edit = %s" % self.allItems[self.indexFrom].getLabel()
+
+                if DEBUG2 == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)
+                
                 # In data structure update the items label
                 self.allItems[self.indexFrom].setLabel(new_label)
 
@@ -429,7 +432,7 @@ elif '/save_reload' in PLUGIN_URL:
             clearWindowProperty(PREFIX_TEXT_COLOR)
             clearWindowProperty(SUFFIX_TEXT_COLOR)
             
-            xbmcgui.Dialog().ok('Manage Kodi Favourites', 'Save successful, press OK to reload your profile...')
+            xbmcgui.Dialog().ok('Manage Kodi Favourites', 'Save successful, press OK to reload your Kodi profile\n\nThis may take several seconds...')
             xbmc.executebuiltin('LoadProfile(%s)' % xbmc.getInfoLabel('System.ProfileName'))
             # Alternative way of issuing a profile reload, using JSON-RPC:
             #rpcQuery = (
@@ -504,6 +507,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
