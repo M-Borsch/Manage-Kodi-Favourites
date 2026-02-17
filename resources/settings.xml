@@ -1,5 +1,13 @@
  <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
+    <category label="Settings">
+        <!-- Dropdown Selection -->
+        <setting id="mode_select" type="select" label="Select Mode" values="Custom|Default" default="Default" />
+        
+        <!-- Text Field: Only visible if 'Custom' is selected -->
+        <setting id="custom_text" type="text" label="Custom Value" default="" visible="eq(-1,0)" />
+    </category>
+ 
      <category label="30001"> <!-- Picklist Settings -->
         <setting type="string" label="30002" />
       
@@ -49,6 +57,7 @@
 
     </category>
 </settings>
+
 
 
 
