@@ -275,6 +275,11 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             else:
                 cur_suffix_color = ADDON.getSetting('suffixColSel')
 
+            # Now Update the Prefix - Suffix and Color of selected item suffix
+            listitem_at_index = self.allItems[self.indexFrom]
+            label = listitem_at_index.getLabel()
+            if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Item Selected)' %  str(label))
+           
             newPrefixColor = '[COLOR ' + cur_prefix_color + ']'
             newSuffixColor = '[COLOR ' + cur_suffix_color + ']'
             new_label = newPrefixColor + cur_prefix_text + '[/COLOR]' + label + newSuffixColor + cur_suffix_text + '[/COLOR]'
@@ -290,13 +295,8 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             if xbmcgui.Dialog().yesno(
                     'Manage Kodi Favourites',
                     'This will modify the Prefix/Suffix/Color of the currently selected item.\n\nProceed?'
-            ):
-                # For now hard code a sample suffix
-                listitem_at_index = self.allItems[self.indexFrom]
-                label = listitem_at_index.getLabel()
-                if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Item Selected)' %  str(label))
-                
-                # Show the chnageto the list item
+            ):           
+                # Show the chnage to the list item
                 listitem_at_index.setLabel(new_label)
 
     def doReload(self):
@@ -488,5 +488,6 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
