@@ -290,6 +290,9 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             new_label = newPrefixColor + cur_prefix_text + '[/COLOR]' + label + newSuffixColor + cur_suffix_text + '[/COLOR]'
             
             if DEBUG2 == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(New Label)' %  str(new_label))
+            if DEBUG2 == '1': xbmc.log(msg='Manage Kodi Favourites', 'INFO: "%s"\n(New Label)' %  str(new_label), level=xbmc.LOGDEBUG)
+
+            
             listitem_at_index.setLabel(new_label)
 
     def doReload(self):
@@ -481,6 +484,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
