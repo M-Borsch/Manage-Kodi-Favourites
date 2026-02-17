@@ -113,20 +113,29 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
         fontSize = '0' if not ADDON.getSetting('fontSize') else ADDON.getSetting('fontSize')
         self.setProperty(FONT_SIZE, fontSize)
 
-        # Determine the Prefix, Sufix and Colors from Configuration Settings
-        if ADDON.getSetting('prefixBoolCus') == "true":
+        # Determine the Prefix Text from Configuration Settings
+        if ADDON.getSetting('prefixTextCus'):
             cur_prefix_text = ADDON.getSetting('prefixTextCus')
+        else:
+            cur_prefix_text = "UNKNOWN"
+            
+        # Determine the Prefix Color from Configuration Settings
+        if ADDON.getSetting('prefixColorCus'):
             cur_prefix_color = ADDON.getSetting('prefixColorCus')
         else:
-            cur_prefix_text = xbmc.getLocalizedString(int(ADDON.getSetting('prefixTextSel')))
-            cur_prefix_color = ADDON.getSetting('prefixColorSel')
-        
-        if ADDON.getSetting('suffixBoolCus') == "true":
+            cur_prefix_color = "yellow"
+
+        # Determine the Suffix Text from Configuration Settings
+        if ADDON.getSetting('suffixTextCus'):
             cur_suffix_text = ADDON.getSetting('suffixTextCus')
+        else:
+            cur_suffix_text = "UNKNOWN"
+            
+        # Determine the Suffix Color from Configuration Settings
+        if ADDON.getSetting('suffixColorCus'):
             cur_suffix_color = ADDON.getSetting('suffixColorCus')
         else:
-            cur_suffix_text = xbmc.getLocalizedString(int(ADDON.getSetting('suffixTextSel')))
-            cur_suffix_color = ADDON.getSetting('suffixColorSel')
+            cur_suffix_color = "yellow"
 
         self.setProperty(CUR_PREFIX_TEXT, cur_prefix_text)
         self.setProperty(CUR_PREFIX_COLOR, cur_prefix_color)
@@ -448,6 +457,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
