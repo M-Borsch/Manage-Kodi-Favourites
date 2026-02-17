@@ -113,7 +113,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
         fontSize = '0' if not ADDON.getSetting('fontSize') else ADDON.getSetting('fontSize')
         self.setProperty(FONT_SIZE, fontSize)
 
-        cur_Prefix_text_str = ADDON.getSetting('prefixTextSel-new')
+        cur_Prefix_text_str = ADDON.getSetting('my_setting-new')
         
         if DEBUG2 == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s "\n(Prefix Text Sel text_str)' %  cur_Prefix_text_str)
 
@@ -463,6 +463,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
