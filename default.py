@@ -113,7 +113,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
         fontSize = '0' if not ADDON.getSetting('fontSize') else ADDON.getSetting('fontSize')
         self.setProperty(FONT_SIZE, fontSize)
 
-        cur_Prefix_text_str = ADDON.getSetting('prefixTextSel'
+        cur_Prefix_text_str = ADDON.getSetting('prefixTextSel')
         cur_Prefix_text_int = int(cur_Prefix_text_str)
         localized_label = addon.getLocalizedString(cur_Prefix_text_int)
         
@@ -464,6 +464,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
