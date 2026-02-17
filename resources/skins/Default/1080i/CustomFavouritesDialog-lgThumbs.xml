@@ -338,7 +338,7 @@
 					<align>left</align>
 					<aligny>top</aligny>
 					 <textcolor>white</textcolor>
-					<label>$VAR[cur_prefix_text]</label>
+					<label>Window.Property(PrefixTextColor)</label>
 				</control>
 				<control type="textbox">
 					<visible>true</visible>
@@ -362,7 +362,7 @@
 					<align>left</align>
 					<aligny>top</aligny>
 					 <textcolor>white</textcolor>
-					<label>- # Samsung TV + # / orange</label>
+					<label>Window.Property(SuffixTextColor)</label>
 				</control>
 				<control type="textbox">
 					<visible>false</visible>
@@ -469,6 +469,7 @@
 	   </control>
 	</controls>
 </window>
+
 
 
 
