@@ -7,6 +7,9 @@
         <setting type="lsep" label="TEST" />
         <!-- Prefix entry and Color settings -->
         <setting id="prefixTextSel-new" type="labelnum" label="Hello" lvalues="30028|30005|30006|30007|30008" default="1" />
+
+        <setting id="prefixTextSel-old" type="select" label="30004" lvalues="30028|30005|30006|30007|30008" default="1" />
+
       
         <setting type="lsep" label="30003" />
       
@@ -52,6 +55,7 @@
 
     </category>
 </settings>
+
 
 
 
