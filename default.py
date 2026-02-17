@@ -355,7 +355,7 @@ def favouritesDataGen():
         else:
             thumb = ''
 
-        if DEBUG2 == '1': log_msg = "**** Manage Kodi Favourites **** INFO: name = %s" % str(name)
+        if DEBUG2 == '1': log_msg = "###### Manage Kodi Favourites ###### INFO: name = %s" % str(name)
 
         # Yield a 3-tuple of name, thumb-url and the original content of the favourites entry.
         yield name, thumb, entry
@@ -504,5 +504,6 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
