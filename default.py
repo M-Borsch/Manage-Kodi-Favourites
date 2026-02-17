@@ -115,9 +115,11 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
 
         cur_Prefix_text_str = ADDON.getSetting('prefixTextSel')
         cur_Prefix_text_int = int(cur_Prefix_text_str)
-        localized_label = ADDON.getLocalizedString(cur_Prefix_text_int)
+        localized_label = ADDON.getLocalizedString(2)
         
         if DEBUG2 == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s "\n(Prefix Text Sel text_str)' %  cur_Prefix_text_str)
+        if DEBUG2 == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s "\n(Prefix Text Sel text_int)' %  str(cur_Prefix_text_int))
+
         if DEBUG2 == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s "\n(Prefix Text Sel)' %  localized_label)
 
         
@@ -465,6 +467,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
