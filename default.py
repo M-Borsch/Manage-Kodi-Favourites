@@ -300,6 +300,10 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
                 # Show the chnage to the list item
                 listitem_at_index.setLabel(new_label)
 
+                # In data structure update the items label
+                self.allItems[self.indexFrom].setProperty('label', new_label)
+
+
     def doReload(self):
         if xbmcgui.Dialog().yesno(
             'Manage Kodi Favourites',
@@ -489,6 +493,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
