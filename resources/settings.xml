@@ -20,13 +20,13 @@
 
         <setting type="lsep" label="30032" />
         <!-- Default the Prefix/Suffix text entry and Color settings -->
-        <setting id="prefixBooltCus" type="bool" label="30033" default="false"/>
+        <setting id="prefixBoolCus" type="bool" label="30033" default="false"/>
 
         <setting id="prefixTextCus" type="text" label="30034" default="" />
         <setting id="prefixColorCus" type="text" label="30035" default="" />
 
         <setting type="lsep" label="30036" />
-        <setting id="suffixBooltCus" type="bool" label="30037" default="false"/>
+        <setting id="suffixBoolCus" type="bool" label="30037" default="false"/>
 
         <setting id="suffixTextCus" type="text" label="30034" default=""/>
         <setting id="suffixColorCus" type="text" label="30035" default="" />
@@ -49,6 +49,7 @@
 
     </category>
 </settings>
+
 
 
 
