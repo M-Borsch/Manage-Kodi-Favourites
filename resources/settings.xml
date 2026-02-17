@@ -1,8 +1,5 @@
  <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
-     <category label="TESTING"> <!-- Picklist Settings -->
-        <setting id="prefixTextSel-new" type="select" label="30004" lvalues="30028|30005|30006|30007|30008" default="NONE" />
-     </category>
      <category label="30001"> <!-- Picklist Settings -->
         <setting type="string" label="30002" />
 
@@ -50,6 +47,7 @@
 
     </category>
 </settings>
+
 
 
 
