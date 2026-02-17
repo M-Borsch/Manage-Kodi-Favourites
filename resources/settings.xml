@@ -7,11 +7,7 @@
         <setting type="lsep" label="TEST" />
         <!-- Prefix entry and Color settings -->
         <setting id="prefixTextSel-new" type="labelnum" label="Hello" lvalues="30028|30005|30006|30007|30008" default="1" />
-        <setting id="my_setting" type="labelenum" label="Choose Option" values="Option A|Option B|Option C" default="Option A" />
-        <setting id="my_setting-new" type="labelenum" label="Choose Option" lvalues="30028|30005|30006|30007|30008" default="30005" />
-
-
-        <setting id="prefixTextSel-old" type="select" label="30004" lvalues="30028|30005|30006|30007|30008" default="1" />
+        <setting id="my_setting-new" type="labelenum" label="30004" lvalues="30028|30005|30006|30007|30008" default="30005" />
 
       
         <setting type="lsep" label="30003" />
@@ -58,6 +54,7 @@
 
     </category>
 </settings>
+
 
 
 
