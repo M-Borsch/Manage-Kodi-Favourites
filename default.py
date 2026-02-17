@@ -248,9 +248,9 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             label = listitem_at_index.getLabel()
             if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Item Selected)' %  str(label))
 
-            newPrefixColor = "[COLOR " + CUR_PREFIX_COLOR + "]"
-            newSuffixColor = "[COLOR " + CUR_SUFFIX_COLOR + "]"
-            new_label = newPrefixColor + CUR_PREFIX_TEXT + "[/COLOR]" + label + newSuffixColor + CUR_SUFFIX_TEXT + "[/COLOR]"
+            newPrefixColor = "[COLOR " + str(CUR_PREFIX_COLOR) + "]"
+            newSuffixColor = "[COLOR " + str(CUR_SUFFIX_COLOR) + "]"
+            new_label = newPrefixColor + str(CUR_PREFIX_TEXT) + "[/COLOR]" + label + newSuffixColor + str(CUR_SUFFIX_TEXT) + "[/COLOR]"
             if DEBUG2 == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(New Label)' %  str(new_label))
             listitem_at_index.setLabel(new_label)
 
@@ -443,6 +443,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
