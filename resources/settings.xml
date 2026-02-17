@@ -6,13 +6,13 @@
 
         <setting type="lsep" label="TEST" />
         <!-- Prefix entry and Color settings -->
-        <setting id="my_setting-new" type="labelenum" label="30004" lvalues="30028|30005|30006|30007|30008" default="30005" />
+        <setting id="my_setting-new" type="labelenum" label="30004" lvalues="30028|30005|30006|30007|30008" default="NONE" />
 
       
         <setting type="lsep" label="30003" />
       
         <!-- Prefix entry and Color settings -->
-        <setting id="prefixTextSel" type="labelenum" label="30004" lvalues="30028|30005|30006|30007|30008" default="30005" />
+        <setting id="prefixTextSel" type="labelenum" label="30004" lvalues="30028|30005|30006|30007|30008" default="NONE" />
 
         <!-- Text Field: Only visible if 'Custom' is selected -->
         <setting id="prefixTextCus" type="text" label="30029" default="" visible="eq(-1,0)" />
@@ -53,6 +53,7 @@
 
     </category>
 </settings>
+
 
 
 
