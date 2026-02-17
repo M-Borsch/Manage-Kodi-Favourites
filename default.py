@@ -136,7 +136,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             cur_suffix_text = ADDON.getSetting('suffixTextSel')
             
         # Determine the Suffix Color from Configuration Settings
-        if ADDON.getSetting('suffixColorCus'
+        if ADDON.getSetting('suffixColorCus'):
             cur_suffix_color = ADDON.getSetting('suffixColorCus')
         else:
             cur_suffix_color = ADDON.getSetting('suffixTextCol')
@@ -461,6 +461,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
