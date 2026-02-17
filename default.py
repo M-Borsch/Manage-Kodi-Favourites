@@ -143,6 +143,9 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
         self.setProperty(CUR_SUFFIX_COLOR, cur_suffix_color) 
             
         if DEBUG2 == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Prefix Label)' %  str(cur_prefix_text))
+        cur_prefix_text-new = ADDON.getSetting('prefixTextSel-new')
+        if DEBUG2 == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Prefix Label New)' %  str(cur_prefix_text-new))
+
         
         self.allItems = list(self._makeFavourites(favouritesGen))
         self.indexFrom = None # Integer index of the source item (or None when nothing is selected).
@@ -485,6 +488,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
