@@ -132,6 +132,10 @@ msgctxt "#30027"
 msgid "NONE"
 
 #: resources/settings.xml
+msgctxt "#30028"
+msgid "CUSTOM"
+
+#: resources/settings.xml
 msgctxt "#30030"
 msgid "[COLOR blue]Custom Override Section for Prefix / Suffix / Colors [/COLOR]"
 
@@ -194,3 +198,4 @@ msgid "[COLOR white]Here you choose the actions to be performed when selecting i
 #: resources/settings.xml
 msgctxt "#30045"
 msgid "Reordering Method"
+
