@@ -289,12 +289,12 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             newSuffixColor = '[COLOR ' + cur_suffix_color + ']'
             new_label = newPrefixColor + cur_prefix_text + '[/COLOR]' + label + newSuffixColor + cur_suffix_text + '[/COLOR]'
 
-            if DEBUG2 == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Prefix Label)' %  str(cur_prefix_text))
-            if DEBUG2 == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Prefix Color)' %  str(cur_prefix_color))
+            if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Prefix Label)' %  str(cur_prefix_text))
+            if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Prefix Color)' %  str(cur_prefix_color))
 
-            if DEBUG2 == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(New Label)' %  str(new_label))
+            if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(New Label)' %  str(new_label))
             log_msg = "Manage Kodi Favourites INFO: New Label = %s" % new_label
-            if DEBUG2 == '1': xbmc.log("Manage Kodi Favourites INFO: New Label = %s" % new_label, level=xbmc.LOGINFO)
+            if DEBUG == '1': xbmc.log("Manage Kodi Favourites INFO: New Label = %s" % new_label, level=xbmc.LOGINFO)
             
             # Show the chnageto the list item
             listitem_at_index.setLabel(new_label)
@@ -488,6 +488,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
