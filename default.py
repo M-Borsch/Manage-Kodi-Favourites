@@ -288,7 +288,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Prefix Color)' %  str(cur_prefix_color))
 
             if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(New Label)' %  str(new_label))
-            log_msg = "Manage Kodi Favourites INFO: New Label = %s" % new_label
+            if DEBUG == '1': log_msg = "Manage Kodi Favourites INFO: New Label = %s" % new_label
             if DEBUG == '1': xbmc.log("Manage Kodi Favourites INFO: New Label = %s" % new_label, level=xbmc.LOGINFO)
 
             # Let the user know that there are about to modify a List entry
@@ -354,6 +354,8 @@ def favouritesDataGen():
                 thumb = THUMBNAILS_PATH_FORMAT.format(folder=cacheFilename[0], file=cacheFilename)
         else:
             thumb = ''
+
+        if DEBUG2 == '1': log_msg = "Manage Kodi Favourites INFO: name = %s" % str(name)
 
         # Yield a 3-tuple of name, thumb-url and the original content of the favourites entry.
         yield name, thumb, entry
@@ -502,3 +504,4 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
