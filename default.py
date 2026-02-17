@@ -123,7 +123,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
         if ADDON.getSetting('prefixColorCus'):
             cur_prefix_color = ADDON.getSetting('prefixColorCus')
         else:
-            cur_prefix_color = ADDON.getSetting('prefixTextCol')
+            cur_prefix_color = ADDON.getSetting('prefixColSel')
 
         # Determine the Suffix Text from Configuration Settings
         if ADDON.getSetting('suffixTextCus'):
@@ -135,7 +135,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
         if ADDON.getSetting('suffixColorCus'):
             cur_suffix_color = ADDON.getSetting('suffixColorCus')
         else:
-            cur_suffix_color = ADDON.getSetting('suffixTextCol')
+            cur_suffix_color = ADDON.getSetting('suffixColSel')
 
         self.setProperty(CUR_PREFIX_TEXT, cur_prefix_text)
         self.setProperty(CUR_PREFIX_COLOR, cur_prefix_color)
@@ -272,7 +272,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             if ADDON.getSetting('prefixColorCus'):
                 cur_prefix_color = ADDON.getSetting('prefixColorCus')
             else:
-                cur_prefix_color = ADDON.getSetting('prefixTextCol')
+                cur_prefix_color = ADDON.getSetting('prefixColSel')
     
             # Determine the Suffix Text from Configuration Settings
             if ADDON.getSetting('suffixTextCus'):
@@ -284,7 +284,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             if ADDON.getSetting('suffixColorCus'):
                 cur_suffix_color = ADDON.getSetting('suffixColorCus')
             else:
-                cur_suffix_color = ADDON.getSetting('suffixTextCol')
+                cur_suffix_color = ADDON.getSetting('suffixColSel')
 
             newPrefixColor = '[COLOR ' + cur_prefix_color + ']'
             newSuffixColor = '[COLOR ' + cur_suffix_color + ']'
@@ -489,6 +489,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
