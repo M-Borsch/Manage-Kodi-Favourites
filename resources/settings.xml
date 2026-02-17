@@ -1,8 +1,10 @@
  <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
-    <category label="Settings">
+    <category label="30001">
+        <setting type="string" label="30002" />
+
         <!-- Dropdown Selection -->
-        <setting id="mode_select" type="select" label="Select Mode" values="Custom|Default" default="Default" />
+        <setting id="mode_select" type="select" label="30004" values="Custom|30005|30006|30007|30008" default="30005" />
         
         <!-- Text Field: Only visible if 'Custom' is selected -->
         <setting id="custom_text" type="text" label="Custom Value" default="" visible="eq(-1,0)" />
@@ -57,6 +59,7 @@
 
     </category>
 </settings>
+
 
 
 
