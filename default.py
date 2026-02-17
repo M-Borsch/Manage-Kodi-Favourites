@@ -303,8 +303,10 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
                 # Mark the change but dont reset the selection state.
                 self.isDirty = True
 
+                if DEBUG2 == '1': log_msg = "###### Manage Kodi Favourites ###### INFO: new_label = %s" % str(new_label)
+
                 # In data structure update the items label
-                self.allItems[selectedPosition].setProperty('label', new_label)
+                self.allItems[self.indexFrom].setLabel(new_label)
 
     def doReload(self):
         if xbmcgui.Dialog().yesno(
@@ -354,8 +356,6 @@ def favouritesDataGen():
                 thumb = THUMBNAILS_PATH_FORMAT.format(folder=cacheFilename[0], file=cacheFilename)
         else:
             thumb = ''
-
-        if DEBUG2 == '1': log_msg = "###### Manage Kodi Favourites ###### INFO: name = %s" % str(name)
 
         # Yield a 3-tuple of name, thumb-url and the original content of the favourites entry.
         yield name, thumb, entry
@@ -504,6 +504,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
