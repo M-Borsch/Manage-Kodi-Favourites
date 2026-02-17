@@ -292,13 +292,13 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
                     'Manage Kodi Favourites', message_text
             ):
                 
-        # For now hard code a sample suffix
-        listitem_at_index = self.allItems[self.indexFrom]
-        label = listitem_at_index.getLabel()
-        if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Item Selected)' %  str(label))
-            
-        # Show the chnageto the list item
-        listitem_at_index.setLabel(new_label)
+            # For now hard code a sample suffix
+            listitem_at_index = self.allItems[self.indexFrom]
+            label = listitem_at_index.getLabel()
+            if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Item Selected)' %  str(label))
+                
+            # Show the chnageto the list item
+            listitem_at_index.setLabel(new_label)
 
     def doReload(self):
         if xbmcgui.Dialog().yesno(
@@ -489,6 +489,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
