@@ -286,7 +286,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             log_msg = "Manage Kodi Favourites INFO: New Label = %s" % new_label
             if DEBUG == '1': xbmc.log("Manage Kodi Favourites INFO: New Label = %s" % new_label, level=xbmc.LOGINFO)
 
-            message_text = f"This will modify the Prefix/Suffix/Color of the currently selected item to.\n {new_lbel} \nProceed"
+            message_text = "This will modify the Prefix/Suffix/Color of the currently selected item to.\n {new_label} \nProceed"
             # Let the user know that there are about to modify a List entry
             if xbmcgui.Dialog().yesno(
                     'Manage Kodi Favourites', message_text
@@ -489,6 +489,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
