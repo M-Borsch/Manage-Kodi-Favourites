@@ -113,35 +113,33 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
         fontSize = '0' if not ADDON.getSetting('fontSize') else ADDON.getSetting('fontSize')
         self.setProperty(FONT_SIZE, fontSize)
 
-        cur_Prefix_text_str = ADDON.getSetting('my_setting-new')
+        cur_Prefix_text_str = ADDON.getSetting('prefixTextSel')
         
         if DEBUG2 == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s "\n(Prefix Text Sel text_str)' %  cur_Prefix_text_str)
-
-
         
         # Determine the Prefix Text from Configuration Settings
         if ADDON.getSetting('prefixTextCus'):
             cur_prefix_text = ADDON.getSetting('prefixTextCus')
         else:
-            cur_prefix_text = "UNKNOWN"
+            cur_prefix_text = ADDON.getSetting('prefixTextSel')
             
         # Determine the Prefix Color from Configuration Settings
         if ADDON.getSetting('prefixColorCus'):
             cur_prefix_color = ADDON.getSetting('prefixColorCus')
         else:
-            cur_prefix_color = "yellow"
+            cur_prefix_color = ADDON.getSetting('prefixTextCol')
 
         # Determine the Suffix Text from Configuration Settings
         if ADDON.getSetting('suffixTextCus'):
             cur_suffix_text = ADDON.getSetting('suffixTextCus')
         else:
-            cur_suffix_text = "UNKNOWN"
+            cur_suffix_text = ADDON.getSetting('suffixTextSel')
             
         # Determine the Suffix Color from Configuration Settings
-        if ADDON.getSetting('suffixColorCus'):
+        if ADDON.getSetting('suffixColorCus'
             cur_suffix_color = ADDON.getSetting('suffixColorCus')
         else:
-            cur_suffix_color = "yellow"
+            cur_suffix_color = ADDON.getSetting('suffixTextCol')
 
         self.setProperty(CUR_PREFIX_TEXT, cur_prefix_text)
         self.setProperty(CUR_PREFIX_COLOR, cur_prefix_color)
@@ -463,6 +461,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
