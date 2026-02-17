@@ -338,7 +338,7 @@
 					<align>left</align>
 					<aligny>top</aligny>
 					 <textcolor>white</textcolor>
-					<label>[cur_prefix_text]</label>
+					<label>$VAR[cur_prefix_text]</label>
 				</control>
 				<control type="textbox">
 					<visible>true</visible>
@@ -469,6 +469,7 @@
 	   </control>
 	</controls>
 </window>
+
 
 
 
