@@ -110,14 +110,14 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
         self.setProperty(FONT_SIZE, fontSize)
 
         # Determine the Prefix, Sufix and Colors from Configuration Settings
-        if ADDON.getSetting('prefixBooltCus') == "true":
+        if ADDON.getSetting('prefixBoolCus') == "true":
             PrefixText = ADDON.getSetting('prefixTextCus')
             PrefixColor = ADDON.getSetting('prefixColorCus')
         else:
             PrefixText = xbmc.getLocalizedString(int(ADDON.getSetting('prefixTextSel')))
             PrefixColor = ADDON.getSetting('prefixColorSel')
         
-        if ADDON.getSetting('suffixBooltCus') == "true":
+        if ADDON.getSetting('suffixBoolCus') == "true":
             SuffixText = ADDON.getSetting('suffixTextCus')
             SuffixColor = ADDON.getSetting('suffixColorCus')
         else:
@@ -244,7 +244,9 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             label = listitem_at_index.getLabel()
             if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Item Selected)' %  str(label))
 
-            new_label = label + " - [COLOR orange]# Scrubs V2 #[/COLOR]"
+            newPrefixColor = "[COLOR " + PrefixColor + "]"
+            newSuffixColor = "[COLOR " + SuffixColor + "]"
+            new_label = newPrefixColor + PrefixText + "[/COLOR] + label + newSuffixColor + SuffixText + "[/COLOR]"
             listitem_at_index.setLabel(new_label)
 
     def doReload(self):
@@ -436,6 +438,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
