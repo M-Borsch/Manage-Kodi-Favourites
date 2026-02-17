@@ -246,7 +246,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
 
             newPrefixColor = "[COLOR " + PrefixColor + "]"
             newSuffixColor = "[COLOR " + SuffixColor + "]"
-            new_label = newPrefixColor + PrefixText + "[/COLOR] + label + newSuffixColor + SuffixText + "[/COLOR]"
+            new_label = newPrefixColor + PrefixText + "[/COLOR]" + label + newSuffixColor + SuffixText + "[/COLOR]"
             listitem_at_index.setLabel(new_label)
 
     def doReload(self):
@@ -438,6 +438,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
