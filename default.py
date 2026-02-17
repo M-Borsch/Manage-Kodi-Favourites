@@ -133,8 +133,8 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
         else:
             cur_suffix_color = ADDON.getSetting('suffixColSel')
 
-        PrefixTextColor = '[COLOR yellow]' + cur_prefix_text + ' / ' + cur_prefix_color
-        SuffixTextColor = '[COLOR yellow]' + cur_suffix_text + ' / ' + cur_suffix_color
+        PrefixTextColor = '[COLOR yellow]' + cur_prefix_text + ' / ' + cur_prefix_color + '[/COLOR]'
+        SuffixTextColor = '[COLOR yellow]' + cur_suffix_text + ' / ' + cur_suffix_color + '[/COLOR]'
         self.setProperty(PrefixTextColor, PrefixTextColor)
         self.setProperty(SuffixTextColor, SuffixTextColor)
      
@@ -485,6 +485,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
