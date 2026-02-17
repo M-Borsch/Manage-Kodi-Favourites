@@ -51,6 +51,10 @@ PROPERTY_FAVOURITES_RESULT = 'ordfav.result'
 REORDER_METHOD = 'reorder'
 FONT_SIZE = 'fontSize'
 THUMB_SIZE = 'thumbSize'
+CUR_PREFIX_TEXT = 'NONE'
+CUR_PREFIX_COLOR = 'NONE'
+CUR_SUFFIX_TEXT = 'NONE'
+CUR_SUFFIX_COLOR = 'NONE'
 
 ADDON = Addon()
 PLUGIN_ID = int(sys.argv[1])
@@ -444,6 +448,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
