@@ -7,6 +7,9 @@
         <setting type="lsep" label="30003" />
       
         <!-- Prefix entry and Color settings -->
+        <setting id="prefixTextSel-new" type="labelnum" label="30004" lvalues="30028|30005|30006|30007|30008" default="1" />
+      
+        <!-- Prefix entry and Color settings -->
         <setting id="prefixTextSel" type="select" label="30004" lvalues="30028|30005|30006|30007|30008" default="1" />
 
         <!-- Text Field: Only visible if 'Custom' is selected -->
@@ -48,6 +51,7 @@
 
     </category>
 </settings>
+
 
 
 
