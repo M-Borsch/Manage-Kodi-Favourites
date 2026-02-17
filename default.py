@@ -51,10 +51,6 @@ PROPERTY_FAVOURITES_RESULT = 'ordfav.result'
 REORDER_METHOD = 'reorder'
 FONT_SIZE = 'fontSize'
 THUMB_SIZE = 'thumbSize'
-CUR_PREFIX_TEXT = 'NONE'
-CUR_PREFIX_COLOR = 'NONE'
-CUR_SUFFIX_TEXT = 'NONE'
-CUR_SUFFIX_COLOR = 'NONE'
 
 ADDON = Addon()
 PLUGIN_ID = int(sys.argv[1])
@@ -137,13 +133,13 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
         else:
             cur_suffix_color = ADDON.getSetting('suffixColSel')
 
-        self.setProperty(CUR_PREFIX_TEXT, cur_prefix_text)
-        self.setProperty(CUR_PREFIX_COLOR, cur_prefix_color)
-        self.setProperty(CUR_SUFFIX_TEXT, cur_suffix_text)
-        self.setProperty(CUR_SUFFIX_COLOR, cur_suffix_color) 
-            
-        if DEBUG2 == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Entry: Prefix Label)' %  str(cur_prefix_text))
-        if DEBUG2 == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Entry: Prefix Color)' %  str(cur_prefix_color))
+        PrefixTextColor = '[COLOR yellow]' + cur_prefix_text + ' / ' + cur_prefix_color
+        SuffixTextColor = '[COLOR yellow]' + cur_suffix_text + ' / ' + cur_suffix_color
+        self.setProperty(PrefixTextColor, PrefixTextColor)
+        self.setProperty(SuffixTextColor, SuffixTextColor)
+     
+        if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Entry: Prefix Label)' %  str(cur_prefix_text))
+        if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Entry: Prefix Color)' %  str(cur_prefix_color))
         
         self.allItems = list(self._makeFavourites(favouritesGen))
         self.indexFrom = None # Integer index of the source item (or None when nothing is selected).
@@ -489,6 +485,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
