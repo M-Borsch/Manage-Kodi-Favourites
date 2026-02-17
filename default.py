@@ -300,6 +300,9 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
                 # Show the chnage to the list item
                 listitem_at_index.setLabel(new_label)
 
+                # Mark the change but dont reset the selection state.
+                self.isDirty = True
+
                 # In data structure update the items label
                 self.allItems[self.indexFrom].setProperty('label', new_label)
 
@@ -493,6 +496,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
