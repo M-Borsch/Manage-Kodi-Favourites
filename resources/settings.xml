@@ -7,28 +7,28 @@
         <setting type="lsep" label="30003" />
       
         <!-- Prefix entry and Color settings -->
-        <setting id="prefixTextSel" type="select" label="30004" lvalues="30028|30005|30006|30007|30008" default="30005" />
+        <setting id="prefixTextSel" type="select" label="30004" lvalues="30028|30005|30006|30007|30008" default="1" />
 
         <!-- Text Field: Only visible if 'Custom' is selected -->
-        <setting id="prefixTextCus-new" type="text" label="Custom Value" default="" visible="eq(-1,0)" />
+        <setting id="prefixTextCus" type="text" label="Custom Value" default="" visible="eq(-1,0)" />
       
-        <setting id="prefixColSel" type="select" label="30009" lvalues="30028|30010|30011|30012|30013|30014|30015" default="30010" />
+        <setting id="prefixColSel" type="select" label="30009" lvalues="30028|30010|30011|30012|30013|30014|30015" default="1" />
       
         <!-- Text Field: Only visible if 'Custom' is selected -->
-        <setting id="prefixColorCus-new" type="text" label="Custom Value" default="" visible="eq(-1,0)" />
+        <setting id="prefixColorCus" type="text" label="Custom Value" default="" visible="eq(-1,0)" />
       
         <setting type="lsep" label="30016" />
         <!-- Suffix entry and Color settings -->
       
-        <setting id="suffixTextSel" type="select" label="30017" lvalues="30028|30018|30019|30020|30021|30022|30023}30024|30025" default="30018" />
+        <setting id="suffixTextSel" type="select" label="30017" lvalues="30028|30018|30019|30020|30021|30022|30023}30024|30025" default="1" />
 
         <!-- Text Field: Only visible if 'Custom' is selected -->
-        <setting id="suffixTextCus-new" type="text" label="Custom Value" default="" visible="eq(-1,0)" />
+        <setting id="suffixTextCus" type="text" label="Custom Value" default="" visible="eq(-1,0)" />
       
-        <setting id="suffixColSel" type="select" label="30026" lvalues="30028|30010|30011|30012|30013|30014|30015" default="30010" />
+        <setting id="suffixColSel" type="select" label="30026" lvalues="30028|30010|30011|30012|30013|30014|30015" default="1" />
 
         <!-- Text Field: Only visible if 'Custom' is selected -->
-        <setting id="suffixColorCus-new" type="text" label="Custom Value" default="" visible="eq(-1,0)" />
+        <setting id="suffixColorCus" type="text" label="Custom Value" default="" visible="eq(-1,0)" />
     </category>
    
 
@@ -48,6 +48,7 @@
 
     </category>
 </settings>
+
 
 
 
