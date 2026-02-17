@@ -392,7 +392,7 @@ def clearWindowProperty(prop):
 
 # Debugging helper. Logs a LOGNOTICE-level message.
 def xbmcLog(*args):
-    xbmc.log('[COLOR yellow]Manage Kodi Favourites > ' + ' '.join((var if isinstance(var, str) +'[/COLOR]'else repr(var)) for var in args), xbmc.LOGNOTICE)
+    xbmc.log('[COLOR yellow]Manage Kodi Favourites > ' + ' '.join((var if isinstance(var, str) else repr(var)) for var in args), xbmc.LOGNOTICE)
 
 #===================================================================================
 
@@ -506,6 +506,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
