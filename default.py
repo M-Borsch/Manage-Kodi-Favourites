@@ -354,6 +354,8 @@ def favouritesDataGen():
                 thumb = THUMBNAILS_PATH_FORMAT.format(folder=cacheFilename[0], file=cacheFilename)
         else:
             thumb = ''
+        
+        if DEBUG2 == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(name)' %  str(name))
 
         # Yield a 3-tuple of name, thumb-url and the original content of the favourites entry.
         yield name, thumb, entry
@@ -403,7 +405,7 @@ if '/dialog' in PLUGIN_URL:
         if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(thumSize is LARGE)' % thumbSize)
         ui = CustomFavouritesDialog('CustomFavouritesDialog-lgThumbs.xml', ADDON.getAddonInfo('path'), 'Default', '1080i')
     try:  
-        result = ui.doCustomModal(favouritesDataGen())
+        result = ui.(favouritesDataGen())
         setRawWindowProperty(PROPERTY_FAVOURITES_RESULT, result)
     except Exception as e:
         xbmcLog(traceback.format_exc())
@@ -502,3 +504,4 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
