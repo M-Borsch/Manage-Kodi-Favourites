@@ -412,7 +412,7 @@ if '/dialog' in PLUGIN_URL:
         clearWindowProperty(REORDER_METHOD)
         clearWindowProperty(THUMB_SIZE)
         clearWindowProperty(PREFIX_TEXT_COLOR)
-        clearWindowProperty(SUEFIX_TEXT_COLOR)
+        clearWindowProperty(SUFFIX_TEXT_COLOR)
 
     finally:
         del ui # Delete the dialog instance after it's done, as it's not garbage collected.
@@ -425,7 +425,7 @@ elif '/save_reload' in PLUGIN_URL:
             clearWindowProperty(REORDER_METHOD)
             clearWindowProperty(THUMB_SIZE)
             clearWindowProperty(PREFIX_TEXT_COLOR)
-            clearWindowProperty(SUEFIX_TEXT_COLOR)
+            clearWindowProperty(SUFFIX_TEXT_COLOR)
             
             xbmcgui.Dialog().ok('Manage Kodi Favourites', 'Save successful, press OK to reload your profile...')
             xbmc.executebuiltin('LoadProfile(%s)' % xbmc.getInfoLabel('System.ProfileName'))
@@ -450,7 +450,7 @@ elif '/save_exit' in PLUGIN_URL:
             clearWindowProperty(REORDER_METHOD)
             clearWindowProperty(THUMB_SIZE)
             clearWindowProperty(PREFIX_TEXT_COLOR)
-            clearWindowProperty(SUEFIX_TEXT_COLOR)
+            clearWindowProperty(SUFFIX_TEXT_COLOR)
             xbmcgui.Dialog().ok('Manage Kodi Favourites', 'Save successful. Press OK to end the add-on...')
         xbmc.executebuiltin('Action(Back)')
     except Exception as e:
@@ -463,7 +463,7 @@ elif '/exit_only' in PLUGIN_URL:
     clearWindowProperty(REORDER_METHOD)
     clearWindowProperty(THUMB_SIZE)
     clearWindowProperty(PREFIX_TEXT_COLOR)
-    clearWindowProperty(SUEFIX_TEXT_COLOR)
+    clearWindowProperty(SUFFIX_TEXT_COLOR)
     xbmc.executebuiltin('Action(Back)')
     # Alternative action, going to the Home screen.
     #xbmc.executebuiltin('ActivateWindow(home)') # ID taken from https://kodi.wiki/view/Window_IDs
@@ -502,12 +502,3 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
-
-
-
-
-
-
-
-
-
