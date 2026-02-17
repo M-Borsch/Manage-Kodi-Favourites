@@ -251,16 +251,6 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
         else:
             if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n\n(Item Selected)' % str(self.indexFrom))
 
-        # Let the user know that there are about to modify a List entry
-        if xbmcgui.Dialog().yesno(
-                'Manage Kodi Favourites',
-                'This will modify the Prefix/Suffix/Color of the currently selected item.\n\nProceed?'
-        ):
-            # For now hard code a sample suffix
-            listitem_at_index = self.allItems[self.indexFrom]
-            label = listitem_at_index.getLabel()
-            if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Item Selected)' %  str(label))
-
             # Determine the Prefix Text from Configuration Settings
             if ADDON.getSetting('prefixTextCus'):
                 cur_prefix_text = ADDON.getSetting('prefixTextCus')
@@ -295,7 +285,18 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(New Label)' %  str(new_label))
             log_msg = "Manage Kodi Favourites INFO: New Label = %s" % new_label
             if DEBUG == '1': xbmc.log("Manage Kodi Favourites INFO: New Label = %s" % new_label, level=xbmc.LOGINFO)
-            
+
+            message_text = f"This will modify the Prefix/Suffix/Color of the currently selected item to.\n {new_lbel} \nProceed"
+            # Let the user know that there are about to modify a List entry
+            if xbmcgui.Dialog().yesno(
+                    'Manage Kodi Favourites', message_text
+            ):
+                
+            # For now hard code a sample suffix
+            listitem_at_index = self.allItems[self.indexFrom]
+            label = listitem_at_index.getLabel()
+            if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Item Selected)' %  str(label))
+                
             # Show the chnageto the list item
             listitem_at_index.setLabel(new_label)
 
@@ -488,6 +489,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
