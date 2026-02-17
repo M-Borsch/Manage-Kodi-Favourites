@@ -15,7 +15,11 @@
       
         <setting type="lsep" label="30003" />
         <!-- Prefix entry and Color settings -->
-        <setting id="prefixTextSel" type="select" label="30004" lvalues="30005|30006|30007|30008" default="0" />
+        <setting id="prefixTextSel" type="select" label="30004" lvalues="30028|30005|30006|30007|30008" default="0" />
+      
+        <!-- Text Field: Only visible if 'Custom' is selected -->
+        <setting id="prefixTextCus-new" type="text" label="Custom Value" default="" visible="eq(-1,0)" />
+      
         <setting id="prefixColSel" type="select" label="30009" lvalues="30010|30011|30012|30013|30014|30015" default="0" />
       
         <setting type="lsep" label="30016" />
@@ -59,6 +63,7 @@
 
     </category>
 </settings>
+
 
 
 
