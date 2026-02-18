@@ -45,7 +45,7 @@ from xbmcaddon import Addon
 DEBUG = '0'
 DEBUG2 = '1'
 # Flag to put up the Under Construction Popup
-DEBUG3 = '0'
+DEBUG3 = '3'
 FAVOURITES_PATH = 'special://userdata/favourites.xml'
 THUMBNAILS_PATH_FORMAT = 'special://thumbnails/{folder}/{file}'
 
@@ -106,7 +106,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
     # Function used to start the dialog.
     def doCustomModal(self, favouritesGen):
 
-        if DEBUG3 == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "\n[COLOR red]### WARNING:[/COLOR] this is partial working Addon under development.')
+        if DEBUG3 == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "\n[COLOR red]### WARNING:[/COLOR] Addon under development. Prefix/Suffix and Colors not permanently saved!')
         
         reorderingMethod = '0' if not ADDON.getSetting('reorderingMethod') else ADDON.getSetting('reorderingMethod')
         self.setProperty(REORDER_METHOD, reorderingMethod)
@@ -507,4 +507,5 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
