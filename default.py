@@ -280,21 +280,21 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Item Selected)' %  str(label))
 
             # Ignore NONE entries
-            if cur_prefix_text == 'NONE'
-                newPrefixText = ''
+            if cur_prefix_text == "NONE"
+                newPrefixText = ""
 
-            if cur_suffix_text == 'NONE'
-                newSuffixText = ''
+            if cur_suffix_text == "NONE"
+                newSuffixText = ""
             
-            if cur_prefix_color == 'NONE'
+            if cur_prefix_color == "NONE"
                 newPrefixTextColor = newPrefixText
             else
-                newPrefixTextColor = '[COLOR ' + cur_prefix_color + ']' + newPrefixText + '[/COLOR]'
+                newPrefixTextColor = "[COLOR " + cur_prefix_color + "]" + newPrefixText + "[/COLOR]"
             
-            if cur_suffix_color == 'NONE'
+            if cur_suffix_color == "NONE"
                 newSuffixTextColor = newSuffixText
             else
-                newSuffixTextColor = '[COLOR ' + cur_suffix_color + ']' + newSuffixText + '[/COLOR]'
+                newSuffixTextColor = "[COLOR " + cur_suffix_color + "]" + newSuffixText + "[/COLOR]"
             
             new_label = newPrefixTextColor + label + newSuffixTextColor
 
@@ -526,6 +526,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
