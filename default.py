@@ -45,7 +45,7 @@ from xbmcaddon import Addon
 DEBUG = '0'
 DEBUG2 = '1'
 # Flag to put up the Under Construction Popup
-DEBUG3 = '3'
+DEBUG3 = '0'
 FAVOURITES_PATH = 'special://userdata/favourites.xml'
 THUMBNAILS_PATH_FORMAT = 'special://thumbnails/{folder}/{file}'
 
@@ -507,5 +507,6 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
