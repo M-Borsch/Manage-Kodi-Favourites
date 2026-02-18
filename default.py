@@ -60,7 +60,6 @@ ADDON = Addon()
 PLUGIN_ID = int(sys.argv[1])
 PLUGIN_URL = sys.argv[0]
 
-
 # Custom Favourites window class for managing the favourites items.
 class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
     def __init__(self, *args, **kwargs):
@@ -91,7 +90,6 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
         }
         self.noop = lambda: None
 
-
     @staticmethod
     def _makeFavourites(favouritesGen):
         LISTITEM = xbmcgui.ListItem
@@ -104,7 +102,6 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             li.setArt(artDict)
             li.setProperty('index', str(index)) # To help with resetting, if necessary.
             yield li
-
 
     # Function used to start the dialog.
     def doCustomModal(self, favouritesGen):
@@ -159,7 +156,6 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
         else:
             return ''
 
-
     # Automatically called before the dialog is shown. The UI controls exist now.
     def onInit(self):
         self.panel = self.getControl(101)
@@ -174,10 +170,8 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
     def onClick(self, controlId):
         self.idHandlerDict.get(controlId, self.noop)()
 
-
     def onAction(self, action):
         self.actionHandlerDict.get(action.getId(), self.noop)()
-
 
     def doSelect(self):
         selectedPosition = self.panel.getSelectedPosition()
@@ -399,7 +393,7 @@ def clearWindowProperty(prop):
 
 # Debugging helper. Logs a LOGNOTICE-level message.
 def xbmcLog(*args):
-    xbmc.log('[COLOR yellow]Manage Kodi Favourites > {/COLOR]' + ' '.join((var if isinstance(var, str) else repr(var)) for var in args), xbmc.LOGNOTICE)
+    xbmc.log('[COLOR yellow]Manage Kodi Favourites > [/COLOR]' + ' '.join((var if isinstance(var, str) else repr(var)) for var in args), xbmc.LOGNOTICE)
 
 #===================================================================================
 
@@ -513,28 +507,3 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
