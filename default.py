@@ -294,7 +294,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
                     'Manage Kodi Favourites',
                     msg_text
             ):           
-                # Show the chnage to the list item
+                # Show the change to the list item
                 listitem_at_index.setLabel(new_label)
 
                 # Mark the change but dont reset the selection state.
@@ -307,7 +307,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
                 if DEBUG2 == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)
                 
                 # In data structure update the items label
-                self.allItems[self.indexFrom].setLabel(new_label)
+                # self.allItems[self.indexFrom].setLabel(new_label)
 
                 self.doSelect()
 
@@ -507,3 +507,4 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
