@@ -482,7 +482,7 @@ else:
                                  'use:[/B] select one item, then select another to Insert/Swap. ' \
                                  'Do this as much as needed. Finally, close the dialog and use the menus ' \
                                  'below to save your changes.'})
-    saveReloadItem = xbmcgui.ListItem('[B]   Apply Changes and Reload Your Kodi Profile (may take several seconds)...[/B]')
+    saveReloadItem = xbmcgui.ListItem('[B]   Apply Changes and Reload Your Kodi Profile...[/B]')
     saveReloadItem.setArt({'thumb': 'DefaultAddonsUpdates.png'})
     saveReloadItem.setInfo('video', {'plot': 'Save any changes you made and reload your Kodi profile '
                                        'to make the changes visible right now, without having to restart Kodi.'})
@@ -506,6 +506,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
