@@ -311,7 +311,9 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
                 # self.allItems[self.indexFrom].setLabel(new_label)
                 
                 # UnSelect the current item
-                self.doUnSelect()
+                self.allItems[self.indexFrom].setProperty('selected', '')
+                self.indexFrom = None
+                self.panel.getSelectedItem().setProperty('selected', '')
 
     def doReload(self):
         if xbmcgui.Dialog().yesno(
@@ -509,6 +511,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
