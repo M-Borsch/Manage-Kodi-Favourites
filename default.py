@@ -301,10 +301,10 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
                 # Mark the change but dont reset the selection state.
                 self.isDirty = True
 
-                if DEBUG2 == '1': log_msg = "[INFO:{/COLOR] New Label = %s" % new_label
-                if DEBUG2 == '1': xbmcLog(log_msg)
+                if DEBUG2 == '1': log_msg = "[COLOR yellow]Manage Kodi Favourites INFO:[/COLOR] New Label = %s" % new_label
+                if DEBUG2 == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)
 
-                if DEBUG2 == '1': log_msg = "[COLOR yellow]Manage Kodi Favourites INFO:{/COLOR] Get Label before edit = %s" % self.allItems[self.indexFrom].getLabel()
+                if DEBUG2 == '1': log_msg = "[COLOR yellow]Manage Kodi Favourites INFO:[/COLOR] Get Label before edit = %s" % self.allItems[self.indexFrom].getLabel()
                 if DEBUG2 == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)
                 
                 # In data structure update the items label
@@ -506,6 +506,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
