@@ -282,10 +282,14 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             # Ignore NONE entries
             if cur_prefix_text == 'NONE':
                 newPrefixText = ''
+            else
+                newPrefixText = cur_prefix_text
 
             if cur_suffix_text == 'NONE':
                 newSuffixText = ''
-            
+            else
+                newSuffixText = cur_suffix_text 
+                
             if cur_prefix_color == 'NONE':
                 newPrefixTextColor = newPrefixText
             else
@@ -526,6 +530,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
