@@ -44,6 +44,8 @@ from xbmcaddon import Addon
 
 DEBUG = '0'
 DEBUG2 = '1'
+# Flag to put up the Under Construction Popup
+DEBUG3 = '0'
 FAVOURITES_PATH = 'special://userdata/favourites.xml'
 THUMBNAILS_PATH_FORMAT = 'special://thumbnails/{folder}/{file}'
 
@@ -107,7 +109,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
     # Function used to start the dialog.
     def doCustomModal(self, favouritesGen):
 
-        if DEBUG2 == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "\n[COLOR red]### WARNING:[/COLOR] this is partial working Addon under development.')
+        if DEBUG3 == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "\n[COLOR red]### WARNING:[/COLOR] this is partial working Addon under development.')
         
         reorderingMethod = '0' if not ADDON.getSetting('reorderingMethod') else ADDON.getSetting('reorderingMethod')
         self.setProperty(REORDER_METHOD, reorderingMethod)
@@ -304,12 +306,10 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
                 # Mark the change but dont reset the selection state.
                 self.isDirty = True
 
-                master_list = getRawWindowProperty(PROPERTY_FAVOURITES_RESULT)
-
                 if DEBUG2 == '1': log_msg = "[COLOR yellow]Manage Kodi Favourites INFO:[/COLOR] New Label = %s" % new_label
                 if DEBUG2 == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)
 
-                if DEBUG2 == '1': log_msg = "[COLOR yellow]Manage Kodi Favourites INFO:[/COLOR] Get Label before edit = %s" % master_list[self.indexFrom].getLabel()
+                if DEBUG2 == '1': log_msg = "[COLOR yellow]Manage Kodi Favourites INFO:[/COLOR] Get Label before edit = %s" % new_label
                 if DEBUG2 == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)
                 
                 # In data structure update the items label
@@ -515,6 +515,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
