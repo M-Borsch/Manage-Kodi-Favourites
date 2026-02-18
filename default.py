@@ -289,12 +289,12 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             if cur_prefix_color == 'NONE':
                 newPrefixTextColor = newPrefixText
             else
-                newPrefixTextColor = '[COLOR ' + cur_prefix_color + ']' + newPrefixText + '[/COLOR]'
+                newPrefixTextColor = "[COLOR " + cur_prefix_color + "]" + newPrefixText + "[/COLOR]"
             
             if cur_suffix_color == 'NONE':
                 newSuffixTextColor = newSuffixText
             else
-                newSuffixTextColor = '[COLOR ' + cur_suffix_color + ']' + newSuffixText + '[/COLOR]'
+                newSuffixTextColor = "[COLOR " + cur_suffix_color + "]" + newSuffixText + "[/COLOR]"
             
             new_label = newPrefixTextColor + label + newSuffixTextColor
 
@@ -526,6 +526,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
