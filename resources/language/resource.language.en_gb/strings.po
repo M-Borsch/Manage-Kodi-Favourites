@@ -140,6 +140,14 @@ msgctxt "#30029"
 msgid " CUSTOM VALUE"
 
 #: resources/settings.xml
+msgctxt "#30030"
+msgid "white"
+
+#: resources/settings.xml
+msgctxt "#30031"
+msgid "purple"
+
+#: resources/settings.xml
 msgctxt "#30038"
 msgid "Thumb/Font/Re-Order"
 
@@ -170,6 +178,7 @@ msgid "[COLOR white]Here you choose the actions to be performed when selecting i
 #: resources/settings.xml
 msgctxt "#30045"
 msgid "Reordering Method"
+
 
 
 
