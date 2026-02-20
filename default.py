@@ -370,6 +370,9 @@ def favouritesDataGen():
         match = namePattern.search(entry)
         name = PARSER.unescape(match.group(1)) if match else ''
 
+        # change name for test
+        name = "[COLOR yellow]###Mike -" + name
+
         match = thumbPattern.search(entry)
         if match:
             thumb = PARSER.unescape(match.group(1))
@@ -530,6 +533,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
