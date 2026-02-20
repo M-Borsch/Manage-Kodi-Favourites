@@ -1,7 +1,7 @@
 # Manage Kodi Favourites Program Addon - To Do
 ![icon](https://github.com/M-Borsch/Manage-Kodi-Favourites/blob/main/Manage-Kodi-Fav-icon.png)  
 
-### This is a simple & lightweight program add-on that lets you quickly manage your Kodi favourites by adding Prefixes, Suffixes and use Colors to better oraganize your Favourites list that works on multiple Kodi skins.
+### This is a simple & lightweight program add-on that lets you quickly manage your Kodi favourites by adding Prefixes, Suffixes and use Colors to better organize your Favourites list by insert/swapping entries and adding a Prefix/Suffix and Colors that works on multiple Kodi skins.
 > [!NOTE]
 > - [x] - (WYSIWYG Popup) - Add ability to display a Thumbnail based version of your Favourites to edit
 > 
