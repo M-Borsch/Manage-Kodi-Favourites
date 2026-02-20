@@ -100,6 +100,10 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             li = LISTITEM(data[0], path=data[2])
             artDict['thumb'] = data[1] # Slightly faster than recreating a dict on every item.
             li.setArt(artDict)
+
+            # TEST - Try modifying prefix for all
+            li.setLabel("##Mike -" + li.Label)
+            
             li.setProperty('index', str(index)) # To help with resetting, if necessary.
             yield li
 
@@ -370,9 +374,6 @@ def favouritesDataGen():
         match = namePattern.search(entry)
         name = PARSER.unescape(match.group(1)) if match else ''
 
-        # change name for test
-        name = "[COLOR yellow]###Mike -" + name
-
         match = thumbPattern.search(entry)
         if match:
             thumb = PARSER.unescape(match.group(1))
@@ -533,6 +534,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
