@@ -102,7 +102,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             li.setArt(artDict)
 
             # TEST - Try modifying prefix for all
-            li.setLabel("##Mike -" + "TEST")
+            li.setLabel("##Mike -" + data[0])
             
             li.setProperty('index', str(index)) # To help with resetting, if necessary.
             yield li
@@ -534,6 +534,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
