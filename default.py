@@ -246,7 +246,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
     def doConfigure(self):
         if xbmcgui.Dialog().yesno(
             'Manage Kodi Favourites',
-            'This will close this popup and take you to the Configuration Panel.\nProceed?'
+            'This will abandon any Prefix/Suffix and Color changes, close this popup and take you to the Configuration Panel.\nProceed?'
         ):
             self.close()
             # Call up Addon Settings
@@ -570,6 +570,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
