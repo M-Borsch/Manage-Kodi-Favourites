@@ -322,12 +322,12 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             verbose = False if not ADDON.getSetting('presuffixBool') else ADDON.getSetting('presuffixBool')
             if verbose == True:
                 if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(thumSize is SMALL)' % thumbSize)
-                    ui = CustomFavouritesDialog('CustomFavouritesDialog-smThumbs.xml', ADDON.getAddonInfo('path'), 'Default', '1080i')
-                    msg_text = f"This will modify the Prefix/Suffix/Color of the currently selected item to:.\n{new_label}\nProceed?"
-                    if xbmcgui.Dialog().yesno(
-                            'Manage Kodi Favourites',
-                            msg_text
-                    ):
+                ui = CustomFavouritesDialog('CustomFavouritesDialog-smThumbs.xml', ADDON.getAddonInfo('path'), 'Default', '1080i')
+                msg_text = f"This will modify the Prefix/Suffix/Color of the currently selected item to:.\n{new_label}\nProceed?"
+                if xbmcgui.Dialog().yesno(
+                        'Manage Kodi Favourites',
+                        msg_text
+                ):
                         
             # Show the change to the list item
             listitem_at_index.setLabel(new_label)
@@ -564,6 +564,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
