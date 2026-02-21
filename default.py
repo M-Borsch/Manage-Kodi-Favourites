@@ -479,9 +479,10 @@ if '/dialog' in PLUGIN_URL:
 
 elif '/save_reload' in PLUGIN_URL:
     # Reload the current profile (which causes a reload of 'favourites.xml').
+    # TEST new favs
+    res=saveNewFavourites(getRawWindowProperty(PROPERTY_FAVOURITES_RESULT)
     try:
         if saveFavourites(getRawWindowProperty(PROPERTY_FAVOURITES_RESULT)):
-            res=saveNewFavourites(getRawWindowProperty(PROPERTY_FAVOURITES_RESULT)
             clearWindowProperty(PROPERTY_FAVOURITES_RESULT)
             clearWindowProperty(REORDER_METHOD)
             clearWindowProperty(THUMB_SIZE)
@@ -563,6 +564,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
