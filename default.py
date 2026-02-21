@@ -99,7 +99,8 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
         for index, data in enumerate(favouritesGen):
             # The path of each ListItem contains the original favourite entry XML text (with the label, thumb and URL)
             # and this is what's written to the favourites file upon saving -- what changes is the order of the items.
-            li = LISTITEM(data[0], path=data[2])
+            # TEST - add action field to Label2
+            li = LISTITEM(data[0], data[3], path=data[2])
             artDict['thumb'] = data[1] # Slightly faster than recreating a dict on every item.
             li.setArt(artDict)
 
@@ -402,11 +403,7 @@ def favouritesDataGen():
 
         # TEST - Write out the Action field
         if DEBUG == '1': log_msg = "[COLOR red]Manage Kodi Favourites INFO:[/COLOR] Action Field: %s" % action
-        if DEBUG == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)
-
-        # TEST - Write out the Action field
-        if DEBUG2 == '1': log_msg = "[COLOR red]Manage Kodi Favourites INFO:[/COLOR] Event Field: %s" % event
-        if DEBUG2 == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)       
+        if DEBUG == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)     
         
         # Yield a 3-tuple of name, thumb-url and the original content of the favourites entry.
         yield name, thumb, entry, action
@@ -570,6 +567,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
