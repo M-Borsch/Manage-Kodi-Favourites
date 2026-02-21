@@ -179,6 +179,11 @@ msgid "[COLOR white]Here you choose the actions to be performed when selecting i
 msgctxt "#30045"
 msgid "Reordering Method"
 
+#: resources/settings.xml
+msgctxt "#30046"
+msgid "Verbose: Preview Change Before Applying"
+
+
 
 
 
