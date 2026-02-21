@@ -370,7 +370,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
 
     def _makeNewResult(self):
         INDENT_STRING = ' ' * 4
-        return '<favourites>\n' + '\n'.join((INDENT_STRING + '<favourite>name=' + li.getLabel + 'thumb=' + '>' + li.getLabel2 + '</favourite>') for li in self.allItems) + '\n</favourites>\n'
+        return '<favourites>\n' + '\n'.join((INDENT_STRING + '<favourite>name=' + li.getLabel() + 'thumb=' + '>' + li.getLabel2() + '</favourite>') for li in self.allItems) + '\n</favourites>\n'
 
 #===================================================================================
 
@@ -571,6 +571,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
