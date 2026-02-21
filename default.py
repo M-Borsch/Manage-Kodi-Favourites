@@ -327,24 +327,18 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
                     if xbmcgui.Dialog().yesno(
                             'Manage Kodi Favourites',
                             msg_text
-                    ):           
-                # Show the change to the list item
-                listitem_at_index.setLabel(new_label)
+                    ):
+                        
+            # Show the change to the list item
+            listitem_at_index.setLabel(new_label)
 
-                # Mark the change but dont reset the selection state.
-                self.isDirty = True
+            # Mark the change but dont reset the selection state.
+            self.isDirty = True
 
-                # TEST
-                if DEBUG == '1': log_msg = "[COLOR yellow]Manage Kodi Favourites INFO:[/COLOR] New Label = %s" % new_label
-                if DEBUG == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)
-
-                if DEBUG == '1': log_msg = "[COLOR yellow]Manage Kodi Favourites INFO:[/COLOR] Get Label before edit = %s" % new_label
-                if DEBUG == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)
-                
-                # UnSelect the current item
-                self.allItems[self.indexFrom].setProperty('selected', '')
-                self.indexFrom = None
-                self.panel.getSelectedItem().setProperty('selected', '')
+            # UnSelect the current item
+            self.allItems[self.indexFrom].setProperty('selected', '')
+            self.indexFrom = None
+            self.panel.getSelectedItem().setProperty('selected', '')
 
     def doReload(self):
         if xbmcgui.Dialog().yesno(
@@ -570,6 +564,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
