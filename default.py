@@ -408,7 +408,7 @@ def favouritesDataGen():
         if DEBUG2 == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)       
         
         # Yield a 3-tuple of name, thumb-url and the original content of the favourites entry.
-        yield name, thumb, entry
+        yield name, thumb, entry, action
 
 
 def saveFavourites(xmlText):
@@ -554,6 +554,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
