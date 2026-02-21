@@ -104,8 +104,8 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
 
             # TEST - Try modifying prefix for all
             # li.setLabel("##Mike -" + data[0])
-            if DEBUG2 == '1': log_msg = "[COLOR red]Manage Kodi Favourites INFO:[/COLOR] New Label = %s" % data[2]
-            if DEBUG2 == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)
+            if DEBUG == '1': log_msg = "[COLOR red]Manage Kodi Favourites INFO:[/COLOR] New Label = %s" % data[2]
+            if DEBUG == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)
             
             li.setProperty('index', str(index)) # To help with resetting, if necessary.
             yield li
@@ -330,11 +330,12 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
                 # Mark the change but dont reset the selection state.
                 self.isDirty = True
 
-                if DEBUG2 == '1': log_msg = "[COLOR yellow]Manage Kodi Favourites INFO:[/COLOR] New Label = %s" % new_label
-                if DEBUG2 == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)
+                # TEST
+                if DEBUG == '1': log_msg = "[COLOR yellow]Manage Kodi Favourites INFO:[/COLOR] New Label = %s" % new_label
+                if DEBUG == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)
 
-                if DEBUG2 == '1': log_msg = "[COLOR yellow]Manage Kodi Favourites INFO:[/COLOR] Get Label before edit = %s" % new_label
-                if DEBUG2 == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)
+                if DEBUG == '1': log_msg = "[COLOR yellow]Manage Kodi Favourites INFO:[/COLOR] Get Label before edit = %s" % new_label
+                if DEBUG == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)
                 
                 # In data structure update the items label
                 # TEST
@@ -378,7 +379,7 @@ def favouritesDataGen():
 
     namePattern = re.compile('name\s*=\s*"([^"]+)')
     thumbPattern = re.compile('thumb\s*=\s*"([^"]+)')
-    actionPattern = re.compile('>\s*"([^"]+)')
+    actionPattern = re.compile('>\\s*"([^"]+)')
                                
     for entryMatch in re.finditer('(<favourite\s+[^<]+</favourite>)', contents):
         entry = entryMatch.group(1)
@@ -403,8 +404,8 @@ def favouritesDataGen():
         action = PARSER.unescape(match.group(1)) if match else ''
 
         # TEST - Try modifying prefix for all
-        if DEBUG2 == '1': log_msg = "[COLOR red]Manage Kodi Favourites INFO:[/COLOR] Action Code: %s" % action
-        if DEBUG2 == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)       
+        if DEBUG == '1': log_msg = "[COLOR red]Manage Kodi Favourites INFO:[/COLOR] Action Code: %s" % action
+        if DEBUG == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)       
         
         # Yield a 3-tuple of name, thumb-url and the original content of the favourites entry.
         yield name, thumb, entry
@@ -553,6 +554,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
