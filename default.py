@@ -46,7 +46,7 @@ from xbmcaddon import Addon
 DEBUG = '0'
 DEBUG2 = '1'
 # Flag to put up the Under Construction Popup
-DEBUG3 = '1'
+DEBUG3 = '0'
 FAVOURITES_PATH = 'special://userdata/favourites.xml'
 NEW_FAVOURITES_PATH = 'special://userdata/favourites-new.xml'
 THUMBNAILS_PATH_FORMAT = 'special://thumbnails/{folder}/{file}'
@@ -481,7 +481,7 @@ if '/dialog' in PLUGIN_URL:
 elif '/save_reload' in PLUGIN_URL:
     # Reload the current profile (which causes a reload of 'favourites.xml').
     try:
-        if saveNewFavourites(getRawWindowProperty(PROPERTY_FAVOURITES_RESULT)):
+        if saveFavourites(getRawWindowProperty(PROPERTY_FAVOURITES_RESULT)):
             clearWindowProperty(PROPERTY_FAVOURITES_RESULT)
             clearWindowProperty(REORDER_METHOD)
             clearWindowProperty(THUMB_SIZE)
@@ -566,6 +566,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
