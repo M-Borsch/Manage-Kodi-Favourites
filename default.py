@@ -7,7 +7,7 @@
 # --------------------------------------------------------------------
 # M-Borsch 2026-02-14: Version 2.0.0
 # - Initial Release based on 1.4.3 of Insert/Swap Kodi Favourites.
-# - Major re-write of the Addon to allow for the ability to add
+# - Complete re-write of the Addon to allow for the ability to add
 # prefixes and suffixes and color items in your Kodi Favoutites list
 # --------------------------------------------------------------------
 # M-Borsch 2023-12-24: Version 1.4.3
@@ -404,8 +404,8 @@ def favouritesDataGen():
         action = PARSER.unescape(match.group(1)) if match else ''
 
         # TEST - Try modifying prefix for all
-        if DEBUG2 == '1': log_msg = "[COLOR red]Manage Kodi Favourites INFO:[/COLOR] Action Code: %s" % action
-        if DEBUG2 == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)       
+        if DEBUG == '1': log_msg = "[COLOR red]Manage Kodi Favourites INFO:[/COLOR] Action Code: %s" % action
+        if DEBUG == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)       
         
         # Yield a 3-tuple of name, thumb-url and the original content of the favourites entry.
         yield name, thumb, entry, action
@@ -554,6 +554,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
