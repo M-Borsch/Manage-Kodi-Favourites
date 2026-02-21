@@ -404,8 +404,8 @@ def favouritesDataGen():
         action = PARSER.unescape(match.group(1)) if match else ''
 
         # TEST - Try modifying prefix for all
-        if DEBUG == '1': log_msg = "[COLOR red]Manage Kodi Favourites INFO:[/COLOR] Action Code: %s" % action
-        if DEBUG == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)       
+        if DEBUG2 == '1': log_msg = "[COLOR red]Manage Kodi Favourites INFO:[/COLOR] Action Code: %s" % action
+        if DEBUG2 == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)       
         
         # Yield a 3-tuple of name, thumb-url and the original content of the favourites entry.
         yield name, thumb, entry
@@ -554,6 +554,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
