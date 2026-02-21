@@ -320,16 +320,12 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
 
             # Check setting to see if we should let the user know that there are about to modify a List entry
             verbose = False if not ADDON.getSetting('presuffixBool') else ADDON.getSetting('presuffixBool')
-            if verbose:
                 
-                # Let the user know that there are about to modify a List entry
-                msg_text = f"This will modify the Prefix/Suffix/Color of the currently selected item to:.\n{new_label}\nProceed?"
-                if xbmcgui.Dialog().yesno(
-                        'Manage Kodi Favourites',
-                        msg_text
-                ):
+            # Let the user know that there are about to modify a List entry
+            msg_text = f"This will modify the Prefix/Suffix/Color of the currently selected item to:.\n{new_label}\nProceed?"
+            if verbose:
+                xbmcgui.Dialog().yesno('Manage Kodi Favourites', msg_text):
                     
-            else:
             # Check setting to see if we should let the user know that there are about to modify a List entry
             # verbose = False if not ADDON.getSetting('presuffixBool') else ADDON.getSetting('presuffixBool')
             # if verbose == True:
@@ -340,7 +336,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             #            'Manage Kodi Favourites',
             #            msg_text
             #    ):
-                        
+            else:            
                 # Show the change to the list item
                 listitem_at_index.setLabel(new_label)
             
@@ -576,6 +572,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
