@@ -395,6 +395,9 @@ def favouritesDataGen():
         else:
             thumb = ''
 
+        # TEST - name change
+        name = "###TEST## -" + name
+        
         # Yield a 3-tuple of name, thumb-url and the original content of the favourites entry.
         yield name, thumb, entry
 
@@ -542,28 +545,3 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
