@@ -185,7 +185,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             self.panel.getSelectedItem().setProperty('selected', '1')
 
             # TEST
-            self.allItems[self.indexFrom].setLabel("### CHANGED -" + self.allItems[self.indexFrom].Label)
+            self.panel.getSelectedItem().setLabel("### CHANGED -" + "OLD LABEL")
         
         else:
             # Something was already selected, so do the reodering.
@@ -542,6 +542,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
