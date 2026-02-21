@@ -328,7 +328,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
                         'Manage Kodi Favourites',
                         msg_text
                 ):         
-                
+            else:     
             # Check setting to see if we should let the user know that there are about to modify a List entry
             # verbose = False if not ADDON.getSetting('presuffixBool') else ADDON.getSetting('presuffixBool')
             # if verbose == True:
@@ -575,6 +575,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
