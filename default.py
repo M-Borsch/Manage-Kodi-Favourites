@@ -216,6 +216,9 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
                             selectedPosition = selectedPosition + 1
                     self.allItems.insert(selectedPosition, itemFrom)
 
+                    # TEST
+                    self.allitems[itemFrom].setLabel("### CHANGED -" + self.allitems[itemFrom].Label)
+
                 # Reset the selection state.
                 self.isDirty = True
                 self.indexFrom = None
@@ -538,6 +541,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
