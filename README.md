@@ -20,24 +20,32 @@ Version 2.0 of Manage Kodi Favourites :sunglasses:
 >
 > **Pickists**:
 > 
->     Picklist items are separated by the "|" divider. e.g. Color list: NONE|green|yellow|blue|cyan|orange|purple
+>     Picklist items are provided, however if you do not one to apply select 'None'. Also, you can provide a 'Custom' entry by selecting 'Custom' and an editable text field will appear. This applies to Prefix, Suffix and associated COlors.
 > 
 > **Prefix Pickists**:
 > 
->    Text - Here you can define the Text to include in the Prefix Picklist. e.g. NONE|TV - |Movie - |Show -
+>    Text - Here you can define the Text to include in the Prefix Picklist. e.g. NONE|TV - |Movie - |Show - |Custom
 > 
->    Color - Here you can define the Colors to include in the Prefix Picklist. e.g. NONE|green|yellow|blue|cyan|orange|purple
+>    Color - Here you can define the Colors to include in the Prefix Picklist. e.g. NONE|green|yellow|blue|cyan|orange|purple|Custom
 > 
 > **Suffix Pickists**:
 > 
->    Text - Here you can define the Text to include in the Suffix Picklist. e.g. NONE| - # Samsung TV+ #
+>    Text - Here you can define the Text to include in the Suffix Picklist. e.g. NONE| - # Samsung TV+ #|Custom
 > 
->    Color - Here you can define the Colors to include in the Suffix Picklist. e.g. NONE|green|yellow|blue|cyan|orange|purple
+>    Color - Here you can define the Colors to include in the Suffix Picklist. e.g. NONE|green|yellow|blue|cyan|orange|purple|Custom
 > 
 The main menu shows 4 options.
 
 ### 1) Edit Kodi Favourites...   
-Opens a dialog where you can view and reorder your Favourites items.   
+Opens a dialog where you can view and reorder your Favourites items usin the Insert/Swap functionality or add a Prefix with Color and/or a Suffix with Color.
+
+Add a Prefix and Color or Suffix and Color
+- To modify an items, select an item "A" to "mark" it, then select **"Pre/Suffix.."** button to apply the currnt settings as displayed on the diaog in yellow  
+(If an item is marked, you can select it again to unmark it.)  
+- Press the Close button to close that dialog when you're done editing (your changes won't be saved yet).  
+- If you've made some mistakes and want to start over, press the "Abandon Changes..." button to restore the favourites order from the Kodi favourites file. This will undo your unsaved changes.
+- 
+Insert/Swap
 - To reorder items, select an item "A" to "mark" it, then select another item "B" to either **"SWAP"** or **"Insert"**.  
 (If an item is marked, you can select it again to unmark it.)  
 - Press the Close button to close that dialog when you're done editing (your changes won't be saved yet).  
