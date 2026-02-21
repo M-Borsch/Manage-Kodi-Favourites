@@ -108,7 +108,9 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             # li.setLabel("##Mike -" + data[0])
             if DEBUG == '1': log_msg = "[COLOR red]Manage Kodi Favourites INFO:[/COLOR] New Label = %s" % data[2]
             if DEBUG == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)
-            
+
+            li.setProperty('thumb', thumb) 
+
             li.setProperty('index', str(index)) # To help with resetting, if necessary.
             yield li
 
@@ -362,7 +364,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
 
     def _makeNewResult(self):
         INDENT_STRING = ' ' * 4
-        return '<favourites>\n' + '\n'.join((INDENT_STRING + '<favourite name="' + li.getLabel() + '"thumb="' + li.getArt() + '">' + li.getLabel2() + '</favourite>\n') for li in self.allItems) + '\n</favourites>\n'
+        return '<favourites>\n' + '\n'.join((INDENT_STRING + '<favourite name="' + li.getLabel() + '"thumb="' + li.getProperty('thumb') + '">' + li.getLabel2() + '</favourite>\n') for li in self.allItems) + '\n</favourites>\n'
 
 #===================================================================================
 
@@ -563,6 +565,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
