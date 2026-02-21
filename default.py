@@ -183,6 +183,10 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             # Selecting a new item to reorder.
             self.indexFrom = selectedPosition
             self.panel.getSelectedItem().setProperty('selected', '1')
+
+            # TEST
+            self.allItems[self.indexFrom].setLabel("### CHANGED -" + self.allItems[self.indexFrom].Label)
+        
         else:
             # Something was already selected, so do the reodering.
             if self.indexFrom != selectedPosition:
@@ -215,9 +219,6 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
                         if self.indexFrom > selectedPosition:
                             selectedPosition = selectedPosition + 1
                     self.allItems.insert(selectedPosition, itemFrom)
-
-                    # TEST
-                    self.allItems[self.itemFrom].setLabel("### CHANGED -" + self.allItems[self.itemFrom].Label)
 
                 # Reset the selection state.
                 self.isDirty = True
@@ -541,6 +542,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
