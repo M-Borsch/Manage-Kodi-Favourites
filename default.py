@@ -312,9 +312,6 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             
             new_label = newPrefixTextColor + label + newSuffixTextColor
 
-            if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Prefix Label)' %  str(cur_prefix_text))
-            if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Prefix Color)' %  str(cur_prefix_color))
-
             if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(New Label)' %  str(new_label))
 
             # Check setting to see if we should let the user know that there are about to modify a List entry
@@ -569,53 +566,6 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
