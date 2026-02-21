@@ -109,7 +109,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             if DEBUG == '1': log_msg = "[COLOR red]Manage Kodi Favourites INFO:[/COLOR] New Label = %s" % data[2]
             if DEBUG == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)
 
-            li.setProperty('thumb', data[1]) 
+            li.setProperty('thumb', data[4]) 
 
             li.setProperty('index', str(index)) # To help with resetting, if necessary.
             yield li
@@ -384,6 +384,7 @@ def favouritesDataGen():
         name = PARSER.unescape(match.group(1)) if match else ''
 
         match = thumbPattern.search(entry)
+        origThumb = match
         if match:
             thumb = PARSER.unescape(match.group(1))
             cacheFilename = xbmc.getCacheThumbName(thumb)
@@ -404,7 +405,7 @@ def favouritesDataGen():
         if DEBUG == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)     
         
         # Yield a 3-tuple of name, thumb-url and the original content of the favourites entry.
-        yield name, thumb, entry, action
+        yield name, thumb, entry, action, origThumb
 
 
 def saveFavourites(xmlText):
@@ -565,6 +566,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
