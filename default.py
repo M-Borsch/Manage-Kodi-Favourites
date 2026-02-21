@@ -330,8 +330,12 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
                 if DEBUG2 == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)
                 
                 # In data structure update the items label
-                # TBD
-                # self.allItems[self.indexFrom].setLabel(new_label)
+                # TEST
+                self.allItems[self.indexFrom].setLabel(new_label)
+
+                # TRY
+                self.panel.reset()
+                self.panel.addItems(self.allItems)
                 
                 # UnSelect the current item
                 self.allItems[self.indexFrom].setProperty('selected', '')
@@ -534,6 +538,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
