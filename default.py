@@ -109,7 +109,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             if DEBUG == '1': log_msg = "[COLOR red]Manage Kodi Favourites INFO:[/COLOR] New Label = %s" % data[2]
             if DEBUG == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)
 
-            li.setProperty('thumb', thumb) 
+            li.setProperty('thumb', data[1]) 
 
             li.setProperty('index', str(index)) # To help with resetting, if necessary.
             yield li
@@ -565,6 +565,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
