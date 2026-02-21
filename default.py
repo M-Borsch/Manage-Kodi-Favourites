@@ -50,7 +50,7 @@ DEBUG3 = '1'
 FAVOURITES_PATH = 'special://userdata/favourites.xml'
 THUMBNAILS_PATH_FORMAT = 'special://thumbnails/{folder}/{file}'
 
-PROPERTY_FAVOURITES_RESULT = 'ordfav.result'
+PROPERTY_FAVOURITES_RESULT = 'managefav.result'
 REORDER_METHOD = 'reorder'
 FONT_SIZE = 'fontSize'
 THUMB_SIZE = 'thumbSize'
@@ -554,6 +554,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
