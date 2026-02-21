@@ -45,5 +45,8 @@
         <setting id="reorderingMethod" label="30045" type="enum" default="0"
                  values="Swap A and B|Insert A before B|Insert A after B"/>
 
+         <setting id="presuffixBool" type="bool" label="30046" default="false"/>
+      
     </category>
 </settings>
+
