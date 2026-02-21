@@ -28,6 +28,9 @@
 
         <!-- Text Field: Only visible if 'Custom' is selected -->
         <setting id="suffixColorCus" type="text" label="30029" default="" visible="eq(-1,0)" />
+
+        <setting id="presuffixBool" type="bool" label="30046" default="false"/>
+
     </category>
    
 
@@ -42,11 +45,10 @@
      
         <setting type="lsep" label="30043" />
         <setting type="string" label="30044" />
-        <setting id="reorderingMethod" label="30045" type="enum" default="0"
+        <setting id="reorderingMethod" label="30045" type="enum" default="2"
                  values="Swap A and B|Insert A before B|Insert A after B"/>
-
-         <setting id="presuffixBool" type="bool" label="30046" default="false"/>
       
     </category>
 </settings>
+
 
