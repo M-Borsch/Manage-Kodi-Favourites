@@ -324,7 +324,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             # Let the user know that there are about to modify a List entry
             msg_text = f"This will modify the Prefix/Suffix/Color of the currently selected item to:.\n{new_label}\nProceed?"
             if verbose:
-                xbmcgui.Dialog().yesno('Manage Kodi Favourites', msg_text):
+                xbmcgui.Dialog().yesno('Manage Kodi Favourites', msg_text)
                     
             # Check setting to see if we should let the user know that there are about to modify a List entry
             # verbose = False if not ADDON.getSetting('presuffixBool') else ADDON.getSetting('presuffixBool')
@@ -452,10 +452,9 @@ def clearWindowProperty(prop):
     window.clearProperty(prop)
 
 
-# Debugging helper. Logs a LOGNOTICE-level message.
+# Debugging helper. Logs a LOGNERROR-level message.
 def xbmcLog(*args):
-    xbmc.log('[COLOR yellow]Manage Kodi Favourites > [/COLOR]' + ' '.join((var if isinstance(var, str) else repr(var)) for var in args), xbmc.LOGNOTICE)
-
+    xbmc.log('[COLOR yellow]Manage Kodi Favourites > [/COLOR]' + ' '.join((var if isinstance(var, str) else repr(var)) for var in args), level=xbmc.LOGERROR)
 #===================================================================================
 
 ### Entry point ###
@@ -572,6 +571,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
