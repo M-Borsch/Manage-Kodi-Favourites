@@ -161,7 +161,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
 
         self.doModal()
         if self.isDirty:
-            return self._makeResult()
+            return self._makeNewResult()
         else:
             return ''
 
@@ -368,6 +368,10 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
         INDENT_STRING = ' ' * 4
         return '<favourites>\n' + '\n'.join((INDENT_STRING + li.getPath()) for li in self.allItems) + '\n</favourites>\n'
 
+    def _makeNewResult(self):
+        INDENT_STRING = ' ' * 4
+        return '<favourites>\n' + '\n'.join((INDENT_STRING + '<favourite>name=' + li.getLabel + 'thumb=' + '>' + li.getLabel2 +</favourite>) for li in self.allItems) + '\n</favourites>\n'
+
 #===================================================================================
 
 def favouritesDataGen():
@@ -567,6 +571,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
