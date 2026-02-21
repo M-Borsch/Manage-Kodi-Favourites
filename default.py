@@ -44,7 +44,6 @@ import xbmc, xbmcgui, xbmcplugin, xbmcvfs
 from xbmcaddon import Addon
 
 DEBUG = '0'
-DEBUG2 = '1'
 # Flag to put up the Under Construction Popup
 DEBUG3 = '0'
 FAVOURITES_PATH = 'special://userdata/favourites.xml'
@@ -99,7 +98,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
         for index, data in enumerate(favouritesGen):
             # The path of each ListItem contains the original favourite entry XML text (with the label, thumb and URL)
             # and this is what's written to the favourites file upon saving -- what changes is the order of the items.
-            # TEST - add action field to Label2
+            # add action field to Label2
             li = LISTITEM(data[0], data[3], path=data[2])
             artDict['thumb'] = data[1] # Slightly faster than recreating a dict on every item.
             li.setArt(artDict)
@@ -570,6 +569,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
