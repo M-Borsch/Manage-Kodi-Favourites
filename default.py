@@ -48,6 +48,7 @@ DEBUG2 = '1'
 # Flag to put up the Under Construction Popup
 DEBUG3 = '1'
 FAVOURITES_PATH = 'special://userdata/favourites.xml'
+NEW_FAVOURITES_PATH = 'special://userdata/favourites-new.xml'
 THUMBNAILS_PATH_FORMAT = 'special://thumbnails/{folder}/{file}'
 
 PROPERTY_FAVOURITES_RESULT = 'managefav.result'
@@ -418,6 +419,17 @@ def saveFavourites(xmlText):
         raise Exception('ERROR: unable to write to the Favourites file. Nothing was saved.')
     return True
 
+def saveNewFavourites(xmlText):
+    if not xmlText:
+        return False
+    try:
+        file = xbmcvfs.File(NEW_FAVOURITES_PATH, 'w')
+        file.write(xmlText)
+        file.close()
+    except Exception as e:
+        raise Exception('ERROR: unable to write to the New Favourites file. Nothing was saved.')
+    return True
+
 
 def getRawWindowProperty(prop):
     window = xbmcgui.Window(xbmcgui.getCurrentWindowId())
@@ -469,6 +481,7 @@ elif '/save_reload' in PLUGIN_URL:
     # Reload the current profile (which causes a reload of 'favourites.xml').
     try:
         if saveFavourites(getRawWindowProperty(PROPERTY_FAVOURITES_RESULT)):
+            saveNewFavourites(getRawWindowProperty(PROPERTY_FAVOURITES_RESULT)
             clearWindowProperty(PROPERTY_FAVOURITES_RESULT)
             clearWindowProperty(REORDER_METHOD)
             clearWindowProperty(THUMB_SIZE)
@@ -550,6 +563,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
