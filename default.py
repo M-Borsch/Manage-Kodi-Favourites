@@ -339,8 +339,8 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
                 # self.allItems[self.indexFrom].setLabel(new_label)
 
                 # TRY
-                self.panel.reset()
-                self.panel.addItems(self.allItems)
+                # self.panel.reset()
+                # self.panel.addItems(self.allItems)
                 
                 # UnSelect the current item
                 self.allItems[self.indexFrom].setProperty('selected', '')
@@ -471,6 +471,7 @@ if '/dialog' in PLUGIN_URL:
         clearWindowProperty(PROPERTY_FAVOURITES_RESULT)
         clearWindowProperty(REORDER_METHOD)
         clearWindowProperty(THUMB_SIZE)
+        clearWindowProperty(FONT_SIZE)
         clearWindowProperty(PREFIX_TEXT_COLOR)
         clearWindowProperty(SUFFIX_TEXT_COLOR)
 
@@ -484,6 +485,7 @@ elif '/save_reload' in PLUGIN_URL:
             clearWindowProperty(PROPERTY_FAVOURITES_RESULT)
             clearWindowProperty(REORDER_METHOD)
             clearWindowProperty(THUMB_SIZE)
+            clearWindowProperty(FONT_SIZE)
             clearWindowProperty(PREFIX_TEXT_COLOR)
             clearWindowProperty(SUFFIX_TEXT_COLOR)
             
@@ -509,6 +511,7 @@ elif '/save_exit' in PLUGIN_URL:
             clearWindowProperty(PROPERTY_FAVOURITES_RESULT)
             clearWindowProperty(REORDER_METHOD)
             clearWindowProperty(THUMB_SIZE)
+            clearWindowProperty(FONT_SIZE)
             clearWindowProperty(PREFIX_TEXT_COLOR)
             clearWindowProperty(SUFFIX_TEXT_COLOR)
             xbmcgui.Dialog().ok('Manage Kodi Favourites', 'Save successful. Press OK to end the add-on...')
@@ -522,6 +525,7 @@ elif '/exit_only' in PLUGIN_URL:
     clearWindowProperty(PROPERTY_FAVOURITES_RESULT)
     clearWindowProperty(REORDER_METHOD)
     clearWindowProperty(THUMB_SIZE)
+    clearWindowProperty(FONT_SIZE)
     clearWindowProperty(PREFIX_TEXT_COLOR)
     clearWindowProperty(SUFFIX_TEXT_COLOR)
     xbmc.executebuiltin('Action(Back)')
@@ -562,6 +566,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
