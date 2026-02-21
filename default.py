@@ -186,10 +186,6 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             # Selecting a new item to reorder.
             self.indexFrom = selectedPosition
             self.panel.getSelectedItem().setProperty('selected', '1')
-
-            # TEST
-            self.panel.getSelectedItem().setLabel("### CHANGED -" + "OLD LABEL")
-        
         else:
             # Something was already selected, so do the reodering.
             if self.indexFrom != selectedPosition:
@@ -339,7 +335,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
                 
                 # In data structure update the items label
                 # TEST
-                self.allItems[self.indexFrom].setLabel(new_label)
+                # self.allItems[self.indexFrom].setLabel(new_label)
 
                 # TRY
                 self.panel.reset()
@@ -554,6 +550,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
