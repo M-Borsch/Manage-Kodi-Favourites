@@ -335,14 +335,6 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
                 if DEBUG == '1': log_msg = "[COLOR yellow]Manage Kodi Favourites INFO:[/COLOR] Get Label before edit = %s" % new_label
                 if DEBUG == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)
                 
-                # In data structure update the items label
-                # TEST
-                # self.allItems[self.indexFrom].setLabel(new_label)
-
-                # TRY
-                # self.panel.reset()
-                # self.panel.addItems(self.allItems)
-                
                 # UnSelect the current item
                 self.allItems[self.indexFrom].setProperty('selected', '')
                 self.indexFrom = None
@@ -370,7 +362,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
 
     def _makeNewResult(self):
         INDENT_STRING = ' ' * 4
-        return '<favourites>\n' + '\n'.join((INDENT_STRING + '<favourite name="' + li.getLabel() + '"thumb="/storage/.kodi/addons/Insert-Swap-Kodi-Favourites/icon.png' + '">' + li.getLabel2() + '</favourite>\n') for li in self.allItems) + '\n</favourites>\n'
+        return '<favourites>\n' + '\n'.join((INDENT_STRING + '<favourite name="' + li.getLabel() + '"thumb="' + li.getArt() + '">' + li.getLabel2() + '</favourite>\n') for li in self.allItems) + '\n</favourites>\n'
 
 #===================================================================================
 
@@ -571,6 +563,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
