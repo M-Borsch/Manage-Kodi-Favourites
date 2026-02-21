@@ -379,7 +379,7 @@ def favouritesDataGen():
 
     namePattern = re.compile('name\s*=\s*"([^"]+)')
     thumbPattern = re.compile('thumb\s*=\s*"([^"]+)')
-    actionPattern = re.compile('>\\s*"([^"]+)')
+    actionPattern = re.compile('>\s*([^<]+)')
                                
     for entryMatch in re.finditer('(<favourite\s+[^<]+</favourite>)', contents):
         entry = entryMatch.group(1)
@@ -554,6 +554,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
