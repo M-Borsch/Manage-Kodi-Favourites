@@ -103,6 +103,8 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
 
             # TEST - Try modifying prefix for all
             li.setLabel("##Mike -" + data[0])
+            if DEBUG2 == '1': log_msg = "[COLOR red]Manage Kodi Favourites INFO:[/COLOR] New Label = %s" % data[2]
+            if DEBUG2 == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)
             
             li.setProperty('index', str(index)) # To help with resetting, if necessary.
             yield li
@@ -545,3 +547,4 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
