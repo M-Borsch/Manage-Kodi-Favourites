@@ -384,9 +384,9 @@ def favouritesDataGen():
         name = PARSER.unescape(match.group(1)) if match else ''
 
         match = thumbPattern.search(entry)
-        origThumb = match
         if match:
             thumb = PARSER.unescape(match.group(1))
+            origThumb = thumb
             cacheFilename = xbmc.getCacheThumbName(thumb)
             if 'ffffffff' not in cacheFilename:
                 if '.jpg' in thumb:
@@ -566,6 +566,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
