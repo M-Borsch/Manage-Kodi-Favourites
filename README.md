@@ -17,6 +17,11 @@ Version 2.0 of Manage Kodi Favourites :sunglasses:
 (Latest)
 -  <a href="Manage-Kodi-Favourites-2.0.zip">Manage-Kodi-Favourites-2.0.zip</a> (Latest)
 
+Questions/Comments/thanks - <a href="mailto:kodi@borsch.ca">Send an email to MB-KODI</a><br />
+
+> [!IMPORTANT]
+> <img class="an1" draggable="false" src="https://fonts.gstatic.com/s/e/notoemoji/15.1/26a0_fe0f/72.png" alt="Ã¢Å¡ Ã¯Â¸Â" width="20" loading="lazy" data-emoji="Ã¢Å¡ Ã¯Â¸Â" aria-label="Ã¢Å¡ Ã¯Â¸Â"> No Copyright infringement intended <img class="an1" draggable="false" src="https://fonts.gstatic.com/s/e/notoemoji/15.1/274c/72.png" alt="Ã¢ÂÅ’" width="20" loading="lazy" data-emoji="Ã¢ÂÅ’" aria-label="Ã¢ÂÅ’"> <a href="mailto:kodi@borsch.ca">Send an email to MB-KODI</a> to fix / Remove. (<span style="font-size: 8px;"><em>NAS</em></span>)
+
 -------------------------------
 # How to use:
 
