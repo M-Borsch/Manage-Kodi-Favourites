@@ -338,7 +338,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
                 # Show the change to the list item
                 listitem_at_index.setLabel(new_label)
             
-                # Mark the change but dont reset the selection state.
+                # Mark the change
                 self.isDirty = True
 
                 # UnSelect the current item
@@ -357,6 +357,10 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             self.allItems = sorted(self.allItems, key=lambda li: li.getProperty('sortname'))
             self.panel.reset()
             self.panel.addItems(self.allItems)
+
+            # Mark the change
+            self.isDirty = True
+
     
     def doReload(self):
         if xbmcgui.Dialog().yesno(
@@ -596,6 +600,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
