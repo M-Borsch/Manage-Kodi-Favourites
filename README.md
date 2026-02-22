@@ -5,38 +5,38 @@ This Kodi program addon allows you to manage your Kodi favourites by inserting o
 
 # Program Addon: Manage Kodi Favourites
 
-### This is a simple & lightweight program add-on that lets you quickly manage your Kodi favourites that works on multiple Kodi skins. Use this Porgram addon to easilly Manage by inserting or swapping entries and/or adding Color, prepending a Prefix or appending a Suffix to entries in your Kodi Favourites list.
+### This is a simple & lightweight KODI Program Addon that lets you quickly manage your Kodi favourites list that works on multiple Kodi skins. Use this Porgram Addon to easilly Manage (i.e. move, add a prefix or suffix and color code entries) by inserting or swapping entries and/or adding Color, prepending a Prefix or appending a Suffix to entries in your Kodi Favourites list.
 > [!NOTE]
 > (Latest) - This is the latest version of the Manage Kodi Favourites
-ing
-Version 2.0 of Manage Kodi Favourites :sunglasses:
-- Added ability for users to set the Prefixes, Suffixes and/or Colors in the configuration panel and easilly modify entries in their Kodi Favourites list
+> 
+Version 2.1 of Manage Kodi Favourites :sunglasses:
+- Added ability for users to add a Prefix, Suffix and/or Color each. Set the default actions in the configuration panel and easily and graphically modify entries in the Kodi Favourites list
 (Latest)
 -------------------------------
 # How to use:
 
 > [!IMPORTANT]
-> Depending on the setting you set in the configuration screen, this addon will either **Add a Prefix/Suffix** to items and/or **Color** those items in your Favourites list.
+> Depending on the setting you set in the configuration panel, this addon will either **Add a Prefix/Suffix** to items and/or **Color** to items in your Favourites list or allow uses to easily **Move items** by inserting/swapping entries.
 >
 > **Pickists**:
 > 
->     Picklist items are provided, however if you do not one to apply select 'None'. Also, you can provide a 'Custom' entry by selecting 'Custom' and an editable text field will appear. This applies to Prefix, Suffix and associated COlors.
+>     Default Picklists are provided, however if you do not want an action to apply, you simply select 'None'. Also, you can provide a 'Custom' entry by selecting the 'Custom' option and an editable text field will appear. This applies to Prefix, Suffix and associated COlors.
 > 
 > **Prefix Pickists**:
 > 
->    Text - Here you can define the Text to include in the Prefix Picklist. e.g. NONE|TV - |Movie - |Show - |Custom
+>    Text - Select the Text to be "prepended" to a selected item. e.g. NONE|TV - |Movie - |Show - |Custom
 > 
->    Color - Here you can define the Colors to include in the Prefix Picklist. e.g. NONE|green|yellow|blue|cyan|orange|purple|Custom
+>    Color - Select the Color to be applied to the Prefix. e.g. NONE|green|yellow|blue|cyan|orange|purple|white|Custom
 > 
 > **Suffix Pickists**:
 > 
->    Text - Here you can define the Text to include in the Suffix Picklist. e.g. NONE| - # Samsung TV+ #|Custom
+>    Text - Select the Text to be "appended" to a selected item. e.g. NONE| - # Samsung TV+ #|Custom
 > 
->    Color - Here you can define the Colors to include in the Suffix Picklist. e.g. NONE|green|yellow|blue|cyan|orange|purple|Custom
+>    Color - Select the Color to be applied to the Suffix. e.g. NONE|green|yellow|blue|cyan|orange|purple|white|Custom
 > 
-The main menu shows 4 options.
+### The main menu shows 4 options.
 
-### 1) Edit Kodi Favourites...   
+### 1) Manage Your Kodi Favourites...   
 Opens a dialog where you can view and reorder your Favourites items usin the Insert/Swap functionality or add a Prefix with Color and/or a Suffix with Color.
 
 Add a Prefix and Color or Suffix and Color
@@ -51,11 +51,11 @@ Insert/Swap
 - Press the Close button to close that dialog when you're done editing (your changes won't be saved yet).  
 - If you've made some mistakes and want to start over, press the "Restore..." button to restore the favourites order from the Kodi favourites file. This will undo your unsaved changes.
    
-### 2) Save and reload
+### 2) Apply and Reload Your Kodi Profile
 Saves your changes and reloads your Kodi profile, so your changes can be seen immediately instead of you having to restart Kodi to see them.
    
-### 3) Save and exit
-Saves your changes but doesn't reload Kodi (as this operation can crash in some Kodi builds). After using this, you have to manually restart Kodi to see your changes.
+### 3) Save and Exit
+Saves your changes but doesn't reload your Kodiprofie (as this operation can crash in some Kodi builds). After using this, you have to manually restart Kodi to see your changes.
 
-### 4) Exit only
-Just steps back from the add-on, no saving.
+### 4) Exit 
+Abandon your edits. Just steps back from the add-on, no saving.
