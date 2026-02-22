@@ -532,6 +532,11 @@ elif '/exit_only' in PLUGIN_URL:
     # Alternative action, going to the Home screen.
     #xbmc.executebuiltin('ActivateWindow(home)') # ID taken from https://kodi.wiki/view/Window_IDs
 
+elif '/configure' in PLUGIN_URL:
+    # Call up the configuration panel.
+    # Activate the Manage Kodi Favourites Settings window
+    xbmc.executebuiltin('Addon.OpenSettings(Manage-Kodi-Favourites)')
+
 else:
     # Create the menu items.
     xbmcplugin.setContent(PLUGIN_ID, 'files')
@@ -555,6 +560,9 @@ else:
     exitItem = xbmcgui.ListItem('[B]   Exit (Abandon All Changes)[/B]')
     exitItem.setArt({'thumb': 'DefaultFolderBack.png'})
     exitItem.setInfo('video', {'plot': 'Exit the add-on (same as pressing Back), without saving your changes.'})
+    configureItem = xbmcgui.ListItem('[B]Configure... (Call Up Configuration Panel)[/B]')
+    configureItem.setArt({'thumb': 'DefaultFolderBack.png'})
+    configureItem.setInfo('video', {'plot': 'Configure the default actions for Prefix, Suffix, Colors and Insert/Swap modes.'})
     xbmcplugin.addDirectoryItems(
         PLUGIN_ID,
         (
@@ -563,9 +571,12 @@ else:
             (PLUGIN_URL + 'save_reload', saveReloadItem, False),
             (PLUGIN_URL + 'save_exit', saveExitItem, False),
             (PLUGIN_URL + 'exit_only', exitItem, False)
+            (PLUGIN_URL + 'configure', configureItem, False)
+
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
