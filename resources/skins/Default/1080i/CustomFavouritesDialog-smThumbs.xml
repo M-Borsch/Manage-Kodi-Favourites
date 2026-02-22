@@ -262,7 +262,7 @@
                 <width>270</width>
 				<top>90</top>
                 <bottom>0</bottom>
-				<itemgap>50</itemgap>
+				<itemgap>20</itemgap>
                 <control type="button" id="301">
                     <width>270</width>
                     <height>100</height>
@@ -275,6 +275,7 @@
                     <texturenofocus colordiffuse="30FFFFFF">BGWhite.png</texturenofocus>
                 </control>
                 <control type="button" id="302">
+		    <visible>false</visible>
                     <width>270</width>
                     <height>100</height>
                     <onleft>200</onleft>
@@ -286,6 +287,7 @@
                     <texturenofocus colordiffuse="30FFFFFF">BGWhite.png</texturenofocus>
                 </control>
                 <control type="image">
+		    <visible>false</visible>
                     <height>300</height>
                     <onleft>200</onleft>
                     <onright>100</onright>
@@ -303,69 +305,177 @@
 			<aligny>top</aligny>
 			<label>[B]Swap:[/B]</label>
 		</control>
-		<control type="textbox">
-			<visible>String.IsEqual(Window.Property(reorder),1)</visible>
-			<height>25</height>
-			<onleft>200</onleft>
-			<width>270</width>
-			<onright>100</onright>
-			<font>font10</font>
-			<align>left</align>
-			<aligny>top</aligny>
-			<label>[B]Insert A before B:[/B]
-			</label>
-		</control>
-		<control type="textbox">
-			<visible>String.IsEqual(Window.Property(reorder),2)</visible>
-			<height>25</height>
-			<onleft>200</onleft>
-			<width>270</width>
-			<onright>100</onright>
-			<font>font10</font>
-			<align>left</align>
-			<aligny>top</aligny>
-			<label>[B]Insert A after B:[/B]
-			</label>
-		</control>
-		<control type="textbox">
-                    <visible>String.IsEqual(Window.Property(reorder),0)</visible>
-                    <height>150</height>
-		    <onleft>200</onleft>
-		    <width>270</width>
+				<control type="button" id="303">
+                    <width>270</width>
+                    <height>100</height>
+                    <onleft>200</onleft>
                     <onright>100</onright>
-		    <font>font10</font>
-                    <align>left</align>
-                    <aligny>top</aligny>
-                    <label>Select [B]"A" then select "B"[/B]
-- "A" will be placed at "B" and "B" will be placed at "A".
-		    </label>
+                    <textcolor>white</textcolor>
+                    <label>[B]Configure...[/B]</label>
+                    <align>center</align>
+                    <texturefocus colordiffuse="FF12A0C7">BGWhite.png</texturefocus>
+                    <texturenofocus colordiffuse="30FFFFFF">BGWhite.png</texturenofocus>
                 </control>
-		<control type="textbox">
-                    <visible>String.IsEqual(Window.Property(reorder),1)</visible>
-                    <height>150</height>
-		    <onleft>200</onleft>
-		    <width>270</width>
+				<control type="button" id="304">
+                    <width>270</width>
+                    <height>100</height>
+                    <onleft>200</onleft>
                     <onright>100</onright>
-		    <font>font10</font>
-                    <align>left</align>
-                    <aligny>top</aligny>
-                    <label>Select [B]"A" then select "B"[/B]
-- "A" will be placed before "B".
-		    </label>
+                    <textcolor>white</textcolor>
+                    <label>[B]Pre/Suffix & Color...[/B]</label>
+                    <align>center</align>
+                    <texturefocus colordiffuse="FF12A0C7">BGWhite.png</texturefocus>
+                    <texturenofocus colordiffuse="30FFFFFF">BGWhite.png</texturenofocus>
                 </control>
-		<control type="textbox">
+				<control type="textbox">
+					<visible>true</visible>
+					<height>25</height>
+					<onleft>200</onleft>
+					<width>270</width>
+					<onright>100</onright>
+					<font>font10</font>
+					<align>left</align>
+					<aligny>top</aligny>
+					<textcolor>yellow</textcolor>
+					<label>[B]Prefix / Color:[/B]</label>
+				</control>
+				<control type="textbox">
+					<visible>true</visible>
+					<height>50</height>
+					<onleft>195</onleft>
+					<width>270</width>
+					<onright>100</onright>
+					<font>font10</font>
+					<align>left</align>
+					<aligny>top</aligny>
+					 <textcolor>white</textcolor>
+					<label>$INFO[Window.Property(PrefixTextColor)]</label>
+				</control>
+				<control type="textbox">
+					<visible>true</visible>
+					<height>25</height>
+					<onleft>200</onleft>
+					<width>270</width>
+					<onright>100</onright>
+					<font>font10</font>
+					<align>left</align>
+					<aligny>top</aligny>
+					 <textcolor>yellow</textcolor>
+					<label>[B]Suffix / Color:[/B]</label>
+				</control>
+				<control type="textbox">
+					<visible>true</visible>
+					<height>50</height>
+					<onleft>200</onleft>
+					<width>270</width>
+					<onright>100</onright>
+					<font>font10</font>
+					<align>left</align>
+					<aligny>top</aligny>
+					 <textcolor>white</textcolor>
+					<label>$INFO[Window.Property(SuffixTextColor)]</label>
+				</control>
+				<control type="textbox">
+					<visible>false</visible>
+					<height>25</height>
+					<onleft>200</onleft>
+					<width>270</width>
+					<onright>100</onright>
+					<font>font10</font>
+					<align>left</align>
+					<aligny>top</aligny>
+					<label>[B]THUMB: [/B]$INFO[Window.Property(thumbSize)] [B]FONT: [/B] $INFO[Window.Property(fontSize)]</label>
+				</control>
+				<control type="textbox">
+					<visible>true</visible>
+					<height>25</height>
+					<onleft>200</onleft>
+					<width>270</width>
+					<onright>100</onright>
+					<font>font10</font>
+					<align>left</align>
+					<aligny>top</aligny>
+					<label>[B]=====INSERT/SWAP=================================[/B]</label>
+				</control>
+				<control type="textbox">
+					<visible>String.IsEqual(Window.Property(reorder),0)</visible>
+					<height>30</height>
+					<onleft>200</onleft>
+					<width>270</width>
+					<onright>100</onright>
+					<font>font10</font>
+					<align>left</align>
+					<aligny>top</aligny>
+					<label>[B]Swap:[/B]</label>
+				</control>
+				<control type="textbox">
+					<visible>String.IsEqual(Window.Property(reorder),1)</visible>
+					<height>30</height>
+					<onleft>200</onleft>
+					<width>270</width>
+					<onright>100</onright>
+					<font>font10</font>
+					<align>left</align>
+					<aligny>top</aligny>
+					<label>[B]Insert A before B:[/B]
+					</label>
+				</control>
+				<control type="textbox">
+					<visible>String.IsEqual(Window.Property(reorder),2)</visible>
+					<height>30</height>
+					<onleft>200</onleft>
+					<width>270</width>
+					<onright>100</onright>
+					<font>font10</font>
+					<align>left</align>
+					<aligny>top</aligny>
+					<label>[B]Insert A after B:[/B]</label>
+				</control>
+				<control type="textbox">
+		            <visible>String.IsEqual(Window.Property(reorder),0)</visible>
+		            <height>75</height>
+				    <onleft>200</onleft>
+				    <width>270</width>
+		            <onright>100</onright>
+				    <font>font10</font>
+		            <align>left</align>
+		            <aligny>top</aligny>
+		            <label>Select [B]"A" then select "B"[/B] - "A" will be placed at "B" and "B" will be placed at "A".</label>
+		        </control>
+				<control type="textbox">
+		            <visible>String.IsEqual(Window.Property(reorder),1)</visible>
+		            <height>75</height>
+					<onleft>200</onleft>
+				    <width>270</width>
+		            <onright>100</onright>
+				    <font>font10</font>
+		            <align>left</align>
+		            <aligny>top</aligny>
+		            <label>Select [B]"A" then select "B"[/B] - "A" will be placed before "B".</label>
+		        </control>
+				<control type="textbox">
                     <visible>String.IsEqual(Window.Property(reorder),2)</visible>
-                    <height>150</height>
-		    <onleft>200</onleft>
-		    <width>270</width>
+                    <height>75</height>
+		    		<onleft>200</onleft>
+		    		<width>270</width>
                     <onright>100</onright>
-		    <font>font10</font>
+		    		<font>font10</font>
                     <align>left</align>
                     <aligny>top</aligny>
-                    <label>Select [B]"A" then select "B"[/B]
-- "A" will be placed after "B".
-		    </label>
+                   	<label>Select [B]"A" then select "B"[/B] - "A" will be placed after "B".</label>
                 </control>
+				<control type="textbox">
+					<visible>true</visible>
+					<height>50</height>
+					<onleft>200</onleft>
+					<width>270</width>
+					<onright>100</onright>
+					<font>font10</font>
+					<align>left</align>
+					<aligny>top</aligny>
+					<textcolor>blue</textcolor>
+					<label>[I]kodi@borsch.ca http://borsch.ca[/I]</label>
+				</control>
 	     </control>
 	   </control>
 	</controls>
