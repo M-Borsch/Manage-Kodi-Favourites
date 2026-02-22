@@ -11,7 +11,8 @@
       [COLOR lavender][B]Manage Kodi Favourites[/B][/COLOR]
       [B]2.0:[/B]
       - Initial Public release
-      - Add ability to add Prefixes, Suffixes and Colors and/or Insert/Swap items in Kodi Favourites.
+      - Add ability to add Prefixes, Suffixes and Colors and/or Insert/Swap items in Favourites.
+      - Add ability to "Sort" all items in Favourites.  
       - Supersedes the Insert/Swap Kodi Favourites Program Addon
     </news>
     <summary>
@@ -22,6 +23,7 @@ Lets you manage the entries in your [B]Favourites[/B] by either inserting/swappi
 
 Kodi Program Addon to graphically manage your Kodi favourites by sorting, inserting, or swapping items and/or adding a prefix, suffix and color to you Kodi favourites
 Select item "A" and modify the Prefix/Suffix and Colors or simply select "A" then "B" and move depending the on the Insert/Swap mode set in the configuration panel. 
+
 Use the "Sort" button to quickly alphabetize your Favourites.
 
 Use this to quickly and easily manage your Kodi Favourites.
