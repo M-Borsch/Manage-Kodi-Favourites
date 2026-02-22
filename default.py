@@ -398,7 +398,7 @@ def favouritesDataGen():
 
         match = namePattern.search(entry)
         name = PARSER.unescape(match.group(1)) if match else ''
-        sortname = re.sub(pattern, "", name, flags=re.I)
+        sortname = re.sub(sortnamePattern, "", name, flags=re.I)
 
         match = thumbPattern.search(entry)
         if match:
@@ -592,6 +592,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
