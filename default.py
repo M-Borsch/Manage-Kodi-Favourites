@@ -547,22 +547,23 @@ else:
                                  'use:[/B] select one item, then select another to Insert/Swap. ' \
                                  'Do this as much as needed. Finally, close the dialog and use the menus ' \
                                  'below to save your changes.'})
-    saveReloadItem = xbmcgui.ListItem('[B]   Apply Changes and Reload Your Kodi Profile...[/B]')
+    saveReloadItem = xbmcgui.ListItem('   Apply Changes and Reload Your Kodi Profile')
     saveReloadItem.setArt({'thumb': 'DefaultAddonsUpdates.png'})
     saveReloadItem.setInfo('video', {'plot': 'Save any changes you made and reload your Kodi profile '
                                        'to make the changes visible right now, without having to restart Kodi.'})
-    saveExitItem = xbmcgui.ListItem('[B]   Save and Exit (No Reload - Leave Changes Pending a Kodi Restart or Profile Reload)[/B]')
+    saveExitItem = xbmcgui.ListItem('   Save and Exit (No Reload - Leave Changes Pending a Kodi Restart or Profile Reload)')
     saveExitItem.setArt({'thumb': 'DefaultFolderBack.png'})
     saveExitItem.setInfo('video', {'plot': 'Save any changes you made and exit the add-on. [B]Note:[/B] if you '
                                    'make any changes to your favourites using the Favourites screen (like adding, '
                                    'removing or reordering items) before closing Kodi, your changes from this '
                                    'add-on will be ignored.'})
-    exitItem = xbmcgui.ListItem('[B]   Exit (Abandon All Changes)[/B]')
-    exitItem.setArt({'thumb': 'DefaultFolderBack.png'})
-    exitItem.setInfo('video', {'plot': 'Exit the add-on (same as pressing Back), without saving your changes.'})
-    configureItem = xbmcgui.ListItem('[B]Configure... (Call Up Configuration Panel)[/B]')
+    configureItem = xbmcgui.ListItem('[B]Configure... (Change Settings)[/B]')
     configureItem.setArt({'thumb': 'DefaultFolderBack.png'})
     configureItem.setInfo('video', {'plot': 'Configure the default actions for Prefix, Suffix, Colors and Insert/Swap modes.'})
+    exitItem = xbmcgui.ListItem('[B]Exit (Abandon All Changes)[/B]')
+    exitItem.setArt({'thumb': 'DefaultFolderBack.png'})
+    exitItem.setInfo('video', {'plot': 'Exit the add-on (same as pressing Back), without saving your changes.'})
+
     xbmcplugin.addDirectoryItems(
         PLUGIN_ID,
         (
@@ -570,12 +571,12 @@ else:
             (PLUGIN_URL + 'dialog', dialogItem, False),
             (PLUGIN_URL + 'save_reload', saveReloadItem, False),
             (PLUGIN_URL + 'save_exit', saveExitItem, False),
-            (PLUGIN_URL + 'exit_only', exitItem, False),
-            (PLUGIN_URL + 'configure', configureItem, False)
-
+            (PLUGIN_URL + 'configure', configureItem, False),
+            (PLUGIN_URL + 'exit_only', exitItem, False)
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
