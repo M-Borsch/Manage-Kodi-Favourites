@@ -5,12 +5,13 @@ This Kodi program addon allows you to manage your Kodi favourites by inserting o
 
 # Program Addon: Manage Kodi Favourites
 
-### This is a simple & lightweight KODI Program Addon that lets you quickly manage your Kodi favourites list that works on multiple Kodi skins. Use this Porgram Addon to easilly Manage (i.e. move, add a prefix or suffix and color code entries) by inserting or swapping entries and/or adding Color, prepending a Prefix or appending a Suffix to entries in your Kodi Favourites list.
+### This is a simple & lightweight KODI Program Addon that lets you quickly manage your Kodi favourites list that works on multiple Kodi skins. Use this Porgram Addon to easilly Manage (i.e. move, sort,add a prefix or suffix and color code Favourites) by inserting or swapping entries, using the sort function and/or adding Color, prepending a Prefix or appending a Suffix to entries in your Kodi Favourites list.
 > [!NOTE]
 > (Latest) - This is the latest version of the Manage Kodi Favourites
 > 
-Version 2.1 of Manage Kodi Favourites :sunglasses:
+Version 2.0 of Manage Kodi Favourites :sunglasses:
 - Added ability for users to add a Prefix, Suffix and/or Color each. Set the default actions in the configuration panel and easily and graphically modify entries in the Kodi Favourites list
+- Added ability to "Sort" Favourites
 (Latest)
 -------------------------------
 # How to use:
@@ -56,6 +57,9 @@ Saves your changes and reloads your Kodi profile, so your changes can be seen im
    
 ### 3) Save and Exit
 Saves your changes but doesn't reload your Kodiprofie (as this operation can crash in some Kodi builds). After using this, you have to manually restart Kodi to see your changes.
+
+### 4) Configure 
+Call up the Settings Dialog to change default Insert/Swap actions, Thumbnail size, Font size on labels and Colors as well as set the Prefix and Suffix text.
 
 ### 4) Exit 
 Abandon your edits. Just steps back from the add-on, no saving.
