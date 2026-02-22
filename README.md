@@ -72,6 +72,7 @@ Call up the Settings Dialog to change default Insert/Swap actions, Thumbnail siz
 
 ### 4) Exit 
 Abandon your edits. Just steps back from the add-on, no saving.
+
 ------------------------------------------------------------------------------------------------------------------
 > [!IMPORTANT]
 > MB-KODI Terms and Conditions / Disclaimer
