@@ -343,6 +343,18 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
                 self.indexFrom = None
                 self.panel.getSelectedItem().setProperty('selected', '')
 
+    def doSortItems(self):
+        if xbmcgui.Dialog().yesno(
+            'Manage Kodi Favourites',
+            'This will sort all items in your Favourites list.\nProceed?'
+        ):
+            
+            # Re-sort all items based on their original indices.
+            self.indexFrom = None
+            self.allItems = sorted(self.allItems, key=lambda li: li.getLabel())
+            self.panel.reset()
+            self.panel.addItems(self.allItems)
+    
     def doReload(self):
         if xbmcgui.Dialog().yesno(
             'Manage Kodi Favourites',
@@ -576,6 +588,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
