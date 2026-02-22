@@ -401,8 +401,8 @@ def favouritesDataGen():
         name = PARSER.unescape(match.group(1)) if match else ''
         sortname = re.sub(sortnamePattern, "", name, flags=re.I)
 
-        if DEBUG2 == '1': log_msg = "[COLOR red]Manage Kodi Favourites INFO:[/COLOR] Sort Name: %s" % sortname
-        if DEBUG2 == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)             
+        if DEBUG == '1': log_msg = "[COLOR red]Manage Kodi Favourites INFO:[/COLOR] Sort Name: %s" % sortname
+        if DEBUG == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)             
         
         match = thumbPattern.search(entry)
         if match:
@@ -596,6 +596,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
