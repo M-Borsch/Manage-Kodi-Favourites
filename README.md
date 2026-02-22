@@ -45,7 +45,7 @@ Add a Prefix and Color or Suffix and Color
 (If an item is marked, you can select it again to unmark it.)  
 - Press the Close button to close that dialog when you're done editing (your changes won't be saved yet).  
 - If you've made some mistakes and want to start over, press the "Abandon Changes..." button to restore the favourites order from the Kodi favourites file. This will undo your unsaved changes.
-- 
+
 Insert/Swap
 - To reorder items, select an item "A" to "mark" it, then select another item "B" to either **"SWAP"** or **"Insert"**.  
 (If an item is marked, you can select it again to unmark it.)  
