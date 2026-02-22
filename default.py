@@ -72,7 +72,8 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             101: self.doSelect,
             301: self.close,
             302: self.doReload,
-            303: self.doConfigure,
+            # 303: self.doConfigure,
+            303: self.doSortItems,
             304: self.doPreSuffix,
         }
 
@@ -588,6 +589,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
