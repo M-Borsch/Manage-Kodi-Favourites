@@ -21,6 +21,6 @@
 >
 > - [x] - (Write Out New file) - Add ability to save the change in Prefix/Suffix and Colors in the Favourites list
 >
-> - [ ] - (Sort) - Add ability to sort the Favourites list
+> - [x] - (Sort) - Add ability to sort the Favourites list
 
 
