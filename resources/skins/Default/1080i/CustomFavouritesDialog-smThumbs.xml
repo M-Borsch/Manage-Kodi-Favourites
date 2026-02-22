@@ -311,7 +311,7 @@
                     <onleft>200</onleft>
                     <onright>100</onright>
                     <textcolor>white</textcolor>
-                    <label>[B]Configure...[/B]</label>
+                    <label>[B]Sort...[/B]</label>
                     <align>center</align>
                     <texturefocus colordiffuse="FF12A0C7">BGWhite.png</texturefocus>
                     <texturenofocus colordiffuse="30FFFFFF">BGWhite.png</texturenofocus>
@@ -480,4 +480,5 @@
 	   </control>
 	</controls>
 </window>
+
 
