@@ -109,7 +109,8 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             if DEBUG == '1': log_msg = "[COLOR red]Manage Kodi Favourites INFO:[/COLOR] New Label = %s" % data[2]
             if DEBUG == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)
 
-            li.setProperty('thumb', data[4]) 
+            li.setProperty('thumb', data[4])
+            li.setProperty('sortname', data[5])
 
             li.setProperty('index', str(index)) # To help with resetting, if necessary.
             yield li
@@ -352,7 +353,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             
             # Re-sort all items based on their original indices.
             self.indexFrom = None
-            self.allItems = sorted(self.allItems, key=lambda li: li.getLabel())
+            self.allItems = sorted(self.allItems, key=lambda li: li.getProperty('sortname'))
             self.panel.reset()
             self.panel.addItems(self.allItems)
     
@@ -390,12 +391,14 @@ def favouritesDataGen():
     namePattern = re.compile('name\s*=\s*"([^"]+)')
     thumbPattern = re.compile('thumb\s*=\s*"([^"]+)')
     actionPattern = re.compile('>\s*([^<]+)')
+    sortnamePattern = r"\[\/?COLOR\]"
                                
     for entryMatch in re.finditer('(<favourite\s+[^<]+</favourite>)', contents):
         entry = entryMatch.group(1)
 
         match = namePattern.search(entry)
         name = PARSER.unescape(match.group(1)) if match else ''
+        sortname = re.sub(pattern, "", name, flags=re.I)
 
         match = thumbPattern.search(entry)
         if match:
@@ -419,7 +422,7 @@ def favouritesDataGen():
         if DEBUG == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)     
         
         # Yield a 3-tuple of name, thumb-url and the original content of the favourites entry.
-        yield name, thumb, entry, action, origThumb
+        yield name, thumb, entry, action, origThumb, sortname
 
 
 def saveFavourites(xmlText):
@@ -589,6 +592,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
