@@ -9,10 +9,13 @@ This Kodi program addon allows you to manage your Kodi favourites by inserting o
 > [!NOTE]
 > (Latest) - This is the latest version of the Manage Kodi Favourites
 > 
+> Supported by MB-KODI ✔️
+> 
 Version 2.0 of Manage Kodi Favourites :sunglasses:
 - Added ability for users to add a Prefix, Suffix and/or Color each. Set the default actions in the configuration panel and easily and graphically modify entries in the Kodi Favourites list
 - Added ability to "Sort" Favourites
 (Latest)
+-  <a href="Manage-Kodi-Favourites-2.0.zip">Download the latest Manage Kodi Favourites (zip file)</a> (Latest)
 -------------------------------
 # How to use:
 
