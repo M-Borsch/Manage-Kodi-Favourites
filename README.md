@@ -16,6 +16,8 @@ Version 2.0 of Manage Kodi Favourites :sunglasses:
 - Added ability to "Sort" Favourites
 (Latest)
 -  <a href="https://github.com/M-Borsch/Manage-Kodi-Favourites/blob/main/Manage-Kodi-Favourites-2.0.zip">Download the latest Manage Kodi Favourites (zip file)</a> (Latest)
+-  -  <a href="Manage-Kodi-Favourites-2.0.zip">Download the latest Manage Kodi Favourites new (zip file)</a> (Latest)
+
 -------------------------------
 # How to use:
 
