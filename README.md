@@ -15,7 +15,7 @@ Version 2.0 of Manage Kodi Favourites :sunglasses:
 - Added ability for users to add a Prefix, Suffix and/or Color each. Set the default actions in the configuration panel and easily and graphically modify entries in the Kodi Favourites list
 - Added ability to "Sort" Favourites
 (Latest)
--  <a href="Manage-Kodi-Favourites-2.0.zip">Download the latest Manage Kodi Favourites (zip file)</a> (Latest)
+-  <a href="Manage-Kodi-Favourites-2.0.zip">Manage-Kodi-Favourites-2.0.zip</a> (Latest)
 
 -------------------------------
 # How to use:
