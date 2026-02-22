@@ -44,6 +44,7 @@ import xbmc, xbmcgui, xbmcplugin, xbmcvfs
 from xbmcaddon import Addon
 
 DEBUG = '0'
+DEBUG2 = '1'
 # Flag to put up the Under Construction Popup
 DEBUG3 = '0'
 FAVOURITES_PATH = 'special://userdata/favourites.xml'
@@ -400,6 +401,9 @@ def favouritesDataGen():
         name = PARSER.unescape(match.group(1)) if match else ''
         sortname = re.sub(sortnamePattern, "", name, flags=re.I)
 
+        if DEBUG2 == '1': log_msg = "[COLOR red]Manage Kodi Favourites INFO:[/COLOR] Sort Name: %s" % sortname
+        if DEBUG2 == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)             
+        
         match = thumbPattern.search(entry)
         if match:
             thumb = PARSER.unescape(match.group(1))
@@ -592,6 +596,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
