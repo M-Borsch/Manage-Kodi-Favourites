@@ -17,11 +17,12 @@
 Manage your Favourites made easy!
     </summary>
     <description lang="en">
-Lets you manage the entries in your [B]Favourites[/B] by either adding "prefix/suffix" or "coloring".
+Lets you manage the entries in your [B]Favourites[/B] by either inserting/swapping entries and/or adding a "prefix/suffix" with "coloring".
 
-Select item and madify depending on selected items 
+This Kodi Program Addon allows you to graphically manage your Kodi favourites by inserting or swapping items and/or adding a prefix, suffix and color to you Kodi favourites
+Select item "A" and modify the Prefix/Suffix and Colors or slect "A" then "B" and move depending on the Insert/Swap mode. 
 
-Modify picklists in the configuration screen.
+Customize the actions in the configuration panel.
 
 Use this to quickly and easily manage your Favourites.
     </description>
