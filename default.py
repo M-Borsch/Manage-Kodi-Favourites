@@ -668,7 +668,7 @@ elif '/overwrite_favs' in PLUGIN_URL:
     else:
         # Display an error dialog if the operation fails
         dialog = xbmcgui.Dialog()
-        dialog.ok("File Operation Error", f"[COLOR red]Manage Kodi Favourites: [/COLOR]Operation Denied. Please change option in Configure-Settings-Advanced prior to copying!'")
+        dialog.ok("File Operation Error", f"[COLOR red]Manage Kodi Favourites: [/COLOR]Operation Denied.\n\nPlease change option in Configure-Settings-Advanced prior to copying!'")
 
 else:
     # Create the menu items.
@@ -727,6 +727,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
