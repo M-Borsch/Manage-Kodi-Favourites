@@ -509,7 +509,7 @@ def overwriteFavourites():
                 shutil.copyfile(src, dst)
                 # Display a confirmation dialog (requires xbmcgui)
                 dialog = xbmcgui.Dialog()
-                dialog.ok("File Operation", "[COLOR red]Manage Kodi Favourites: [/COLOR]favourites.xml successfully copied!\n\nYou must restart Kodi or [COLOR orange]Reload Profile\nto view the change")
+                dialog.ok("File Operation", "[COLOR red]Manage Kodi Favourites: [/COLOR]favourites.xml successfully copied!\n\nYou must restart Kodi or [COLOR orange]Reload Profile[/COLOR]\nto view the change")
             except IOError as e:
                 # Display an error dialog if the operation fails
                 dialog = xbmcgui.Dialog()
@@ -665,7 +665,7 @@ else:
     # Create the menu items.
     xbmcplugin.setContent(PLUGIN_ID, 'files')
 
-    dialogItem = xbmcgui.ListItem('[COLOR blue][B]Manage Your Kodi Favourites...(Edit Your Favourites List)[/B][/COLOR]')
+    dialogItem = xbmcgui.ListItem('[COLOR blue][B]Manage Your Kodi Favourites...[/COLOR](Edit Your Favourites List)[/B]')
     dialogItem.setArt({'thumb': 'DefaultAddonContextItem.png'})
     dialogItem.setInfo('video', {'plot': 'Open the dialog where you can Manage your favourites.[CR][B]How to ' \
                                  'use:[/B] select one item, then select another to Insert/Swap. ' \
@@ -718,6 +718,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
