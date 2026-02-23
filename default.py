@@ -32,6 +32,7 @@ import xbmc
 import xbmcgui
 import os
 import shutil
+import xbmcvfs
 
 try:
     # Python 2.x
@@ -497,8 +498,8 @@ def overwriteFavourites():
 
         # Define source and destination paths using xbmc.translatePath()
         # 'special://home/' is a common built-in path in Kodi that points to the userdata folder
-        src = xbmc.translatePath(selected_file_path)
-        dst = xbmc.translatePath(FAVOURITES_PATH)
+        src = xbmcvfs.translatePath(selected_file_path)
+        dst = xbmcvfs.translatePath(FAVOURITES_PATH)
         
         # Add error handling using a try-except block
         try:
@@ -710,17 +711,3 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
