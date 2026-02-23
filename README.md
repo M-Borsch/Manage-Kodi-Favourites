@@ -40,16 +40,15 @@ This <font COLOR="blue"><B>MB-KODI Manage Kodi Favourites</B></font> Program Add
 > 
 > **Prefix Pickists**:
 > 
->    Text - Select the Text to be "prepended" to a selected item. e.g. NONE|TV - |Movie - |Show - |Custom
+> Text - Select the Text to be "prepended" to a selected item. e.g. NONE|TV - |Movie - |Show - |Custom
 > 
->    Color - Select the Color to be applied to the Prefix. e.g. NONE|green|yellow|blue|cyan|orange|purple|white|Custom
+> Color - Select the Color to be applied to the Prefix. e.g. NONE|green|yellow|blue|cyan|orange|purple|white|Custom
 > 
 > **Suffix Pickists**:
 > 
->    Text - Select the Text to be "appended" to a selected item. e.g. NONE| - # Samsung TV+ #|Custom
+> Text - Select the Text to be "appended" to a selected item. e.g. NONE| - # Samsung TV+ #|Custom
 > 
->    Color - Select the Color to be applied to the Suffix. e.g. NONE|green|yellow|blue|cyan|orange|purple|white|Custom
-
+> Color - Select the Color to be applied to the Suffix. e.g. NONE|green|yellow|blue|cyan|orange|purple|white|Custom
 
 ## ADDON Main Menu
 
@@ -87,11 +86,12 @@ Abandon your edits. Just steps back from the add-on, no saving.
 Questions/Comments/thanks - <a href="mailto:kodi@borsch.ca">Send an email to MB-KODI</a><br />
 <hr>
 <p><img class="an1" draggable="false" src="https://fonts.gstatic.com/s/e/notoemoji/15.1/26a0_fe0f/72.png" alt="âš ï¸" width="20" loading="lazy" data-emoji="âš ï¸" aria-label="âš ï¸"> No Copyright infringement intended <img class="an1" draggable="false" src="https://fonts.gstatic.com/s/e/notoemoji/15.1/274c/72.png" alt="âŒ" width="20" loading="lazy" data-emoji="âŒ" aria-label="âŒ"> <a href="mailto:kodi@borsch.ca">Send an email to MB-KODI</a> to fix / Remove. (<span style="font-size: 8px;"><em>NAS</em></span>)</p>
+
 <hr>
 
 > [!IMPORTANT]
 > MB-KODI Terms and Conditions / Disclaimer
-> 
+
 Information published on or related to MB-KODI® repository is accurate and correct to our knowledge, however, there may be omissions, errors, or mistakes. Content published on or related to MB-KODI is for informational purposes only. By continuing to use these services, you agree to the following Terms and Conditions. 
 
 Terms and Conditions / Disclaimer
