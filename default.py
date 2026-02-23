@@ -509,7 +509,7 @@ def overwriteFavourites():
                 shutil.copyfile(src, dst)
                 # Display a confirmation dialog (requires xbmcgui)
                 dialog = xbmcgui.Dialog()
-                dialog.ok("File Operation", "[COLOR red]Manage Kodi Favourites: [/COLOR]favourites.xml successfully copied!")
+                dialog.ok("File Operation", "[COLOR red]Manage Kodi Favourites: [/COLOR]favourites.xml successfully copied!\n\nYou must restart Kodi or [COLOR orange]Reload Profile\nto view the change")
             except IOError as e:
                 # Display an error dialog if the operation fails
                 dialog = xbmcgui.Dialog()
@@ -675,13 +675,13 @@ else:
     saveReloadItem.setArt({'thumb': 'DefaultAddonsUpdates.png'})
     saveReloadItem.setInfo('video', {'plot': 'Save any changes you made and reload your Kodi profile '
                                        'to make the changes visible right now, without having to restart Kodi.'})
-    saveExitItem = xbmcgui.ListItem('   Save & Exit (Save-Exit-No Reload - Leave Changes Pending a Kodi Restart or [COLOR orange]Profile Reload[/COLOR])')
+    saveExitItem = xbmcgui.ListItem('   Save & Exit (Save-Exit-No Reload - Leave Changes Pending a Kodi Restart or [COLOR orange]Reload Profile[/COLOR])')
     saveExitItem.setArt({'thumb': 'DefaultAddonsUpdates.png'})
     saveExitItem.setInfo('video', {'plot': 'Save any changes you made and exit the add-on. [B]Note:[/B] if you '
                                    'make any changes to your favourites using the Favourites screen (like adding, '
                                    'removing or reordering items) before closing Kodi, your changes from this '
                                    'add-on will be ignored.'})
-    saveSaveItem = xbmcgui.ListItem('   Save Only (Save-No Exit-No Reload - Leave Changes Pending a Kodi Restart or [COLOR orange]Profile Reload[/COLOR])')
+    saveSaveItem = xbmcgui.ListItem('   Save Only (Save-No Exit-No Reload - Leave Changes Pending a Kodi Restart or [COLOR orange]Reload Profile[/COLOR])')
     saveSaveItem.setArt({'thumb': 'DefaultFolderBack.png'})
     saveSaveItem.setInfo('video', {'plot': 'Save any changes you made but do not exit the add-on. [B]Note:[/B] if you '
                                    'make any changes to your favourites using the Favourites screen (like adding, '
@@ -696,9 +696,9 @@ else:
     configureItem = xbmcgui.ListItem('[B]Configure... (Change Settings)[/B]')
     configureItem.setArt({'thumb': 'DefaultFolderBack.png'})
     configureItem.setInfo('video', {'plot': 'Configure the default actions in Settings panel for Prefix, Suffix, Colors and Insert/Swap modes.'})
-    overwriteFavs = xbmcgui.ListItem('[COLOR red][B]Overwrite Favourites [/COLOR](Advanced! - Overwrite Fvourites file - Leave Changes Pending a Kodi Restart or [COLOR orange]Profile Reload[/COLOR])[/B]')
+    overwriteFavs = xbmcgui.ListItem('[COLOR red][B]Overwrite Favourites [/COLOR](Advanced! - Overwrite Fvourites file - Leave Changes Pending a Kodi Restart or [COLOR orange]Reload Profile[COLOR])[/B]')
     overwriteFavs.setArt({'thumb': 'DefaultFolderBack.png'})
-    overwriteFavs.setInfo('video', {'plot': 'Advanced - Overwrite Kodi Favourites file, Leave Changes Pending a Kodi Restart or [COLOR orange]Profile Reload.[/COLOR]'})
+    overwriteFavs.setInfo('video', {'plot': 'Advanced - Overwrite Kodi Favourites file, Leave Changes Pending a Kodi Restart or [COLOR orange]Reload Profile.[/COLOR]'})
     exitItem = xbmcgui.ListItem('[B]Exit (No Save-Exit - Abandon Any Unsaved Changes)[/B]')
     exitItem.setArt({'thumb': 'DefaultFolderBack.png'})
     exitItem.setInfo('video', {'plot': 'Exit the add-on (same as pressing Back), without saving your changes.'})
@@ -718,7 +718,6 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
-
 
 
 
