@@ -97,31 +97,31 @@ msgid "NONE"
 
 #: resources/settings.xml
 msgctxt "#30019"
-msgid " - # Free99 #"
+msgid " - ¤ Free99 ¤"
 
 #: resources/settings.xml
 msgctxt "#30020"
-msgid " - # Scrubs V2 #"
+msgid " - ¤ Scrubs V2 ¤"
 
 #: resources/settings.xml
 msgctxt "#30021"
-msgid " - # Ghost #"
+msgid " - ¤ Ghost ¤"
 
 #: resources/settings.xml
 msgctxt "#30022"
-msgid " - # Quicksilver #"
+msgid " - ¤ Quicksilver ¤"
 
 #: resources/settings.xml
 msgctxt "#30023"
-msgid " - # Samsung TV+ #"
+msgid " - ¤ Samsung TV+ ¤"
 
 #: resources/settings.xml
 msgctxt "#30024"
-msgid " - # Pluto TV #"
+msgid " - ¤ Pluto TV ¤"
 
 #: resources/settings.xml
 msgctxt "#30025"
-msgid " - # IPTV #"
+msgid " - ¤ IPTV ¤"
 
 #: resources/settings.xml
 msgctxt "#30026"
@@ -201,4 +201,5 @@ msgid "»»» Launch "
 
 #: resources/settings.xml
 msgctxt "#30051"
-msgid " - # TV Free #"
+msgid " - ¤ TV Free ¤"
+
