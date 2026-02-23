@@ -586,7 +586,7 @@ else:
     # Create the menu items.
     xbmcplugin.setContent(PLUGIN_ID, 'files')
 
-    dialogItem = xbmcgui.ListItem('[B]Manage Your Kodi Favourites...[/B]')
+    dialogItem = xbmcgui.ListItem('[B]Manage Your Kodi Favourites...(Edit Your Favourites List)[/B]')
     dialogItem.setArt({'thumb': 'DefaultAddonContextItem.png'})
     dialogItem.setInfo('video', {'plot': 'Open the dialog where you can Manage your favourites.[CR][B]How to ' \
                                  'use:[/B] select one item, then select another to Insert/Swap. ' \
@@ -635,6 +635,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
