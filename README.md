@@ -40,15 +40,15 @@ Default Picklists are provided, however if you do not want an action to apply, y
  
 **Prefix Pickists**:
 
->Text - Select the Text to be "prepended" to a selected item. e.g. "NONE|TV - |Movie - |Show - |Custom"
+>Text - Select the Text to be "prepended" to a selected item. e.g. "NONE,TV - ,Movie - ,Show - ,Custom"
 
->Color - Select the Color to be applied to the Prefix. e.g. "NONE|green|yellow|blue|cyan|orange|purple|white|Custom"
+>Color - Select the Color to be applied to the Prefix. e.g. "NONE,green,yellow,blue,cyan,orange,purple,white,Custom"
  
 **Suffix Pickists**:
 
->Text - Select the Text to be "appended" to a selected item. e.g. "NONE| - # Samsung TV+ #|Custom"
+>Text - Select the Text to be "appended" to a selected item. e.g. "NONE, - # Samsung TV+ #,Custom"
 
->Color - Select the Color to be applied to the Suffix. e.g. "NONE|green|yellow|blue|cyan|orange|purple|white|Custom"
+>Color - Select the Color to be applied to the Suffix. e.g.  "NONE,green,yellow,blue,cyan,orange,purple,white,Custom"
 
 ## ADDON Main Menu
 
