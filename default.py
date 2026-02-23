@@ -632,8 +632,8 @@ elif '/overwrite_favs' in PLUGIN_URL:
         if xbmcgui.Dialog().yesno('Manage Kodi Favourites', msg_text):
             # Activate the filemaanager
             overwriteFavourites()
-        else
-            overwriteFavourites()
+    else:
+        overwriteFavourites()
 
 else:
     # Create the menu items.
@@ -692,6 +692,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
