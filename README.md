@@ -49,8 +49,9 @@ This <font COLOR="blue"><B>MB-KODI Manage Kodi Favourites</B></font> Program Add
 >    Text - Select the Text to be "appended" to a selected item. e.g. NONE| - # Samsung TV+ #|Custom
 > 
 >    Color - Select the Color to be applied to the Suffix. e.g. NONE|green|yellow|blue|cyan|orange|purple|white|Custom
-> 
-### The main menu shows the options.
+
+
+## ADDON Main Menu
 
 ### 1) Manage Your Kodi Favourites...   
 Opens a dialog where you can view and reorder your Favourites items usin the Insert/Swap functionality or add a Prefix with Color and/or a Suffix with Color.
