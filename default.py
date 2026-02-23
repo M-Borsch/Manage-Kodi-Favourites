@@ -29,6 +29,9 @@ import sys
 import json
 import traceback
 import xbmc
+import xbmcgui
+import os
+
 try:
     # Python 2.x
     from HTMLParser import HTMLParser
@@ -444,7 +447,6 @@ def saveFavourites(xmlText):
         raise Exception('ERROR: unable to write to the Favourites file. Nothing was saved.')
     return True
 
-def saveNewFavourites(xmlText):
     if not xmlText:
         return False
     try:
@@ -454,6 +456,45 @@ def saveNewFavourites(xmlText):
     except Exception as e:
         raise Exception('ERROR: unable to write to the New Favourites file. Nothing was saved.')
     return True
+
+
+def overwriteFavourites():
+
+    # --- Configuration Variables ---
+    # Type of browse dialog: 1 = ShowAndGetFile
+    browse_type = 1
+    # Dialog heading
+    heading = 'Select a Readable File'
+    # The starting path. Use "" to list local drives and network shares
+    # or specify a default path like 'special://home/addons/'
+    default_path = 'special://home' 
+    # File mask for readable files (e.g., text, xml, log files). Use '|' to separate extensions.
+    file_mask = '.txt|.xml|.log|.md' 
+    # Enable multiple file selection (optional)
+    enable_multiple = False
+    
+    # --- Show the browse dialog ---
+    dialog = xbmcgui.Dialog()
+    selected_file_path = dialog.browse(
+        browse_type,
+        heading,
+        '',  # shares parameter: "" for local/network sources, "files" for file sources
+        file_mask,
+        enableMultiple=enable_multiple,
+        defaultt=default_path # default path to start browsing from
+    )
+    
+    # --- Process the result ---
+    if selected_file_path:
+        xbmc.log(f"Selected file path: {selected_file_path}", xbmc.LOGINFO)
+        # You can now use xbmcvfs to read the file content
+        # Example (requires importing xbmcvfs):
+        # import xbmcvfs
+        # with xbmcvfs.File(selected_file_path, 'r') as f:
+        #     content = f.read()
+        #     xbmc.log(f"File content snippet: {content[:100]}", xbmc.LOGINFO)
+    else:
+        xbmc.log("File selection cancelled by user.", xbmc.LOGINFO)
 
 
 def getRawWindowProperty(prop):
@@ -590,10 +631,9 @@ elif '/overwrite_favs' in PLUGIN_URL:
     if verbose == 'true':
         if xbmcgui.Dialog().yesno('Manage Kodi Favourites', msg_text):
             # Activate the filemaanager
-            xbmc.executebuiltin('ActivateWindow(filemanager)', True)
-    else:
-        # Just do the change
-        xbmc.executebuiltin('ActivateWindow(filemanager)', True)
+            overwriteFavourites()
+        else
+            overwriteFavourites()
 
 else:
     # Create the menu items.
@@ -652,6 +692,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
