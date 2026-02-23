@@ -528,18 +528,7 @@ elif '/save_reload' in PLUGIN_URL:
         xbmcLog(traceback.format_exc())
         xbmcgui.Dialog().ok('Manage Kodi Favourites Error', 'ERROR: "%s"\n(Please check the log for more info)' % str(e))
 
-elif '/nosave_reload' in PLUGIN_URL:
-    # Reload the current profile (which causes a reload of 'favourites.xml').
-    clearWindowProperty(PROPERTY_FAVOURITES_RESULT)
-    clearWindowProperty(REORDER_METHOD)
-    clearWindowProperty(THUMB_SIZE)
-    clearWindowProperty(FONT_SIZE)
-    clearWindowProperty(PREFIX_TEXT_COLOR)
-    clearWindowProperty(SUFFIX_TEXT_COLOR)
-    
-    xbmcgui.Dialog().ok('Manage Kodi Favourites', 'Exiting and Reloading Kodi Profile, press OK to start the reload\n\nThis may take several seconds...')
-    xbmc.executebuiltin('LoadProfile(%s)' % xbmc.getInfoLabel('System.ProfileName'))
-    
+
 elif '/save_exit' in PLUGIN_URL:
     # Reload the current profile (which causes a reload of 'favourites.xml').
     try:
@@ -564,6 +553,18 @@ elif '/save_noexit' in PLUGIN_URL:
     except Exception as e:
         xbmcLog(traceback.format_exc())
         xbmcgui.Dialog().ok('Manage Kodi Favourites Error', 'ERROR: "%s"\n(Please check the log for more info)' % str(e))
+elif '/nosave_reload' in PLUGIN_URL:
+    # Reload the current profile (which causes a reload of 'favourites.xml').
+    clearWindowProperty(PROPERTY_FAVOURITES_RESULT)
+    clearWindowProperty(REORDER_METHOD)
+    clearWindowProperty(THUMB_SIZE)
+    clearWindowProperty(FONT_SIZE)
+    clearWindowProperty(PREFIX_TEXT_COLOR)
+    clearWindowProperty(SUFFIX_TEXT_COLOR)
+    
+    xbmcgui.Dialog().ok('Manage Kodi Favourites', 'Exiting and Reloading Kodi Profile, press OK to start the reload\n\nThis may take several seconds...')
+    xbmc.executebuiltin('LoadProfile(%s)' % xbmc.getInfoLabel('System.ProfileName'))
+
 
 elif '/exit_only' in PLUGIN_URL:
     # Clear the results property and go back one screen (to wherever the user came from).
@@ -617,7 +618,7 @@ else:
     configureItem = xbmcgui.ListItem('[B]Configure... (Change Settings)[/B]')
     configureItem.setArt({'thumb': 'DefaultFolderBack.png'})
     configureItem.setInfo('video', {'plot': 'Configure the default actions in Settings panel for Prefix, Suffix, Colors and Insert/Swap modes.'})
-    exitItem = xbmcgui.ListItem('[B]Exit (No Save-Exit - Abandon All Changes)[/B]')
+    exitItem = xbmcgui.ListItem('[B]Exit (No Save-Exit - Abandon Any Unsaved Changes)[/B]')
     exitItem.setArt({'thumb': 'DefaultFolderBack.png'})
     exitItem.setInfo('video', {'plot': 'Exit the add-on (same as pressing Back), without saving your changes.'})
 
@@ -635,6 +636,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
