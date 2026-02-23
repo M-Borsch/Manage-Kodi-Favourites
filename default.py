@@ -528,6 +528,18 @@ elif '/save_reload' in PLUGIN_URL:
         xbmcLog(traceback.format_exc())
         xbmcgui.Dialog().ok('Manage Kodi Favourites Error', 'ERROR: "%s"\n(Please check the log for more info)' % str(e))
 
+elif '/nosave_reload' in PLUGIN_URL:
+    # Reload the current profile (which causes a reload of 'favourites.xml').
+    clearWindowProperty(PROPERTY_FAVOURITES_RESULT)
+    clearWindowProperty(REORDER_METHOD)
+    clearWindowProperty(THUMB_SIZE)
+    clearWindowProperty(FONT_SIZE)
+    clearWindowProperty(PREFIX_TEXT_COLOR)
+    clearWindowProperty(SUFFIX_TEXT_COLOR)
+    
+    xbmcgui.Dialog().ok('Manage Kodi Favourites', 'Reload Yout Kodi Profile, press OK to reload your Kodi profile\n\nThis may take several seconds...')
+    xbmc.executebuiltin('LoadProfile(%s)' % xbmc.getInfoLabel('System.ProfileName'))
+
 elif '/save_exit' in PLUGIN_URL:
     # Reload the current profile (which causes a reload of 'favourites.xml').
     try:
@@ -540,6 +552,15 @@ elif '/save_exit' in PLUGIN_URL:
             clearWindowProperty(SUFFIX_TEXT_COLOR)
             xbmcgui.Dialog().ok('Manage Kodi Favourites', 'Save successful. Press OK to end the add-on...')
         xbmc.executebuiltin('Action(Back)')
+    except Exception as e:
+        xbmcLog(traceback.format_exc())
+        xbmcgui.Dialog().ok('Manage Kodi Favourites Error', 'ERROR: "%s"\n(Please check the log for more info)' % str(e))
+
+elif '/save_noexit' in PLUGIN_URL:
+    # Reload the current profile (which causes a reload of 'favourites.xml').
+    try:
+        if saveFavourites(getRawWindowProperty(PROPERTY_FAVOURITES_RESULT)):
+            xbmcgui.Dialog().ok('Manage Kodi Favourites', 'Save successful. Press OK to Continue Editing Favourites...')
     except Exception as e:
         xbmcLog(traceback.format_exc())
         xbmcgui.Dialog().ok('Manage Kodi Favourites Error', 'ERROR: "%s"\n(Please check the log for more info)' % str(e))
@@ -571,20 +592,32 @@ else:
                                  'use:[/B] select one item, then select another to Insert/Swap. ' \
                                  'Do this as much as needed. Finally, close the dialog and use the menus ' \
                                  'below to save your changes.'})
-    saveReloadItem = xbmcgui.ListItem('   Apply Changes and Reload Your Kodi Profile')
+    saveReloadItem = xbmcgui.ListItem('   Apply Changes (Save-Exit-Reload Your Kodi Profile')
     saveReloadItem.setArt({'thumb': 'DefaultAddonsUpdates.png'})
     saveReloadItem.setInfo('video', {'plot': 'Save any changes you made and reload your Kodi profile '
                                        'to make the changes visible right now, without having to restart Kodi.'})
-    saveExitItem = xbmcgui.ListItem('   Save and Exit (No Reload - Leave Changes Pending a Kodi Restart or Profile Reload)')
-    saveExitItem.setArt({'thumb': 'DefaultFolderBack.png'})
+    saveExitItem = xbmcgui.ListItem('   Save & Exit (Save-Exit-No Reload - Leave Changes Pending a Kodi Restart or Profile Reload)')
+    saveExitItem.setArt({'thumb': 'DefaultAddonsUpdates.png'})
     saveExitItem.setInfo('video', {'plot': 'Save any changes you made and exit the add-on. [B]Note:[/B] if you '
+                                   'make any changes to your favourites using the Favourites screen (like adding, '
+                                   'removing or reordering items) before closing Kodi, your changes from this '
+                                   'add-on will be ignored.'})
+    saveSaveItem = xbmcgui.ListItem('   Save Only (Save-No Exit-No Reload - Leave Changes Pending a Kodi Restart or Profile Reload)')
+    saveSaveItem.setArt({'thumb': 'DefaultFolderBack.png'})
+    saveSaveItem.setInfo('video', {'plot': 'Save any changes you made but do not exit the add-on. [B]Note:[/B] if you '
+                                   'make any changes to your favourites using the Favourites screen (like adding, '
+                                   'removing or reordering items) before closing Kodi, your changes from this '
+                                   'add-on will be ignored.'})
+    saveReloadItem = xbmcgui.ListItem('   Exit & Reload Only (Exit-Reload Your Kodi Profile)')
+    saveReloadItem.setArt({'thumb': 'DefaultAddonsUpdates.png'})
+    saveReloadItem.setInfo('video', {'plot': 'Do not save any changes you made exit the add-on and Reload you Kodi profile. [B]Note:[/B] if you '
                                    'make any changes to your favourites using the Favourites screen (like adding, '
                                    'removing or reordering items) before closing Kodi, your changes from this '
                                    'add-on will be ignored.'})
     configureItem = xbmcgui.ListItem('[B]Configure... (Change Settings)[/B]')
     configureItem.setArt({'thumb': 'DefaultFolderBack.png'})
-    configureItem.setInfo('video', {'plot': 'Configure the default actions for Prefix, Suffix, Colors and Insert/Swap modes.'})
-    exitItem = xbmcgui.ListItem('[B]Exit (Abandon All Changes)[/B]')
+    configureItem.setInfo('video', {'plot': 'Configure the default actions in Settings panel for Prefix, Suffix, Colors and Insert/Swap modes.'})
+    exitItem = xbmcgui.ListItem('[B]Exit (No Save-Exit - Abandon All Changes)[/B]')
     exitItem.setArt({'thumb': 'DefaultFolderBack.png'})
     exitItem.setInfo('video', {'plot': 'Exit the add-on (same as pressing Back), without saving your changes.'})
 
@@ -595,11 +628,14 @@ else:
             (PLUGIN_URL + 'dialog', dialogItem, False),
             (PLUGIN_URL + 'save_reload', saveReloadItem, False),
             (PLUGIN_URL + 'save_exit', saveExitItem, False),
+            (PLUGIN_URL + 'save_noexit', saveExitItem, False),
+            (PLUGIN_URL + 'nosave_reload', saveExitItem, False),
             (PLUGIN_URL + 'configure', configureItem, False),
             (PLUGIN_URL + 'exit_only', exitItem, False)
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
