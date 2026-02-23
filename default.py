@@ -537,9 +537,9 @@ elif '/nosave_reload' in PLUGIN_URL:
     clearWindowProperty(PREFIX_TEXT_COLOR)
     clearWindowProperty(SUFFIX_TEXT_COLOR)
     
-    xbmcgui.Dialog().ok('Manage Kodi Favourites', 'Reload Yout Kodi Profile, press OK to reload your Kodi profile\n\nThis may take several seconds...')
+    xbmcgui.Dialog().ok('Manage Kodi Favourites', 'Exiting and Reloading Kodi Profile, press OK to start the reload\n\nThis may take several seconds...')
     xbmc.executebuiltin('LoadProfile(%s)' % xbmc.getInfoLabel('System.ProfileName'))
-
+    
 elif '/save_exit' in PLUGIN_URL:
     # Reload the current profile (which causes a reload of 'favourites.xml').
     try:
@@ -610,7 +610,7 @@ else:
                                    'add-on will be ignored.'})
     saveReloadItem = xbmcgui.ListItem('   Exit & Reload Only (Exit-Reload Your Kodi Profile)')
     saveReloadItem.setArt({'thumb': 'DefaultAddonsUpdates.png'})
-    saveReloadItem.setInfo('video', {'plot': 'Do not save any changes you made exit the add-on and Reload you Kodi profile. [B]Note:[/B] if you '
+    saveReloadItem.setInfo('video', {'plot': 'Do not save any changes you made, exit the add-on and Reload you Kodi profile. [B]Note:[/B] if you '
                                    'make any changes to your favourites using the Favourites screen (like adding, '
                                    'removing or reordering items) before closing Kodi, your changes from this '
                                    'add-on will be ignored.'})
@@ -635,6 +635,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
