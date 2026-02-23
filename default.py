@@ -628,13 +628,14 @@ else:
             (PLUGIN_URL + 'dialog', dialogItem, False),
             (PLUGIN_URL + 'save_reload', saveReloadItem, False),
             (PLUGIN_URL + 'save_exit', saveExitItem, False),
-            (PLUGIN_URL + 'save_noexit', saveExitItem, False),
-            (PLUGIN_URL + 'nosave_reload', saveExitItem, False),
+            (PLUGIN_URL + 'save_noexit', saveSaveItem, False),
+            (PLUGIN_URL + 'nosave_reload', saveReloadItem, False),
             (PLUGIN_URL + 'configure', configureItem, False),
             (PLUGIN_URL + 'exit_only', exitItem, False)
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
