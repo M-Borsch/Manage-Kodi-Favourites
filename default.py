@@ -520,7 +520,7 @@ def overwriteFavourites():
     else:
         # Display an error dialog if the operation fails
         dialog = xbmcgui.Dialog()
-        dialog.ok("File Operation Error", f"[COLOR red]Manage Kodi Favourites: [/COLOR]Error: Please select 'favourites.xml'")
+        dialog.ok("File Operation Error", f"[COLOR red]Manage Kodi Favourites: [/COLOR]Invalid Filename: Please select 'favourites.xml'")
 
 
 def getRawWindowProperty(prop):
@@ -718,6 +718,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
