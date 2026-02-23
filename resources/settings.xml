@@ -29,8 +29,6 @@
         <!-- Text Field: Only visible if 'Custom' is selected -->
         <setting id="suffixColorCus" type="text" label="30029" default="" visible="eq(-1,0)" />
 
-        <setting id="presuffixBool" type="bool" label="30046" default="true"/>
-
     </category>
    
 
@@ -49,7 +47,19 @@
                  values="Swap A and B|Insert A before B|Insert A after B"/>
       
     </category>
+
+      <category label="30051"> <!-- Advanced Settings -->
+        <setting type="string" label="30056" />
+
+        <setting id="advancedBool" type="bool" label="30055" default="true"/>
+        <setting type="string" label="30056" />
+
+        <setting id="presuffixBool" type="bool" label="30046" default="true"/>
+
+    </category>
+
 </settings>
+
 
 
 
