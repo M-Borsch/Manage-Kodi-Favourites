@@ -538,7 +538,7 @@ elif '/save_exit' in PLUGIN_URL:
             clearWindowProperty(FONT_SIZE)
             clearWindowProperty(PREFIX_TEXT_COLOR)
             clearWindowProperty(SUFFIX_TEXT_COLOR)
-            xbmcgui.Dialog().ok('Manage Kodi Favourites', 'Save successful. Press OK to end the add-on...')
+            xbmcgui.Dialog().ok('Manage Kodi Favourites', 'Save successful. Press OK to exit Manage Kodi Favourites...')
         xbmc.executebuiltin('Action(Back)')
     except Exception as e:
         xbmcLog(traceback.format_exc())
@@ -583,9 +583,15 @@ elif '/configure' in PLUGIN_URL:
     xbmc.executebuiltin('Addon.OpenSettings(Manage-Kodi-Favourites)')
 
 elif '/ovewrite_favs' in PLUGIN_URL:
-    # Call up the configuration panel.
-    # Activate the Manage Kodi Favourites Settings window
-    xbmc.executebuiltin('ActivateWindow(filemanager)', True)
+    # Let the user know that there are about to Overwrite their Favourites file
+    msg_text = f"[COLOR red]DANGER! [/COLOR]This will overwrite your Kodi Favourites file and cannot be undone - Proceed?"
+    if verbose == 'true':
+        if xbmcgui.Dialog().yesno('Manage Kodi Favourites', msg_text):
+            # Activate the filemaanager
+            xbmc.executebuiltin('ActivateWindow(filemanager)', True)
+    else:
+        # Show the change to the list item
+        xbmcgui.Dialog().ok('Manage Kodi Favourites', 'You Chose NOt to Overwite Your Kodi Favourites file')
 
 else:
     # Create the menu items.
@@ -644,6 +650,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
