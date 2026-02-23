@@ -31,6 +31,7 @@ import traceback
 import xbmc
 import xbmcgui
 import os
+import shutil
 
 try:
     # Python 2.x
@@ -493,6 +494,23 @@ def overwriteFavourites():
         # with xbmcvfs.File(selected_file_path, 'r') as f:
         #     content = f.read()
         #     xbmc.log(f"File content snippet: {content[:100]}", xbmc.LOGINFO)
+
+        # Define source and destination paths using xbmc.translatePath()
+        # 'special://home/' is a common built-in path in Kodi that points to the userdata folder
+        src = xbmc.translatePath(selected_file_path)
+        dst = xbmc.translatePath(FAVOURITES_PATH)
+        
+        # Add error handling using a try-except block
+        try:
+            shutil.copyfile(src, dst)
+            # Display a confirmation dialog (requires xbmcgui)
+            dialog = xbmcgui.Dialog()
+            dialog.ok("File Operation", "[COLOR red]Manage Kodi Favourites: [/COLOR]favourites.xml successfully copied!")
+        except IOError as e:
+            # Display an error dialog if the operation fails
+            dialog = xbmcgui.Dialog()
+            dialog.ok("File Operation Error", f"[COLOR red]Manage Kodi Favourites: [/COLOR]Error copying favourites.xml file: {e}")
+    
     else:
         xbmc.log("[COLOR red]Manage Kodi Favourites: [/COLOR]File selection cancelled by user.", xbmc.LOGINFO)
 
@@ -692,6 +710,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
