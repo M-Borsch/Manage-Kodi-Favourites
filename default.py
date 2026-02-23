@@ -584,14 +584,16 @@ elif '/configure' in PLUGIN_URL:
 
 elif '/ovewrite_favs' in PLUGIN_URL:
     # Let the user know that there are about to Overwrite their Favourites file
+    verbose = 'false' if not ADDON.getSetting('presuffixBool') else ADDON.getSetting('presuffixBool')
+
     msg_text = f"[COLOR red]DANGER! [/COLOR]This will overwrite your Kodi Favourites file and cannot be undone - Proceed?"
     if verbose == 'true':
         if xbmcgui.Dialog().yesno('Manage Kodi Favourites', msg_text):
             # Activate the filemaanager
             xbmc.executebuiltin('ActivateWindow(filemanager)', True)
     else:
-        # Show the change to the list item
-        xbmcgui.Dialog().ok('Manage Kodi Favourites', 'You Chose NOt to Overwite Your Kodi Favourites file')
+        # Just do the change
+        xbmc.executebuiltin('ActivateWindow(filemanager)', True)
 
 else:
     # Create the menu items.
@@ -650,6 +652,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
