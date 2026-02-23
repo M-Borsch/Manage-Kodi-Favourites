@@ -664,23 +664,23 @@ else:
                                  'use:[/B] select one item, then select another to Insert/Swap. ' \
                                  'Do this as much as needed. Finally, close the dialog and use the menus ' \
                                  'below to save your changes.'})
-    saveReloadItem = xbmcgui.ListItem('   Apply Changes (Save-Exit-Reload Your Kodi Profile')
+    saveReloadItem = xbmcgui.ListItem('   Apply Changes (Save-Exit-Reload Your Kodi Profile)')
     saveReloadItem.setArt({'thumb': 'DefaultAddonsUpdates.png'})
     saveReloadItem.setInfo('video', {'plot': 'Save any changes you made and reload your Kodi profile '
                                        'to make the changes visible right now, without having to restart Kodi.'})
-    saveExitItem = xbmcgui.ListItem('   Save & Exit (Save-Exit-No Reload - Leave Changes Pending a Kodi Restart or Profile Reload)')
+    saveExitItem = xbmcgui.ListItem('   Save & Exit (Save-Exit-No Reload - Leave Changes Pending a Kodi Restart or [COLOR orange]Profile Reload[/COLOR])')
     saveExitItem.setArt({'thumb': 'DefaultAddonsUpdates.png'})
     saveExitItem.setInfo('video', {'plot': 'Save any changes you made and exit the add-on. [B]Note:[/B] if you '
                                    'make any changes to your favourites using the Favourites screen (like adding, '
                                    'removing or reordering items) before closing Kodi, your changes from this '
                                    'add-on will be ignored.'})
-    saveSaveItem = xbmcgui.ListItem('   Save Only (Save-No Exit-No Reload - Leave Changes Pending a Kodi Restart or Profile Reload)')
+    saveSaveItem = xbmcgui.ListItem('   Save Only (Save-No Exit-No Reload - Leave Changes Pending a Kodi Restart or [COLOR orange]Profile Reload[/COLOR])')
     saveSaveItem.setArt({'thumb': 'DefaultFolderBack.png'})
     saveSaveItem.setInfo('video', {'plot': 'Save any changes you made but do not exit the add-on. [B]Note:[/B] if you '
                                    'make any changes to your favourites using the Favourites screen (like adding, '
                                    'removing or reordering items) before closing Kodi, your changes from this '
                                    'add-on will be ignored.'})
-    nosaveReloadItem = xbmcgui.ListItem('   Exit & Reload Only (No Save-Exit-Reload Your Kodi Profile)')
+    nosaveReloadItem = xbmcgui.ListItem('   Exit & [COLOR orange]Reload Profile[/COLOR] Only (No Save-Exit-Reload Your Kodi Profile)')
     nosaveReloadItem.setArt({'thumb': 'DefaultAddonsUpdates.png'})
     nosaveReloadItem.setInfo('video', {'plot': 'Do not save any changes you made, exit the add-on and Reload you Kodi profile. [B]Note:[/B] if you '
                                    'make any changes to your favourites using the Favourites screen (like adding, '
@@ -689,9 +689,9 @@ else:
     configureItem = xbmcgui.ListItem('[B]Configure... (Change Settings)[/B]')
     configureItem.setArt({'thumb': 'DefaultFolderBack.png'})
     configureItem.setInfo('video', {'plot': 'Configure the default actions in Settings panel for Prefix, Suffix, Colors and Insert/Swap modes.'})
-    overwriteFavs = xbmcgui.ListItem('[COLOR red][B]Overwrite Favourites [/COLOR](Advanced! - Overwrite Fvourites file - Leave Changes Pending a Kodi Restart or Profile Reload)[/B]')
+    overwriteFavs = xbmcgui.ListItem('[COLOR red][B]Overwrite Favourites [/COLOR](Advanced! - Overwrite Fvourites file - Leave Changes Pending a Kodi Restart or [COLOR orange]Profile Reload[/COLOR])[/B]')
     overwriteFavs.setArt({'thumb': 'DefaultFolderBack.png'})
-    overwriteFavs.setInfo('video', {'plot': 'Advanced - Overwrite Kodi Favourites file, Leave Changes Pending a Kodi Restart or Profile Reload.'})
+    overwriteFavs.setInfo('video', {'plot': 'Advanced - Overwrite Kodi Favourites file, Leave Changes Pending a Kodi Restart or [COLOR orange]Profile Reload.[/COLOR]'})
     exitItem = xbmcgui.ListItem('[B]Exit (No Save-Exit - Abandon Any Unsaved Changes)[/B]')
     exitItem.setArt({'thumb': 'DefaultFolderBack.png'})
     exitItem.setInfo('video', {'plot': 'Exit the add-on (same as pressing Back), without saving your changes.'})
@@ -711,3 +711,4 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
