@@ -48,17 +48,18 @@
       
     </category>
 
-      <category label="30051"> <!-- Advanced Settings -->
+      <category label="30053"> <!-- Advanced Settings -->
+        <setting type="string" label="30054" />
+ 
+       <setting id="advancedBool" type="bool" label="30055" default="true"/>     
         <setting type="string" label="30056" />
-
-        <setting id="advancedBool" type="bool" label="30055" default="true"/>
-        <setting type="string" label="30056" />
-
+       
         <setting id="presuffixBool" type="bool" label="30046" default="true"/>
-
+       
     </category>
 
 </settings>
+
 
 
 
