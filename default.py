@@ -464,12 +464,12 @@ def overwriteFavourites():
     # Type of browse dialog: 1 = ShowAndGetFile
     browse_type = 1
     # Dialog heading
-    heading = 'Select a Readable File'
+    heading = 'Select the favourites.xml file'
     # The starting path. Use "" to list local drives and network shares
     # or specify a default path like 'special://home/addons/'
     default_path = 'special://home' 
     # File mask for readable files (e.g., text, xml, log files). Use '|' to separate extensions.
-    file_mask = '.txt|.xml|.log|.md' 
+    file_mask = 'favourite.xml' 
     # Enable multiple file selection (optional)
     enable_multiple = False
     
@@ -692,6 +692,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
