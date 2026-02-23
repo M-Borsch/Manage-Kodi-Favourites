@@ -213,12 +213,8 @@ msgid "[COLOR white]Here you can enable advanced functions within the Addon[/COL
 
 #: resources/settings.xml
 msgctxt "#30055"
-msgid "[COLOR red]Overwrite Kodi Favourites File[/COLOR]"
+msgid "[COLOR red]Allow User to Overwrite Kodi Favourites File[/COLOR]"
 
 #: resources/settings.xml
 msgctxt "#30056"
 msgid "[COLOR white]Warning: This will enable a function to allow users to overwrite their current Kodi Favourites file. This is an advanced function that cannot be undone![/COLOR]"
-
-
-
-
