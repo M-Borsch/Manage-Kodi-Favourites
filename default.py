@@ -528,7 +528,6 @@ elif '/save_reload' in PLUGIN_URL:
         xbmcLog(traceback.format_exc())
         xbmcgui.Dialog().ok('Manage Kodi Favourites Error', 'ERROR: "%s"\n(Please check the log for more info)' % str(e))
 
-
 elif '/save_exit' in PLUGIN_URL:
     # Reload the current profile (which causes a reload of 'favourites.xml').
     try:
@@ -553,6 +552,7 @@ elif '/save_noexit' in PLUGIN_URL:
     except Exception as e:
         xbmcLog(traceback.format_exc())
         xbmcgui.Dialog().ok('Manage Kodi Favourites Error', 'ERROR: "%s"\n(Please check the log for more info)' % str(e))
+
 elif '/nosave_reload' in PLUGIN_URL:
     # Reload the current profile (which causes a reload of 'favourites.xml').
     clearWindowProperty(PROPERTY_FAVOURITES_RESULT)
@@ -564,7 +564,6 @@ elif '/nosave_reload' in PLUGIN_URL:
     
     xbmcgui.Dialog().ok('Manage Kodi Favourites', 'Exiting and Reloading Kodi Profile, press OK to start the reload\n\nThis may take several seconds...')
     xbmc.executebuiltin('LoadProfile(%s)' % xbmc.getInfoLabel('System.ProfileName'))
-
 
 elif '/exit_only' in PLUGIN_URL:
     # Clear the results property and go back one screen (to wherever the user came from).
@@ -636,4 +635,5 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
