@@ -199,7 +199,6 @@ msgid "»»» CMD - "
 msgctxt "#30050"
 msgid "»»» Launch "
 
-
-
-
-
+#: resources/settings.xml
+msgctxt "#30051"
+msgid " - # TV Free #"
