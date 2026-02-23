@@ -5,26 +5,38 @@ This Kodi Program Addon allows you to manage your Kodi favourites by sorting, in
 
 # Program Addon: Manage Kodi Favourites
 
-### This is a simple & lightweight KODI Program Addon that lets you quickly manage your Kodi favourites list that works on multiple Kodi skins. Use this Program Addon to easilly Manage (i.e. move, sort, add a prefix or suffix and color code Favourites) by inserting or swapping entries, using the sort function and/or adding Color, prepending a Prefix or appending a Suffix to entries in your Kodi Favourites list.
+This is a simple & lightweight KODI Program Addon that lets you quickly manage your Kodi favourites list that works on multiple Kodi skins. Use this Program Addon to easilly Manage (i.e. move, sort, add a prefix or suffix and color code Favourites) by inserting or swapping entries, using the sort function and/or adding Color, prepending a Prefix or appending a Suffix to entries in your Kodi Favourites list.
+
 > [!NOTE]
 > (Latest) - This is the latest version of the Manage Kodi Favourites
 > 
 > Supported by MB-KODI ✔️
-> 
+
 Version 2.0 of Manage Kodi Favourites :sunglasses:
 - Added ability for users to add a Prefix, Suffix and/or Color each. Set the default actions in the configuration panel and easily and graphically modify entries in the Kodi Favourites list
 - Added ability to "Sort" Favourites
 (Latest)
--  <a href="Manage-Kodi-Favourites-2.0.zip">Manage-Kodi-Favourites-2.0.zip</a> (Latest)
--------------------------------
+
+<a href="Manage-Kodi-Favourites-2.0.zip">Manage-Kodi-Favourites-2.0.zip</a> (Latest)
+
+This <font COLOR="blue"><B>MB-KODI Manage Kodi Favourites</B></font> Program Addon is published as a Kodi Program Addon that you can install directly into Kodi or via the MB-KODI Repository. It is a publicly available Kodi Addon supported by MB-KODI.<br />
+<br />
+<B>Installation Instructions</B><br />
+<B><font COLOR="blue">1</font></B> - In Kodi use the "File Manager" to add a new 'source' pointing to one of these sources: <br />
+<ul>
+<li>http://borsch.myqnapcloud.com:8089/Manage-Kodi-Favourites</li>
+<li>https://m-borsch.github.io/Manage-Kodi-Favourites</li>
+</ul>
+<B><font COLOR="blue">2</font></B> - In Kodi use the "Addons" - "Install from zip" option to install the Addon utilizing the 'source' that you added in the previous step<br />
+
 # How to use:
 
 > [!IMPORTANT]
-> Depending on the setting you set in the configuration panel, this addon will either **Add a Prefix/Suffix** to items and/or **Color** to items in your Favourites list or allow uses to easily **Move items** by inserting/swapping entries.
+> Depending on the settings you set in the configuration/setting panel, this Addon will either **Add a Prefix/Suffix** to items and/or add a **Color** to items in your Favourites list as well as allow users to easily and graphically **Sort or Move items** by inserting/swapping entries or using the built-in **Sort** function.
 >
 > **Pickists**:
 > 
->     Default Picklists are provided, however if you do not want an action to apply, you simply select 'None'. Also, you can provide a 'Custom' entry by selecting the 'Custom' option and an editable text field will appear. This applies to Prefix, Suffix and associated COlors.
+> Default Picklists are provided, however if you do not want an action to apply, you simply select 'None'. Also, you can provide a 'Custom' entry by selecting the 'Custom' option and an editable text field will appear. This applies to Prefix, Suffix and associated Colors.
 > 
 > **Prefix Pickists**:
 > 
