@@ -696,7 +696,7 @@ else:
     configureItem = xbmcgui.ListItem('[B]Configure... (Change Settings)[/B]')
     configureItem.setArt({'thumb': 'DefaultFolderBack.png'})
     configureItem.setInfo('video', {'plot': 'Configure the default actions in Settings panel for Prefix, Suffix, Colors and Insert/Swap modes.'})
-    overwriteFavs = xbmcgui.ListItem('[COLOR red][B]Overwrite Favourites [/COLOR](Advanced! - Overwrite Fvourites file - Leave Changes Pending a Kodi Restart or [COLOR orange]Reload Profile[COLOR])[/B]')
+    overwriteFavs = xbmcgui.ListItem('[COLOR red][B]Overwrite Favourites [/COLOR](Advanced! - Overwrite Fvourites file - Leave Changes Pending a Kodi Restart or [COLOR orange]Reload Profile[/COLOR])[/B]')
     overwriteFavs.setArt({'thumb': 'DefaultFolderBack.png'})
     overwriteFavs.setInfo('video', {'plot': 'Advanced - Overwrite Kodi Favourites file, Leave Changes Pending a Kodi Restart or [COLOR orange]Reload Profile.[/COLOR]'})
     exitItem = xbmcgui.ListItem('[B]Exit (No Save-Exit - Abandon Any Unsaved Changes)[/B]')
@@ -718,6 +718,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
