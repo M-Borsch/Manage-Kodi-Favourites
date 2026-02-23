@@ -609,9 +609,9 @@ else:
                                    'make any changes to your favourites using the Favourites screen (like adding, '
                                    'removing or reordering items) before closing Kodi, your changes from this '
                                    'add-on will be ignored.'})
-    saveReloadItem = xbmcgui.ListItem('   Exit & Reload Only (Exit-Reload Your Kodi Profile)')
-    saveReloadItem.setArt({'thumb': 'DefaultAddonsUpdates.png'})
-    saveReloadItem.setInfo('video', {'plot': 'Do not save any changes you made, exit the add-on and Reload you Kodi profile. [B]Note:[/B] if you '
+    nosaveReloadItem = xbmcgui.ListItem('   Exit & Reload Only (Exit-Reload Your Kodi Profile)')
+    nosaveReloadItem.setArt({'thumb': 'DefaultAddonsUpdates.png'})
+    nosaveReloadItem.setInfo('video', {'plot': 'Do not save any changes you made, exit the add-on and Reload you Kodi profile. [B]Note:[/B] if you '
                                    'make any changes to your favourites using the Favourites screen (like adding, '
                                    'removing or reordering items) before closing Kodi, your changes from this '
                                    'add-on will be ignored.'})
@@ -630,28 +630,10 @@ else:
             (PLUGIN_URL + 'save_reload', saveReloadItem, False),
             (PLUGIN_URL + 'save_exit', saveExitItem, False),
             (PLUGIN_URL + 'save_noexit', saveSaveItem, False),
-            (PLUGIN_URL + 'nosave_reload', saveReloadItem, False),
+            (PLUGIN_URL + 'nosave_reload', nosaveReloadItem, False),
             (PLUGIN_URL + 'configure', configureItem, False),
             (PLUGIN_URL + 'exit_only', exitItem, False)
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
