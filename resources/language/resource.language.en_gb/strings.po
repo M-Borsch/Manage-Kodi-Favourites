@@ -189,4 +189,17 @@ msgid "Series - "
 
 #: resources/settings.xml
 msgctxt "#30048"
-msgid "CMD - "
+msgid "»» "
+
+ #: resources/settings.xml
+msgctxt "#30049"
+msgid "»»» CMD - "
+ 
+#: resources/settings.xml
+msgctxt "#30050"
+msgid "»»» Launch "
+
+
+
+
+
