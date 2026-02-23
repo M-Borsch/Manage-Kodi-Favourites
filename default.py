@@ -486,7 +486,7 @@ def overwriteFavourites():
     
     # --- Process the result ---
     if selected_file_path:
-        xbmc.log(f"Selected file path: {selected_file_path}", xbmc.LOGINFO)
+        xbmc.log(f"[COLOR red]Manage Kodi Favourites: [/COLOR]Selected file path: {selected_file_path}", xbmc.LOGINFO)
         # You can now use xbmcvfs to read the file content
         # Example (requires importing xbmcvfs):
         # import xbmcvfs
@@ -494,7 +494,7 @@ def overwriteFavourites():
         #     content = f.read()
         #     xbmc.log(f"File content snippet: {content[:100]}", xbmc.LOGINFO)
     else:
-        xbmc.log("File selection cancelled by user.", xbmc.LOGINFO)
+        xbmc.log("[COLOR red]Manage Kodi Favourites: [/COLOR]File selection cancelled by user.", xbmc.LOGINFO)
 
 
 def getRawWindowProperty(prop):
@@ -692,6 +692,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
