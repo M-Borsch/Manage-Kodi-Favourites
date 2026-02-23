@@ -487,7 +487,7 @@ def overwriteFavourites():
     )
 
     # Does the slected file include "favourites.xml"
-    if "favourites.xml" in if "video" in filename::
+    if "favourites\.xml" in if "video" in filename::
     
         # --- Process the result ---
         if selected_file_path:
@@ -718,5 +718,6 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
