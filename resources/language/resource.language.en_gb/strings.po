@@ -25,7 +25,7 @@ msgid "[COLOR blue]Manage Kodi Favourites[/COLOR]"
 
 #: resources/settings.xml
 msgctxt "#30001"
-msgid "[COLOR blue]Picklists[/COLOR]"
+msgid "[COLOR blue]Prefix/Suffix[/COLOR]"
 
 #: resources/settings.xml
 msgctxt "#30002"
@@ -217,4 +217,5 @@ msgid "[COLOR red]Allow User to Overwrite Kodi Favourites File[/COLOR]"
 
 #: resources/settings.xml
 msgctxt "#30056"
-msgid "[COLOR white]Warning: This will enable a function to allow users to overwrite their current Kodi Favourites file. This is an advanced function that cannot be undone![/COLOR]"
+msgid "[COLOR red]Warning:[/COLOR][COLOR white] This will enable a function to allow users to overwrite their current Kodi Favourites file. This is an advanced function that cannot be undone![/COLOR]"
+
