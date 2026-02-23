@@ -582,6 +582,11 @@ elif '/configure' in PLUGIN_URL:
     # Activate the Manage Kodi Favourites Settings window
     xbmc.executebuiltin('Addon.OpenSettings(Manage-Kodi-Favourites)')
 
+elif '/ovewrite_favs' in PLUGIN_URL:
+    # Call up the configuration panel.
+    # Activate the Manage Kodi Favourites Settings window
+    xbmc.executebuiltin('ActivateWindow(filemanager)', True)
+
 else:
     # Create the menu items.
     xbmcplugin.setContent(PLUGIN_ID, 'files')
@@ -620,6 +625,9 @@ else:
     exitItem = xbmcgui.ListItem('[B]Exit (No Save-Exit - Abandon Any Unsaved Changes)[/B]')
     exitItem.setArt({'thumb': 'DefaultFolderBack.png'})
     exitItem.setInfo('video', {'plot': 'Exit the add-on (same as pressing Back), without saving your changes.'})
+    overwriteFavs = xbmcgui.ListItem('[B]Overwrite Favourites (Advanced! - Overwrite Fvourites file - Leave Changes Pending a Kodi Restart or Profile Reload)[/B]')
+    overwriteFavs.setArt({'thumb': 'DefaultFolderBack.png'})
+    overwriteFavs.setInfo('video', {'plot': 'Advanced! - Overwrite Kodi Favourites file, Leave Changes Pending a Kodi Restart or Profile Reload.'})
 
     xbmcplugin.addDirectoryItems(
         PLUGIN_ID,
@@ -631,10 +639,12 @@ else:
             (PLUGIN_URL + 'save_noexit', saveSaveItem, False),
             (PLUGIN_URL + 'nosave_reload', nosaveReloadItem, False),
             (PLUGIN_URL + 'configure', configureItem, False),
-            (PLUGIN_URL + 'exit_only', exitItem, False)
+            (PLUGIN_URL + 'exit_only', exitItem, False),
+            (PLUGIN_URL + 'overwrite_favs', overwriteFavs, False)
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
