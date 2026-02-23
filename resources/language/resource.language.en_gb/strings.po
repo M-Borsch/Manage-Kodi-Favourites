@@ -183,7 +183,10 @@ msgid "Reordering Method"
 msgctxt "#30046"
 msgid "Verbose: Preview Change Before Applying"
 
+#: resources/settings.xml
+msgctxt "#30047"
+msgid "Series - "
 
-
-
-
+#: resources/settings.xml
+msgctxt "#30048"
+msgid "CMD - "
