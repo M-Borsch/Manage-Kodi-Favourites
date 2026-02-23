@@ -650,16 +650,25 @@ elif '/configure' in PLUGIN_URL:
     xbmc.executebuiltin('Addon.OpenSettings(Manage-Kodi-Favourites)')
 
 elif '/overwrite_favs' in PLUGIN_URL:
-    # Let the user know that there are about to Overwrite their Favourites file
-    verbose = 'false' if not ADDON.getSetting('presuffixBool') else ADDON.getSetting('presuffixBool')
 
-    msg_text = f"[COLOR red]DANGER! [/COLOR]This will overwrite your Kodi Favourites file and cannot be undone - Proceed?"
-    if verbose == 'true':
-        if xbmcgui.Dialog().yesno('Manage Kodi Favourites', msg_text):
-            # Activate the filemaanager
+    # Check if flag is set to allow overwrite
+    overwriteFlag = 'false' if not ADDON.getSetting('advancedBool') else ADDON.getSetting('advancedBool')
+
+    if overwriteFlag == 'true':
+
+        # Let the user know that there are about to Overwrite their Favourites file
+        verbose = 'false' if not ADDON.getSetting('presuffixBool') else ADDON.getSetting('presuffixBool')
+        msg_text = f"[COLOR red]DANGER! [/COLOR]This will overwrite your Kodi Favourites file and cannot be undone - Proceed?"
+        if verbose == 'true':
+            if xbmcgui.Dialog().yesno('Manage Kodi Favourites', msg_text):
+                # Activate the filemaanager
+                overwriteFavourites()
+        else:
             overwriteFavourites()
     else:
-        overwriteFavourites()
+        # Display an error dialog if the operation fails
+        dialog = xbmcgui.Dialog()
+        dialog.ok("File Operation Error", f"[COLOR red]Manage Kodi Favourites: [/COLOR]Operation Denied. Please change option in Settings-Advanced prior to copying!'")
 
 else:
     # Create the menu items.
@@ -718,6 +727,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
