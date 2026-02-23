@@ -486,8 +486,8 @@ def overwriteFavourites():
         defaultt=default_path # default path to start browsing from
     )
 
-    # Does the slected file include "favourites.xml"
-    if "favourites\.xml" in if "video" in filename::
+    # Does the selected file include "favourites.xml"
+    if "favourites.xml" in selected_file_path:
     
         # --- Process the result ---
         if selected_file_path:
@@ -520,7 +520,7 @@ def overwriteFavourites():
     else:
         # Display an error dialog if the operation fails
         dialog = xbmcgui.Dialog()
-        dialog.ok("File Operation Error", f"[COLOR red]Manage Kodi Favourites: [/COLOR]Error: Please select "favourites.xml" file: {e}")
+        dialog.ok("File Operation Error", f"[COLOR red]Manage Kodi Favourites: [/COLOR]Error: Please select 'favourites.xml' file: {e}")
 
 
 def getRawWindowProperty(prop):
@@ -718,6 +718,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
