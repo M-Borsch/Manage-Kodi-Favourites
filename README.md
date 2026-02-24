@@ -67,17 +67,26 @@ Insert/Swap
 - Press the Close button to close that dialog when you're done editing (your changes won't be saved yet).  
 - If you've made some mistakes and want to start over, press the "Restore..." button to restore the favourites order from the Kodi favourites file. This will undo your unsaved changes.
    
-### 2) Apply and Reload Your Kodi Profile
+### 2) Apply Changes (Save-Exit-Reload Your Kodi Profile)
 Saves your changes and reloads your Kodi profile, so your changes can be seen immediately instead of you having to restart Kodi to see them.
    
-### 3) Save and Exit
-Saves your changes but doesn't reload your Kodiprofie (as this operation can crash in some Kodi builds). After using this, you have to manually restart Kodi to see your changes.
+### 3) Save and Exit (Save-Exit-No Reload Your Kodi Profile)
+Saves your changes, exit the Addon but doesn't reload your Kodi profie (as this operation can crash in some Kodi builds and you may wish to wait to reload your profile). After using this, you have to manually restart Kodi or use the 'Reload Profile' option within this Addon to see your changes.
 
-### 4) Configure 
+### 4) Save Only (Save-No Exit-No Reload Your Kodi Profile)
+Saves your changes but doesn't exit the Addon nor reload your Kodi profie. This option allows you to save your chnages but keep working. After using this, you have to manually restart Kodi or use the 'Reload Profile' option within this Addon to see your changes.
+
+### 5) Exit & Reload Profile (No Save-Exit-Reload Your Kodi Profile)
+Exits the Addon and Reloads your Kodi Profile. Use this to load the last saved version of your Kodi Favourites file with all yoour recent changes.
+
+### 6) Configure...(Change Settings) 
 Call up the Settings Dialog to change default Insert/Swap actions, Thumbnail size, Font size on labels and Colors as well as set the Prefix and Suffix text.
 
-### 5) Exit 
-Abandon your edits. Just steps back from the add-on, no saving.
+### 7) Overwrite Favourites File (Advanced - Overwrite Favourites Files...)
+This is an advanced fuction and should be used with caution. It allows users to manually overwrite their favourites file (favourites.xml) with a new file of the same name. Users must enable this option in the Configure-Settings-Advanced section of the configuration panel for the Addon.
+
+### 8) Exit (No Save-Exit-Abandon Any Unsaved Changes)
+Abandon your edits. Just steps back from the Addon, no saving.
 
 ### Reference Articles availiable at: <a href="http://borsch.ca">borsch.ca</a>
 
