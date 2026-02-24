@@ -507,7 +507,7 @@ def overwriteFavourites():
             # Add error handling using a try-except block
             try:
                 # shutil.copyfile(src, dst)
-                xbmcvfs.copyfile(src, dst)
+                xbmcvfs.copy(src, dst)
                 # Display a confirmation dialog (requires xbmcgui)
                 dialog = xbmcgui.Dialog()
                 dialog.ok("File Operation", "[COLOR red]Manage Kodi Favourites: [/COLOR]favourites.xml successfully copied!\n\nYou must restart Kodi or [COLOR orange]Reload Profile[/COLOR]\nto view the change")
@@ -728,6 +728,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
