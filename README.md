@@ -56,7 +56,7 @@ Default Picklists are provided, however if you do not want an action to apply, y
 Opens a dialog where you can view and reorder your Favourites items usin the Insert/Swap functionality or add a Prefix with Color and/or a Suffix with Color.
 
 Add a Prefix and Color or Suffix and Color
-- To modify an items, select an item "A" to "mark" it, then select **"Pre/Suffix.."** button to apply the currnt settings as displayed on the diaog in yellow  
+- To modify an items, select an item "A" to "mark" it, then select **"Pre/Suffix.."** button to apply the current settings as displayed on the dialog in yellow  
 (If an item is marked, you can select it again to unmark it.)  
 - Press the Close button to close that dialog when you're done editing (your changes won't be saved yet).  
 - If you've made some mistakes and want to start over, press the "Abandon Changes..." button to restore the favourites order from the Kodi favourites file. This will undo your unsaved changes.
@@ -71,24 +71,24 @@ Insert/Swap
 Saves your changes and reloads your Kodi profile, so your changes can be seen immediately instead of you having to restart Kodi to see them.
    
 ### 3) Save and Exit (Save-Exit-No Reload Your Kodi Profile)
-Saves your changes, exit the Addon but doesn't reload your Kodi profie (as this operation can crash in some Kodi builds and you may wish to wait to reload your profile). After using this, you have to manually restart Kodi or use the 'Reload Profile' option within this Addon to see your changes.
+Saves your changes, exit the Addon but doesn't reload your Kodi profile (as this operation can crash in some Kodi builds and you may wish to wait to reload your profile). After using this, you have to manually restart Kodi or use the 'Reload Profile' option within this Addon to see your changes.
 
 ### 4) Save Only (Save-No Exit-No Reload Your Kodi Profile)
-Saves your changes but doesn't exit the Addon nor reload your Kodi profie. This option allows you to save your chnages but keep working. After using this, you have to manually restart Kodi or use the 'Reload Profile' option within this Addon to see your changes.
+Saves your changes but doesn't exit the Addon nor reload your Kodi profile. This option allows you to save your changes but keep working. After using this, you have to manually restart Kodi or use the 'Reload Profile' option within this Addon to see your changes.
 
 ### 5) Exit & Reload Profile (No Save-Exit-Reload Your Kodi Profile)
-Exits the Addon and Reloads your Kodi Profile. Use this to load the last saved version of your Kodi Favourites file with all yoour recent changes.
+Exits the Addon and Reloads your Kodi Profile. Use this to load the last saved version of your Kodi Favourites file with all your recent changes.
 
 ### 6) Configure...(Change Settings) 
 Call up the Settings Dialog to change default Insert/Swap actions, Thumbnail size, Font size on labels and Colors as well as set the Prefix and Suffix text.
 
 ### 7) Overwrite Favourites File (Advanced - Overwrite Favourites Files...)
-This is an advanced fuction and should be used with caution. It allows users to manually overwrite their favourites file (favourites.xml) with a new file of the same name. Users must enable this option in the Configure-Settings-Advanced section of the configuration panel for the Addon.
+This is an advanced function and should be used with caution. It allows users to manually overwrite their favourites file (favourites.xml) with a new file of the same name. Users must enable this option in the Configure-Settings-Advanced section of the configuration panel for the Addon.
 
 ### 8) Exit (No Save-Exit-Abandon Any Unsaved Changes)
 Abandon your edits. Just steps back from the Addon, no saving.
 
-### Reference Articles availiable at: <a href="http://borsch.ca">borsch.ca</a>
+### Reference Articles available at: <a href="http://borsch.ca">borsch.ca</a>
 
 - <a href="http://borsch.myqnapcloud.com:8083/index.php/articles-by-group/how-to/howto-create-a-github-kodi-addon?highlight=WyJrb2RpIl0="><b><i></i></b><i>Article on how to build a Kodi Repository and an Addon on borsch.ca</i></a>
 
