@@ -429,9 +429,9 @@ def favouritesDataGen():
         match = actionPattern.search(entry)
         action = PARSER.unescape(match.group(1)) if match else ''
 
-        # TEST - Write out the Action field
-        if DEBUG == '1': log_msg = "[COLOR red]Manage Kodi Favourites INFO:[/COLOR] Action Field: %s" % action
-        if DEBUG == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)     
+        # DEBUG - Write out the Thumb field
+        if DEBUG2 == '1': log_msg = "[COLOR red]Manage Kodi Favourites INFO:[/COLOR] OrigThumb Field: %s" % origThumb
+        if DEBUG2 == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)     
         
         # Yield a 3-tuple of name, thumb-url and the original content of the favourites entry.
         yield name, thumb, entry, action, origThumb, sortname
@@ -727,6 +727,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
