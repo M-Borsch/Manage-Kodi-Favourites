@@ -107,15 +107,14 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             # and this is what's written to the favourites file upon saving -- what changes is the order of the items.
             # add action field to Label2
             li = LISTITEM(data[0], data[3], path=data[2])
-            # artDict['thumb'] = data[1] # Slightly faster than recreating a dict on every item.
+            artDict['thumb'] = data[1] # Slightly faster than recreating a dict on every item.
 
-            artDict['thumb'] = data[4] # Slightly SLOWER.
             li.setArt(artDict)
 
             if DEBUG == '1': log_msg = "[COLOR red]Manage Kodi Favourites INFO:[/COLOR] New Label = %s" % data[2]
             if DEBUG == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)
 
-            li.setProperty('thumb', data[4])
+            li.setProperty('origThumb', data[4])
             li.setProperty('sortname', data[5])
 
             li.setProperty('index', str(index)) # To help with resetting, if necessary.
@@ -389,7 +388,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
 
     def _makeNewResult(self):
         INDENT_STRING = ' ' * 4
-        return '<favourites>\n' + '\n'.join((INDENT_STRING + '<favourite name="' + li.getLabel() + '"thumb="' + li.getProperty('thumb') + '">' + li.getLabel2() + '</favourite>\n') for li in self.allItems) + '\n</favourites>\n'
+        return '<favourites>\n' + '\n'.join((INDENT_STRING + '<favourite name="' + li.getLabel() + '"thumb="' + li.getProperty('origThumb') + '">' + li.getLabel2() + '</favourite>\n') for li in self.allItems) + '\n</favourites>\n'
 
 #===================================================================================
 
@@ -730,6 +729,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
