@@ -110,8 +110,6 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             artDict['thumb'] = data[1] # Slightly faster than recreating a dict on every item.
             li.setArt(artDict)
 
-            # TEST - Try modifying prefix for all
-            # li.setLabel("##Mike -" + data[0])
             if DEBUG == '1': log_msg = "[COLOR red]Manage Kodi Favourites INFO:[/COLOR] New Label = %s" % data[2]
             if DEBUG == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)
 
@@ -414,6 +412,7 @@ def favouritesDataGen():
         if DEBUG == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)             
         
         match = thumbPattern.search(entry)
+        origThumb = thumb
         if match:
             thumb = PARSER.unescape(match.group(1))
             cacheFilename = xbmc.getCacheThumbName(thumb)
@@ -425,8 +424,6 @@ def favouritesDataGen():
                 thumb = THUMBNAILS_PATH_FORMAT.format(folder=cacheFilename[0], file=cacheFilename)
         else:
             thumb = ''
-        
-        origThumb = thumb
 
         match = actionPattern.search(entry)
         action = PARSER.unescape(match.group(1)) if match else ''
@@ -729,6 +726,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
