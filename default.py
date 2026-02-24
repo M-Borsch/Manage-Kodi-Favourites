@@ -107,7 +107,9 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             # and this is what's written to the favourites file upon saving -- what changes is the order of the items.
             # add action field to Label2
             li = LISTITEM(data[0], data[3], path=data[2])
-            artDict['thumb'] = data[1] # Slightly faster than recreating a dict on every item.
+            # artDict['thumb'] = data[1] # Slightly faster than recreating a dict on every item.
+
+            artDict['thumb'] = data[4] # Slightly SLOWER than recreating a dict on every item.
             li.setArt(artDict)
 
             if DEBUG == '1': log_msg = "[COLOR red]Manage Kodi Favourites INFO:[/COLOR] New Label = %s" % data[2]
@@ -728,6 +730,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
