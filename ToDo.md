@@ -13,7 +13,7 @@
 >
 > - [x] -  (Configuration Dialog) - Add ability to add a Custom Prefix, Suffix and Color
 >
-> - [x] - (WYSIWYG Dialog) - Add ability to callup Configuraaation panel to change options
+> - [x] - (WYSIWYG Dialog) - Add ability to callup Configuration panel to change options
 >
 > - [x] - (WYSIWYG Dialog) - Add ability to modify the list with Insert/Swap, Prefix, Suffix and Colors
 >
@@ -22,5 +22,13 @@
 > - [x] - (Write Out New file) - Add ability to save the change in Prefix/Suffix and Colors in the Favourites list
 >
 > - [x] - (Sort) - Add ability to sort the Favourites list
+>
+> - [x] - (Save) - Add ability to Save Only the Favourites list
+> 
+> - [x] - (Reload) - Add ability to Reload User Kodi Profile
+> 
+> - [x] - (Overwrite Favourites) - Add ability to Overwrite the Favourites file (favourites.xml)
+> 
+
 
 
