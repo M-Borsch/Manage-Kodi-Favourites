@@ -412,9 +412,10 @@ def favouritesDataGen():
         if DEBUG == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)             
         
         match = thumbPattern.search(entry)
-        origThumb = match
         if match:
             thumb = PARSER.unescape(match.group(1))
+            origThumb = thumb
+
             cacheFilename = xbmc.getCacheThumbName(thumb)
             if 'ffffffff' not in cacheFilename:
                 if '.jpg' in thumb:
@@ -726,6 +727,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
