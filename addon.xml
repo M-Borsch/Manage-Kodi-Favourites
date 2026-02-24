@@ -9,6 +9,8 @@
   <extension point="xbmc.addon.metadata">
     <news>
       [COLOR lavender][B]Manage Kodi Favourites[/B][/COLOR]
+      [B]2.1:[/B]
+      - Bug FIx: Ignore Cache files of thumbs
       [B]2.0:[/B]
       - Initial Public release
       - Add ability to add Prefixes, Suffixes and Colors and/or Insert/Swap items in Favourites.
