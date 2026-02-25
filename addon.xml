@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="Manage-Kodi-Favourites" name="[COLOR blue]Manage Kodi Favourites[/COLOR]" version="2.1" provider-name="M-Borsch,MB-K@DI">
+<addon id="Manage-Kodi-Favourites" name="[COLOR blue]Manage Kodi Favourites[/COLOR]" version="2.2" provider-name="M-Borsch,MB-K@DI">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
   </requires>
@@ -9,6 +9,8 @@
   <extension point="xbmc.addon.metadata">
     <news>
       [COLOR lavender][B]Manage Kodi Favourites[/B][/COLOR]
+     [B]2.2:[/B]
+      - Bug FIx: Custom Suffix was added when NONE selected. Add Presffix and Suffix entries
       [B]2.1:[/B]
       - Bug FIx: Ignore Cache files of thumbs
       [B]2.0:[/B]
