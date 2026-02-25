@@ -240,6 +240,19 @@ msgctxt "#30061"
 msgid "- ¤ The Loop ¤"
 
 #: resources/settings.xml
-msgctxt "#30062"cyan
+msgctxt "#30062"
 msgid "red"
+
+#: resources/settings.xml
+msgctxt "#30063"
+msgid "#### HELP SECTION ####"
+
+#: resources/settings.xml
+msgctxt "#30064"
+msgid "How to Use These Settings..."
+
+#: resources/settings.xml
+msgctxt "#30065"
+msgid "Reference Kodi Color Chart..."
+
 
