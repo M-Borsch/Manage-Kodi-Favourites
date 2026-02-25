@@ -245,14 +245,18 @@ msgid "red"
 
 #: resources/settings.xml
 msgctxt "#30063"
-msgid "#### HELP SECTION ####"
+msgid "How To"
 
 #: resources/settings.xml
 msgctxt "#30064"
-msgid "How to Use These Settings..."
+msgid "How To?..."
 
 #: resources/settings.xml
 msgctxt "#30065"
 msgid "Reference Kodi Color Chart..."
+
+#: resources/settings.xml
+msgctxt "#30066"
+msgid "[COLOR green]Need Help?:[/COLOR][COLOR white] Click below to get the 'How To' on using this Addon[/COLOR]"
 
 
