@@ -11,7 +11,7 @@
         <!-- Text Field: Only visible if 'Custom' is selected -->
         <setting id="prefixTextCus" type="text" label="30029" default="" visible="eq(-1,0)" />
       
-        <setting id="prefixColSel" type="labelenum" label="30009" lvalues="30028|30010|30011|30012|30013|30014|30015|30030|30031" default="NONE" />
+        <setting id="prefixColSel" type="labelenum" label="30009" lvalues="30028|30010|30011|30012|30013|30014|30015|30030|30031|30062" default="NONE" />
       
         <!-- Text Field: Only visible if 'Custom' is selected -->
         <setting id="prefixColorCus" type="text" label="30029" default="" visible="eq(-1,0)" />
@@ -24,12 +24,15 @@
         <!-- Text Field: Only visible if 'Custom' is selected -->
         <setting id="suffixTextCus" type="text" label="30029" default="" visible="eq(-1,0)" />
       
-        <setting id="suffixColSel" type="labelenum" label="30026" lvalues="30028|30010|30011|30012|30013|30014|30015|30030|30031" default="NONE" />
+        <setting id="suffixColSel" type="labelenum" label="30026" lvalues="30028|30010|30011|30012|30013|30014|30015|30030|30031|30062" default="NONE" />
 
         <!-- Text Field: Only visible if 'Custom' is selected -->
         <setting id="suffixColorCus" type="text" label="30029" default="" visible="eq(-1,0)" />
 
-        <setting label="Kodi Color Chart" type="action" id="KodiColorChart" action="ShowPicture(special://home/addons/Manage-Kodi-Favourites/MB-KODI-icon.png)"/>
+        <setting type="lsep" label="30063" />
+
+        <setting label="30064" type="action" id="KodiColorChart" action="ShowPicture(special://home/addons/Manage-Kodi-Favourites/Kodi-Color-chart.jpg)"/>
+        <setting label="30065" type="action" id="KodiColorChart" action="ShowPicture(special://home/addons/Manage-Kodi-Favourites/Kodi-Color-chart.jpg)"/>
 
     </category>
    
@@ -61,6 +64,7 @@
     </category>
 
 </settings>
+
 
 
 
