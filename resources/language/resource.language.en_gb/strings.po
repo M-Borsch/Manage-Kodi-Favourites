@@ -225,7 +225,7 @@ msgid "[COLOR green]Note:[/COLOR][COLOR white] Select 'NONE' to NOT have the opt
 
 #: resources/settings.xml
 msgctxt "#30058"
-msgid "[COLOR yellow]Sports - "
+msgid "Sports - "
 
 #: resources/settings.xml
 msgctxt "#30059"
@@ -238,3 +238,4 @@ msgid "- ¤ SportHD ¤"
 #: resources/settings.xml
 msgctxt "#30061"
 msgid "- ¤ The Loop ¤"
+
