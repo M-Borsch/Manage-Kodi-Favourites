@@ -271,4 +271,10 @@ msgid "How To - Thumb/Font/Re-Order?..."
 msgctxt "#30069"
 msgid "How To - [COLOR red]ADVANCED[/COLOR]"
 
+#: resources/settings.xml
+msgctxt "#30070"
+msgid "How To - Menu Items"
 
+#: resources/settings.xml
+msgctxt "#30069"
+msgid "How To - Graphical User Interface (GUI) - [COLOR] blue]Maange Kodi Favourites...[/COLOR]"
