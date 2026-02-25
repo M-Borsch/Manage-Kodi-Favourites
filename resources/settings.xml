@@ -31,8 +31,8 @@
 
         <setting type="lsep" label="30063" />
 
-        <setting label="30064" type="action" id="KodiColorChart" action="ShowPicture(special://home/addons/Manage-Kodi-Favourites/Kodi-Color-chart.jpg)"/>
-        <setting label="30065" type="action" id="KodiColorChart" action="ShowPicture(special://home/addons/Manage-Kodi-Favourites/Kodi-Color-chart.jpg)"/>
+        <setting label="30064" type="action" id="KodiColorChart" action="ShowPicture(special://home/addons/Manage-Kodi-Favourites/Comming-Soon.png)"/>
+        <setting label="30065" type="action" id="KodiColorChart" action="ShowPicture(special://home/addons/Manage-Kodi-Favourites/Kodi-Color-Chart.png)"/>
 
     </category>
    
@@ -64,6 +64,7 @@
     </category>
 
 </settings>
+
 
 
 
