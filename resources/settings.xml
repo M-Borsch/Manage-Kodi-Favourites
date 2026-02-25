@@ -29,7 +29,7 @@
         <!-- Text Field: Only visible if 'Custom' is selected -->
         <setting id="suffixColorCus" type="text" label="30029" default="" visible="eq(-1,0)" />
 
-        <setting label="Kodi Color Chart" type="action" id="KodiColorChart" action=""/>
+        <setting label="Kodi Color Chart" type="action" id="KodiColorChart" action="ShowPicture(MB-KODI-icon.png)"/>
 
     </category>
    
@@ -61,6 +61,7 @@
     </category>
 
 </settings>
+
 
 
 
