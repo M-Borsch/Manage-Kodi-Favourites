@@ -239,3 +239,7 @@ msgid "- ¤ SportHD ¤"
 msgctxt "#30061"
 msgid "- ¤ The Loop ¤"
 
+#: resources/settings.xml
+msgctxt "#30062"cyan
+msgid "red"
+
