@@ -219,3 +219,22 @@ msgid "[COLOR red]Allow User to Overwrite Kodi Favourites File[/COLOR]"
 msgctxt "#30056"
 msgid "[COLOR red]Warning:[/COLOR][COLOR white] This will enable a function to allow users to overwrite their current Kodi Favourites file. This is an advanced function that cannot be undone![/COLOR]"
 
+#: resources/settings.xml
+msgctxt "#30057"
+msgid "[COLOR green]Note:[/COLOR][COLOR white] Select 'NONE' to NOT have the option apply[/COLOR]"
+
+#: resources/settings.xml
+msgctxt "#30058"
+msgid "[COLOR yellow]Sports - "
+
+#: resources/settings.xml
+msgctxt "#30059"
+msgid "- ¤ Rising Tides ¤"
+
+#: resources/settings.xml
+msgctxt "#30060"
+msgid "- ¤ SportHD ¤"
+
+#: resources/settings.xml
+msgctxt "#30061"
+msgid "- ¤ The Loop ¤"
