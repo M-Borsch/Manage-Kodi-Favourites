@@ -276,6 +276,7 @@ msgctxt "#30070"
 msgid "How To - Menu Items"
 
 #: resources/settings.xml
-msgctxt "#30069"
-msgid "How To - Graphical User Interface (GUI) - [COLOR blue]Maange Kodi Favourites...[/COLOR](Edit Your Favourites List)"
+msgctxt "#30071"
+msgid "How To - Graphical User Interface - [COLOR blue]Manage Kodi Favourites...[/COLOR]"
+
 
