@@ -287,6 +287,3 @@ msgid "[COLOR green]Contact Us...[/COLOR]"
 msgctxt "#30073"
 msgid "- ¤ Downloads ¤"
 
-#: resources/settings.xml
-msgctxt "#30074"
-msgid "[COLOR red]VER: 2.3[/COLOR]"
