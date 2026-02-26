@@ -283,4 +283,7 @@ msgid "How To - Graphical User Interface - [COLOR blue]Manage Kodi Favourites...
 msgctxt "#30072"
 msgid "[COLOR green]Contact Us...[/COLOR]"
 
+#: resources/settings.xml
+msgctxt "#30073"
+msgid "- ¤ Downloads ¤"
 
