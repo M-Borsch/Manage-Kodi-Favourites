@@ -3,7 +3,7 @@
      <category label="30063"> <!-- Help Section -->
         <setting type="string" label="30066" />
         <setting label="30064" type="action" id="MKF-Help-Overview" action="ShowPicture(special://home/addons/Manage-Kodi-Favourites/Manage-Kodi-Favourites-Help-Overview.png)"/>
-        <setting label="30067" type="action" id="MKF-Help-PrefixSuffix" action="ShowPicture(special://home/addons/Manage-Kodi-Favourites/Coming-Soon.png)"/>
+        <setting label="30067" type="action" id="MKF-Help-PrefixSuffix" action="ShowPicture(special://home/addons/Manage-Kodi-Favourites/Manage-Kodi-Favourites-Help-Prefix-Suffix.png)"/>
         <setting label="30068" type="action" id="MKF-Help-Thumb" action="ShowPicture(special://home/addons/Manage-Kodi-Favourites/Coming-Soon.png)"/>
         <setting label="30069" type="action" id="MKF-Help-ADVANCED" action="ShowPicture(special://home/addons/Manage-Kodi-Favourites/Manage-Kodi-Favourites-Help-Advanced.png)"/>
         
@@ -76,6 +76,7 @@
     </category>
 
 </settings>
+
 
 
 
