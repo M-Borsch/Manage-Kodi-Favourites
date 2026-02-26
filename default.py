@@ -83,8 +83,6 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             304: self.doPreSuffix,
         }
 
-        if DEBUG2 == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'VER: "%s"\n' %  str(self.version))
-
         # Map action IDs to custom handler methods. See more action IDs in
         # https://github.com/xbmc/xbmc/blob/master/xbmc/input/actions/ActionIDs.h
         self.actionHandlerDict = {
@@ -185,6 +183,9 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
         setRawWindowProperty(REORDER_METHOD, reorderingMethod)
         thumbSize = '0' if not ADDON.getSetting('thumbSize') else ADDON.getSetting('thumbSize')
         setRawWindowProperty(THUMB_SIZE, thumbSize)
+            
+        if DEBUG2 == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'VER: "%s"\n' %  ADDON.getSetting('version'))
+
 
     def onClick(self, controlId):
         self.idHandlerDict.get(controlId, self.noop)()
@@ -731,6 +732,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
