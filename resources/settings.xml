@@ -1,6 +1,6 @@
  <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
-     <category label="30063" + "30074"> <!-- Help Section -->
+     <category label="30063"> <!-- Help Section -->
         <setting type="string" label="30066" />
         <setting id="curVer" type="string" label="30074" default="30074"/>
         <setting label="30064" type="action" id="MKF-Help-Overview" action="ShowPicture(special://home/addons/Manage-Kodi-Favourites/Manage-Kodi-Favourites-Help-Overview.png)"/>
@@ -81,6 +81,7 @@
     </category>
 
 </settings>
+
 
 
 
