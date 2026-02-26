@@ -181,9 +181,6 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
         setRawWindowProperty(REORDER_METHOD, reorderingMethod)
         thumbSize = '0' if not ADDON.getSetting('thumbSize') else ADDON.getSetting('thumbSize')
         setRawWindowProperty(THUMB_SIZE, thumbSize)
-            
-        if DEBUG2 == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'VER: "%s"\n' %  self.panel.getSetting('version'))
-
 
     def onClick(self, controlId):
         self.idHandlerDict.get(controlId, self.noop)()
@@ -730,6 +727,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
