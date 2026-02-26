@@ -55,7 +55,7 @@
                     <right>0</right>
                     <top>0</top>
                     <aligny>center</aligny>
-                    <label>[B]Manage Kodi Favourites - Prefix/Suffix/Color/Insert-Swap[/B]</label>
+                    <label>[B]Manage Kodi Favourites - Prefix/Suffix/Color/Insert-Swap/Order[/B]</label>
                     <shadowcolor>black</shadowcolor>
                 </control>
                 <!-- "button overlay to avoid closing in dialog area." -->
@@ -469,6 +469,7 @@
 	   </control>
 	</controls>
 </window>
+
 
 
 
