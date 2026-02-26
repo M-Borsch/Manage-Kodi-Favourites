@@ -261,15 +261,15 @@ msgid "[COLOR green]Need Help?:[/COLOR][COLOR white] Click below to get the 'How
 
 #: resources/settings.xml
 msgctxt "#30067"
-msgid "How To - [COLOR blue]Prefix/Suffix?...[/COLOR]"
+msgid "How To - [COLOR orange]Settings - [/COLOR][COLOR blue]Prefix/Suffix?...[/COLOR]"
 
 #: resources/settings.xml
 msgctxt "#30068"
-msgid "How To - Thumb/Font/Re-Order?..."
+msgid "How To - [COLOR orange]Settings - [/COLOR]Thumb/Font/Re-Order?..."
 
 #: resources/settings.xml
 msgctxt "#30069"
-msgid "How To - [COLOR red]ADVANCED[/COLOR]"
+msgid "How To - [COLOR orange]Settings - [/COLOR][COLOR red]ADVANCED[/COLOR]"
 
 #: resources/settings.xml
 msgctxt "#30070"
@@ -278,5 +278,3 @@ msgid "How To - Menu Items"
 #: resources/settings.xml
 msgctxt "#30071"
 msgid "How To - Graphical User Interface - [COLOR blue]Manage Kodi Favourites...[/COLOR]"
-
-
