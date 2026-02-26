@@ -126,9 +126,6 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
 
         currentVer = '0' if not ADDON.getAddonInfo('version') else ADDON.getAddonInfo('version')
         self.setProperty(CURRENTVER, currentVer)
-
-        if DEBUG2 == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Current Ver:)' %  currentVer)
-
         reorderingMethod = '0' if not ADDON.getSetting('reorderingMethod') else ADDON.getSetting('reorderingMethod')
         self.setProperty(REORDER_METHOD, reorderingMethod)
         fontSize = '0' if not ADDON.getSetting('fontSize') else ADDON.getSetting('fontSize')
@@ -733,6 +730,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
