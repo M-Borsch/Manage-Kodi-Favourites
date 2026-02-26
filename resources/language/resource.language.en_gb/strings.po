@@ -149,7 +149,7 @@ msgid "purple"
 
 #: resources/settings.xml
 msgctxt "#30038"
-msgid "Thumb/Font/Re-Order"
+msgid "Thumb/Font/Reorder"
 
 #: resources/settings.xml
 msgctxt "#30039"
@@ -282,4 +282,5 @@ msgid "How To - Graphical User Interface - [COLOR blue]Manage Kodi Favourites...
 #: resources/settings.xml
 msgctxt "#30072"
 msgid "[COLOR green]Contact Us...[/COLOR]"
+
 
