@@ -122,8 +122,6 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
 
     # Function used to start the dialog.
     def doCustomModal(self, favouritesGen):
-
-        if DEBUG3 == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "\n[COLOR red]### WARNING:[/COLOR] Addon under development. Prefix/Suffix and Colors not permanently saved!')
         
         reorderingMethod = '0' if not ADDON.getSetting('reorderingMethod') else ADDON.getSetting('reorderingMethod')
         self.setProperty(REORDER_METHOD, reorderingMethod)
@@ -184,7 +182,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
         thumbSize = '0' if not ADDON.getSetting('thumbSize') else ADDON.getSetting('thumbSize')
         setRawWindowProperty(THUMB_SIZE, thumbSize)
             
-        if DEBUG2 == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'VER: "%s"\n' %  ADDON.getSetting('version'))
+        if DEBUG2 == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'VER: "%s"\n' %  self.panel.getSetting('version'))
 
 
     def onClick(self, controlId):
@@ -732,6 +730,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
