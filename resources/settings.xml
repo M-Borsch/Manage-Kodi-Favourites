@@ -8,7 +8,7 @@
         <setting label="30069" type="action" id="MKF-Help-ADVANCED" action="ShowPicture(special://home/addons/Manage-Kodi-Favourites/Manage-Kodi-Favourites-Help-Advanced.png)"/>
         
         <setting type="lsep" label="" />
-        <setting label="30070" type="action" id="MKF-Help-Menu" action="ShowPicture(special://home/addons/Manage-Kodi-Favourites/Coming-Soon.png)"/>
+        <setting label="30070" type="action" id="MKF-Help-Menu" action="ShowPicture(special://home/addons/Manage-Kodi-Favourites/Manage-Kodi-Favourites-Help-Menu-Items.png)"/>
         
         <setting type="lsep" label="" />
         <setting label="30071" type="action" id="MKF-Help-GUI" action="ShowPicture(special://home/addons/Manage-Kodi-Favourites/Coming-Soon.png)"/>
@@ -76,6 +76,7 @@
     </category>
 
 </settings>
+
 
 
 
