@@ -83,6 +83,8 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             304: self.doPreSuffix,
         }
 
+        if DEBUG2 == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'VER: "%s"\n' %  str(self.version))
+
         # Map action IDs to custom handler methods. See more action IDs in
         # https://github.com/xbmc/xbmc/blob/master/xbmc/input/actions/ActionIDs.h
         self.actionHandlerDict = {
@@ -729,6 +731,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
