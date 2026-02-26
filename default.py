@@ -62,7 +62,7 @@ FONT_SIZE = 'fontSize'
 THUMB_SIZE = 'thumbSize'
 PREFIX_TEXT_COLOR = 'PrefixTextColor'
 SUFFIX_TEXT_COLOR = 'SuffixTextColor'
-CURRENTVER = '0'
+CURRENTVER = 'currentVer'
 
 ADDON = Addon()
 PLUGIN_ID = int(sys.argv[1])
@@ -733,6 +733,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
