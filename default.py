@@ -125,9 +125,9 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
     def doCustomModal(self, favouritesGen):
 
         currentVer = '0' if not ADDON.getAddonInfo('version') else ADDON.getAddonInfo('version')
-        self.setProperty(CURRENTVER, "Ver: " + str(currentVer))
+        self.setProperty(CURRENTVER, currentVer)
 
-        if DEBUG2 == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Current Ver:)' %  str(currentVer))
+        if DEBUG2 == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Current Ver:)' %  currentVer)
 
         reorderingMethod = '0' if not ADDON.getSetting('reorderingMethod') else ADDON.getSetting('reorderingMethod')
         self.setProperty(REORDER_METHOD, reorderingMethod)
@@ -733,6 +733,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
