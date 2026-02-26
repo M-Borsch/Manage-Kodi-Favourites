@@ -62,6 +62,7 @@ FONT_SIZE = 'fontSize'
 THUMB_SIZE = 'thumbSize'
 PREFIX_TEXT_COLOR = 'PrefixTextColor'
 SUFFIX_TEXT_COLOR = 'SuffixTextColor'
+CURRENTVER = '0'
 
 ADDON = Addon()
 PLUGIN_ID = int(sys.argv[1])
@@ -122,7 +123,12 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
 
     # Function used to start the dialog.
     def doCustomModal(self, favouritesGen):
-        
+
+        currentVer = '0' if not ADDON.getAddonInfo('version') else ADDON.getAddonInfo('version')
+        self.setProperty(CURRENTVER, "Ver: " + str(currentVer))
+
+        if DEBUG2 == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Current Ver:)' %  str(currentVer))
+
         reorderingMethod = '0' if not ADDON.getSetting('reorderingMethod') else ADDON.getSetting('reorderingMethod')
         self.setProperty(REORDER_METHOD, reorderingMethod)
         fontSize = '0' if not ADDON.getSetting('fontSize') else ADDON.getSetting('fontSize')
@@ -727,6 +733,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
