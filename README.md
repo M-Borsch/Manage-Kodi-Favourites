@@ -88,19 +88,31 @@ This is an advanced function and should be used with caution. It allows users to
 ### 8) Exit (No Save-Exit-Abandon Any Unsaved Changes)
 Abandon your edits. Just steps back from the Addon, no saving.
 
-### Help Screens Available in the Addon
-Overview:
-<img src="Manage-Kodi-Favourites-Help-Overview.png" alt="Overview" width="400">
-Settings - Prefix / Suffix:
-<img src="Manage-Kodi-Favourites-Help-Prefix-Suffix.png" alt="Settings - Prefix/Suffix" width="400">
-Settings - Thumb / Font / Reorder / Insert/Swap:
-<img src="Manage-Kodi-Favourites-Help-Insert-Swap.png" alt="Thumb/Font/Color & Insert/Swap" width="400">
-Settings - ADVANCED:
-<img src="Manage-Kodi-Favourites-Help-Advanced.png" alt="Overview" width="400">
-Main Menu:
-<img src="Manage-Kodi-Favourites-Help-Menu-Items.png" alt="Main Menu" width="400">
-GUI - Graphical User Interface:
-<img src="Manage-Kodi-Favourites-Help-GUI.png" alt="GUI" width="400">
+## Help Screens Available in the Addon
+
+### Overview:
+
+<img src="Manage-Kodi-Favourites-Help-Overview.png" alt="Overview" width="600">
+
+### Settings - Prefix / Suffix:
+
+<img src="Manage-Kodi-Favourites-Help-Prefix-Suffix.png" alt="Settings - Prefix/Suffix" width="600">
+
+### Settings - Thumb / Font / Reorder / Insert/Swap:
+
+<img src="Manage-Kodi-Favourites-Help-Insert-Swap.png" alt="Thumb/Font/Color & Insert/Swap" width="600">
+
+### Settings - ADVANCED:
+
+<img src="Manage-Kodi-Favourites-Help-Advanced.png" alt="Overview" width="600">
+
+### Main Menu:
+
+<img src="Manage-Kodi-Favourites-Help-Menu-Items.png" alt="Main Menu" width="600">
+
+### GUI - Graphical User Interface:
+
+<img src="Manage-Kodi-Favourites-Help-GUI.png" alt="GUI" width="600">
 
 ### Reference Articles available at: <a href="http://borsch.ca">borsch.ca</a>
 
