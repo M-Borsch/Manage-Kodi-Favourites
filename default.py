@@ -184,6 +184,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
         setRawWindowProperty(REORDER_METHOD, reorderingMethod)
         thumbSize = '0' if not ADDON.getSetting('thumbSize') else ADDON.getSetting('thumbSize')
         setRawWindowProperty(THUMB_SIZE, thumbSize)
+        
 
     def onClick(self, controlId):
         self.idHandlerDict.get(controlId, self.noop)()
@@ -291,6 +292,12 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
                 cur_suffix_color = ADDON.getSetting('suffixColorCus')
             else:
                 cur_suffix_color = ADDON.getSetting('suffixColSel')
+    
+            PrefixTextColor = '[COLOR yellow]' + cur_prefix_text + ' / ' + cur_prefix_color + '[/COLOR]'
+            SuffixTextColor = '[COLOR yellow]' + cur_suffix_text + ' / ' + cur_suffix_color + '[/COLOR]'
+
+            self.setProperty(PREFIX_TEXT_COLOR, PrefixTextColor)
+            self.setProperty(SUFFIX_TEXT_COLOR, SuffixTextColor)      
 
             # Now Update the Prefix - Suffix and Color of selected item suffix
             listitem_at_index = self.allItems[self.indexFrom]
@@ -737,3 +744,4 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
