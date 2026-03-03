@@ -194,10 +194,6 @@ msgid "»» "
  #: resources/settings.xml
 msgctxt "#30049"
 msgid "»»» CMD - "
- 
-#: resources/settings.xml
-msgctxt "#30050"
-msgid "»»» Launch "
 
 #: resources/settings.xml
 msgctxt "#30051"
@@ -299,4 +295,7 @@ msgid " ŒR"
 msgctxt "#30076"
 msgid " ŒM"
 
+#: resources/settings.xml
+msgctxt "#30077"
+msgid "»»» Launch "
 
