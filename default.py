@@ -185,35 +185,35 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
         thumbSize = '0' if not ADDON.getSetting('thumbSize') else ADDON.getSetting('thumbSize')
         setRawWindowProperty(THUMB_SIZE, thumbSize)
 
-        # Determine the Prefix Text from Configuration Settings
-        if ADDON.getSetting('prefixTextCus'):
-            cur_prefix_text = ADDON.getSetting('prefixTextCus')
-        else:
-            cur_prefix_text = ADDON.getSetting('prefixTextSel')
-            
-        # Determine the Prefix Color from Configuration Settings
-        if ADDON.getSetting('prefixColorCus'):
-            cur_prefix_color = ADDON.getSetting('prefixColorCus')
-        else:
-            cur_prefix_color = ADDON.getSetting('prefixColSel')
+           # Determine the Prefix Text from Configuration Settings
+            if ADDON.getSetting('prefixTextSel') == 'CUSTOM':
+                cur_prefix_text = ADDON.getSetting('prefixTextCus')
+            else:
+                cur_prefix_text = ADDON.getSetting('prefixTextSel')
+                        
+            # Determine the Prefix Color from Configuration Settings
+            if ADDON.getSetting('prefixColSel') == 'CUSTOM':
+                cur_prefix_color = ADDON.getSetting('prefixColorCus')
+            else:
+                cur_prefix_color = ADDON.getSetting('prefixColSel')
+    
+            # Determine the Suffix Text from Configuration Settings
+            if ADDON.getSetting('suffixTextSel') == 'CUSTOM':
+                cur_suffix_text = ADDON.getSetting('suffixTextCus')
+            else:
+                cur_suffix_text = ADDON.getSetting('suffixTextSel')
+                
+            # Determine the Suffix Color from Configuration Settings
+            if ADDON.getSetting('suffixColSel') == 'CUSTOM':
+                cur_suffix_color = ADDON.getSetting('suffixColorCus')
+            else:
+                cur_suffix_color = ADDON.getSetting('suffixColSel')
+    
+            PrefixTextColor = '[COLOR yellow]' + cur_prefix_text + ' / ' + cur_prefix_color + '[/COLOR]'
+            SuffixTextColor = '[COLOR yellow]' + cur_suffix_text + ' / ' + cur_suffix_color + '[/COLOR]'
 
-        # Determine the Suffix Text from Configuration Settings
-        if ADDON.getSetting('suffixTextCus'):
-            cur_suffix_text = ADDON.getSetting('suffixTextCus')
-        else:
-            cur_suffix_text = ADDON.getSetting('suffixTextSel')
-            
-        # Determine the Suffix Color from Configuration Settings
-        if ADDON.getSetting('suffixColorCus'):
-            cur_suffix_color = ADDON.getSetting('suffixColorCus')
-        else:
-            cur_suffix_color = ADDON.getSetting('suffixColSel')
-
-        PrefixTextColor = '[COLOR yellow]' + cur_prefix_text + ' / ' + cur_prefix_color + '[/COLOR]'
-        SuffixTextColor = '[COLOR yellow]' + cur_suffix_text + ' / ' + cur_suffix_color + '[/COLOR]'
-
-        self.setProperty(PREFIX_TEXT_COLOR, PrefixTextColor)
-        self.setProperty(SUFFIX_TEXT_COLOR, SuffixTextColor)
+            self.setProperty(PREFIX_TEXT_COLOR, PrefixTextColor)
+            self.setProperty(SUFFIX_TEXT_COLOR, SuffixTextColor)      
 
     def onClick(self, controlId):
         self.idHandlerDict.get(controlId, self.noop)()
@@ -773,5 +773,6 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
