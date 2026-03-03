@@ -21,13 +21,15 @@
 >
 > - [x] - (Write Out New file) - Add ability to save the change in Prefix/Suffix and Colors in the Favourites list
 >
-> - [x] - (Sort) - Add ability to sort the Favourites list
+> - [x] - (Sort and Filter) - Add ability to sort the Favourites list
 >
 > - [x] - (Save) - Add ability to Save Only the Favourites list
 > 
 > - [x] - (Reload) - Add ability to Reload User Kodi Profile
 > 
 > - [x] - (Overwrite Favourites) - Add ability to Overwrite the Favourites file (favourites.xml)
+> 
+> - [x] - (Filter) - Add Filter Suffix to allow for categories to filter - personal groups
 > 
 
 
