@@ -285,5 +285,18 @@ msgid "[COLOR green]Contact Us...[/COLOR]"
 
 #: resources/settings.xml
 msgctxt "#30073"
-msgid "- ¤ Downloads ¤"
+msgid " - ¤ Downloads ¤"
+
+#: resources/settings.xml
+msgctxt "#30074"
+msgid " ŒŒ"
+
+#: resources/settings.xml
+msgctxt "#30075"
+msgid " ŒR"
+
+#: resources/settings.xml
+msgctxt "#30076"
+msgid " ŒM"
+
 
