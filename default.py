@@ -530,7 +530,7 @@ def writeoutFavourites():
     # --- Process the result ---
     if selected_file_path:
         
-        xbmc.log(f"[COLOR red]Manage Kodi Favourites: [/COLOR]Selected file path: {selected_file_path}", xbmc.LOGINFO)
+        # xbmc.log(f"[COLOR red]Manage Kodi Favourites: [/COLOR]Selected file path: {selected_file_path}", xbmc.LOGINFO)
         
         # You can now use xbmcvfs to read the file content
         # Example (requires importing xbmcvfs):
@@ -550,7 +550,7 @@ def writeoutFavourites():
             xbmcvfs.copy(src, dst)
             # Display a confirmation dialog (requires xbmcgui)
             dialog = xbmcgui.Dialog()
-            dialog.ok("File Operation", "[COLOR red]Manage Kodi Favourites: [/COLOR]favourites.xml successfully copied!\n\nYou must restart Kodi or [COLOR orange]Reload Profile[/COLOR]\nto view the change")
+            dialog.ok("File Operation", "[COLOR green]Manage Kodi Favourites: [/COLOR]favourites.xml successfully copied!\n")
         except IOError as e:
             # Display an error dialog if the operation fails
             dialog = xbmcgui.Dialog()
@@ -559,42 +559,6 @@ def writeoutFavourites():
     else:
         xbmc.log("[COLOR red]Manage Kodi Favourites: [/COLOR]File selection cancelled by user.", xbmc.LOGINFO)
 
-
-
-
-def hold_junk():
-    fav_file_content = ""
-    try:
-        file = xbmcvfs.File(FAVOURITES_PATH, 'r')
-        fav_file_content = file.read()
-        file.close()
-    except Exception as e:
-        raise Exception('ERROR: unable to read the Favourites file. Nothing was saved.')
-
-    # 1. Prompt user to select a directory
-    dialog = xbmcgui.Dialog()
-    selected_dir = dialog.browse(0, 'Select Directory to Save File', 'favourites.xml')
-    
-    if selected_dir:
-        # 2. Define the file name
-        file_name = "favourites.xml"
-        full_path = os.path.join(selected_dir, file_name)
-
-        if DEBUG2 == '1': log_msg = "[COLOR red]Manage Kodi Favourites INFO:[/COLOR] filename = %s" % full_path
-        if DEBUG2 == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)
-
-        
-        # 3. Write data to the file
-        try:
-            with open(full_path, 'w') as f:
-                f.write(fav_file_content)
-            dialog.notification('Success', 'File written successfully', xbmcgui.NOTIFICATION_INFO)
-        except Exception as e:
-            dialog.notification('Error', str(e), xbmcgui.NOTIFICATION_ERROR)
-    else:
-        print("No directory selected")
-        
-    return True
 
 def overwriteFavourites():
 
@@ -887,6 +851,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
