@@ -18,7 +18,7 @@ Latest Version Manage Kodi Favourites :sunglasses:
 - Added Help screens
 (Latest)
 
-<a href="Manage-Kodi-Favourites-2.4.zip">Manage-Kodi-Favourites-2.4.zip</a> (Latest)
+<a href="Manage-Kodi-Favourites-2.5.zip">Manage-Kodi-Favourites-2.5.zip</a> (Latest)
 
 This <font COLOR="blue"><B>MB-KODI Manage Kodi Favourites</B></font> Program Addon is published as a Kodi Program Addon that you can install directly into Kodi or via the MB-KODI Repository. It is a publicly available Kodi Addon supported by MB-KODI.<br />
 <br />
