@@ -506,7 +506,6 @@ def writeoutFavourites():
         file.close()
     except Exception as e:
         raise Exception('ERROR: unable to read the Favourites file. Nothing was saved.')
-    return True
 
     try:
         file = xbmcvfs.File(NEW_FAVOURITES_PATH, 'w')
@@ -807,6 +806,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
