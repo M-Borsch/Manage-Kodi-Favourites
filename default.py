@@ -515,6 +515,10 @@ def writeoutFavourites():
         # 2. Define the file name
         file_name = "favourites.xml"
         full_path = os.path.join(selected_dir, file_name)
+
+        if DEBUG2 == '1': log_msg = "[COLOR red]Manage Kodi Favourites INFO:[/COLOR] filename = %s" % full_path
+        if DEBUG2 == '1': xbmc.log(log_msg, level=xbmc.LOGINFO)
+
         
         # 3. Write data to the file
         try:
@@ -819,6 +823,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
