@@ -507,12 +507,25 @@ def writeoutFavourites():
     except Exception as e:
         raise Exception('ERROR: unable to read the Favourites file. Nothing was saved.')
 
-    try:
-        file = xbmcvfs.File(NEW_FAVOURITES_PATH, 'w')
-        file.write(fav_file_content)
-        file.close()
-    except Exception as e:
-        raise Exception('ERROR: unable to write the Favourites file. Nothing was saved.')
+    # 1. Prompt user to select a directory
+    dialog = xbmcgui.Dialog()
+    selected_dir = dialog.browse(0, 'Select Directory to Save File', 'favourites.xml')
+    
+    if selected_dir:
+        # 2. Define the file name
+        file_name = "favourites.xml"
+        full_path = os.path.join(selected_dir, file_name)
+        
+        # 3. Write data to the file
+        try:
+            with open(full_path, 'w') as f:
+                f.write(fav_file_content)
+            dialog.notification('Success', 'File written successfully', xbmcgui.NOTIFICATION_INFO)
+        except Exception as e:
+            dialog.notification('Error', str(e), xbmcgui.NOTIFICATION_ERROR)
+    else:
+        print("No directory selected")
+        
     return True
 
 def overwriteFavourites():
@@ -806,6 +819,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
