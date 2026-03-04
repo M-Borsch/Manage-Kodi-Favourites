@@ -508,7 +508,7 @@ def writeoutFavourites():
     
     # The starting path. Use "" to list local drives and network shares
     # or specify a default path like 'special://home/addons/'
-    default_path = 'special://home' 
+    default_path = '' 
     
     # File mask for directories.
     file_mask = '/' 
@@ -887,6 +887,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
