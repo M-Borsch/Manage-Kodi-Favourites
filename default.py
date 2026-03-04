@@ -497,6 +497,24 @@ def saveFavourites(xmlText):
         raise Exception('ERROR: unable to write to the New Favourites file. Nothing was saved.')
     return True
 
+def writeoutFavourites():
+
+    fav_file_content = ""
+    try:
+        file = xbmcvfs.File(FAVOURITES_PATH, 'r')
+        fav_file_content = file.read()
+        file.close()
+    except Exception as e:
+        raise Exception('ERROR: unable to read the Favourites file. Nothing was saved.')
+    return True
+
+    try:
+        file = xbmcvfs.File(NEW_FAVOURITES_PATH, 'w')
+        file.write(fav_file_content)
+        file.close()
+    except Exception as e:
+        raise Exception('ERROR: unable to write the Favourites file. Nothing was saved.')
+    return True
 
 def overwriteFavourites():
 
@@ -696,6 +714,18 @@ elif '/configure' in PLUGIN_URL:
     xbmc.executebuiltin('Addon.OpenSettings(Manage-Kodi-Favourites)')
 
 elif '/overwrite_favs' in PLUGIN_URL:
+    
+    # Let the user know that there are about to Overwrite their Favourites file
+    verbose = 'false' if not ADDON.getSetting('presuffixBool') else ADDON.getSetting('presuffixBool')
+    msg_text = f"[COLOR red]DANGER! [/COLOR]This will save a copy of your Kodi Favourites file - Proceed?"
+    if verbose == 'true':
+        if xbmcgui.Dialog().yesno('Manage Kodi Favourites', msg_text):
+            # Activate the filemaanager
+            writeoutFavourites()
+    else:
+        writeoutFavourites()
+
+elif '/overwrite_favs' in PLUGIN_URL:
 
     # Check if flag is set to allow overwrite
     overwriteFlag = 'false' if not ADDON.getSetting('advancedBool') else ADDON.getSetting('advancedBool')
@@ -751,6 +781,9 @@ else:
     configureItem = xbmcgui.ListItem('[B]Configure... (Change Settings)[/B]')
     configureItem.setArt({'thumb': 'DefaultFolderBack.png'})
     configureItem.setInfo('video', {'plot': 'Configure the default actions in Settings panel for Prefix, Suffix, Colors and Insert/Swap modes.'})
+    writeoutFavs = xbmcgui.ListItem('[COLOR red][B]Write Out Favourites [/COLOR](Advanced! - Save a Copy of Favourites file[/B]')
+    writeoutFavs.setArt({'thumb': 'DefaultFolderBack.png'})
+    writeoutFavs.setInfo('video', {'plot': 'Advanced - Write out a copy of your Kodi Favourites file.[/COLOR]'})
     overwriteFavs = xbmcgui.ListItem('[COLOR red][B]Overwrite Favourites [/COLOR](Advanced! - Overwrite Favourites file - Leave Changes Pending a Kodi Restart or [COLOR orange]Reload Profile[/COLOR])[/B]')
     overwriteFavs.setArt({'thumb': 'DefaultFolderBack.png'})
     overwriteFavs.setInfo('video', {'plot': 'Advanced - Overwrite Kodi Favourites file, Leave Changes Pending a Kodi Restart or [COLOR orange]Reload Profile.[/COLOR]'})
@@ -768,11 +801,13 @@ else:
             (PLUGIN_URL + 'save_noexit', saveSaveItem, False),
             (PLUGIN_URL + 'nosave_reload', nosaveReloadItem, False),
             (PLUGIN_URL + 'configure', configureItem, False),
+            (PLUGIN_URL + 'writeout_favs', writeoutFavs, False),
             (PLUGIN_URL + 'overwrite_favs', overwriteFavs, False),
             (PLUGIN_URL + 'exit_only', exitItem, False)
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
