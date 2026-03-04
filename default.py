@@ -713,7 +713,7 @@ elif '/configure' in PLUGIN_URL:
     # Activate the Manage Kodi Favourites Settings window
     xbmc.executebuiltin('Addon.OpenSettings(Manage-Kodi-Favourites)')
 
-elif '/overwrite_favs' in PLUGIN_URL:
+elif '/writeout_favs' in PLUGIN_URL:
     
     # Let the user know that there are about to Overwrite their Favourites file
     verbose = 'false' if not ADDON.getSetting('presuffixBool') else ADDON.getSetting('presuffixBool')
@@ -807,6 +807,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
