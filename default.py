@@ -499,6 +499,70 @@ def saveFavourites(xmlText):
 
 def writeoutFavourites():
 
+    # --- Configuration Variables ---
+    # Type of browse dialog: 1 = ShowAndGetDir
+    browse_type = 0
+    
+    # Dialog heading
+    heading = 'Select the directory to save favourites.xml file'
+    
+    # The starting path. Use "" to list local drives and network shares
+    # or specify a default path like 'special://home/addons/'
+    default_path = 'special://home' 
+    
+    # File mask for directories.
+    file_mask = '/' 
+    
+    # Enable multiple file selection (optional)
+    enable_multiple = False
+    
+    # --- Show the browse dialog ---
+    dialog = xbmcgui.Dialog()
+    selected_file_path = dialog.browse(
+        browse_type,
+        heading,
+        '',  # shares parameter: "" for local/network sources, "files" for file sources
+        file_mask,
+        enableMultiple=enable_multiple,
+        defaultt=default_path # default path to start browsing from
+    )
+
+    # --- Process the result ---
+    if selected_file_path:
+        
+        xbmc.log(f"[COLOR red]Manage Kodi Favourites: [/COLOR]Selected file path: {selected_file_path}", xbmc.LOGINFO)
+        
+        # You can now use xbmcvfs to read the file content
+        # Example (requires importing xbmcvfs):
+        # import xbmcvfs
+        # with xbmcvfs.File(selected_file_path, 'r') as f:
+        #     content = f.read()
+        #     xbmc.log(f"File content snippet: {content[:100]}", xbmc.LOGINFO)
+
+        # Define source and destination paths using xbmc.translatePath()
+        # 'special://home/' is a common built-in path in Kodi that points to the userdata folder
+        src = xbmcvfs.translatePath(FAVOURITES_PATH)
+        dst = xbmcvfs.translatePath(selected_file_path) + "/favourites.xml"
+        
+        # Add error handling using a try-except block
+        try:
+            # shutil.copyfile(src, dst)
+            xbmcvfs.copy(src, dst)
+            # Display a confirmation dialog (requires xbmcgui)
+            dialog = xbmcgui.Dialog()
+            dialog.ok("File Operation", "[COLOR red]Manage Kodi Favourites: [/COLOR]favourites.xml successfully copied!\n\nYou must restart Kodi or [COLOR orange]Reload Profile[/COLOR]\nto view the change")
+        except IOError as e:
+            # Display an error dialog if the operation fails
+            dialog = xbmcgui.Dialog()
+            dialog.ok("File Operation Error", f"[COLOR red]Manage Kodi Favourites: [/COLOR]Error copying favourites.xml file: {e}")
+    
+    else:
+        xbmc.log("[COLOR red]Manage Kodi Favourites: [/COLOR]File selection cancelled by user.", xbmc.LOGINFO)
+
+
+
+
+def hold_junk():
     fav_file_content = ""
     try:
         file = xbmcvfs.File(FAVOURITES_PATH, 'r')
@@ -823,6 +887,7 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
 
 
 
