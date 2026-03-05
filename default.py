@@ -761,7 +761,7 @@ elif '/writeout_favs' in PLUGIN_URL:
     
     # Let the user know that there are about to Overwrite their Favourites file
     verbose = 'false' if not ADDON.getSetting('presuffixBool') else ADDON.getSetting('presuffixBool')
-    msg_text = f"[COLOR red]DANGER! [/COLOR]This will save a copy of your Kodi Favourites file - overwriting any local version of favourites.xml in the selected direcory\n\n Proceed?"
+    msg_text = f"[COLOR red]DANGER! [/COLOR]This will save a copy of your Kodi Favourites file - overwriting any local version of favourites.xml in the selected directory\n Proceed?"
     if verbose == 'true':
         if xbmcgui.Dialog().yesno('Manage Kodi Favourites', msg_text):
             # Activate the filemaanager
@@ -851,3 +851,4 @@ else:
         )
     )
     xbmcplugin.endOfDirectory(PLUGIN_ID)
+
