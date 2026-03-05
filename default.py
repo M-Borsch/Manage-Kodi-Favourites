@@ -828,7 +828,7 @@ else:
     writeoutFavs = xbmcgui.ListItem('[COLOR red][B]-> Download Current Favourites file [/COLOR](Advanced! - Save a Copy of favourites.xml file[/B]')
     writeoutFavs.setArt({'thumb': 'DefaultFolderBack.png'})
     writeoutFavs.setInfo('video', {'plot': 'Advanced - Download a copy of your Kodi Favourites file.[/COLOR]'})
-    overwriteFavs = xbmcgui.ListItem('[COLOR red][B]-> Upload Favourites [/COLOR](Advanced! - Upload a new Favourites file - Leave Changes Pending a Kodi Restart or [COLOR orange]Reload Profile[/COLOR])[/B]')
+    overwriteFavs = xbmcgui.ListItem('[COLOR red][B]-> Upload Favourites [/COLOR](Advanced! - Upload a new Favourites file (favourites.xml) - Leave Changes Pending a Kodi Restart or [COLOR orange]Reload Profile[/COLOR])[/B]')
     overwriteFavs.setArt({'thumb': 'DefaultAddonsUpdates.png'})
     overwriteFavs.setInfo('video', {'plot': 'Advanced - Upload Kodi Favourites file, Leave Changes Pending a Kodi Restart or [COLOR orange]Reload Profile.[/COLOR]'})
     exitItem = xbmcgui.ListItem('[B]Exit (No Save-Exit - Abandon Any Unsaved Changes)[/B]')
