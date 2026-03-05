@@ -83,10 +83,13 @@ Exits the Addon and Reloads your Kodi Profile. Use this to load the last saved v
 ### 6) Configure...(Change Settings) 
 Call up the Settings Dialog to change default Insert/Swap actions, Thumbnail size, Font size on labels and Colors as well as set the Prefix and Suffix text.
 
-### 7) Overwrite Favourites File (Advanced - Overwrite Favourites Files...)
+### 7) Advanced - Download Current Favourites file (Advanced! - Save a Copy of favourites.xml file.
+This is an advanced function that allows users to manually dowload a copy of their favourites file (favourites.xml).
+
+### 8) Advanced - Upload Kodi Favourites file, Leave Changes Pending a Kodi Restart or Reload Profile.
 This is an advanced function and should be used with caution. It allows users to manually overwrite their favourites file (favourites.xml) with a new file of the same name. Users must enable this option in the Configure-Settings-Advanced section of the configuration panel for the Addon.
 
-### 8) Exit (No Save-Exit-Abandon Any Unsaved Changes)
+### 9) Exit (No Save-Exit-Abandon Any Unsaved Changes)
 Abandon your edits. Just steps back from the Addon, no saving.
 
 ## Help Screens Available in the Addon
