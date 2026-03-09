@@ -52,6 +52,8 @@ Default Picklists are provided, however if you do not want an action to apply, y
 >Color - Select the Color to be applied to the Suffix. e.g.  "NONE,green,yellow,blue,cyan,orange,purple,white,Custom"
 
 ## ADDON Main Menu
+> [!IMPORTANT]
+> If you make a change to your Favourites list using "Manage Kodi Favourites" - make sure after you return to the main menu that you use one of the "Save" options to 'lock' in your change. Otherwise, your edits will be lost! 
 
 ### 1) Manage Your Kodi Favourites...   
 Opens a dialog where you can view and reorder your Favourites items usin the Insert/Swap functionality or add a Prefix with Color and/or a Suffix with Color.
