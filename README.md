@@ -69,7 +69,10 @@ Insert/Swap
 (If an item is marked, you can select it again to unmark it.)  
 - Press the Close button to close that dialog when you're done editing (your changes won't be saved yet).  
 - If you've made some mistakes and want to start over, press the "Restore..." button to restore the favourites order from the Kodi favourites file. This will undo your unsaved changes.
-   
+
+Sort
+- This will 'alhabetize' (i.e. sort) your Favourites list. When used with a "Suffix", you can organize and/or group your favourites into categories, etc. - all stored in alphabetical order.
+
 ### 2) Apply Changes (Save-Exit-Reload Your Kodi Profile)
 Saves your changes and reloads your Kodi profile, so your changes can be seen immediately instead of you having to restart Kodi to see them.
    
