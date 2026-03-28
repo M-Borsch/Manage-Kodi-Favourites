@@ -31,6 +31,7 @@
 > 
 > - [x] - (Filter) - Add Filter Suffix to allow for categories to filter - personal groups
 > 
-
-
-
+> - [ ] - (GUI) - Reorganize Menu to have Config first, Manage, then Save (in green)
+> 
+> - [ ] - (GUI) - Reorganize Configure to have Help as last last option
+> 
