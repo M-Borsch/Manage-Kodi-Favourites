@@ -794,12 +794,21 @@ else:
     # Create the menu items.
     xbmcplugin.setContent(PLUGIN_ID, 'files')
 
+    configureItem = xbmcgui.ListItem('[B]Configure... (Change Settings)[/B]')
+    configureItem.setArt({'thumb': 'DefaultFolderBack.png'})
+    configureItem.setInfo('video', {'plot': 'Configure the default actions in Settings panel for Prefix, Suffix, Colors and Insert/Swap modes.'})
     dialogItem = xbmcgui.ListItem('[COLOR blue][B]Manage Your Kodi Favourites...[/COLOR](Edit Your Favourites List)[/B]')
     dialogItem.setArt({'thumb': 'DefaultAddonContextItem.png'})
     dialogItem.setInfo('video', {'plot': 'Open the dialog where you can Manage your favourites.[CR][B]How to ' \
                                  'use:[/B] select one item, then select another to Insert/Swap. ' \
                                  'Do this as much as needed. Finally, close the dialog and use the menus ' \
                                  'below to save your changes.'})
+    saveSaveItem = xbmcgui.ListItem('   [COLOR green]Save Only (Save-No Exit-No Reload - Leave Changes Pending a Kodi Restart or [/COLOR][COLOR orange]Reload Profile[/COLOR])')
+    saveSaveItem.setArt({'thumb': 'DefaultFolderBack.png'})
+    saveSaveItem.setInfo('video', {'plot': 'Save any changes you made but do not exit the add-on. [B]Note:[/B] if you '
+                                   'make any changes to your favourites using the Favourites screen (like adding, '
+                                   'removing or reordering items) before closing Kodi, your changes from this '
+                                   'add-on will be ignored.'})
     saveReloadItem = xbmcgui.ListItem('   Apply Changes (Save-Exit-Reload Your Kodi Profile)')
     saveReloadItem.setArt({'thumb': 'DefaultAddonsUpdates.png'})
     saveReloadItem.setInfo('video', {'plot': 'Save any changes you made and reload your Kodi profile '
@@ -810,21 +819,12 @@ else:
                                    'make any changes to your favourites using the Favourites screen (like adding, '
                                    'removing or reordering items) before closing Kodi, your changes from this '
                                    'add-on will be ignored.'})
-    saveSaveItem = xbmcgui.ListItem('   Save Only (Save-No Exit-No Reload - Leave Changes Pending a Kodi Restart or [COLOR orange]Reload Profile[/COLOR])')
-    saveSaveItem.setArt({'thumb': 'DefaultFolderBack.png'})
-    saveSaveItem.setInfo('video', {'plot': 'Save any changes you made but do not exit the add-on. [B]Note:[/B] if you '
-                                   'make any changes to your favourites using the Favourites screen (like adding, '
-                                   'removing or reordering items) before closing Kodi, your changes from this '
-                                   'add-on will be ignored.'})
     nosaveReloadItem = xbmcgui.ListItem('   Exit & [COLOR orange]Reload Profile[/COLOR] Only (No Save-Exit-Reload Your Kodi Profile)')
     nosaveReloadItem.setArt({'thumb': 'DefaultAddonsUpdates.png'})
     nosaveReloadItem.setInfo('video', {'plot': 'Do not save any changes you made, exit the add-on and Reload you Kodi profile. [B]Note:[/B] if you '
                                    'make any changes to your favourites using the Favourites screen (like adding, '
                                    'removing or reordering items) before closing Kodi, your changes from this '
                                    'add-on will be ignored.'})
-    configureItem = xbmcgui.ListItem('[B]Configure... (Change Settings)[/B]')
-    configureItem.setArt({'thumb': 'DefaultFolderBack.png'})
-    configureItem.setInfo('video', {'plot': 'Configure the default actions in Settings panel for Prefix, Suffix, Colors and Insert/Swap modes.'})
     writeoutFavs = xbmcgui.ListItem('[COLOR red][B]-> Download Current Favourites file [/COLOR](Advanced! - Save a Copy of favourites.xml file[/B]')
     writeoutFavs.setArt({'thumb': 'DefaultFolderBack.png'})
     writeoutFavs.setInfo('video', {'plot': 'Advanced - Download a copy of your Kodi Favourites file.[/COLOR]'})
