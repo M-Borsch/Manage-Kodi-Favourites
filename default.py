@@ -4,6 +4,9 @@
 # In other words, this is an add-on to edit your
 # favourites.xml file.
 #
+# M-Borsch 2026-03-30: Version 2.6
+# - Latest release
+# --------------------------------------------------------------------
 # --------------------------------------------------------------------
 # M-Borsch 2026-02-14: Version 2.0.0
 # - Initial Release based on 1.4.3 of Insert/Swap Kodi Favourites.
@@ -803,7 +806,7 @@ else:
                                  'use:[/B] select one item, then select another to Insert/Swap. ' \
                                  'Do this as much as needed. Finally, close the dialog and use the menus ' \
                                  'below to save your changes.'})
-    saveSaveItem = xbmcgui.ListItem('   [COLOR green]Save Only (Save-No Exit-No Reload - Leave Changes Pending a Kodi Restart or [/COLOR][COLOR orange]Reload Profile[/COLOR])')
+    saveSaveItem = xbmcgui.ListItem('   [COLOR green]Save Only Continue to Edit (Save-No Exit-No Reload - Leave Changes Pending a Kodi Restart or [/COLOR][COLOR orange]Reload Profile[/COLOR])')
     saveSaveItem.setArt({'thumb': 'DefaultFolderBack.png'})
     saveSaveItem.setInfo('video', {'plot': 'Save any changes you made but do not exit the add-on. [B]Note:[/B] if you '
                                    'make any changes to your favourites using the Favourites screen (like adding, '
@@ -839,12 +842,12 @@ else:
         PLUGIN_ID,
         (
             # PLUGIN_URL already ends with a slash, so just append the route to it.
+            (PLUGIN_URL + 'configure', configureItem, False),
+            (PLUGIN_URL + 'save_noexit', saveSaveItem, False),
             (PLUGIN_URL + 'dialog', dialogItem, False),
             (PLUGIN_URL + 'save_reload', saveReloadItem, False),
             (PLUGIN_URL + 'save_exit', saveExitItem, False),
-            (PLUGIN_URL + 'save_noexit', saveSaveItem, False),
             (PLUGIN_URL + 'nosave_reload', nosaveReloadItem, False),
-            (PLUGIN_URL + 'configure', configureItem, False),
             (PLUGIN_URL + 'writeout_favs', writeoutFavs, False),
             (PLUGIN_URL + 'overwrite_favs', overwriteFavs, False),
             (PLUGIN_URL + 'exit_only', exitItem, False)
