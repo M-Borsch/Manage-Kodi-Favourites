@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="Manage-Kodi-Favourites" name="[COLOR blue]Manage Kodi Favourites[/COLOR]" version="2.5" provider-name="M-Borsch,MB-K@DI">
+<addon id="Manage-Kodi-Favourites" name="[COLOR blue]Manage Kodi Favourites[/COLOR]" version="2.6" provider-name="M-Borsch,MB-K@DI">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
   </requires>
@@ -9,6 +9,8 @@
   <extension point="xbmc.addon.metadata">
     <news>
       [COLOR lavender][B]Manage Kodi Favourites[/B][/COLOR]
+      [B]2.6:[/B]
+      - Change Menu layout and configuration tabs
       [B]2.5:[/B]
       - Add ability export Favourites file (favourites.xml)
       [B]2.4:[/B]
