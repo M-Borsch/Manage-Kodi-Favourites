@@ -1,22 +1,5 @@
  <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <settings>
-     <category label="30063"> <!-- Help Section -->
-        <setting type="string" label="30066" />
-        <setting label="30064" type="action" id="MKF-Help-Overview" action="ShowPicture(special://home/addons/Manage-Kodi-Favourites/Manage-Kodi-Favourites-Help-Overview.png)"/>
-        <setting label="30067" type="action" id="MKF-Help-PrefixSuffix" action="ShowPicture(special://home/addons/Manage-Kodi-Favourites/Manage-Kodi-Favourites-Help-Prefix-Suffix.png)"/>
-        <setting label="30068" type="action" id="MKF-Help-Thumb" action="ShowPicture(special://home/addons/Manage-Kodi-Favourites/Manage-Kodi-Favourites-Help-Insert-Swap.png)"/>
-        <setting label="30069" type="action" id="MKF-Help-ADVANCED" action="ShowPicture(special://home/addons/Manage-Kodi-Favourites/Manage-Kodi-Favourites-Help-Advanced.png)"/>
-        
-        <setting type="lsep" label="" />
-        <setting label="30070" type="action" id="MKF-Help-Menu" action="ShowPicture(special://home/addons/Manage-Kodi-Favourites/Manage-Kodi-Favourites-Help-Menu-Items.png)"/>
-        
-        <setting type="lsep" label="" />
-        <setting label="30071" type="action" id="MKF-Help-GUI" action="ShowPicture(special://home/addons/Manage-Kodi-Favourites/Manage-Kodi-Favourites-Help-GUI.png)"/>
-
-        <setting type="lsep" label="" />
-        <setting label="30072" type="action" id="MKF-Help-ContactUs" action="ShowPicture(special://home/addons/Manage-Kodi-Favourites/Manage-Kodi-Favourites-Help-ContactUs.png)"/>
-
-     </category>
       
      <category label="30001"> <!-- Picklist Settings -->
         <setting type="string" label="30002" />
@@ -69,6 +52,24 @@
       
     </category>
 
+     <category label="30063"> <!-- Help Section -->
+        <setting type="string" label="30066" />
+        <setting label="30064" type="action" id="MKF-Help-Overview" action="ShowPicture(special://home/addons/Manage-Kodi-Favourites/Manage-Kodi-Favourites-Help-Overview.png)"/>
+        <setting label="30067" type="action" id="MKF-Help-PrefixSuffix" action="ShowPicture(special://home/addons/Manage-Kodi-Favourites/Manage-Kodi-Favourites-Help-Prefix-Suffix.png)"/>
+        <setting label="30068" type="action" id="MKF-Help-Thumb" action="ShowPicture(special://home/addons/Manage-Kodi-Favourites/Manage-Kodi-Favourites-Help-Insert-Swap.png)"/>
+        <setting label="30069" type="action" id="MKF-Help-ADVANCED" action="ShowPicture(special://home/addons/Manage-Kodi-Favourites/Manage-Kodi-Favourites-Help-Advanced.png)"/>
+        
+        <setting type="lsep" label="" />
+        <setting label="30070" type="action" id="MKF-Help-Menu" action="ShowPicture(special://home/addons/Manage-Kodi-Favourites/Manage-Kodi-Favourites-Help-Menu-Items.png)"/>
+        
+        <setting type="lsep" label="" />
+        <setting label="30071" type="action" id="MKF-Help-GUI" action="ShowPicture(special://home/addons/Manage-Kodi-Favourites/Manage-Kodi-Favourites-Help-GUI.png)"/>
+
+        <setting type="lsep" label="" />
+        <setting label="30072" type="action" id="MKF-Help-ContactUs" action="ShowPicture(special://home/addons/Manage-Kodi-Favourites/Manage-Kodi-Favourites-Help-ContactUs.png)"/>
+
+     </category>
+ 
       <category label="30053"> <!-- Advanced Settings -->
         <setting type="string" label="30054" />
  
