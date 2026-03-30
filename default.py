@@ -806,13 +806,13 @@ else:
                                  'use:[/B] select one item, then select another to Insert/Swap. ' \
                                  'Do this as much as needed. Finally, close the dialog and use the menus ' \
                                  'below to save your changes.'})
-    saveSaveItem = xbmcgui.ListItem('   [COLOR green]Save Only Continue to Edit (Save-No Exit-No Reload - Leave Changes Pending a Kodi Restart or [/COLOR][COLOR orange]Reload Profile[/COLOR])')
+    saveSaveItem = xbmcgui.ListItem('   [COLOR lightgreen]Save Only Continue to Edit (Save-No Exit-No Reload - Leave Changes Pending a Kodi Restart or [/COLOR][COLOR orange]Reload Profile[/COLOR])')
     saveSaveItem.setArt({'thumb': 'DefaultFolderBack.png'})
     saveSaveItem.setInfo('video', {'plot': 'Save any changes you made but do not exit the add-on. [B]Note:[/B] if you '
                                    'make any changes to your favourites using the Favourites screen (like adding, '
                                    'removing or reordering items) before closing Kodi, your changes from this '
                                    'add-on will be ignored.'})
-    saveReloadItem = xbmcgui.ListItem('   Apply Changes (Save-Exit-Reload Your Kodi Profile)')
+    saveReloadItem = xbmcgui.ListItem('   Apply Changes (Save-Exit-[COLOR orange]Reload Your Kodi Profile[/COLOR])')
     saveReloadItem.setArt({'thumb': 'DefaultAddonsUpdates.png'})
     saveReloadItem.setInfo('video', {'plot': 'Save any changes you made and reload your Kodi profile '
                                        'to make the changes visible right now, without having to restart Kodi.'})
@@ -843,8 +843,8 @@ else:
         (
             # PLUGIN_URL already ends with a slash, so just append the route to it.
             (PLUGIN_URL + 'configure', configureItem, False),
-            (PLUGIN_URL + 'save_noexit', saveSaveItem, False),
             (PLUGIN_URL + 'dialog', dialogItem, False),
+            (PLUGIN_URL + 'save_noexit', saveSaveItem, False),
             (PLUGIN_URL + 'save_reload', saveReloadItem, False),
             (PLUGIN_URL + 'save_exit', saveExitItem, False),
             (PLUGIN_URL + 'nosave_reload', nosaveReloadItem, False),
