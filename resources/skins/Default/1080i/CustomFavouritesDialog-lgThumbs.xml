@@ -318,7 +318,7 @@
                 </control>
 				<control type="textbox">
 					<visible>true</visible>
-					<height>20</height>
+					<height>25</height>
 					<onleft>200</onleft>
 					<width>270</width>
 					<onright>100</onright>
@@ -330,7 +330,7 @@
 				</control>
 				<control type="textbox">
 					<visible>true</visible>
-					<height>20</height>
+					<height>25</height>
 					<onleft>195</onleft>
 					<width>270</width>
 					<onright>100</onright>
@@ -342,7 +342,7 @@
 				</control>
 				<control type="textbox">
 					<visible>true</visible>
-					<height>20</height>
+					<height>25</height>
 					<onleft>200</onleft>
 					<width>270</width>
 					<onright>100</onright>
@@ -354,7 +354,7 @@
 				</control>
 				<control type="textbox">
 					<visible>true</visible>
-					<height>20</height>
+					<height>25</height>
 					<onleft>200</onleft>
 					<width>270</width>
 					<onright>100</onright>
@@ -366,7 +366,7 @@
 				</control>
 				<control type="textbox">
 					<visible>true</visible>
-					<height>20</height>
+					<height>25</height>
 					<onleft>200</onleft>
 					<width>270</width>
 					<onright>100</onright>
@@ -378,7 +378,7 @@
 				</control>
 				<control type="textbox">
 					<visible>true</visible>
-					<height>20</height>
+					<height>25</height>
 					<onleft>200</onleft>
 					<width>270</width>
 					<onright>100</onright>
@@ -483,7 +483,7 @@
 					<onleft>200</onleft>
 					<width>270</width>
 					<onright>100</onright>
-					<font>font10</font>
+					<font>font9</font>
 					<align>left</align>
 					<aligny>top</aligny>
 					<textcolor>blue</textcolor>
