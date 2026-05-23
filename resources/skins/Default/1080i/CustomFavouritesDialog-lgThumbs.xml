@@ -468,7 +468,7 @@
 		        </control>
 				<control type="textbox">
                     <visible>String.IsEqual(Window.Property(reorder),2)</visible>
-                    <height>75</height>
+                    <height>70</height>
 		    		<onleft>200</onleft>
 		    		<width>270</width>
                     <onright>100</onright>
@@ -493,44 +493,3 @@
 	   </control>
 	</controls>
 </window>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
