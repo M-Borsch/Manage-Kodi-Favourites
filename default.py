@@ -375,7 +375,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
 
             self.setProperty(PREFIX_TEXT_COLOR, PrefixTextColor)
             self.setProperty(SUFFIX_TEXT_COLOR, SuffixTextColor)      
-            self.setProperty(FILTER_TEXT_COLOR, SuffixTextColor)      
+            self.setProperty(FILTER_TEXT_COLOR, FilterextColor)      
 
             # Now Update the Prefix - Suffix and Color of selected item suffix
             listitem_at_index = self.allItems[self.indexFrom]
