@@ -65,6 +65,8 @@ FONT_SIZE = 'fontSize'
 THUMB_SIZE = 'thumbSize'
 PREFIX_TEXT_COLOR = 'PrefixTextColor'
 SUFFIX_TEXT_COLOR = 'SuffixTextColor'
+FILTER_TEXT_COLOR = 'FilterTextColor'
+
 CURRENTVER = 'currentVer'
 
 ADDON = Addon()
@@ -158,11 +160,26 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
         else:
             cur_suffix_color = ADDON.getSetting('suffixColSel')
 
+
+        # Determine the Filter Text from Configuration Settings
+        if ADDON.getSetting('filterTextCus'):
+            cur_filter_text = ADDON.getSetting('filterTextCus')
+        else:
+            cur_filter_text = ADDON.getSetting('filterextSel')
+            
+        # Determine the Suffix Color from Configuration Settings
+        if ADDON.getSetting('filterColorCus'):
+            cur_filter_color = ADDON.getSetting('filterColorCus')
+        else:
+            cur_filter_color = ADDON.getSetting('filterColSel')
+
         PrefixTextColor = '[COLOR yellow]' + cur_prefix_text + ' / ' + cur_prefix_color + '[/COLOR]'
         SuffixTextColor = '[COLOR yellow]' + cur_suffix_text + ' / ' + cur_suffix_color + '[/COLOR]'
+        FilterTextColor = '[COLOR green]' + cur_filter_text + ' / ' + cur_filter_color + '[/COLOR]'
 
         self.setProperty(PREFIX_TEXT_COLOR, PrefixTextColor)
         self.setProperty(SUFFIX_TEXT_COLOR, SuffixTextColor)
+        self.setProperty(FILTER_TEXT_COLOR, FilterTextColor)
      
         if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Entry: Prefix Label)' %  str(cur_prefix_text))
         if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(Entry: Prefix Color)' %  str(cur_prefix_color))
@@ -212,11 +229,26 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
         else:
             cur_suffix_color = ADDON.getSetting('suffixColSel')
 
+        # Determine the Suffix Text from Configuration Settings
+        if ADDON.getSetting('suffixTextSel') == 'CUSTOM':
+            cur_suffix_text = ADDON.getSetting('suffixTextCus')
+        else:
+            cur_suffix_text = ADDON.getSetting('suffixTextSel')
+            
+        # Determine the Filter Color from Configuration Settings
+        if ADDON.getSetting('filterColSel') == 'CUSTOM':
+            cur_filter_color = ADDON.getSetting('filterColorCus')
+        else:
+            cur_filter_color = ADDON.getSetting('filterColSel')
+
         PrefixTextColor = '[COLOR yellow]' + cur_prefix_text + ' / ' + cur_prefix_color + '[/COLOR]'
         SuffixTextColor = '[COLOR yellow]' + cur_suffix_text + ' / ' + cur_suffix_color + '[/COLOR]'
+        FilterTextColor = '[COLOR green]' + cur_filter_text + ' / ' + cur_filter_color + '[/COLOR]'
 
         self.setProperty(PREFIX_TEXT_COLOR, PrefixTextColor)
-        self.setProperty(SUFFIX_TEXT_COLOR, SuffixTextColor)      
+        self.setProperty(SUFFIX_TEXT_COLOR, SuffixTextColor)
+        self.setProperty(FILTER_TEXT_COLOR, FilterTextColor)      
+
 
     def onClick(self, controlId):
         self.idHandlerDict.get(controlId, self.noop)()
@@ -324,12 +356,20 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
                 cur_suffix_color = ADDON.getSetting('suffixColorCus')
             else:
                 cur_suffix_color = ADDON.getSetting('suffixColSel')
+
+          # Determine the Filter Color from Configuration Settings
+            if ADDON.getSetting('filterColSel') == 'CUSTOM':
+                cur_filter_color = ADDON.getSetting('filterColorCus')
+            else:
+                cur_filter_color = ADDON.getSetting('filterColSel')
     
             PrefixTextColor = '[COLOR yellow]' + cur_prefix_text + ' / ' + cur_prefix_color + '[/COLOR]'
             SuffixTextColor = '[COLOR yellow]' + cur_suffix_text + ' / ' + cur_suffix_color + '[/COLOR]'
+            FilterTextColor = '[COLOR green]' + cur_filter_text + ' / ' + cur_filter_color + '[/COLOR]'
 
             self.setProperty(PREFIX_TEXT_COLOR, PrefixTextColor)
             self.setProperty(SUFFIX_TEXT_COLOR, SuffixTextColor)      
+            self.setProperty(FILTER_TEXT_COLOR, SuffixTextColor)      
 
             # Now Update the Prefix - Suffix and Color of selected item suffix
             listitem_at_index = self.allItems[self.indexFrom]
@@ -346,6 +386,11 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
                 newSuffixText = ''
             else:
                 newSuffixText = cur_suffix_text 
+
+            if cur_filter_text == 'NONE':
+                newFilterText = ''
+            else:
+                newFilterText = cur_filter_text 
                 
             if cur_prefix_color == 'NONE':
                 newPrefixTextColor = newPrefixText
@@ -356,8 +401,14 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
                 newSuffixTextColor = newSuffixText
             else:
                 newSuffixTextColor = "[COLOR " + cur_suffix_color + "]" + newSuffixText + "[/COLOR]"
+
+            if cur_filter_color == 'NONE':
+                newFilterTextColor = newFilterText
+            else:
+                newFilterTextColor = "[COLOR " + cur_filter_color + "]" + newFilterText + "[/COLOR]"
             
-            new_label = newPrefixTextColor + label + newSuffixTextColor
+            
+            new_label = newPrefixTextColor + label + newSuffixTextColor + newFilterTextColor
 
             if DEBUG == '1': xbmcgui.Dialog().ok('Manage Kodi Favourites', 'INFO: "%s"\n(New Label)' %  str(new_label))
 
