@@ -64,7 +64,7 @@ msgctxt "#30010"
 msgid "NONE"
 
 #: resources/settings.xml
-msgctxt "#30011"cyan
+msgctxt "#30011"
 msgid "green"
 
 #: resources/settings.xml
@@ -299,3 +299,34 @@ msgid " ŒM"
 msgctxt "#30077"
 msgid "»»» Launch "
 
+#: resources/settings.xml
+msgctxt "#30078"
+msgid "- ¤ Gratis Red ¤"
+
+#: resources/settings.xml
+msgctxt "#30079"
+msgid "[COLOR blue]Section for Addditional Filter Picklists[/COLOR]"
+
+#: resources/settings.xml
+msgctxt "#30080"
+msgid "Filter Text"
+
+#: resources/settings.xml
+msgctxt "#30081"
+msgid "Filter Color"
+
+#: resources/settings.xml
+msgctxt "#30082"
+msgid "NONE"
+
+#: resources/settings.xml
+msgctxt "#30083"
+msgid "CUSTOM"
+
+#: resources/settings.xml
+msgctxt "#30084"
+msgid " CUSTOM VALUE"
+
+#: resources/settings.xml
+msgctxt "#30085"
+msgid "green"
