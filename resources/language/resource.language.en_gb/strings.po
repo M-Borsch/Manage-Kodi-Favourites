@@ -25,7 +25,7 @@ msgid "[COLOR blue]Manage Kodi Favourites[/COLOR]"
 
 #: resources/settings.xml
 msgctxt "#30001"
-msgid "[COLOR blue]Prefix/Suffix[/COLOR]"
+msgid "[COLOR blue]Prefix/Suffix/Filter[/COLOR]"
 
 #: resources/settings.xml
 msgctxt "#30002"
