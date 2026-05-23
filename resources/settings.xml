@@ -20,7 +20,7 @@
         <setting type="lsep" label="30016" />
         <!-- Suffix entry and Color settings -->
       
-        <setting id="suffixTextSel" type="labelenum" label="30017" lvalues="30028|30018|30019|30020|30021|30022|30023}30024|30025|30051|30059|30060|30061|30073|30074|30075|30076" default="NONE" />
+        <setting id="suffixTextSel" type="labelenum" label="30080" lvalues="30028|30018|30019|30020|30021|30022|30023}30024|30025|30051|30059|30060|30061|30073" default="NONE" />
 
         <!-- Text Field: Only visible if 'Custom' is selected -->
         <setting id="suffixTextCus" type="text" label="30029" default="" visible="eq(-1,0)" />
@@ -29,6 +29,19 @@
 
         <!-- Text Field: Only visible if 'Custom' is selected -->
         <setting id="suffixColorCus" type="text" label="30029" default="" visible="eq(-1,0)" />
+
+        <setting type="lsep" label="30079" />
+        <!-- Filter entry and Color settings -->
+      
+        <setting id="filterTextSel" type="labelenum" label="30017" lvalues="30082|30083|30074|30075|30076" default="NONE" />
+
+        <!-- Text Field: Only visible if 'Custom' is selected -->
+        <setting id="filterTextCus" type="text" label="30084" default="" visible="eq(-1,0)" />
+      
+        <setting id="filterColSel" type="labelenum" label="30026" lvalues="30028|30010|30011|30012|30013|30014|30015|30030|30031|30062" default="NONE" />
+
+        <!-- Text Field: Only visible if 'Custom' is selected -->
+        <setting id="filterColorCus" type="text" label="30029" default="" visible="eq(-1,0)" />
        
         <setting type="lsep" label="" />
         <setting label="30065" type="action" id="KodiColorChart" action="ShowPicture(special://home/addons/Manage-Kodi-Favourites/Kodi-Color-Chart.png)"/>
