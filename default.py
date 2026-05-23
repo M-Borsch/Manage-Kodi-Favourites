@@ -4,7 +4,7 @@
 # In other words, this is an add-on to edit your
 # favourites.xml file.
 #
-# M-Borsch 2026-03-30: Version 2.6
+# M-Borsch 2026-03-30: Version 2.7
 # - Latest release
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
@@ -165,7 +165,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
         if ADDON.getSetting('filterTextCus'):
             cur_filter_text = ADDON.getSetting('filterTextCus')
         else:
-            cur_filter_text = ADDON.getSetting('filterextSel')
+            cur_filter_text = ADDON.getSetting('filterTextSel')
             
         # Determine the Suffix Color from Configuration Settings
         if ADDON.getSetting('filterColorCus'):
