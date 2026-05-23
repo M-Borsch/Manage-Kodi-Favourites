@@ -29,7 +29,7 @@ msgid "[COLOR blue]Prefix/Suffix[/COLOR]"
 
 #: resources/settings.xml
 msgctxt "#30002"
-msgid "[COLOR white]Here you choose the actions from the picklists for Prefix/Suffix and Colors[/COLOR]"
+msgid "[COLOR white]Here you choose the actions from the picklists for Prefix/Suffix/Filter and Colors[/COLOR]"
 
 #: resources/settings.xml
 msgctxt "#30003"
