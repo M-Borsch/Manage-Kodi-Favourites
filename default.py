@@ -175,7 +175,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
 
         PrefixTextColor = '[COLOR yellow]' + cur_prefix_text + ' / ' + cur_prefix_color + '[/COLOR]'
         SuffixTextColor = '[COLOR yellow]' + cur_suffix_text + ' / ' + cur_suffix_color + '[/COLOR]'
-        FilterTextColor = '[COLOR green]' + cur_filter_text + ' / ' + cur_filter_color + '[/COLOR]'
+        FilterTextColor = '[COLOR yellow]' + cur_filter_text + ' / ' + cur_filter_color + '[/COLOR]'
 
         self.setProperty(PREFIX_TEXT_COLOR, PrefixTextColor)
         self.setProperty(SUFFIX_TEXT_COLOR, SuffixTextColor)
@@ -243,7 +243,7 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
 
         PrefixTextColor = '[COLOR yellow]' + cur_prefix_text + ' / ' + cur_prefix_color + '[/COLOR]'
         SuffixTextColor = '[COLOR yellow]' + cur_suffix_text + ' / ' + cur_suffix_color + '[/COLOR]'
-        FilterTextColor = '[COLOR green]' + cur_filter_text + ' / ' + cur_filter_color + '[/COLOR]'
+        FilterTextColor = '[COLOR yellow]' + cur_filter_text + ' / ' + cur_filter_color + '[/COLOR]'
 
         self.setProperty(PREFIX_TEXT_COLOR, PrefixTextColor)
         self.setProperty(SUFFIX_TEXT_COLOR, SuffixTextColor)
