@@ -318,7 +318,7 @@
                 </control>
 				<control type="textbox">
 					<visible>true</visible>
-					<height>15</height>
+					<height>20</height>
 					<onleft>200</onleft>
 					<width>270</width>
 					<onright>100</onright>
@@ -330,7 +330,7 @@
 				</control>
 				<control type="textbox">
 					<visible>true</visible>
-					<height>15</height>
+					<height>20</height>
 					<onleft>195</onleft>
 					<width>270</width>
 					<onright>100</onright>
@@ -342,7 +342,7 @@
 				</control>
 				<control type="textbox">
 					<visible>true</visible>
-					<height>25</height>
+					<height>20</height>
 					<onleft>200</onleft>
 					<width>270</width>
 					<onright>100</onright>
@@ -354,7 +354,7 @@
 				</control>
 				<control type="textbox">
 					<visible>true</visible>
-					<height>25</height>
+					<height>20</height>
 					<onleft>200</onleft>
 					<width>270</width>
 					<onright>100</onright>
@@ -364,9 +364,9 @@
 					 <textcolor>white</textcolor>
 					<label>$INFO[Window.Property(SuffixTextColor)]</label>
 				</control>
-								<control type="textbox">
+				<control type="textbox">
 					<visible>true</visible>
-					<height>35</height>
+					<height>20</height>
 					<onleft>200</onleft>
 					<width>270</width>
 					<onright>100</onright>
@@ -378,7 +378,7 @@
 				</control>
 				<control type="textbox">
 					<visible>true</visible>
-					<height>35</height>
+					<height>20</height>
 					<onleft>200</onleft>
 					<width>270</width>
 					<onright>100</onright>
