@@ -85,7 +85,7 @@ msgid "orange"
 
 #: resources/settings.xml
 msgctxt "#30016"
-msgid "[COLOR blue]Settings Section for Suffix Picklists[/COLOR]"
+msgid "[COLOR blue]Section for Suffix Picklists[/COLOR]"
 
 #: resources/settings.xml
 msgctxt "#30017"
@@ -314,4 +314,3 @@ msgid "Filter Text"
 #: resources/settings.xml
 msgctxt "#30081"
 msgid "Filter Color"
-
