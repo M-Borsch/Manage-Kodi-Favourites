@@ -357,7 +357,13 @@ class CustomFavouritesDialog(xbmcgui.WindowXMLDialog):
             else:
                 cur_suffix_color = ADDON.getSetting('suffixColSel')
 
-          # Determine the Filter Color from Configuration Settings
+            # Determine the Suffix Text from Configuration Settings
+            if ADDON.getSetting('filterTextSel') == 'CUSTOM':
+                cur_filter_text = ADDON.getSetting('filterTextCus')
+            else:
+                cur_filter_text = ADDON.getSetting('filterTextSel')
+                
+            # Determine the Filter Color from Configuration Settings
             if ADDON.getSetting('filterColSel') == 'CUSTOM':
                 cur_filter_color = ADDON.getSetting('filterColorCus')
             else:
