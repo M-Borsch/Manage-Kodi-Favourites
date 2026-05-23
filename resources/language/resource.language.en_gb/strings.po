@@ -111,7 +111,7 @@ msgid " - ¤ Ghost ¤"
 msgctxt "#30022"
 msgid " - ¤ Quicksilver ¤"
 
-#: resources/settings.xml
+#: resources/settings.xml`
 msgctxt "#30023"
 msgid " - ¤ Samsung TV+ ¤"
 
@@ -315,18 +315,3 @@ msgid "Filter Text"
 msgctxt "#30081"
 msgid "Filter Color"
 
-#: resources/settings.xml
-msgctxt "#30082"
-msgid "NONE"
-
-#: resources/settings.xml
-msgctxt "#30083"
-msgid "CUSTOM"
-
-#: resources/settings.xml
-msgctxt "#30084"
-msgid " CUSTOM VALUE"
-
-#: resources/settings.xml
-msgctxt "#30085"
-msgid "green"
