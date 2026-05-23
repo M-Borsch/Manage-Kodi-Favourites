@@ -311,14 +311,14 @@
                     <onleft>200</onleft>
                     <onright>100</onright>
                     <textcolor>white</textcolor>
-                    <label>[B]Pre/Suffix & Color...[/B]</label>
+                    <label>[B]Apply Pre/Suffix/Filter & Color...[/B]</label>
                     <align>center</align>
                     <texturefocus colordiffuse="FF12A0C7">BGWhite.png</texturefocus>
                     <texturenofocus colordiffuse="30FFFFFF">BGWhite.png</texturenofocus>
                 </control>
 				<control type="textbox">
 					<visible>true</visible>
-					<height>25</height>
+					<height>15</height>
 					<onleft>200</onleft>
 					<width>270</width>
 					<onright>100</onright>
@@ -330,7 +330,7 @@
 				</control>
 				<control type="textbox">
 					<visible>true</visible>
-					<height>50</height>
+					<height>15</height>
 					<onleft>195</onleft>
 					<width>270</width>
 					<onright>100</onright>
@@ -354,7 +354,7 @@
 				</control>
 				<control type="textbox">
 					<visible>true</visible>
-					<height>50</height>
+					<height>25</height>
 					<onleft>200</onleft>
 					<width>270</width>
 					<onright>100</onright>
@@ -363,6 +363,30 @@
 					<aligny>top</aligny>
 					 <textcolor>white</textcolor>
 					<label>$INFO[Window.Property(SuffixTextColor)]</label>
+				</control>
+								<control type="textbox">
+					<visible>true</visible>
+					<height>35</height>
+					<onleft>200</onleft>
+					<width>270</width>
+					<onright>100</onright>
+					<font>font10</font>
+					<align>left</align>
+					<aligny>top</aligny>
+					 <textcolor>yellow</textcolor>
+					<label>[B]Filter / Color:[/B]</label>
+				</control>
+				<control type="textbox">
+					<visible>true</visible>
+					<height>35</height>
+					<onleft>200</onleft>
+					<width>270</width>
+					<onright>100</onright>
+					<font>font10</font>
+					<align>left</align>
+					<aligny>top</aligny>
+					 <textcolor>white</textcolor>
+					<label>$INFO[Window.Property(FilterTextColor)]</label>
 				</control>
 				<control type="textbox">
 					<visible>false</visible>
