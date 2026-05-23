@@ -301,7 +301,7 @@ msgid "»»» Launch "
 
 #: resources/settings.xml
 msgctxt "#30078"
-msgid "- ¤ Gratis Red ¤"
+msgid " - ¤ Gratis Red ¤"
 
 #: resources/settings.xml
 msgctxt "#30079"
