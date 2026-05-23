@@ -341,15 +341,15 @@
 				</control>
 				<control type="textbox">
 					<visible>true</visible>
-					<height>50</height>
-					<onleft>195</onleft>
+					<height>25</height>
+					<onleft>210</onleft>
 					<width>270</width>
 					<onright>100</onright>
 					<font>font10</font>
 					<align>left</align>
 					<aligny>top</aligny>
 					 <textcolor>white</textcolor>
-					<label>$INFO[Window.Property(PrefixTextColor)]</label>
+					<label>[I]$INFO[Window.Property(PrefixTextColor)][/I]</label>
 				</control>
 				<control type="textbox">
 					<visible>true</visible>
@@ -365,15 +365,39 @@
 				</control>
 				<control type="textbox">
 					<visible>true</visible>
-					<height>50</height>
-					<onleft>200</onleft>
+					<height>25</height>
+					<onleft>210</onleft>
 					<width>270</width>
 					<onright>100</onright>
 					<font>font10</font>
 					<align>left</align>
 					<aligny>top</aligny>
 					 <textcolor>white</textcolor>
-					<label>$INFO[Window.Property(SuffixTextColor)]</label>
+					<label>[I]$INFO[Window.Property(SuffixTextColor)][/I]</label>
+				</control>
+				<control type="textbox">
+					<visible>true</visible>
+					<height>25</height>
+					<onleft>200</onleft>
+					<width>270</width>
+					<onright>100</onright>
+					<font>font10</font>
+					<align>left</align>
+					<aligny>top</aligny>
+					 <textcolor>yellow</textcolor>
+					<label>[B]Filter / Color:[/B]</label>
+				</control>
+				<control type="textbox">
+					<visible>true</visible>
+					<height>25</height>
+					<onleft>210</onleft>
+					<width>270</width>
+					<onright>100</onright>
+					<font>font10</font>
+					<align>left</align>
+					<aligny>top</aligny>
+					 <textcolor>white</textcolor>
+					<label>[I]$INFO[Window.Property(FilterTextColor)][/I]</label>
 				</control>
 				<control type="textbox">
 					<visible>false</visible>
@@ -455,7 +479,7 @@
 		        </control>
 				<control type="textbox">
                     <visible>String.IsEqual(Window.Property(reorder),2)</visible>
-                    <height>75</height>
+                    <height>70</height>
 		    		<onleft>200</onleft>
 		    		<width>270</width>
                     <onright>100</onright>
