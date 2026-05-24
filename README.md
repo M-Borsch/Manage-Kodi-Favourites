@@ -35,7 +35,7 @@ This <font COLOR="blue"><B>MB-KODI Manage Kodi Favourites</B></font> Program Add
 > [!IMPORTANT]
 > Depending on the settings you set in the configuration/setting panel, this Addon will either **Add a Prefix/Suffix and/or Filter** to items and/or add a **Color** to items in your Favourites list as well as allow users to easily and graphically **Sort or Move items** by **inserting/swapping** entries or using the built-in **Sort** function.
 
-**Pickists**:
+### Pickists:
 
 Default Picklists are provided, however if you do not want an action to apply, you simply select 'None'. Also, you can provide a 'Custom' entry by selecting the 'Custom' option and an editable text field will appear. This applies to Prefix, Suffix and associated Colors.
  
