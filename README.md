@@ -56,9 +56,9 @@ Default Picklists are provided, however if you do not want an action to apply, y
 >
 >Color - Select the Color to be applied to the Filter. e.g.  "NONE,green,yellow,blue,cyan,orange,purple,white,Custom"
 
-> [!NOTE]
+> [!TIP]
 >### Filtering Your Favourites List:
->Using Kodi's built-in <B>"FILTER"</B> option. you can easily 'filter' your favourites list by the Prefix, the Suffix or by using the Filter codes that you have added to your entries. This allows users to quicky manage their Favourites list.
+>Using Kodi's built-in <B>"FILTER"</B> option. you can easily 'filter' your favourites list by the Prefix, the Suffix or by using the Filter codes that you have added to your entries. This allows users to quicky manage their Favourites list. For example, use the built-in filter and enter "Movie" to show a list of Favourtie entries tagged with a prefix of "Movie -". Or use the Filter function and enter the "ŒŒ" Fiter tag to produce a FAvourites list tagged with "ŒŒ".
 
 ## ADDON Main Menu
 > [!IMPORTANT]
