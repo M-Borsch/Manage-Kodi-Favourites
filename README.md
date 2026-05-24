@@ -58,7 +58,7 @@ Default Picklists are provided, however if you do not want an action to apply, y
 
 > [!TIP]
 >### Filtering Your Favourites List:
->Using Kodi's built-in <B>"FILTER"</B> option. you can easily 'filter' your favourites list by the Prefix, the Suffix or by using the Filter codes that you have added to your entries. This allows users to quicky manage their Favourites list. For example, use the built-in filter and enter "Movie" to show a list of Favourite entries tagged with a prefix of "Movie -". Or use the Filter function and enter the "ŒŒ" 'Filter' tag to produce a Fvourites list showing just entries tagged with "ŒŒ".
+>Using Kodi's built-in <B>"FILTER"</B> option. you can easily 'filter' your favourites list by the Prefix, the Suffix or by using the Filter codes that you have added to your entries. This allows users to quicky manage their Favourites list. For example, use the built-in filter and enter "Movie" to show a list of Favourite entries tagged with a prefix of "Movie -". Or use the Filter function and enter the "ŒŒ" 'Filter' tag to produce a Favourites list showing just those entries tagged with "ŒŒ".
 
 ## ADDON Main Menu
 > [!IMPORTANT]
