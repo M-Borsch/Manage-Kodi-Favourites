@@ -53,6 +53,7 @@ Default Picklists are provided, however if you do not want an action to apply, y
 **Filter Pickists**:
 
 >Text - Select the Text to be "appended" to a selected item. e.g. "NONE, ŒŒ, ŒR. ŒM,Custom"
+>> ***NOTE:*** may have compatibility issues with Windows installs depending on your skin default font set. Workaround is to use ***Custom*** option and not use special characters in 'Filter' tags. 
 >
 >Color - Select the Color to be applied to the Filter. e.g.  "NONE,green,yellow,blue,cyan,orange,purple,white,Custom"
 
@@ -60,8 +61,7 @@ Default Picklists are provided, however if you do not want an action to apply, y
 >### Filtering Your Favourites List:
 >Using Kodi's built-in <B>"FILTER"</B> option, you can easily 'filter' your favourites list by Color, the Prefix, the Suffix or by using the Filter codes that you have added to your entries. This allows users to quicky manage their Favourites list. For example, use the built-in Kodi filter function to search for:
 > - Enter "Movie" to show a list of Favourite entries tagged with a prefix of "Movie -"
-> - Enter the "ŒŒ" 'Filter' tag to produce a Favourites list showing just those entries tagged with "ŒŒ"
->> ***NOTE:*** may have compatibility issues with Windows installs depending on your skin default font set. Workaround is to use ***Custom*** option and not use special characters in 'Filter' tags. 
+> - Enter the "ŒŒ" 'Filter' tag to produce a Favourites list showing just those entries tagged with "ŒŒ" (Non-Windows installs)
 > - Filter by Color - Enter "green" to produce a list showing just those entries tagged with the color "green"
 
 ## ADDON Main Menu
