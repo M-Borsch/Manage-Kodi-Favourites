@@ -70,18 +70,18 @@ Default Picklists are provided, however if you do not want an action to apply, y
 ### 1) Manage Your Kodi Favourites...   
 Opens a dialog where you can view and reorder your Favourites items usin the Insert/Swap functionality or add a Prefix with Color and/or a Suffix with Color.
 
-Add a Prefix and Color or Suffix and Color
-- To modify an items, select an item "A" to "mark" it, then select **"Pre/Suffix.."** button to apply the current settings as displayed on the dialog in yellow  
+**Add a Prefix and Color,  Suffix and Color, or FIlter and Color**
+- To modify an items, select an item "A" to "mark" it, then select **Apply "Pre/Suffix/Filter.."** button to apply the current settings as displayed on the dialog in yellow  
 (If an item is marked, you can select it again to unmark it.)  
 - Press the Close button to close that dialog when you're done editing (your changes won't be saved yet).  
 - If you've made some mistakes and want to start over, press the "Exit" button to abandon any changes you made to your favourites - i.e. This will undo any changes.
 
-Insert/Swap
+**Insert/Swap**
 - To reorder items, select an item "A" to "mark" it, then select another item "B" to either **"SWAP"** or **"Insert"**.  
 (If an item is marked, you can select it again to unmark it.)  
 - Press the Close button to close that dialog when you're done editing Your changes won't be saved yet. Make sure to use one of the 'Save' optikns to lock in your changes.  
 
-Sort
+**Sort**
 - This will 'alphabetize' (i.e. sort) your Favourites list. When used with a "Suffix", you can organize and/or group your favourites into categories, etc. - all stored in alphabetical order.
 
 ### 2) Apply Changes (Save-Exit-Reload Your Kodi Profile)
