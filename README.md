@@ -65,7 +65,7 @@ Default Picklists are provided, however if you do not want an action to apply, y
 
 ## ADDON Main Menu
 > [!IMPORTANT]
-> If you make a change to your Favourites list using "Manage Kodi Favourites" - make sure after you return to the main menu that you use one of the "Save" options to 'lock' in your change. Otherwise, your edits will be lost! Also, once saved, users must use an option to **Reload** their user profile to see the canges that have been saved.
+> If you make a change to your Favourites list using "Manage Kodi Favourites" - make sure after you return to the main menu that you use one of the "Save" options to 'lock' in your change. Otherwise, your edits will be lost! Also, once saved, users must use an option to **Reload** their user profile to see the changes that have been made to their Kodi Favourites list.
 
 ### 1) Manage Your Kodi Favourites...   
 Opens a dialog where you can view and reorder your Favourites items usin the Insert/Swap functionality or add a Prefix with Color and/or a Suffix with Color.
