@@ -65,7 +65,7 @@ Default Picklists are provided, however if you do not want an action to apply, y
 
 ## ADDON Main Menu
 > [!IMPORTANT]
-> If you make a change to your Favourites list using "Manage Kodi Favourites" - make sure after you return to the main menu that you use one of the "Save" options to 'lock' in your change. Otherwise, your edits will be lost! 
+> If you make a change to your Favourites list using "Manage Kodi Favourites" - make sure after you return to the main menu that you use one of the "Save" options to 'lock' in your change. Otherwise, your edits will be lost! Also, once saved, users must use an option to **Reload** their user profile to see the canges that have been saved.
 
 ### 1) Manage Your Kodi Favourites...   
 Opens a dialog where you can view and reorder your Favourites items usin the Insert/Swap functionality or add a Prefix with Color and/or a Suffix with Color.
@@ -100,7 +100,7 @@ Exits the Addon and Reloads your Kodi Profile. Use this to load the last saved v
 Call up the Settings Dialog to change default Insert/Swap actions, Thumbnail size, Font size on labels and Colors as well as set the Prefix and Suffix text.
 
 ### 7) Advanced - Download Current Favourites file (Advanced! - Save a Copy of favourites.xml file.
-This is an advanced function that allows users to manually download a copy of their favourites file (favourites.xml).
+This is an advanced function that allows users to manually download a copy of their favourites file (favourites.xml). Users must enable this option in the Configure-Settings-Advanced section of the configuration panel for the Addon.
 
 ### 8) Advanced - Upload Kodi Favourites file, Leave Changes Pending a Kodi Restart or Reload Profile.
 This is an advanced function and should be used with caution. It allows users to manually overwrite their favourites file (favourites.xml) with a new file of the same name. Users must enable this option in the Configure-Settings-Advanced section of the configuration panel for the Addon.
