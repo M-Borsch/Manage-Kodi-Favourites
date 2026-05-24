@@ -61,7 +61,7 @@ Default Picklists are provided, however if you do not want an action to apply, y
 >Using Kodi's built-in <B>"FILTER"</B> option, you can easily 'filter' your favourites list by Color, the Prefix, the Suffix or by using the Filter codes that you have added to your entries. This allows users to quicky manage their Favourites list. For example, use the built-in Kodi filter function to search for:
 > - Enter "Movie" to show a list of Favourite entries tagged with a prefix of "Movie -"
 > - Enter the "ŒŒ" 'Filter' tag to produce a Favourites list showing just those entries tagged with "ŒŒ"
-> -- ***NOTE:*** may have compatibility issues with Windows installs depending on your skin default font set. Workaround is to use Custom option and not use special characters. 
+>> ***NOTE:*** may have compatibility issues with Windows installs depending on your skin default font set. Workaround is to use ***Custom*** option and not use special characters. 
 > - Filter by Color - Enter "green" to produce a list showing just those entries tagged with the color "green"
 
 ## ADDON Main Menu
