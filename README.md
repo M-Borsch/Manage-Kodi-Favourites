@@ -37,7 +37,7 @@ This <font COLOR="blue"><B>MB-KODI Manage Kodi Favourites</B></font> Program Add
 
 ### Pickists
 
-Default Picklists are provided, however if you do not want an action to apply, you simply select 'None'. Also, you can provide a 'Custom' entry by selecting the 'Custom' option and an editable text field will appear. This applies to Prefix, Suffix and associated Colors.
+Default Picklists are provided, however if you do not want an action to apply, you simply select 'None'. Also, you can provide a 'Custom' entry by selecting the 'Custom' option and an editable text field will appear. This applies to Prefix, Suffix, Filter codes and associated Colors.
  
 **Prefix Pickists**:
 >Text - Select the Text to be "prepended" to a selected item. e.g. "NONE,TV - ,Movie - ,Show - ,Custom"
