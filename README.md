@@ -55,6 +55,9 @@ Default Picklists are provided, however if you do not want an action to apply, y
 >Text - Select the Text to be "appended" to a selected item. e.g. "NONE, ŒŒ, ŒR. ŒM,Custom"
 
 >Color - Select the Color to be applied to the Filter. e.g.  "NONE,green,yellow,blue,cyan,orange,purple,white,Custom"
+>
+>### Filtering Your Favourites List:
+>Using Kodi's built-in <B>"FILTER"</B> option. you can easily 'filter' your favourites list by the Prefix, the Suffix or by using the Filter codes that you have added to your entries. This allows users to quicky manage their Favourites list.
 
 ## ADDON Main Menu
 > [!IMPORTANT]
@@ -126,9 +129,6 @@ Abandon your edits. Just steps back from the Addon, no saving.
 ### GUI - Graphical User Interface:
 
 <img src="Manage-Kodi-Favourites-Help-GUI.png" alt="GUI" width="600">
-
-### Filtering Your Favourites List:
-Using Kodi's built-in <B>"FILTER"</B> option. you can easily 'filter' your favourites lust by the Prefix, the Suffix or by using the Filter codes that you have added to your entries. This allows users to quicky manage their Favourites list.
 
 ### Reference Articles available at: <a href="http://borsch.ca">borsch.ca</a>
 
