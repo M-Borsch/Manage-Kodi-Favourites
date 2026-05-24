@@ -41,21 +41,21 @@ Default Picklists are provided, however if you do not want an action to apply, y
  
 **Prefix Pickists**:
 >Text - Select the Text to be "prepended" to a selected item. e.g. "NONE,TV - ,Movie - ,Show - ,Custom"
-
+>
 >Color - Select the Color to be applied to the Prefix. e.g. "NONE,green,yellow,blue,cyan,orange,purple,white,Custom"
  
 **Suffix Pickists**:
 
 >Text - Select the Text to be "appended" to a selected item. e.g. "NONE, - # Samsung TV+ #,Custom"
-
+>
 >Color - Select the Color to be applied to the Suffix. e.g.  "NONE,green,yellow,blue,cyan,orange,purple,white,Custom"
 
 **Filter Pickists**:
 
 >Text - Select the Text to be "appended" to a selected item. e.g. "NONE, ŒŒ, ŒR. ŒM,Custom"
-
->Color - Select the Color to be applied to the Filter. e.g.  "NONE,green,yellow,blue,cyan,orange,purple,white,Custom"
 >
+>Color - Select the Color to be applied to the Filter. e.g.  "NONE,green,yellow,blue,cyan,orange,purple,white,Custom"
+
 >### Filtering Your Favourites List:
 >Using Kodi's built-in <B>"FILTER"</B> option. you can easily 'filter' your favourites list by the Prefix, the Suffix or by using the Filter codes that you have added to your entries. This allows users to quicky manage their Favourites list.
 
