@@ -1,11 +1,11 @@
 # Manage-Kodi-Favourites
-This Kodi Program Addon allows you to manage your Kodi favourites by sorting, inserting or swapping items and/or adding a prefix, suffix and color to you Kodi favourites
+This Kodi Program Addon allows you to manage your Kodi favourites by sorting, inserting or swapping items and/or adding a prefix, suffix, a filter  and color to you Kodi favourites
 
 ![icon](MB-KODI-icon.png) (![icon](Manage-Kodi-Fav-icon.png)  
 
 # Program Addon: Manage Kodi Favourites
 
-This is a simple & lightweight KODI Program Addon that lets you quickly manage your Kodi favourites list that works on multiple Kodi skins. Use this Program Addon to easilly Manage (i.e. move, sort, add a prefix or suffix and color code Favourites) by inserting or swapping entries, using the sort function and/or adding Color, prepending a Prefix or appending a Suffix to entries in your Kodi Favourites list.
+This is a simple & lightweight KODI Program Addon that lets you quickly manage your Kodi favourites list that works on multiple Kodi skins. Use this Program Addon to easilly Manage (i.e. move, sort, add a prefix or suffix, a filter and color code Favourites) by inserting or swapping entries, using the sort function and/or adding Color, prepending a Prefix or appending a Suffix and/or Filter to entries in your Kodi Favourites list.
 
 > [!NOTE]
 > (Latest) - This is the latest version of the Manage Kodi Favourites
@@ -13,7 +13,7 @@ This is a simple & lightweight KODI Program Addon that lets you quickly manage y
 > Supported by MB-KODI ✔️
 
 Latest Version Manage Kodi Favourites :sunglasses:
-- Added ability for users to add a Prefix, Suffix and/or Color each. Set the default actions in the configuration panel and easily and graphically modify entries in the Kodi Favourites list
+- Added ability for users to add a Prefix, Suffix and/or Filter or Color each. Set the default actions in the configuration panel and easily and graphically modify entries in the Kodi Favourites list
 - Added ability to "Sort" and "Filter" Favourites
 - Added Help screens
 (Latest)
@@ -33,14 +33,13 @@ This <font COLOR="blue"><B>MB-KODI Manage Kodi Favourites</B></font> Program Add
 # How to use:
 
 > [!IMPORTANT]
-> Depending on the settings you set in the configuration/setting panel, this Addon will either **Add a Prefix/Suffix** to items and/or add a **Color** to items in your Favourites list as well as allow users to easily and graphically **Sort or Move items** by inserting/swapping entries or using the built-in **Sort** function.
+> Depending on the settings you set in the configuration/setting panel, this Addon will either **Add a Prefix/Suffix and/or Filter** to items and/or add a **Color** to items in your Favourites list as well as allow users to easily and graphically **Sort or Move items** by inserting/swapping entries or using the built-in **Sort** function.
 
 **Pickists**:
 
 Default Picklists are provided, however if you do not want an action to apply, you simply select 'None'. Also, you can provide a 'Custom' entry by selecting the 'Custom' option and an editable text field will appear. This applies to Prefix, Suffix and associated Colors.
  
 **Prefix Pickists**:
-
 >Text - Select the Text to be "prepended" to a selected item. e.g. "NONE,TV - ,Movie - ,Show - ,Custom"
 
 >Color - Select the Color to be applied to the Prefix. e.g. "NONE,green,yellow,blue,cyan,orange,purple,white,Custom"
@@ -50,6 +49,12 @@ Default Picklists are provided, however if you do not want an action to apply, y
 >Text - Select the Text to be "appended" to a selected item. e.g. "NONE, - # Samsung TV+ #,Custom"
 
 >Color - Select the Color to be applied to the Suffix. e.g.  "NONE,green,yellow,blue,cyan,orange,purple,white,Custom"
+
+**Filter Pickists**:
+
+>Text - Select the Text to be "appended" to a selected item. e.g. "NONE, ŒŒ, ŒR. ŒM,Custom"
+
+>Color - Select the Color to be applied to the Filter. e.g.  "NONE,green,yellow,blue,cyan,orange,purple,white,Custom"
 
 ## ADDON Main Menu
 > [!IMPORTANT]
@@ -121,6 +126,9 @@ Abandon your edits. Just steps back from the Addon, no saving.
 ### GUI - Graphical User Interface:
 
 <img src="Manage-Kodi-Favourites-Help-GUI.png" alt="GUI" width="600">
+
+### Filtering Your Favourites List:
+Using Kodi's built-in <B>"FILTER"</B> option. you can easily 'filter' your favourites lust by the Prefix, the Suffix or by using the Filter codes that you have added to your entries. This allows users to quicky manage their Favourites list.
 
 ### Reference Articles available at: <a href="http://borsch.ca">borsch.ca</a>
 
