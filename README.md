@@ -33,7 +33,7 @@ This <font COLOR="blue"><B>MB-KODI Manage Kodi Favourites</B></font> Program Add
 # How to use
 
 > [!IMPORTANT]
-> Depending on the settings you set in the configuration/setting panel, this Addon will either **Add a Prefix/Suffix and/or Filter** to items and/or add a **Color** to items in your Favourites list as well as allow users to easily and graphically **Sort or Move items** by **inserting/swapping** entries or using the built-in **Sort** function.
+> Depending on the settings that you set in the configuration/setting panel for the Addon, this Addon will either **Add a Prefix/Suffix and/or Filter** codes to items and/or add a **Color** to items in your Favourites list as well as allow users to easily and graphically **Sort or Move items** by **inserting/swapping** entries or using the built-in **Sort** function to quickly 'alphabetize' your Favourites. Using Kodi's built in 'Filter' option, users can then quickly manage their Favourites i.e. filter lists to show just those items based on the Prefix/Suffix/Filter code or colors that they have modified in their Favourites list.
 
 ### Pickists
 
