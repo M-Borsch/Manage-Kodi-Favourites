@@ -13,13 +13,14 @@ This is a simple & lightweight KODI Program Addon that lets you quickly manage y
 > Supported by MB-KODI ✔️
 
 Latest Version Manage Kodi Favourites :sunglasses:
+- Added ability to laumch the Kodi Filemanger
 - Added ability upload/download favourites file as well as download Kodi log file
 - Added ability for users to add a Prefix, Suffix and/or Filter or Color each. Set the default actions in the configuration panel and easily and graphically modify entries in the Kodi Favourites list
 - Added ability to "Sort" and "Filter" Favourites
 - Added Help screens
 (Latest)
 
-<a href="Manage-Kodi-Favourites-2.9.zip">Manage-Kodi-Favourites-2.9.zip</a> (Latest)
+<a href="Manage-Kodi-Favourites-3.0.zip">Manage-Kodi-Favourites-3.0.zip</a> (Latest)
 
 This <font COLOR="blue"><B>MB-KODI Manage Kodi Favourites</B></font> Program Addon is published as a Kodi Program Addon that you can install directly into Kodi or via the MB-KODI Repository. It is a publicly available Kodi Addon supported by MB-KODI.<br />
 <br />
