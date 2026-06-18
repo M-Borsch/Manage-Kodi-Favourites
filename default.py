@@ -893,6 +893,19 @@ elif '/writeout_favs' in PLUGIN_URL:
     else:
         writeoutFavourites()
 
+elif '/writeout_log' in PLUGIN_URL:
+    
+    # Let the user know that there are about to write out their kodi log file
+    verbose = 'false' if not ADDON.getSetting('presuffixBool') else ADDON.getSetting('presuffixBool')
+    msg_text = f"[COLOR red]DANGER! [/COLOR]This will save a copy of your Kodi Log file - overwriting any local version of kodi.log in the selected directory\n Proceed?"
+    if verbose == 'true':
+        if xbmcgui.Dialog().yesno('Manage Kodi Favourites', msg_text):
+            # Activate the filemaanager
+            writeoutLog()
+    else:
+        writeoutLog()
+
+
 elif '/overwrite_favs' in PLUGIN_URL:
 
     # Check if flag is set to allow overwrite
@@ -956,8 +969,8 @@ else:
     overwriteFavs.setArt({'thumb': 'DefaultAddonsUpdates.png'})
     overwriteFavs.setInfo('video', {'plot': 'Advanced - Upload Kodi Favourites file, Leave Changes Pending a Kodi Restart or [COLOR orange]Reload Profile.[/COLOR]'})
     writeoutLog = xbmcgui.ListItem('[COLOR red][B]-> Download Current Kodi Log file [/COLOR](Advanced! - Save a Copy of kodi.log file[/B]')
-    writeoutFavs.setArt({'thumb': 'DefaultFolderBack.png'})
-    writeoutFavs.setInfo('video', {'plot': 'Advanced - Download a copy of your Kodi Favourites file.[/COLOR]'})
+    writeoutLog.setArt({'thumb': 'DefaultFolderBack.png'})
+    writeoutLog.setInfo('video', {'plot': 'Advanced - Download a copy of your Kodi Favourites file.[/COLOR]'})
     exitItem = xbmcgui.ListItem('[B]Exit (No Save-Exit - Abandon Any Unsaved Changes)[/B]')
     exitItem.setArt({'thumb': 'DefaultFolderBack.png'})
     exitItem.setInfo('video', {'plot': 'Exit the add-on (same as pressing Back), without saving your changes.'})
