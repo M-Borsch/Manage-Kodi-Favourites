@@ -603,10 +603,6 @@ def writeoutLog():
         # 'special://home/' is a common built-in path in Kodi that points to the userdata folder
         src = xbmcvfs.translatePath(LOG_PATH) + "kodi.log"
         dst = xbmcvfs.translatePath(selected_file_path) + "kodi.log"
-
-        xbmc.log(f"[COLOR red]Manage Kodi Favourites: [/COLOR]Src file path: {src}", xbmc.LOGINFO)
-        xbmc.log(f"[COLOR red]Manage Kodi Favourites: [/COLOR]Dst file path: {dst}", xbmc.LOGINFO)
-
     
         # Add error handling using a try-except block
         try:
@@ -719,7 +715,7 @@ def overwriteFavourites():
     
         # --- Process the result ---
         if selected_file_path:
-            xbmc.log(f"[COLOR red]Manage Kodi Favourites: [/COLOR]Selected file path: {selected_file_path}", xbmc.LOGINFO)
+            # xbmc.log(f"[COLOR red]Manage Kodi Favourites: [/COLOR]Selected file path: {selected_file_path}", xbmc.LOGINFO)
             # You can now use xbmcvfs to read the file content
             # Example (requires importing xbmcvfs):
             # import xbmcvfs
