@@ -904,7 +904,10 @@ elif '/writeout_log' in PLUGIN_URL:
             writeoutLog()
     else:
         writeoutLog()
-
+        
+elif '/fmanager' in PLUGIN_URL:
+    # Call up the File Manager.
+    xbmc.executebuiltin("ActivateWindow(FileManager)")
 
 elif '/overwrite_favs' in PLUGIN_URL:
 
@@ -971,6 +974,9 @@ else:
     writeoutLog = xbmcgui.ListItem('[COLOR red][B]-> Download Current Kodi Log file [/COLOR](Advanced! - Save a Copy of kodi.log file[/B]')
     writeoutLog.setArt({'thumb': 'DefaultFolderBack.png'})
     writeoutLog.setInfo('video', {'plot': 'Advanced - Download a copy of your Kodi Favourites file.[/COLOR]'})
+    file_manager = xbmcgui.ListItem('[COLOR red][B]-> Launch File Manager...[/B][/COLOR]')
+    file_manager.setArt({'thumb': 'DefaultAddonsUpdates.png'})
+    file_manager.setInfo('video', {'plot': 'Launch File Manager...'})
     exitItem = xbmcgui.ListItem('[B]Exit (No Save-Exit - Abandon Any Unsaved Changes)[/B]')
     exitItem.setArt({'thumb': 'DefaultFolderBack.png'})
     exitItem.setInfo('video', {'plot': 'Exit the add-on (same as pressing Back), without saving your changes.'})
@@ -988,6 +994,7 @@ else:
             (PLUGIN_URL + 'writeout_favs', writeoutFavs, False),
             (PLUGIN_URL + 'overwrite_favs', overwriteFavs, False),
             (PLUGIN_URL + 'writeout_log', writeoutLog, False),
+            (PLUGIN_URL + 'fmanager', file_manager, False),
             (PLUGIN_URL + 'exit_only', exitItem, False)
         )
     )
