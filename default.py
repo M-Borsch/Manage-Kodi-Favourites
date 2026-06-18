@@ -601,8 +601,8 @@ def writeoutLog():
 
         # Define source and destination paths using xbmc.translatePath()
         # 'special://home/' is a common built-in path in Kodi that points to the userdata folder
-        src = xbmcvfs.translatePath(LOG_PATH)
-        dst = xbmcvfs.translatePath(selected_file_path) + "/kodi.log"
+        src = xbmcvfs.translatePath(LOG_PATH) + "kodi.log"
+        dst = xbmcvfs.translatePath(selected_file_path) + "kodi.log"
 
         xbmc.log(f"[COLOR red]Manage Kodi Favourites: [/COLOR]Src file path: {src}", xbmc.LOGINFO)
         xbmc.log(f"[COLOR red]Manage Kodi Favourites: [/COLOR]Dst file path: {dst}", xbmc.LOGINFO)
