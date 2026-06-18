@@ -4,7 +4,7 @@
 # In other words, this is an add-on to edit your
 # favourites.xml file.
 #
-# M-Borsch 2026-03-30: Version 2.7
+# M-Borsch 2026-03-30: Version 2.9
 # - Latest release
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
@@ -56,6 +56,7 @@ DEBUG2 = '1'
 # Flag to put up the Under Construction Popup
 DEBUG3 = '0'
 FAVOURITES_PATH = 'special://userdata/favourites.xml'
+LOG_PATH = 'special://logpath/'
 NEW_FAVOURITES_PATH = 'special://userdata/favourites-new.xml'
 THUMBNAILS_PATH_FORMAT = 'special://thumbnails/{folder}/{file}'
 
@@ -557,6 +558,69 @@ def saveFavourites(xmlText):
         raise Exception('ERROR: unable to write to the New Favourites file. Nothing was saved.')
     return True
 
+def writeoutLog():
+
+    # --- Configuration Variables ---
+    # Type of browse dialog: 1 = ShowAndGetDir
+    browse_type = 0
+    
+    # Dialog heading
+    heading = 'Select the directory to save kodi.log file'
+    
+    # The starting path. Use "" to list local drives and network shares
+    # or specify a default path like 'special://home/addons/'
+    default_path = '' 
+    
+    # File mask for directories.
+    file_mask = '/' 
+    
+    # Enable multiple file selection (optional)
+    enable_multiple = False
+    
+    # --- Show the browse dialog ---
+    dialog = xbmcgui.Dialog()
+    selected_file_path = dialog.browse(
+        browse_type,
+        heading,
+        '',  # shares parameter: "" for local/network sources, "files" for file sources
+        file_mask,
+        enableMultiple=enable_multiple,
+        defaultt=default_path # default path to start browsing from
+    )
+    # --- Process the result ---
+    if selected_file_path:
+        
+        # xbmc.log(f"[COLOR red]Manage Kodi Favourites: [/COLOR]Selected file path: {selected_file_path}", xbmc.LOGINFO)
+        
+        # You can now use xbmcvfs to read the file content
+        # Example (requires importing xbmcvfs):
+        # import xbmcvfs
+        # with xbmcvfs.File(selected_file_path, 'r') as f:
+        #     content = f.read()
+        #     xbmc.log(f"File content snippet: {content[:100]}", xbmc.LOGINFO)
+
+        # Define source and destination paths using xbmc.translatePath()
+        # 'special://home/' is a common built-in path in Kodi that points to the userdata folder
+        src = xbmcvfs.translatePath(LOG_PATH)
+        dst = xbmcvfs.translatePath(selected_file_path) + "/kodi.log"
+        
+        # Add error handling using a try-except block
+        try:
+            # shutil.copyfile(src, dst)
+            xbmcvfs.copy(src, dst)
+            # Display a confirmation dialog (requires xbmcgui)
+            dialog = xbmcgui.Dialog()
+            dialog.ok("File Operation", "[COLOR green]Manage Kodi Favourites: [/COLOR]kodi.log successfully copied!\n")
+        except IOError as e:
+            # Display an error dialog if the operation fails
+            dialog = xbmcgui.Dialog()
+            dialog.ok("File Operation Error", f"[COLOR red]Manage Kodi Favourites: [/COLOR]Error copying kodi.log file: {e}")
+    
+    else:
+        xbmc.log("[COLOR red]Manage Kodi Favourites: [/COLOR]File selection cancelled by user.", xbmc.LOGINFO)
+
+
+
 def writeoutFavourites():
 
     # --- Configuration Variables ---
@@ -891,6 +955,9 @@ else:
     overwriteFavs = xbmcgui.ListItem('[COLOR red][B]-> Upload Favourites [/COLOR](Advanced! - Upload a new Favourites file (favourites.xml) - Leave Changes Pending a Kodi Restart or [COLOR orange]Reload Profile[/COLOR])[/B]')
     overwriteFavs.setArt({'thumb': 'DefaultAddonsUpdates.png'})
     overwriteFavs.setInfo('video', {'plot': 'Advanced - Upload Kodi Favourites file, Leave Changes Pending a Kodi Restart or [COLOR orange]Reload Profile.[/COLOR]'})
+    writeoutLog = xbmcgui.ListItem('[COLOR red][B]-> Download Current Kodi Log file [/COLOR](Advanced! - Save a Copy of kodi.log file[/B]')
+    writeoutFavs.setArt({'thumb': 'DefaultFolderBack.png'})
+    writeoutFavs.setInfo('video', {'plot': 'Advanced - Download a copy of your Kodi Favourites file.[/COLOR]'})
     exitItem = xbmcgui.ListItem('[B]Exit (No Save-Exit - Abandon Any Unsaved Changes)[/B]')
     exitItem.setArt({'thumb': 'DefaultFolderBack.png'})
     exitItem.setInfo('video', {'plot': 'Exit the add-on (same as pressing Back), without saving your changes.'})
@@ -907,6 +974,7 @@ else:
             (PLUGIN_URL + 'nosave_reload', nosaveReloadItem, False),
             (PLUGIN_URL + 'writeout_favs', writeoutFavs, False),
             (PLUGIN_URL + 'overwrite_favs', overwriteFavs, False),
+            (PLUGIN_URL + 'writeout_log', writeoutLog, False),
             (PLUGIN_URL + 'exit_only', exitItem, False)
         )
     )
