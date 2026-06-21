@@ -896,7 +896,7 @@ elif '/writeout_favs' in PLUGIN_URL:
 elif '/writeout_log' in PLUGIN_URL:
     
     # Let the user know that there are about to write out their kodi log file
-    verbose = 'false' if not ADDON.getSetting('presuffixBool') else ADDON.getSetting('presuffixBool')
+    verbose = 'true'
     msg_text = f"[COLOR red]DANGER! [/COLOR]This will save a copy of your Kodi Log file - overwriting any local version of kodi.log in the selected directory\n Proceed?"
     if verbose == 'true':
         if xbmcgui.Dialog().yesno('Manage Kodi Favourites', msg_text):
