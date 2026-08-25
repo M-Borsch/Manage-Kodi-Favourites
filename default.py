@@ -4,8 +4,11 @@
 # In other words, this is an add-on to edit your
 # favourites.xml file.
 #
-# M-Borsch 2026-03-30: Version 2.9
-# - Latest release
+# M-Borsch 2026-03-30: Version 3.1
+# - Minor release - add Mad Titan Sports Addon tagging
+#
+# M-Borsch 2026-03-30: Version 3.0
+# - Major release - add ability to run File Manager. Upload/Download Favs and Log, etc
 # --------------------------------------------------------------------
 # --------------------------------------------------------------------
 # M-Borsch 2026-02-14: Version 2.0.0
@@ -965,16 +968,16 @@ else:
                                    'make any changes to your favourites using the Favourites screen (like adding, '
                                    'removing or reordering items) before closing Kodi, your changes from this '
                                    'add-on will be ignored.'})
-    writeoutFavs = xbmcgui.ListItem('[COLOR red][B]-> Download Current Favourites file [/COLOR](Advanced! - Save a Copy of favourites.xml file[/B]')
+    writeoutFavs = xbmcgui.ListItem('[COLOR red][B]<- Download Current Favourites file [/COLOR](Advanced! - Save a Copy of favourites.xml file[/B]')
     writeoutFavs.setArt({'thumb': 'DefaultFolderBack.png'})
     writeoutFavs.setInfo('video', {'plot': 'Advanced - Download a copy of your Kodi Favourites file.[/COLOR]'})
     overwriteFavs = xbmcgui.ListItem('[COLOR red][B]-> Upload Favourites [/COLOR](Advanced! - Upload a new Favourites file (favourites.xml) - Leave Changes Pending a Kodi Restart or [COLOR orange]Reload Profile[/COLOR])[/B]')
     overwriteFavs.setArt({'thumb': 'DefaultAddonsUpdates.png'})
     overwriteFavs.setInfo('video', {'plot': 'Advanced - Upload Kodi Favourites file, Leave Changes Pending a Kodi Restart or [COLOR orange]Reload Profile.[/COLOR]'})
-    writeoutLog = xbmcgui.ListItem('[COLOR red][B]-> Download Current Kodi Log file [/COLOR](Advanced! - Save a Copy of kodi.log file[/B]')
+    writeoutLog = xbmcgui.ListItem('[COLOR red][B]<- Download Current Kodi Log file [/COLOR](Advanced! - Save a Copy of kodi.log file[/B]')
     writeoutLog.setArt({'thumb': 'DefaultFolderBack.png'})
     writeoutLog.setInfo('video', {'plot': 'Advanced - Download a copy of your Kodi Favourites file.[/COLOR]'})
-    file_manager = xbmcgui.ListItem('[COLOR red][B]-> Launch File Manager...[/B][/COLOR]')
+    file_manager = xbmcgui.ListItem('[COLOR red][B]>>> Launch File Manager...[/B][/COLOR]')
     file_manager.setArt({'thumb': 'DefaultAddonsUpdates.png'})
     file_manager.setInfo('video', {'plot': 'Launch File Manager...'})
     exitItem = xbmcgui.ListItem('[B]Exit (No Save-Exit - Abandon Any Unsaved Changes)[/B]')
