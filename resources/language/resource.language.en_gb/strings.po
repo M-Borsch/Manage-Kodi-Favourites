@@ -109,7 +109,7 @@ msgid " - ¤ Ghost ¤"
 
 #: resources/settings.xml
 msgctxt "#30022"
-msgid " - ¤ Quicksilver ¤"
+msgid " - ¤ Rising Tides ¤"
 
 #: resources/settings.xml`
 msgctxt "#30023"
