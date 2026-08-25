@@ -314,3 +314,11 @@ msgid "Filter Text"
 #: resources/settings.xml
 msgctxt "#30081"
 msgid "Filter Color"
+
+#: resources/settings.xml
+msgctxt "#30082"
+msgid " - ¤ Red Light ¤"
+
+#: resources/settings.xml
+msgctxt "#30078"
+msgid " - ¤ Mad Titan Sports ¤83
