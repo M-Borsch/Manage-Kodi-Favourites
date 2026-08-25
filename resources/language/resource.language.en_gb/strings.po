@@ -320,5 +320,5 @@ msgctxt "#30082"
 msgid " - ¤ Red Light ¤"
 
 #: resources/settings.xml
-msgctxt "#30078"
-msgid " - ¤ Mad Titan Sports ¤83
+msgctxt "#30083"
+msgid " - ¤ Mad Titan Sports ¤
